@@ -1,0 +1,109 @@
+{
+  "classes": {
+    "DERIVED_SCREENING": "Calculated from declared inputs with a transparent low-order equation; useful for consistency only.",
+    "DESIGN_TARGET": "Program choice or constraint to optimize toward; not a prediction.",
+    "EXPERIMENT_DEPENDENT": "Cannot be promoted to operational fact without physical validation.",
+    "PHYSICAL_CONSTANT": "Exact or accepted physical constant used in arithmetic.",
+    "REFERENCE_INFORMED_TARGET": "Engineering target selected using published contemporary reactor concepts; not achieved by SFR-1 unless separately validated.",
+    "SOLVER_DEPENDENT": "Must be produced by a named high-authority solver/analysis before promotion."
+  },
+  "design_id": "SFR-1-RevA",
+  "parameters": [
+    {
+      "class": "REFERENCE_INFORMED_TARGET",
+      "note": "8 m scale is comparable to the 2026 Helios preconcept; SFR-1 must re-optimize scale.",
+      "path": "reactor_envelope.major_radius_m"
+    },
+    {
+      "class": "DESIGN_TARGET",
+      "note": "Sets Rev A aspect ratio; not a solved plasma boundary.",
+      "path": "reactor_envelope.minor_radius_m"
+    },
+    {
+      "class": "REFERENCE_INFORMED_TARGET",
+      "note": "6 T is a contemporary high-field power-plant reference point, not a demonstrated SFR-1 field.",
+      "path": "reactor_envelope.magnetic_field_axis_T"
+    },
+    {
+      "class": "REFERENCE_INFORMED_TARGET",
+      "note": "3% is deliberately conservative near the 2.7% Helios preconcept value; finite-beta stability remains solver-dependent.",
+      "path": "reactor_envelope.volume_average_beta"
+    },
+    {
+      "class": "DESIGN_TARGET",
+      "note": "1 GW fusion class is a sizing target only.",
+      "path": "reactor_envelope.fusion_power_target_MW"
+    },
+    {
+      "class": "REFERENCE_INFORMED_TARGET",
+      "note": "20 K HTS operation is used in Helios and is technologically plausible, but SFR-1 cryogenic margin is unvalidated.",
+      "path": "magnet_system.operating_temperature_K_target"
+    },
+    {
+      "class": "REFERENCE_INFORMED_TARGET",
+      "note": "20 T is treated as a design ceiling, not a claimed SFR-1 coil result.",
+      "path": "magnet_system.maximum_field_on_conductor_T_ceiling"
+    },
+    {
+      "class": "REFERENCE_INFORMED_TARGET",
+      "note": "0.4% ceiling follows contemporary reactor coil engineering practice; detailed REBCO stack limits must come from conductor-specific data and FEA.",
+      "path": "magnet_system.winding_strain_hard_ceiling_fraction"
+    },
+    {
+      "class": "DESIGN_TARGET",
+      "note": "Reserves radial space for blanket/shield/vessel/thermal isolation; OpenMC and coil optimization may force growth.",
+      "path": "magnet_system.minimum_plasma_to_coil_distance_m_target"
+    },
+    {
+      "class": "DESIGN_TARGET",
+      "note": "Margin above unity is required; full 3-D TBR including penetrations remains solver-dependent.",
+      "path": "blanket_fuel_cycle.tbr_design_target"
+    },
+    {
+      "class": "REFERENCE_INFORMED_TARGET",
+      "note": "10 MW/m2 is an engineering target used in contemporary divertor studies; SFR-1 edge power exhaust is unvalidated.",
+      "path": "plasma_facing_and_exhaust.steady_peak_heat_flux_MW_m2_target_max"
+    },
+    {
+      "class": "DERIVED_SCREENING",
+      "note": "Near first-harmonic electron cyclotron frequency for a 6 T reference field; ray tracing determines actual launch/resonance strategy.",
+      "path": "heating_control.nominal_frequency_GHz"
+    },
+    {
+      "class": "REFERENCE_INFORMED_TARGET",
+      "note": "Used only for a preliminary plant ledger until full neutronics exists.",
+      "path": "thermal_power_conversion.blanket_energy_multiplier_screening"
+    },
+    {
+      "class": "DESIGN_TARGET",
+      "note": "40% plant-cycle target; requires temperature/material/cycle closure.",
+      "path": "thermal_power_conversion.gross_thermal_to_electric_efficiency_target"
+    },
+    {
+      "class": "DESIGN_TARGET",
+      "note": "Program requirement, not a prediction.",
+      "path": "thermal_power_conversion.net_electric_power_MW_design_floor"
+    },
+    {
+      "class": "SOLVER_DEPENDENT",
+      "note": "DESC plus VMEC++ cross-check.",
+      "path": "promotion_status.G1_EQUILIBRIUM"
+    },
+    {
+      "class": "SOLVER_DEPENDENT",
+      "note": "SIMSOPT/coil optimization plus structural FEA and HTS strain.",
+      "path": "promotion_status.G2_COILS"
+    },
+    {
+      "class": "SOLVER_DEPENDENT",
+      "note": "3-D OpenMC/DAGMC or equivalent including ports and streaming.",
+      "path": "promotion_status.G7_NEUTRONICS"
+    },
+    {
+      "class": "EXPERIMENT_DEPENDENT",
+      "note": "No physical reactor hardware is validated by this repository.",
+      "path": "promotion_status.G9_HARDWARE"
+    }
+  ],
+  "policy": "Every numeric parameter is explicitly classified. A design target is not a predicted or validated performance value."
+}

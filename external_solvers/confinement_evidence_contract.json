@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Required production confinement evidence before G3/G4 promotion",
+  "executed": false,
+  "claim_boundary": "This file is a contract, not confinement output.",
+  "required_identity": [
+    "candidate_id",
+    "equilibrium_solver",
+    "equilibrium_output_sha256",
+    "transport_tool_versions",
+    "input_hashes",
+    "execution_environment"
+  ],
+  "G3_required": {
+    "energetic_particles": [
+      "alpha_birth_distribution_definition",
+      "loss_fraction_vs_time",
+      "loss_energy_and_wall_location_distribution",
+      "orbit_or_direct_J_metric",
+      "numerical_convergence_or_step_sensitivity"
+    ],
+    "neoclassical": [
+      "particle_flux_vs_radius",
+      "ion_and_electron_heat_flux_vs_radius",
+      "bootstrap_current_profile",
+      "collisionality_and_Er_scan",
+      "numerical_convergence"
+    ]
+  },
+  "G4_required": {
+    "gyrokinetic": [
+      "linear_growth_rate_scan",
+      "nonlinear_ion_heat_flux",
+      "nonlinear_electron_heat_flux_or_documented_model_boundary",
+      "particle_flux",
+      "gradient_and_resolution_sensitivity"
+    ],
+    "profile_closure": [
+      "heating_and_alpha_source_profiles",
+      "transport_iteration_convergence",
+      "density_and_temperature_profiles",
+      "fusion_power_from_profiles",
+      "required_auxiliary_power"
+    ]
+  },
+  "promotion_rule": "ISS04, vacuum field-line topology, direct-J proxies or a single transport code may reject candidates but cannot independently close G3/G4."
+}

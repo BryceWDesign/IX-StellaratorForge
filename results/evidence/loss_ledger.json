@@ -1,0 +1,60 @@
+{
+  "bounce_averaged_radial_drift_surrogate": {
+    "authority": "bounce-action variation proxy only",
+    "metric": 0.0002581098866308246,
+    "status": "SCREENED"
+  },
+  "divertor_heat_load": {
+    "authority": "current heat metric is geometry-only screening proxy",
+    "metric": null,
+    "status": "UNKNOWN"
+  },
+  "fast_particle_loss": {
+    "authority": "requires guiding-center/particle code on solved field",
+    "metric": null,
+    "status": "UNKNOWN"
+  },
+  "field_line_integrability": {
+    "authority": "reduced Hamiltonian field-line screen only",
+    "metric": 0.009301347947810767,
+    "status": "SCREENED"
+  },
+  "mhd_stability": {
+    "authority": "requires finite-pressure equilibrium and stability analysis",
+    "metric": null,
+    "status": "UNKNOWN"
+  },
+  "net_electric_power": {
+    "authority": "requires complete reactor energy ledger",
+    "metric": null,
+    "status": "UNKNOWN"
+  },
+  "neutron_blanket_performance": {
+    "authority": "requires neutronics and breeding analysis",
+    "metric": null,
+    "status": "UNKNOWN"
+  },
+  "rf_plasma_coupling": {
+    "authority": "requires full-wave/deposition modeling",
+    "metric": null,
+    "status": "UNKNOWN"
+  },
+  "screening_objective_terms": {
+    "authority": "dimensionless reduced-order objective components",
+    "metric": {
+      "bounce_action": 0.01290549433154123,
+      "engineering_screen": 0.0156701834701774,
+      "field_strength_cv": 0.0031358814368249266,
+      "helical_strength_constraint": 0.0,
+      "mirror_regularization": 9.599999999999984e-05,
+      "resonant_overlap": 7.018615490738489e-05,
+      "spectral_complexity": 4.292771209003743e-06
+    },
+    "status": "SCREENED"
+  },
+  "turbulent_transport": {
+    "authority": "requires gyrokinetic or validated transport tooling",
+    "metric": null,
+    "status": "UNKNOWN"
+  }
+}

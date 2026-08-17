@@ -1,0 +1,60 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "name": "IX-Fusion-0.1.0-SBOM",
+  "documentNamespace": "https://github.com/BryceWDesign/IX-Fusion/spdx/0.1.0",
+  "creationInfo": {
+    "created": "2026-08-15T00:00:00Z",
+    "creators": ["Tool: IX-Fusion release preparation"]
+  },
+  "packages": [
+    {
+      "name": "IX-Fusion",
+      "SPDXID": "SPDXRef-Package-IXFusion",
+      "versionInfo": "0.1.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "LicenseRef-IX-Fusion-Eval-Only-1.0",
+      "licenseDeclared": "LicenseRef-IX-Fusion-Eval-Only-1.0",
+      "copyrightText": "Copyright (c) 2026 Bryce Lovell"
+    },
+    {
+      "name": "numpy",
+      "SPDXID": "SPDXRef-Package-NumPy",
+      "versionInfo": ">=2.0,<3",
+      "downloadLocation": "https://pypi.org/project/numpy/",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "name": "matplotlib",
+      "SPDXID": "SPDXRef-Package-Matplotlib",
+      "versionInfo": ">=3.8,<4",
+      "downloadLocation": "https://pypi.org/project/matplotlib/",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-IXFusion"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-IXFusion",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-NumPy"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-IXFusion",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-Matplotlib"
+    }
+  ]
+}

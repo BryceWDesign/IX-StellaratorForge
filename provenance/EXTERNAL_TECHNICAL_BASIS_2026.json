@@ -1,0 +1,78 @@
+{
+  "as_of": "2026-08-16",
+  "policy": "Sources motivate targets and solver paths only; no external result is treated as SFR-1 evidence.",
+  "sources": [
+    {
+      "id": "arXiv:2512.08027",
+      "title": "Overview of the Helios Design: A Practical Planar Coil Stellarator Fusion Power Plant",
+      "url": "https://arxiv.org/abs/2512.08027",
+      "use": "integrated power-plant reference envelope"
+    },
+    {
+      "id": "arXiv:2512.08825",
+      "title": "CIEMAT-QI4X: a reactor-relevant quasi-isodynamic stellarator configuration compatible with an island divertor",
+      "url": "https://arxiv.org/abs/2512.08825",
+      "use": "4FP QI and island-divertor reference"
+    },
+    {
+      "id": "arXiv:2608.02418",
+      "title": "Direct Optimization of Stellarator Omnigenity from the Second Adiabatic Invariant",
+      "url": "https://arxiv.org/abs/2608.02418",
+      "use": "direct-J optimization path"
+    },
+    {
+      "id": "arXiv:2603.12377",
+      "title": "Combination of quasi-isodynamic and piecewise omnigenous magnetic fields",
+      "url": "https://arxiv.org/abs/2603.12377",
+      "use": "QI-pwO design branch"
+    },
+    {
+      "id": "arXiv:2608.03122",
+      "title": "Quasi-single-stage optimization for advanced stellarators",
+      "url": "https://arxiv.org/abs/2608.03122",
+      "use": "coil-feasibility-in-loop path"
+    },
+    {
+      "id": "arXiv:2607.05749",
+      "title": "Towards joint optimization of stellarator coils and support structures",
+      "url": "https://arxiv.org/abs/2607.05749",
+      "use": "joint coil/support FEA path"
+    },
+    {
+      "id": "arXiv:2409.01925",
+      "title": "Strain Optimization for ReBCO High-Temperature Superconducting Stellarator Coils in SIMSOPT",
+      "url": "https://arxiv.org/abs/2409.01925",
+      "use": "REBCO strain-aware coil optimization"
+    },
+    {
+      "id": "DESC-0.17.3",
+      "title": "DESC stellarator optimization package",
+      "url": "https://pypi.org/project/desc-opt/",
+      "use": "G1 3-D MHD equilibrium and optimization execution path; reference release verified 2026-08-16"
+    },
+    {
+      "id": "VMEC++-0.7.1",
+      "title": "VMEC++ ideal-MHD equilibrium solver",
+      "url": "https://pypi.org/project/vmecpp/",
+      "use": "G1 independent ideal-MHD equilibrium cross-check; reference release verified 2026-08-16"
+    },
+    {
+      "id": "SIMSOPT-1.10.6",
+      "title": "SIMSOPT stellarator optimization framework",
+      "url": "https://github.com/hiddenSymmetries/simsopt/releases",
+      "use": "G2 coil/field optimization execution path; reference release verified 2026-08-16"
+    },
+    {
+      "id": "OpenMC-0.16.0",
+      "title": "OpenMC Monte Carlo particle transport",
+      "url": "https://github.com/openmc-dev/openmc/releases",
+      "use": "G7 3-D fixed-source neutron/photon transport execution path; reference release verified 2026-08-16"
+    },
+    {
+      "id": "fusion_neutron_utils",
+      "title": "Fusion neutron utilities",
+      "url": "https://github.com/fusion-energy/fusion_neutron_utils",
+      "use": "Bosch-Hale D-T reactivity implementation cross-check"
+    }
+  ]
+}

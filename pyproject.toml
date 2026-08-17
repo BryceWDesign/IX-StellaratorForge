@@ -1,0 +1,30 @@
+
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ix-stellaratorforge"
+version = "0.4.0"
+description = "Evidence-driven stellarator fusion reactor reference-design and co-design framework."
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "LicenseRef-IX-StellaratorForge-Eval-Only-1.1"}
+authors = [{name = "Bryce Lovell"}]
+dependencies = [
+  "numpy>=2.0,<3",
+  "matplotlib>=3.8,<4",
+]
+
+[project.scripts]
+ix-stellaratorforge = "ix_stellaratorforge.cli:main"
+ix-fusion-foundation = "ix_fusion.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

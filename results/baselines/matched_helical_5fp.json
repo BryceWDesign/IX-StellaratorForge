@@ -1,0 +1,368 @@
+{
+  "metrics": {
+    "engineering": {
+      "blanket_space_proxy": 5.484861781483106,
+      "cryogenic_burden_proxy": 1.4057854648486803,
+      "engineering_burden_score": 0.7880744024344627,
+      "heat_spreading_proxy": 0.8931033305095988,
+      "structural": {
+        "axis_curvature_max": 0.2353751845468539,
+        "axis_curvature_rms": 0.18092833713388284,
+        "axis_torsion_rms": 0.3028474518791924,
+        "normalized_support_burden": 0.24999021608490093
+      }
+    },
+    "omnigenity": {
+      "action_variation_mean": 0.000257672867627876,
+      "action_variation_p95": 0.00031218446577609105,
+      "field_strength_cv": 0.0627995223672695,
+      "mirror_ratio": 0.20890422434519107
+    },
+    "quick_objective": 0.030400559041170915,
+    "trace": {
+      "escape_fraction": 0.0,
+      "iota_estimate_mean": 0.570436038713926,
+      "iota_estimate_std": 0.012550343077926388,
+      "max_radial_excursion": 0.019401160819323138,
+      "mean_radial_excursion": 0.013036818467246475,
+      "mean_surface_spread": 0.0031348067173312044,
+      "p95_radial_excursion": 0.018979105453048612
+    }
+  },
+  "optimized": {
+    "axis_helical_amplitude": 0.11,
+    "description": "Five-field-period reduced helical control with matched aspect ratio, helical-strength target, parameter count, and optimizer budget. It is not a surrogate for any named experimental machine.",
+    "harmonics": [
+      {
+        "amplitude": 0.0014067966030211691,
+        "m": 9,
+        "n": 5,
+        "phase": 0.5664208272472969
+      },
+      {
+        "amplitude": 0.006897719475902254,
+        "m": 10,
+        "n": 5,
+        "phase": 2.2801868299202273
+      },
+      {
+        "amplitude": 0.009695483921076576,
+        "m": 11,
+        "n": 5,
+        "phase": 4.791887902047864
+      }
+    ],
+    "iota0": 0.57,
+    "major_radius": 6.0,
+    "metadata": {
+      "authority": "reduced_order_matched_control",
+      "not_a_named_stellarator": true
+    },
+    "minor_radius": 0.9,
+    "mirror_amplitude": 0.088,
+    "name": "matched_helical_5fp_control",
+    "nfp": 5,
+    "required_helical_strength": 0.018,
+    "role": "matched_baseline",
+    "shear": 0.055
+  },
+  "optimizer_history": [
+    {
+      "iteration": 0.0,
+      "objective": 0.04784086883118943
+    },
+    {
+      "iteration": 1.0,
+      "objective": 0.04102513986116407
+    },
+    {
+      "iteration": 2.0,
+      "objective": 0.04691711584020322
+    },
+    {
+      "iteration": 3.0,
+      "objective": 0.04119113225122547
+    },
+    {
+      "iteration": 4.0,
+      "objective": 0.04093638234330205
+    },
+    {
+      "iteration": 5.0,
+      "objective": 0.04418226158916361
+    },
+    {
+      "iteration": 6.0,
+      "objective": 0.04026427401080797
+    },
+    {
+      "iteration": 7.0,
+      "objective": 0.0389583334054141
+    },
+    {
+      "iteration": 8.0,
+      "objective": 0.04026427401080797
+    },
+    {
+      "iteration": 9.0,
+      "objective": 0.043254315047666955
+    },
+    {
+      "iteration": 10.0,
+      "objective": 0.03601033655061244
+    },
+    {
+      "iteration": 11.0,
+      "objective": 0.0385060465782302
+    },
+    {
+      "iteration": 12.0,
+      "objective": 0.037933997319299424
+    },
+    {
+      "iteration": 13.0,
+      "objective": 0.04315691165820943
+    },
+    {
+      "iteration": 14.0,
+      "objective": 0.03707895227658089
+    },
+    {
+      "iteration": 15.0,
+      "objective": 0.0421358326857461
+    },
+    {
+      "iteration": 16.0,
+      "objective": 0.034829221448492965
+    },
+    {
+      "iteration": 17.0,
+      "objective": 0.034223987682763614
+    },
+    {
+      "iteration": 18.0,
+      "objective": 0.034880713368919444
+    },
+    {
+      "iteration": 19.0,
+      "objective": 0.03440346768736783
+    },
+    {
+      "iteration": 20.0,
+      "objective": 0.03395109807739167
+    },
+    {
+      "iteration": 21.0,
+      "objective": 0.03324552111461531
+    },
+    {
+      "iteration": 22.0,
+      "objective": 0.03378781344418868
+    },
+    {
+      "iteration": 23.0,
+      "objective": 0.033450003508625974
+    },
+    {
+      "iteration": 24.0,
+      "objective": 0.03316109583166214
+    },
+    {
+      "iteration": 25.0,
+      "objective": 0.03413357672478161
+    },
+    {
+      "iteration": 26.0,
+      "objective": 0.03239420020036505
+    },
+    {
+      "iteration": 27.0,
+      "objective": 0.03326130502057364
+    },
+    {
+      "iteration": 28.0,
+      "objective": 0.031942245128835756
+    },
+    {
+      "iteration": 29.0,
+      "objective": 0.0384991915270142
+    },
+    {
+      "iteration": 30.0,
+      "objective": 0.03583424635540111
+    },
+    {
+      "iteration": 31.0,
+      "objective": 0.032905807986606396
+    },
+    {
+      "iteration": 32.0,
+      "objective": 0.03217537566992951
+    },
+    {
+      "iteration": 33.0,
+      "objective": 0.03137661959674159
+    },
+    {
+      "iteration": 34.0,
+      "objective": 0.031912168035024335
+    },
+    {
+      "iteration": 35.0,
+      "objective": 0.031152045842327603
+    },
+    {
+      "iteration": 36.0,
+      "objective": 0.03137661959674159
+    },
+    {
+      "iteration": 37.0,
+      "objective": 0.03190467090443524
+    },
+    {
+      "iteration": 38.0,
+      "objective": 0.031106097988872074
+    },
+    {
+      "iteration": 39.0,
+      "objective": 0.031799031738029365
+    },
+    {
+      "iteration": 40.0,
+      "objective": 0.031131338515183207
+    },
+    {
+      "iteration": 41.0,
+      "objective": 0.03169044662253609
+    },
+    {
+      "iteration": 42.0,
+      "objective": 0.03098533006212458
+    },
+    {
+      "iteration": 43.0,
+      "objective": 0.03060768158382344
+    },
+    {
+      "iteration": 44.0,
+      "objective": 0.03098533006212458
+    },
+    {
+      "iteration": 45.0,
+      "objective": 0.03527150429715084
+    },
+    {
+      "iteration": 46.0,
+      "objective": 0.035585567422082964
+    },
+    {
+      "iteration": 47.0,
+      "objective": 0.032221927543731245
+    },
+    {
+      "iteration": 48.0,
+      "objective": 0.03228526415389367
+    },
+    {
+      "iteration": 49.0,
+      "objective": 0.0315782866995909
+    },
+    {
+      "iteration": 50.0,
+      "objective": 0.031014490819397948
+    },
+    {
+      "iteration": 51.0,
+      "objective": 0.030654068149142455
+    },
+    {
+      "iteration": 52.0,
+      "objective": 0.0306209480532449
+    },
+    {
+      "iteration": 53.0,
+      "objective": 0.030405961106408107
+    },
+    {
+      "iteration": 54.0,
+      "objective": 0.03059517942792135
+    },
+    {
+      "iteration": 55.0,
+      "objective": 0.030658405809517484
+    },
+    {
+      "iteration": 56.0,
+      "objective": 0.030562384065587034
+    },
+    {
+      "iteration": 57.0,
+      "objective": 0.030400559041170915
+    },
+    {
+      "iteration": 58.0,
+      "objective": 0.030408681626778216
+    },
+    {
+      "iteration": 59.0,
+      "objective": 0.03086028677036314
+    },
+    {
+      "iteration": 60.0,
+      "objective": 0.030773003624943007
+    },
+    {
+      "iteration": 61.0,
+      "objective": 0.03320456370349742
+    },
+    {
+      "iteration": 62.0,
+      "objective": 0.036122425462373965
+    },
+    {
+      "iteration": 63.0,
+      "objective": 0.031706378429542804
+    },
+    {
+      "iteration": 64.0,
+      "objective": 0.03070449639053775
+    }
+  ],
+  "seed": {
+    "axis_helical_amplitude": 0.11,
+    "description": "Five-field-period reduced helical control with matched aspect ratio, helical-strength target, parameter count, and optimizer budget. It is not a surrogate for any named experimental machine.",
+    "harmonics": [
+      {
+        "amplitude": 0.0065,
+        "m": 9,
+        "n": 5,
+        "phase": 0.35
+      },
+      {
+        "amplitude": 0.006,
+        "m": 10,
+        "n": 5,
+        "phase": 2.35
+      },
+      {
+        "amplitude": 0.0055,
+        "m": 11,
+        "n": 5,
+        "phase": 4.75
+      }
+    ],
+    "iota0": 0.57,
+    "major_radius": 6.0,
+    "metadata": {
+      "authority": "reduced_order_matched_control",
+      "not_a_named_stellarator": true
+    },
+    "minor_radius": 0.9,
+    "mirror_amplitude": 0.08,
+    "name": "matched_helical_5fp_control",
+    "nfp": 5,
+    "required_helical_strength": 0.018,
+    "role": "matched_baseline",
+    "shear": 0.055
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "feedback_purity_median": 0.9992848384233345,
+  "feedback_purity_p05": 0.9984884209511984,
+  "open_loop_purity_median": 0.9920970600075606,
+  "open_loop_purity_p05": 0.983176552079813,
+  "unwanted_power_reduction_factor": 11.050565704728399
+}

@@ -1,0 +1,71 @@
+{
+  "inputs": [
+    {
+      "archive": "Green-Hydrogen-main(5).zip",
+      "sha256": "01a5a206f0814d5b3353ddcc62e0de41445e451d5706372da74b3395c2475ead",
+      "use": "conceptual provenance only; no prior-repo result is treated as IX-Fusion evidence"
+    },
+    {
+      "archive": "IX-AeroIntegrity-main(20260815-023108).zip",
+      "sha256": "5c6604012ebb4507583bc2db506971222178fb2e1f9574090a5deb47842747fe",
+      "use": "conceptual provenance only; no prior-repo result is treated as IX-Fusion evidence"
+    },
+    {
+      "archive": "IX-Vibe-main(20260815-023118).zip",
+      "sha256": "0c7f9b40640c522f78da7789f6955ec9f5c931582f9013bbce21f52e5922d753",
+      "use": "conceptual provenance only; no prior-repo result is treated as IX-Fusion evidence"
+    },
+    {
+      "archive": "IX-Legacy-main(20260815-023118).zip",
+      "sha256": "492ea9663c58858c47223f907b48ecd7e76aa0bd05182c1f6b549bec070dd1d9",
+      "use": "conceptual provenance only; no prior-repo result is treated as IX-Fusion evidence"
+    },
+    {
+      "archive": "IX-GCR-SPE-main(20260815-024144).zip",
+      "sha256": "3b8d8295aee9a460e2e4de13257f8185ce2c14525c7c52ccc77f62c95b0fe00e",
+      "use": "conceptual provenance only; no prior-repo result is treated as IX-Fusion evidence"
+    },
+    {
+      "archive": "IX-HfTaZen-Shield-main(20260815-024144).zip",
+      "sha256": "b19644deed376bcf87245ea87d5564f6b30bde1dcfbf7d3d363f4446a5c47ecd",
+      "use": "conceptual provenance only; no prior-repo result is treated as IX-Fusion evidence"
+    },
+    {
+      "archive": "IX-Shield-main(20260815-024144).zip",
+      "sha256": "4a64862de6e8cd7ab00659cb3765e168a281a24b60315832254fdc93d6707d0f",
+      "use": "conceptual provenance only; no prior-repo result is treated as IX-Fusion evidence"
+    },
+    {
+      "archive": "IX-Trinity-main(1).zip",
+      "sha256": "7974bc7b97dd9a02d70abde8b3d892c680e4539ae888ddb6f89f95adcc9e90f4",
+      "use": "conceptual provenance only; no prior-repo result is treated as IX-Fusion evidence"
+    },
+    {
+      "archive": "IX-TunerCore-main(20260815-024145).zip",
+      "sha256": "840980ca52a63dc33dd11fe257e4dbaddf01f9bd6eac43cdba575e382f40d776",
+      "use": "conceptual provenance only; no prior-repo result is treated as IX-Fusion evidence"
+    },
+    {
+      "archive": "OpenCryoCore-main(20260815-024144).zip",
+      "sha256": "34ae73d380a67378877c954fce0dee864515845091b2e915e4b9ef138d0bc460",
+      "use": "conceptual provenance only; no prior-repo result is treated as IX-Fusion evidence"
+    },
+    {
+      "archive": "Toroidal-Energy-Core-Generator-main(20260815-024151).zip",
+      "sha256": "546d5de50249f707441697a42ad19948fd91decde93cb3e984c95eaf369470a3",
+      "use": "conceptual provenance only; no prior-repo result is treated as IX-Fusion evidence"
+    },
+    {
+      "archive": "IX-Golden-Trump-Card-main(20260814-181034).zip",
+      "sha256": "5f4b6c1e111431ebbde507f9df7a2febb8d1a0625723a744da12c96889ee884f",
+      "use": "conceptual provenance only; no prior-repo result is treated as IX-Fusion evidence"
+    },
+    {
+      "archive": "Superheavy-Survival-Audit-main(20260814-024850).zip",
+      "sha256": "e3e8a4bce523d3658287dd227c1d3fc2b98eed4e33d4f39370e053e0afd6365c",
+      "use": "conceptual provenance only; no prior-repo result is treated as IX-Fusion evidence"
+    }
+  ],
+  "schema_version": "1.0",
+  "statement": "User-supplied prior repositories inspected during IX-Fusion architecture synthesis. IX-Fusion result authority comes only from IX-Fusion executable evidence."
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "IX-Fusion External Solver Run",
+  "type": "object",
+  "required": [
+    "solver", "solver_version", "authority", "converged",
+    "input_hashes", "output_hashes", "metrics"
+  ],
+  "properties": {
+    "solver": {"type": "string", "minLength": 1},
+    "solver_version": {"type": "string", "minLength": 1},
+    "authority": {
+      "enum": [
+        "equilibrium", "coil_realization", "particle_orbits", "stability",
+        "transport", "rf_full_wave", "neutronics"
+      ]
+    },
+    "converged": {"type": "boolean"},
+    "input_hashes": {"type": "object", "minProperties": 1},
+    "output_hashes": {"type": "object", "minProperties": 1},
+    "metrics": {"type": "object"},
+    "notes": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,11 @@
+{
+  "algorithm": "deterministic_equal_budget_coordinate_search",
+  "passes": 4,
+  "amplitude_step": 0.0025,
+  "phase_step_radians": 0.17453292519943295,
+  "predeclared_candidate_advantage_fraction": 0.02,
+  "engineering_burden_max_ratio": 1.1,
+  "notes": "Both C6 and matched control receive exactly the same search budget. The internal optimizer is a screening tool, not a replacement for DESC/SIMSOPT or other high-fidelity optimizers.",
+  "iota_step": 0.012,
+  "mirror_step": 0.008
+}

@@ -1,0 +1,45 @@
+{
+  "policy": "No field-period count or geometry family is privileged until promoted by solver-authority evidence.",
+  "families": [
+    {
+      "family_id": "QI_3FP_EXPLORATION",
+      "field_periods": 3,
+      "physics_family": "quasi-isodynamic / omnigenous",
+      "role": "exploration",
+      "rationale": "Retained because the internal reduced-order multistart screen had the best median objective, a low-authority result that only justifies promotion to real equilibrium testing.",
+      "privileged": false
+    },
+    {
+      "family_id": "QI_PWO_4FP_REFERENCE",
+      "field_periods": 4,
+      "physics_family": "QI plus piecewise-omnigenous relaxation",
+      "role": "frontier_reference",
+      "rationale": "Retained because 2026 literature provides strong four-period QI/QI-pwO reference designs and direct-J demonstrations; this is external motivation, not validation of the IX model.",
+      "privileged": false
+    },
+    {
+      "family_id": "C6_QI_6FP_LINEAGE",
+      "field_periods": 6,
+      "physics_family": "C6-seeded quasi-isodynamic / omnigenous",
+      "role": "lineage_control",
+      "rationale": "Preserves the original IX-Fusion hypothesis and remains competitive in the internal multistart screen, but receives no symbolic protection.",
+      "privileged": false
+    },
+    {
+      "family_id": "QA_2FP_ENGINEERING_REFERENCE",
+      "field_periods": 2,
+      "physics_family": "quasi-axisymmetric",
+      "role": "engineering_reference",
+      "rationale": "Provides a simpler-coil reference family so QI candidates must earn complexity rather than being compared only against other QI designs.",
+      "privileged": false
+    },
+    {
+      "family_id": "DIRECT_J_UNCONSTRAINED",
+      "field_periods": null,
+      "physics_family": "direct trapped-orbit-action search",
+      "role": "assumption_breaker",
+      "rationale": "Allows direct second-adiabatic-invariant optimization to select topology/field-period structure without inheriting C6 identity.",
+      "privileged": false
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+&INDATA
+  LFREEB = F
+  LASYM = F
+  NFP = 3
+  NCURR = 0
+  GAMMA = 0
+  PHIEDGE = 54.4752166132
+  PRES_SCALE = 1289155.03904
+  PMASS_TYPE = "power_series"
+  AM = 1.0 -2.0 1.0
+  AI = 0.5 0.1
+  RAXIS = 8
+  ZAXIS = 0.0
+  MPOL = 8
+  NTOR = 4
+  NS_ARRAY = 16 32 64 128 256
+  NITER_ARRAY = 4000 8000 12000 16000 24000
+  FTOL_ARRAY = 1e-8 1e-9 1e-10 1e-11 1e-12
+  RBC(-1,1) = 0.0255
+  RBC(0,0) = 8
+  RBC(0,1) = 1.7
+  RBC(1,0) = 0.15
+  RBC(1,1) = 0.0255
+  ZBS(-1,1) = 0.0255
+  ZBS(0,1) = 1.7
+  ZBS(1,0) = -0.15
+  ZBS(1,1) = 0.1105
+/
+&END

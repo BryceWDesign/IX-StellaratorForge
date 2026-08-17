@@ -1,0 +1,23 @@
+{
+  "name": "c6_flower_derived_seed",
+  "role": "candidate",
+  "description": "Six-field-period helical seed derived from the project's original C6 geometry hypothesis. The visual motif is not preserved as a requirement.",
+  "nfp": 6,
+  "major_radius": 6.0,
+  "minor_radius": 0.9,
+  "axis_helical_amplitude": 0.11,
+  "iota0": 0.57,
+  "shear": 0.055,
+  "mirror_amplitude": 0.08,
+  "required_helical_strength": 0.018,
+  "harmonics": [
+    {"m": 11, "n": 6, "amplitude": 0.0065, "phase": 0.0},
+    {"m": 12, "n": 6, "amplitude": 0.0060, "phase": 2.0943951023931953},
+    {"m": 13, "n": 6, "amplitude": 0.0055, "phase": 4.1887902047863905}
+  ],
+  "metadata": {
+    "authority": "reduced_order_seed",
+    "origin": "C6/inverted-Flower inspiration translated into ordinary field-period symmetry",
+    "not_a_solver_equilibrium": true
+  }
+}

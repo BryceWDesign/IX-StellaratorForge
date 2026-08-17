@@ -1,0 +1,35 @@
+{
+  "gates": [
+    {
+      "name": "composite_improvement",
+      "rationale": "Predeclared reduced-order advantage threshold; matched baseline uses equal optimizer budget.",
+      "status": "FAIL",
+      "threshold": ">= 0.02",
+      "value": -0.048731969747092235
+    },
+    {
+      "name": "bounce_action_proxy",
+      "rationale": "Candidate may not buy composite score by worsening the trapped-particle screening proxy.",
+      "status": "FAIL",
+      "threshold": 0.000257672867627876,
+      "value": 0.0002581098866308246
+    },
+    {
+      "name": "field_line_escape",
+      "rationale": "Reduced field-line screen must not increase escape fraction.",
+      "status": "PASS",
+      "threshold": 0.0,
+      "value": 0.0
+    },
+    {
+      "name": "engineering_burden",
+      "rationale": "Candidate is allowed at most 10% higher screening-only engineering burden.",
+      "status": "FAIL",
+      "threshold": 0.866881842677909,
+      "value": 0.870565748343189
+    }
+  ],
+  "reduced_model_verdict": "FAIL_OR_INCONCLUSIVE",
+  "scientific_stage": "geometry_hypothesis",
+  "statement": "The C6 seed does not clear every predeclared reduced-order advantage gate. The hypothesis remains a geometry experiment and must not be described as a confinement improvement."
+}

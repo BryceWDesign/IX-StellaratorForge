@@ -1,0 +1,7 @@
+# Deliberately separated from the base package: these are production science tools.
+# Install in a Linux/WSL2 environment appropriate to each project.
+desc-opt==0.17.3
+vmecpp==0.7.1
+simsopt==1.10.6
+# OpenMC is normally installed via conda/container/system package rather than PyPI.
+# G3/G4 production transport additionally requires project-specific SFINCS / GX / stella tooling.

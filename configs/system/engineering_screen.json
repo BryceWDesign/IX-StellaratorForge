@@ -1,0 +1,9 @@
+{
+  "authority": "dimensionless_screening_only",
+  "include_structural_axis_curvature_proxy": true,
+  "include_blanket_space_proxy": true,
+  "include_heat_spreading_proxy": true,
+  "include_cryogenic_burden_proxy": true,
+  "forbid_certification_claims": true,
+  "forbid_net_power_claims_without_complete_energy_ledger": true
+}

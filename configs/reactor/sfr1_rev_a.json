@@ -1,0 +1,168 @@
+{
+  "as_of": "2026-08-16",
+  "blanket_fuel_cycle": {
+    "alternate_breeder_branch_required": true,
+    "fuel_cycle_model": "TMAP8_or_equivalent_plus_system_inventory_model",
+    "fueling": [
+      "core_D_and_T_ice_pellets",
+      "edge_gas_puffing"
+    ],
+    "reference_breeder_branch": "PbLi_with_enriched_Li6_and_helium_heat_removal",
+    "startup_tritium_inventory_kg_target_max": 2.0,
+    "tbr_design_target": 1.15,
+    "tbr_hard_floor_full_3d": 1.1,
+    "tbr_must_include_ports_and_penetrations": true,
+    "tritium_self_sufficiency_claimed": false
+  },
+  "claim_boundary": "No high-fidelity equilibrium, coil set, burning plasma, tritium self-sufficiency, net electric output, or reactor feasibility has been demonstrated for SFR-1 Rev A.",
+  "controls_assurance": {
+    "claim_authority": "solver_and_experiment_provenance_required",
+    "fail_safe_actions": [
+      "remove_auxiliary_heating",
+      "terminate_fueling",
+      "magnet_protection_sequence",
+      "isolate_tritium_process",
+      "decay_heat_removal"
+    ],
+    "human_authority": "mandatory_for_safety_critical_mode_changes",
+    "plasma_control": "model_based_supervisory_control_with_independent_fast_protection",
+    "structural_health_monitoring": "distributed_temperature_strain_vibration_field_and_leak_sensing"
+  },
+  "core_policy": {
+    "competitors": [
+      {
+        "family": "quasi-isodynamic_or_omnigenous",
+        "field_periods": 3,
+        "id": "SFR1_QI_3FP",
+        "role": "candidate"
+      },
+      {
+        "family": "QI_plus_piecewise_omnigenity",
+        "field_periods": 4,
+        "id": "SFR1_QI_PWO_4FP",
+        "role": "candidate"
+      },
+      {
+        "family": "C6_lineage_QI_or_omnigenous",
+        "field_periods": 6,
+        "id": "SFR1_C6_QI_6FP",
+        "role": "candidate"
+      },
+      {
+        "family": "quasi_axisymmetric",
+        "field_periods": 2,
+        "id": "SFR1_QA_2FP_REF",
+        "role": "engineering_reference"
+      },
+      {
+        "family": "direct_second_adiabatic_invariant_search",
+        "field_periods": null,
+        "id": "SFR1_DIRECT_J_SEARCH",
+        "role": "assumption_breaker"
+      }
+    ],
+    "privileged_core": null,
+    "selected_core": null
+  },
+  "design_id": "SFR-1-RevA",
+  "heating_control": {
+    "installed_startup_ECRH_MW_design_envelope": 20.0,
+    "launch_geometry": "solver_selected_with_high_field_side_candidate",
+    "nominal_frequency_GHz": 170.0,
+    "phase_coherence_role": "actuator_control_only_not_plasma_performance_evidence",
+    "primary_startup_heating": "ECRH",
+    "steady_ECRH_requirement_MW": null
+  },
+  "magnet_system": {
+    "conductor_family": "REBCO_coated_conductor",
+    "maximum_field_on_conductor_T_ceiling": 20.0,
+    "minimum_plasma_to_coil_distance_m_hard_floor": 1.2,
+    "minimum_plasma_to_coil_distance_m_target": 1.35,
+    "operating_temperature_K_target": 20.0,
+    "quench_strategy": "detection_plus_energy_extraction; self_protecting_options_may_compete",
+    "routine_maintenance_may_remove_primary_coils": false,
+    "support_strategy": "joint_coil_support_optimization_with_FEA",
+    "winding_strain_hard_ceiling_fraction": 0.004,
+    "winding_strain_target_fraction": 0.0035
+  },
+  "maintenance": {
+    "blanket_divertor_replaceable": true,
+    "final_sector_count": null,
+    "maintenance_access_is_optimization_objective": true,
+    "philosophy": "replaceable_in_vessel_sectors_without_routine_primary_coil_removal",
+    "remote_handling_required": true
+  },
+  "maturity": "preconceptual_reference_architecture",
+  "mission": "steady-state D-T stellarator pilot/power-plant-class reference architecture",
+  "plasma_facing_and_exhaust": {
+    "divertor_candidates": [
+      "island_divertor",
+      "nonresonant_X_point_if_equilibrium_supports_it"
+    ],
+    "edge_topology_is_core_selection_constraint": true,
+    "required_regimes": [
+      "radiative_edge",
+      "detachment_or_equivalent_heat_flux_reduction",
+      "neutral_pumping_closure"
+    ],
+    "selected_divertor": null,
+    "steady_peak_heat_flux_MW_m2_target_max": 10.0,
+    "target_material_family": "tungsten_based_plasma_facing_surface"
+  },
+  "program": "IX-StellaratorForge",
+  "promotion_status": {
+    "G0_SEED": "PASS_INHERITED_LOW_AUTHORITY",
+    "G1_EQUILIBRIUM": "NOT_RUN",
+    "G2_COILS": "NOT_RUN",
+    "G3_ORBITS": "NOT_RUN",
+    "G4_TURBULENCE": "NOT_RUN",
+    "G5_EDGE": "NOT_RUN",
+    "G6_RF": "NOT_RUN",
+    "G7_NEUTRONICS": "NOT_RUN",
+    "G8_SYSTEM": "NOT_RUN",
+    "G9_HARDWARE": "NOT_RUN"
+  },
+  "radial_build": {
+    "breeding_blanket_m": 0.55,
+    "classification": "design_space_reservation_not_neutronics_validated",
+    "first_wall_and_sacrificial_PFC_m": 0.05,
+    "neutron_gamma_shield_m": 0.45,
+    "thermal_shield_clearance_m": 0.2,
+    "vacuum_vessel_structure_m": 0.1
+  },
+  "reactor_envelope": {
+    "fusion_power_target_MW": 1000.0,
+    "magnetic_field_axis_T": 6.0,
+    "major_radius_m": 8.0,
+    "minor_radius_m": 1.7,
+    "operating_mode": "steady_state",
+    "screening_temperature_keV": {
+      "electron": 15.0,
+      "ion": 15.0
+    },
+    "volume_average_beta": 0.03
+  },
+  "safety_architecture": {
+    "decay_heat_analysis_required": true,
+    "defense_in_depth": true,
+    "loss_of_coolant_and_loss_of_flow_analysis_required": true,
+    "magnet_quench_protection": true,
+    "off_normal_plasma_wall_load_analysis_required": true,
+    "tritium_confinement": "multiple_dynamic_and_static_confinement_boundaries_required",
+    "vacuum_boundary_monitoring": true
+  },
+  "schema_version": "1.0",
+  "thermal_power_conversion": {
+    "blanket_energy_multiplier_screening": 1.15,
+    "decay_heat_removal": "independent_shutdown_heat_removal_required",
+    "gross_thermal_to_electric_efficiency_target": 0.4,
+    "net_electric_power_MW_design_floor": 300.0,
+    "power_cycle_candidates": [
+      "indirect_sCO2_Brayton",
+      "steam_Rankine_reference"
+    ],
+    "primary_coolant_reference": "helium",
+    "recirculating_power_MW_design_ceiling": 120.0,
+    "selected_power_cycle": null
+  }
+}

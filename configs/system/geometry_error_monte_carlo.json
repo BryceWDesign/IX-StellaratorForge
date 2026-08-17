@@ -1,0 +1,8 @@
+{
+  "samples": 160,
+  "seed": 260815,
+  "amplitude_sigma_fraction": 0.03,
+  "phase_sigma_deg": 2.0,
+  "axis_sigma_fraction": 0.02,
+  "iota_sigma": 0.004
+}

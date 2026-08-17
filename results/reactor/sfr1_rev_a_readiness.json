@@ -1,0 +1,95 @@
+{
+  "architecture_validation": {
+    "errors": [],
+    "passed": true,
+    "warnings": []
+  },
+  "closure_campaign_v0_2": {
+    "G1": "OPEN_EXTERNAL_SOLVER_REQUIRED",
+    "G2": "FAILS_FIXED_BASIS_SCREEN__OPTIMIZED_COIL_SET_OPEN",
+    "G3_G4": "SCREENED_NOT_VALIDATED",
+    "G5": "OPEN_3D_EDGE_AND_DIVERTOR_SOLVER_REQUIRED",
+    "G6": "RESONANCE_SCREEN_PASS__DEPOSITION_OPEN",
+    "G7": "SOURCE_TERM_DEFINED__3D_MONTE_CARLO_OPEN",
+    "G8": "TARGET_LEDGER_CLOSES__PHYSICS_COUPLED_CLOSURE_OPEN",
+    "G9": "OPEN_REQUIRES_PHYSICAL_HARDWARE",
+    "verdict": "EXECUTABLE_SFR1_POC_AND_FULL_DESIGN_INVENTORY__HIGH_FIDELITY_G1_G2_G3_G4_G5_G7_NOT_CLOSED"
+  },
+  "closure_campaign_v0_3": {
+    "G1": "OPEN_EXTERNAL_SOLVER_REQUIRED",
+    "G2": "FAILS_FIXED_BASIS_SCREEN__OPTIMIZED_COIL_SET_OPEN",
+    "G3_G4": "SCREENED_NOT_VALIDATED",
+    "G5": "OPEN_3D_EDGE_AND_DIVERTOR_SOLVER_REQUIRED",
+    "G6": "RESONANCE_SCREEN_PASS__DEPOSITION_OPEN",
+    "G7": "SOURCE_TERM_DEFINED__3D_MONTE_CARLO_OPEN",
+    "G8": "TARGET_LEDGER_CLOSES__PHYSICS_COUPLED_CLOSURE_OPEN",
+    "G9": "OPEN_REQUIRES_PHYSICAL_HARDWARE",
+    "verdict": "EXECUTABLE_SFR1_POC_AND_FULL_DESIGN_INVENTORY__HIGH_FIDELITY_G1_G2_G3_G4_G5_G7_NOT_CLOSED"
+  },
+  "core_selection": {
+    "competitors": [
+      "SFR1_QI_3FP",
+      "SFR1_QI_PWO_4FP",
+      "SFR1_C6_QI_6FP",
+      "SFR1_QA_2FP_REF",
+      "SFR1_DIRECT_J_SEARCH"
+    ],
+    "selected": null,
+    "statement": "No core has earned selection. 3FP/4FP/6FP QI-family candidates compete with a QA reference and direct-J search branch."
+  },
+  "current_verdict": "EXECUTABLE_SFR1_POC_AND_FULL_DESIGN_INVENTORY__HIGH_FIDELITY_G1_G2_G3_G4_G5_G7_NOT_CLOSED",
+  "derived_screening": {
+    "dt_reaction_ledger": {
+      "alpha_power_MW": 198.86363636363635,
+      "deuterium_burn_kg_per_day": 0.10247577023313308,
+      "fusion_power_MW": 1000.0,
+      "neutron_power_MW": 801.1363636363636,
+      "reaction_rate_per_s": 3.546311974125433e+20,
+      "tritium_burn_kg_per_day": 0.1534539994902873
+    },
+    "ecrh_first_harmonic_GHz_at_axis_field": 167.95493900537232,
+    "plasma_envelope": {
+      "aspect_ratio": 4.705882352941177,
+      "circular_torus_surface_area_m2": 536.906479419261,
+      "circular_torus_volume_m3": 456.37050750637184,
+      "equal_temperature_density_m3_screening": 8.94030319398016e+19,
+      "magnetic_pressure_Pa": 14323944.87827058,
+      "neutron_wall_load_MW_m2_screening": 1.4921339085028438,
+      "volume_average_plasma_pressure_Pa": 429718.3463481174
+    },
+    "power_balance": {
+      "blanket_multiplier": 1.15,
+      "fusion_power_MW": 1000.0,
+      "gross_efficiency": 0.4,
+      "gross_electric_MW_screening": 460.0,
+      "net_electric_MW_at_recirc_ceiling": 340.0,
+      "recirculating_power_MW_ceiling": 120.0,
+      "thermal_power_MW_screening": 1150.0
+    }
+  },
+  "design_id": "SFR-1-RevA",
+  "maturity": "preconceptual_reference_architecture",
+  "maximum_computational_closure_v0_4": {
+    "G1": "INPUTS_COMPLETE__PRODUCTION_MHD_EXECUTION_OPEN",
+    "G2": "NEW_ARCHITECTURES_EXECUTED__NO_COIL_SET_PROMOTED",
+    "G3_G4": "CONFINEMENT_REQUIREMENTS_AND_VACUUM_TOPOLOGY_QUANTIFIED__KINETIC_TRANSPORT_OPEN",
+    "G7": "SOURCE_AND_COVERAGE_BOUNDS_CLOSED__OPENMC_3D_TRANSPORT_OPEN",
+    "G8": "CONDITIONAL_PLANT_EQUATIONS_CLOSED__INTEGRATED_PREDICTION_WAITS_ON_G1_TO_G7",
+    "G9": "NOT_COMPUTATIONALLY_RESOLVABLE",
+    "authority_note": "Supplemental in-repo closure layer; formal G1-G9 promotion_status remains unchanged until production evidence is committed.",
+    "verdict": "MAXIMUM_IN_REPO_COMPUTATIONAL_CLOSURE_COMPLETE__PRODUCTION_SOLVER_AND_HARDWARE_GATES_REMAIN"
+  },
+  "promotion_status": {
+    "G0_SEED": "PASS_INHERITED_LOW_AUTHORITY",
+    "G1_EQUILIBRIUM": "NOT_RUN",
+    "G2_COILS": "NOT_RUN",
+    "G3_ORBITS": "NOT_RUN",
+    "G4_TURBULENCE": "NOT_RUN",
+    "G5_EDGE": "NOT_RUN",
+    "G6_RF": "NOT_RUN",
+    "G7_NEUTRONICS": "NOT_RUN",
+    "G8_SYSTEM": "NOT_RUN",
+    "G9_HARDWARE": "NOT_RUN"
+  },
+  "what_green_means": "Repository and reference-design invariants reproduce. It does not mean SFR-1 produces fusion or net electricity."
+}
