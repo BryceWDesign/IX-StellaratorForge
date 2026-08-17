@@ -1,0 +1,172 @@
+{
+  "architecture_validation": {
+    "errors": [],
+    "passed": true,
+    "warnings": []
+  },
+  "artifact": "SFR-1 executable proof of concept",
+  "authority": "analytical_empirical_and_intermediate_magnetic_screening",
+  "boolean_checks": {
+    "any_fixed_hybrid_coil_basis_passes_0p5pct_rms_screen": false,
+    "architecture_invariants_pass": true,
+    "current_uniform_screen_meets_floor": false,
+    "high_fidelity_mhd_solver_available_here": false,
+    "openmc_available_here": false,
+    "target_power_ledger_meets_floor": true,
+    "uniform_burn_is_positive": true
+  },
+  "burn_screen": {
+    "beta": 0.03,
+    "dt_reactivity_m3_s": 2.7399296107880726e-22,
+    "field_T": 6.0,
+    "fusion_power_MW_uniform": 704.5706395923565,
+    "ion_density_m3": 8.940303193980161e+19,
+    "power_gap_to_target_MW": 295.42936040764346,
+    "pressure_Pa": 429718.34634811745,
+    "target_fusion_power_MW": 1000.0,
+    "target_to_uniform_ratio": 1.4193041035297327,
+    "temperature_keV": 15.0,
+    "uniform_beta_needed_for_1GW_target": 0.03574036503978043,
+    "volume_m3": 456.37050750637184
+  },
+  "claim_boundary": "This PoC validates the executable research/design pipeline only. It is not evidence of a solved finite-beta stellarator equilibrium, validated confinement, a qualified magnet, TBR self-sufficiency, ignition, net energy, or net electricity.",
+  "confinement_requirements": {
+    "Q10": {
+      "alpha_heating_MW": 198.86363636363635,
+      "auxiliary_heating_MW": 100.0,
+      "iota_screen": 0.55,
+      "iss04_tau_E_H1_s": 0.6044958459900971,
+      "plasma_gain_Q": 10.0,
+      "required_H_ISS04": 1.6282696521226543,
+      "required_tau_E_s": 0.984282240859885,
+      "total_thermal_energy_MJ": 294.1661697115338
+    },
+    "ignition_limit": {
+      "alpha_heating_MW": 198.86363636363635,
+      "auxiliary_heating_MW": 0.0,
+      "iota_screen": 0.55,
+      "iss04_tau_E_H1_s": 0.7750203706790537,
+      "plasma_gain_Q": null,
+      "required_H_ISS04": 1.9086409238090651,
+      "required_tau_E_s": 1.4792355962637131,
+      "total_thermal_energy_MJ": 294.1661697115338
+    }
+  },
+  "external_solver_availability_in_build_runtime": {
+    "desc": false,
+    "openmc": false,
+    "simsopt": false,
+    "vmecpp": false
+  },
+  "held_out_coil_reconstruction": {
+    "acceptance_screen_rms_Bn_over_B": 0.005,
+    "interpretation": "The richer fixed filament basis is evaluated on unseen surface nodes. A failure means real plasma/coil co-optimization is still mandatory; a pass would still not constitute a buildable REBCO magnet.",
+    "results": {
+      "2": {
+        "authority": "intermediate_held_out_biot_savart_filament_screen",
+        "axis_field_std_T": 6.175072666910003e-05,
+        "basis": "24_encircling_plus_helical_harmonics_plus_48_saddle_filaments",
+        "clearance_m": 1.35,
+        "coil_count": 120,
+        "max_filament_current_MA_turn": 3.093651004689446,
+        "mean_axis_field_T": 5.999996590869526,
+        "nfp": 2,
+        "passes_reconstruction_screen": false,
+        "rms_filament_current_MA_turn": 1.4135964436803563,
+        "train_mean_abs_Bn_over_B0": 0.012502070012629197,
+        "train_rms_Bn_over_B0": 0.014588019557104814,
+        "validation_max_abs_Bn_over_B": 0.042177979202249895,
+        "validation_mean_abs_Bn_over_B": 0.013208444205415146,
+        "validation_rms_Bn_over_B": 0.015554590179924608
+      },
+      "3": {
+        "authority": "intermediate_held_out_biot_savart_filament_screen",
+        "axis_field_std_T": 8.546556677361122e-05,
+        "basis": "24_encircling_plus_helical_harmonics_plus_48_saddle_filaments",
+        "clearance_m": 1.35,
+        "coil_count": 120,
+        "max_filament_current_MA_turn": 2.3688735014034363,
+        "mean_axis_field_T": 5.999991485404951,
+        "nfp": 3,
+        "passes_reconstruction_screen": false,
+        "rms_filament_current_MA_turn": 1.0752188072348667,
+        "train_mean_abs_Bn_over_B0": 0.023900024247996723,
+        "train_rms_Bn_over_B0": 0.026996382316904384,
+        "validation_max_abs_Bn_over_B": 0.058967005493847355,
+        "validation_mean_abs_Bn_over_B": 0.024189185786970765,
+        "validation_rms_Bn_over_B": 0.02756582309286443
+      },
+      "4": {
+        "authority": "intermediate_held_out_biot_savart_filament_screen",
+        "axis_field_std_T": 0.00016626528265535541,
+        "basis": "24_encircling_plus_helical_harmonics_plus_48_saddle_filaments",
+        "clearance_m": 1.35,
+        "coil_count": 120,
+        "max_filament_current_MA_turn": 3.2260873889016435,
+        "mean_axis_field_T": 5.999985518539278,
+        "nfp": 4,
+        "passes_reconstruction_screen": false,
+        "rms_filament_current_MA_turn": 0.9970982694600968,
+        "train_mean_abs_Bn_over_B0": 0.03149127323924429,
+        "train_rms_Bn_over_B0": 0.03590687843791287,
+        "validation_max_abs_Bn_over_B": 0.07222349960567095,
+        "validation_mean_abs_Bn_over_B": 0.03218127795696316,
+        "validation_rms_Bn_over_B": 0.037014565260353204
+      },
+      "6": {
+        "authority": "intermediate_held_out_biot_savart_filament_screen",
+        "axis_field_std_T": 0.001962837561596908,
+        "basis": "24_encircling_plus_helical_harmonics_plus_48_saddle_filaments",
+        "clearance_m": 1.35,
+        "coil_count": 120,
+        "max_filament_current_MA_turn": 4.800318617938673,
+        "mean_axis_field_T": 5.999956193275074,
+        "nfp": 6,
+        "passes_reconstruction_screen": false,
+        "rms_filament_current_MA_turn": 0.9978809803965805,
+        "train_mean_abs_Bn_over_B0": 0.05366247699520175,
+        "train_rms_Bn_over_B0": 0.06281297904419823,
+        "validation_max_abs_Bn_over_B": 0.14388776659779823,
+        "validation_mean_abs_Bn_over_B": 0.05487239488509983,
+        "validation_rms_Bn_over_B": 0.0649127487608959
+      }
+    }
+  },
+  "neutronics_source_term": {
+    "dt_reaction_rate_s": 3.546311974125433e+20,
+    "minimum_bred_tritium_kg_day_at_tbr_target": 0.17647209941383038,
+    "neutron_power_MW": 801.1363636363636,
+    "target_fusion_power_MW": 1000.0,
+    "tbr_target": 1.15,
+    "tritium_burn_kg_day": 0.1534539994902873
+  },
+  "power_balance": {
+    "design_target": {
+      "blanket_multiplier": 1.15,
+      "fusion_power_MW": 1000.0,
+      "gross_efficiency": 0.4,
+      "gross_electric_MW_screening": 460.0,
+      "net_electric_MW_at_recirc_ceiling": 340.0,
+      "recirculating_power_MW_ceiling": 120.0,
+      "thermal_power_MW_screening": 1150.0
+    },
+    "net_electric_design_floor_MW": 300.0,
+    "uniform_burn_screen": {
+      "blanket_multiplier": 1.15,
+      "fusion_power_MW": 704.5706395923565,
+      "gross_efficiency": 0.4,
+      "gross_electric_MW_screening": 324.10249421248403,
+      "net_electric_MW_at_recirc_ceiling": 204.10249421248403,
+      "recirculating_power_MW_ceiling": 120.0,
+      "thermal_power_MW_screening": 810.25623553121
+    }
+  },
+  "program": "IX-StellaratorForge",
+  "release": "0.4.0",
+  "rf_screen": {
+    "axis_field_T": 6.0,
+    "fundamental_electron_cyclotron_GHz": 167.95493900537232,
+    "nominal_ECRH_GHz": 170.0
+  },
+  "verdict": "PIPELINE_POC_PASS__REACTOR_PHYSICS_NOT_CLOSED"
+}

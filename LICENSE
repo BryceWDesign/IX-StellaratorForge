@@ -1,0 +1,117 @@
+IX-STELLARATORFORGE RESEARCH & EVALUATION LICENSE
+Version 1.1 — 2026-08-16
+SPDX-License-Identifier: LicenseRef-IX-StellaratorForge-Eval-Only-1.1
+
+Copyright (c) 2026 Bryce Lovell. All rights reserved.
+
+This Research & Evaluation License (the "License") governs the IX-StellaratorForge repository and
+all source code, documentation, configurations, data, figures, analysis outputs, models,
+schemas, scripts, designs, diagrams, bills of materials, and other materials supplied with
+it (collectively, the "Materials").
+
+1. PURPOSE
+The Materials are made available solely so qualified reviewers, researchers, engineers,
+and organizations may inspect, reproduce, audit, benchmark, critique, and internally
+evaluate the computational research represented by IX-StellaratorForge.
+
+2. LIMITED EVALUATION GRANT
+Subject to this License, the Licensor grants You a non-exclusive, non-transferable,
+non-sublicensable, revocable right to:
+  a. view, download, and make reasonable copies of the Materials for Evaluation Use;
+  b. execute the software and reproduce computational results for Evaluation Use;
+  c. make internal modifications solely to test, audit, validate, or falsify the Materials;
+  d. share the Materials with employees, contractors, consultants, or independent
+     validation laboratories acting on Your behalf, provided they are bound by written
+     confidentiality and use restrictions at least as protective as this License.
+
+"Evaluation Use" means non-production, non-operational, non-commercial internal research,
+review, validation, benchmarking, auditing, and falsification activities.
+
+3. RESTRICTIONS
+Without prior written permission from the Licensor, You may not:
+  a. use the Materials in production, field, clinical, industrial, power-generation,
+     reactor, laboratory-plasma, radiation-producing, or other operational systems;
+  b. use the Materials to construct, operate, commission, control, certify, qualify,
+     procure, or authorize physical fusion, plasma, RF, cryogenic, superconducting,
+     radiation, tritium, vacuum, high-voltage, or nuclear hardware;
+  c. manufacture, commercialize, sell, sublicense, rent, host, distribute for value,
+     or embed the Materials in a product or service;
+  d. publicly distribute source-code derivatives, forks, modified copies, substantial
+     portions of the Materials, or reconstruction-enabling technical extracts;
+  e. remove or alter copyright, attribution, license, safety, provenance, or claim-boundary
+     notices;
+  f. represent the Materials as certified, reactor-ready, safe for human use, approved by
+     a regulator, validated for operation, or demonstrated to achieve fusion, ignition,
+     net energy, or net electric power.
+
+4. PUBLICATION OF EVALUATION RESULTS
+You may publish or discuss Evaluation Results such as performance measurements, plots,
+audit findings, benchmark results, criticisms, or conclusions provided that:
+  a. You do not reproduce or disclose source code or substantial Materials beyond what is
+     reasonably necessary to describe the evaluation;
+  b. You do not disclose information sufficient to reconstruct restricted Materials;
+  c. You identify IX-StellaratorForge and Bryce Lovell as the evaluated work/source;
+  d. You do not imply endorsement by the Licensor; and
+  e. You preserve the distinction between reduced-order screening results and validated
+     physical fusion performance.
+
+5. NO OPERATIONAL OR SAFETY AUTHORIZATION
+The Materials are computational research materials. Nothing in this License or repository
+constitutes engineering approval, a safety case, a radiation authorization, a reactor
+license, an operating procedure, a construction specification, or professional advice for
+hazardous physical systems.
+
+6. DERIVATIVES FOR PRIVATE EVALUATION
+Private internal derivatives are permitted only for Evaluation Use and remain subject to
+this License. No right is granted to deploy, commercialize, distribute, or operationalize
+those derivatives.
+
+7. INTELLECTUAL PROPERTY; NO PATENT OR TRADEMARK LICENSE
+The Materials are licensed, not sold. The Licensor retains all right, title, and interest
+not expressly granted. No patent, trademark, trade-secret, or other intellectual-property
+license is granted by implication, estoppel, or otherwise.
+
+8. FEEDBACK
+If You voluntarily provide technical feedback, bug reports, validation results, or
+suggestions to the Licensor, You grant the Licensor a perpetual, worldwide, royalty-free
+right to use that feedback to improve the Materials. This does not grant You additional
+rights in the Materials.
+
+9. COMPLIANCE
+You are responsible for complying with applicable laws, regulations, export-control
+requirements, institutional rules, radiation-safety requirements, and other obligations.
+This License does not authorize conduct prohibited by law or regulation.
+
+10. TERMINATION
+Any breach automatically terminates the rights granted by this License. Upon termination,
+You must cease use and destroy copies and private derivatives in Your control, except where
+retention is required by law.
+
+11. DISCLAIMER OF WARRANTY
+THE MATERIALS ARE PROVIDED "AS IS" AND "AS AVAILABLE", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF ACCURACY, RELIABILITY, MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, SAFETY, OR PERFORMANCE. YOU ASSUME
+ALL RISK ARISING FROM EVALUATION OF THE MATERIALS.
+
+12. LIMITATION OF LIABILITY
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE LICENSOR SHALL NOT BE LIABLE FOR ANY DIRECT,
+INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, CONSEQUENTIAL, OR OTHER DAMAGES ARISING FROM
+OR RELATING TO THE MATERIALS, THIS LICENSE, OR ANY USE OR MISUSE OF THE MATERIALS.
+
+13. SEPARATE WRITTEN LICENSE REQUIRED; CONTACT
+Any permission for deployment, manufacturing, commercialization, operational integration,
+laboratory-plasma use, physical construction, or other use outside Evaluation Use requires
+a separate written agreement signed by the Licensor.
+
+Licensing and permission inquiries must be initiated through the Licensor's LinkedIn profile:
+https://www.linkedin.com/in/brycewdesign/
+
+A connection request, message, discussion, review, download, citation, or other contact does
+not itself grant permission. Authorization exists only when the Licensor provides a separate
+written agreement expressly granting the requested rights.
+
+14. ACCEPTANCE
+By accessing, copying, executing, modifying, or otherwise using the Materials, You agree
+to be bound by this License.
+
+END OF TERMS

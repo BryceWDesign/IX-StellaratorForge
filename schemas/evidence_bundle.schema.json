@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ix-fusion/evidence_bundle.schema.json",
+  "title": "IX-Fusion Evidence Bundle",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "run_id",
+    "created_utc",
+    "model",
+    "seed",
+    "input_hashes",
+    "outputs",
+    "assumptions",
+    "limitations",
+    "claim_level"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "run_id": {"type": "string", "minLength": 1},
+    "created_utc": {"type": "string"},
+    "model": {"type": "string", "minLength": 1},
+    "seed": {"type": "integer"},
+    "input_hashes": {"type": "object", "additionalProperties": {"type": "string", "pattern": "^[0-9a-f]{64}$"}},
+    "outputs": {"type": "object"},
+    "assumptions": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "limitations": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "claim_level": {"const": "reduced-order computational screening only"}
+  },
+  "additionalProperties": false
+}

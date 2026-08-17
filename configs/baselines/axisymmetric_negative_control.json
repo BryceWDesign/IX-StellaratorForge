@@ -1,0 +1,17 @@
+{
+  "name": "axisymmetric_negative_control",
+  "role": "negative_control",
+  "description": "Zero-helical-amplitude code-path control. It is not a fair stellarator performance baseline and is used only to verify that non-axisymmetric penalties respond to perturbations.",
+  "nfp": 1,
+  "major_radius": 6.0,
+  "minor_radius": 0.9,
+  "axis_helical_amplitude": 0.0,
+  "iota0": 0.57,
+  "shear": 0.055,
+  "mirror_amplitude": 0.0,
+  "required_helical_strength": 0.0,
+  "harmonics": [],
+  "metadata": {
+    "authority": "negative_control_only"
+  }
+}

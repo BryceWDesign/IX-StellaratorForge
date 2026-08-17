@@ -1,0 +1,10 @@
+{
+  "count": 6,
+  "target_mode": 1,
+  "samples": 4000,
+  "seed": 240601,
+  "geometry_sigma_deg": 1.0,
+  "phase_sigma_deg": 5.0,
+  "amplitude_sigma_fraction": 0.05,
+  "measurement_residual_fraction": 0.30
+}

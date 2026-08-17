@@ -1,0 +1,14 @@
+{
+  "rule": "A lower-authority result may reject a candidate but may not promote it through a higher-authority gate.",
+  "gates": [
+    {"id": "G0_SEED", "authority": "REDUCED_MODEL"},
+    {"id": "G1_EQUILIBRIUM", "authority": "EQUILIBRIUM_SOLVER"},
+    {"id": "G2_COILS", "authority": "COIL_REALIZATION"},
+    {"id": "G3_ORBITS", "authority": "ORBIT_TRANSPORT"},
+    {"id": "G4_TURBULENCE", "authority": "MULTIPHYSICS"},
+    {"id": "G5_EDGE", "authority": "MULTIPHYSICS"},
+    {"id": "G6_RF", "authority": "MULTIPHYSICS"},
+    {"id": "G7_NEUTRONICS", "authority": "MULTIPHYSICS"},
+    {"id": "G8_SYSTEM", "authority": "MULTIPHYSICS"}
+  ]
+}

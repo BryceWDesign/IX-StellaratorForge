@@ -1,0 +1,20 @@
+{
+  "baseline": {
+    "median_degradation_ratio": 1.1439086166297197,
+    "median_objective": 0.034775461437555936,
+    "nominal_objective": 0.030400559041170915,
+    "p95_degradation_ratio": 1.2321133617343103,
+    "p95_objective": 0.037456934998819476,
+    "samples": 160.0,
+    "worst_degradation_ratio": 1.244142967843965
+  },
+  "candidate": {
+    "median_degradation_ratio": 1.1155060831720323,
+    "median_objective": 0.035564607516601066,
+    "nominal_objective": 0.03188203816465995,
+    "p95_degradation_ratio": 1.2189506015331735,
+    "p95_objective": 0.03886262959891583,
+    "samples": 160.0,
+    "worst_degradation_ratio": 1.2550661562177734
+  }
+}

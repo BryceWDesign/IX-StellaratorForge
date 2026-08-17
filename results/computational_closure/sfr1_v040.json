@@ -1,0 +1,364 @@
+{
+  "G1_equilibrium": {
+    "candidate_inputs": [
+      {
+        "authority": "solver_input_seed_not_equilibrium_evidence",
+        "axis_helical_amplitude_m": 0.15,
+        "boundary_coefficients": {
+          "RBC": {
+            "n=-1,m=1": 0.0255,
+            "n=0,m=0": 8.0,
+            "n=0,m=1": 1.7,
+            "n=1,m=0": 0.15,
+            "n=1,m=1": 0.0255
+          },
+          "ZBS": {
+            "n=-1,m=1": 0.0255,
+            "n=0,m=1": 1.7,
+            "n=1,m=0": -0.15,
+            "n=1,m=1": 0.1105
+          }
+        },
+        "candidate_id": "SFR1_QA_2FP_REF",
+        "field_axis_T": 6.0,
+        "iota_axis_target": 0.5,
+        "iota_edge_target": 0.6,
+        "major_radius_m": 8.0,
+        "minor_radius_m": 1.7,
+        "nfp": 2,
+        "pressure_axis_Pa_screen": 1289155.0390443522,
+        "toroidal_flux_Wb_screen": 54.47521661324701,
+        "volume_average_beta_target": 0.03
+      },
+      {
+        "authority": "solver_input_seed_not_equilibrium_evidence",
+        "axis_helical_amplitude_m": 0.15,
+        "boundary_coefficients": {
+          "RBC": {
+            "n=-1,m=1": 0.0255,
+            "n=0,m=0": 8.0,
+            "n=0,m=1": 1.7,
+            "n=1,m=0": 0.15,
+            "n=1,m=1": 0.0255
+          },
+          "ZBS": {
+            "n=-1,m=1": 0.0255,
+            "n=0,m=1": 1.7,
+            "n=1,m=0": -0.15,
+            "n=1,m=1": 0.1105
+          }
+        },
+        "candidate_id": "SFR1_QI_3FP",
+        "field_axis_T": 6.0,
+        "iota_axis_target": 0.5,
+        "iota_edge_target": 0.6,
+        "major_radius_m": 8.0,
+        "minor_radius_m": 1.7,
+        "nfp": 3,
+        "pressure_axis_Pa_screen": 1289155.0390443522,
+        "toroidal_flux_Wb_screen": 54.47521661324701,
+        "volume_average_beta_target": 0.03
+      },
+      {
+        "authority": "solver_input_seed_not_equilibrium_evidence",
+        "axis_helical_amplitude_m": 0.15,
+        "boundary_coefficients": {
+          "RBC": {
+            "n=-1,m=1": 0.0255,
+            "n=0,m=0": 8.0,
+            "n=0,m=1": 1.7,
+            "n=1,m=0": 0.15,
+            "n=1,m=1": 0.0255
+          },
+          "ZBS": {
+            "n=-1,m=1": 0.0255,
+            "n=0,m=1": 1.7,
+            "n=1,m=0": -0.15,
+            "n=1,m=1": 0.1105
+          }
+        },
+        "candidate_id": "SFR1_QI_PWO_4FP",
+        "field_axis_T": 6.0,
+        "iota_axis_target": 0.5,
+        "iota_edge_target": 0.6,
+        "major_radius_m": 8.0,
+        "minor_radius_m": 1.7,
+        "nfp": 4,
+        "pressure_axis_Pa_screen": 1289155.0390443522,
+        "toroidal_flux_Wb_screen": 54.47521661324701,
+        "volume_average_beta_target": 0.03
+      },
+      {
+        "authority": "solver_input_seed_not_equilibrium_evidence",
+        "axis_helical_amplitude_m": 0.15,
+        "boundary_coefficients": {
+          "RBC": {
+            "n=-1,m=1": 0.0255,
+            "n=0,m=0": 8.0,
+            "n=0,m=1": 1.7,
+            "n=1,m=0": 0.15,
+            "n=1,m=1": 0.0255
+          },
+          "ZBS": {
+            "n=-1,m=1": 0.0255,
+            "n=0,m=1": 1.7,
+            "n=1,m=0": -0.15,
+            "n=1,m=1": 0.1105
+          }
+        },
+        "candidate_id": "SFR1_C6_QI_6FP",
+        "field_axis_T": 6.0,
+        "iota_axis_target": 0.5,
+        "iota_edge_target": 0.6,
+        "major_radius_m": 8.0,
+        "minor_radius_m": 1.7,
+        "nfp": 6,
+        "pressure_axis_Pa_screen": 1289155.0390443522,
+        "toroidal_flux_Wb_screen": 54.47521661324701,
+        "volume_average_beta_target": 0.03
+      }
+    ],
+    "cross_code_rule": "A candidate cannot be promoted from G1 until a converged finite-beta equilibrium is independently cross-checked by DESC and VMEC++ or an explicitly justified equivalent pair.",
+    "status": "INPUTS_COMPLETE__PRODUCTION_MHD_EXECUTION_OPEN",
+    "written_input_paths": [
+      "external_solvers/inputs/input.SFR1_QA_2FP_REF",
+      "external_solvers/inputs/input.SFR1_QI_3FP",
+      "external_solvers/inputs/input.SFR1_QI_PWO_4FP",
+      "external_solvers/inputs/input.SFR1_C6_QI_6FP"
+    ]
+  },
+  "G2_magnets": {
+    "classical_helical_any_pass": false,
+    "classical_helical_best": {
+      "authority": "intermediate_vacuum_biot_savart_field_line_screen",
+      "combined_screen_pass": false,
+      "helical_coil_count": 4,
+      "helical_to_tf_current_ratio": 0.4,
+      "iota_std": 0.010991990245477394,
+      "max_radial_excursion_m": 0.28648061312190065,
+      "mean_iota": 0.038851845717499396,
+      "mean_radial_excursion_m": 0.1597749136188914,
+      "nestedness_screen_pass": true,
+      "nfp": 4,
+      "normalized_max_excursion_over_a": 0.1685180077187651,
+      "sign_pattern": "alternating",
+      "tf_current_MA_turn_per_filament": -9.961772570142877,
+      "transform_screen_pass": false
+    },
+    "classical_helical_scan_count": 40,
+    "current_potential_any_pass": false,
+    "current_potential_results": {
+      "2": {
+        "authority": "intermediate_surface_current_potential_screen_not_regcoil_or_buildable_coils",
+        "axis_field_std_T": 2.0449515408777083e-05,
+        "basis_count": 47,
+        "max_current_potential_coefficient_MA": 38.20066147177561,
+        "mean_axis_field_T": 5.999990923804286,
+        "nfp": 2,
+        "passes_reconstruction_screen": false,
+        "train_rms_Bn_over_B0": 0.01649575678476757,
+        "validation_max_abs_Bn_over_B0": 0.03724478248377999,
+        "validation_rms_Bn_over_B0": 0.016425526898580692,
+        "winding_patch_count": 512
+      },
+      "3": {
+        "authority": "intermediate_surface_current_potential_screen_not_regcoil_or_buildable_coils",
+        "axis_field_std_T": 3.799085629288778e-05,
+        "basis_count": 47,
+        "max_current_potential_coefficient_MA": 38.20065220844541,
+        "mean_axis_field_T": 5.999989468858351,
+        "nfp": 3,
+        "passes_reconstruction_screen": false,
+        "train_rms_Bn_over_B0": 0.023240443316052562,
+        "validation_max_abs_Bn_over_B0": 0.04538536537275072,
+        "validation_rms_Bn_over_B0": 0.023192250572963476,
+        "winding_patch_count": 512
+      },
+      "4": {
+        "authority": "intermediate_surface_current_potential_screen_not_regcoil_or_buildable_coils",
+        "axis_field_std_T": 0.00014469527143034513,
+        "basis_count": 47,
+        "max_current_potential_coefficient_MA": 38.20064108500764,
+        "mean_axis_field_T": 5.999987721754422,
+        "nfp": 4,
+        "passes_reconstruction_screen": false,
+        "train_rms_Bn_over_B0": 0.02934003874200139,
+        "validation_max_abs_Bn_over_B0": 0.058779662750581274,
+        "validation_rms_Bn_over_B0": 0.030523726653520242,
+        "winding_patch_count": 512
+      },
+      "6": {
+        "authority": "intermediate_surface_current_potential_screen_not_regcoil_or_buildable_coils",
+        "axis_field_std_T": 0.0005567706060709224,
+        "basis_count": 47,
+        "max_current_potential_coefficient_MA": 38.20059952002895,
+        "mean_axis_field_T": 5.99998119334666,
+        "nfp": 6,
+        "passes_reconstruction_screen": false,
+        "train_rms_Bn_over_B0": 0.045297375940505494,
+        "validation_max_abs_Bn_over_B0": 0.07751207304441825,
+        "validation_rms_Bn_over_B0": 0.04570418831410746,
+        "winding_patch_count": 512
+      }
+    },
+    "hts_geometry_screen_best_helical": {
+      "authority": "geometry_only_rebco_strain_proxy_not_winding_pack_FEA",
+      "hard_way_strain_proxy_fraction": 0.0015817040043159141,
+      "length_m": 92.36493838140706,
+      "max_curvature_per_m": 0.26361733405265236,
+      "min_bend_radius_m": 3.7933772587210433,
+      "passes_geometry_strain_proxy": true,
+      "rms_curvature_per_m": 0.24771539600218082,
+      "strain_ceiling_fraction": 0.004,
+      "strain_target_fraction": 0.0035
+    },
+    "hts_geometry_screen_tf_reference": {
+      "authority": "geometry_only_rebco_strain_proxy_not_winding_pack_FEA",
+      "hard_way_strain_proxy_fraction": 0.0019672131147569494,
+      "length_m": 19.16316791644826,
+      "max_curvature_per_m": 0.32786885245949154,
+      "min_bend_radius_m": 3.04999999999558,
+      "passes_geometry_strain_proxy": true,
+      "rms_curvature_per_m": 0.3278688524590164,
+      "strain_ceiling_fraction": 0.004,
+      "strain_target_fraction": 0.0035
+    },
+    "interpretation": "Field performance and HTS geometry are separate gates. Geometry-only strain proxies cannot qualify REBCO winding packs; percent-level Bn failure prevents promotion regardless of geometric bendability.",
+    "status": "NEW_ARCHITECTURES_EXECUTED__NO_COIL_SET_PROMOTED"
+  },
+  "G3_G4_confinement": {
+    "Q10_requirement": {
+      "alpha_heating_MW": 198.86363636363635,
+      "auxiliary_heating_MW": 100.0,
+      "iota_screen": 0.55,
+      "iss04_tau_E_H1_s": 0.6044958459900971,
+      "plasma_gain_Q": 10.0,
+      "required_H_ISS04": 1.6282696521226543,
+      "required_tau_E_s": 0.984282240859885,
+      "total_thermal_energy_MJ": 294.1661697115338
+    },
+    "required_production_evidence": [
+      "guiding_center_alpha_orbits",
+      "neoclassical_transport_and_bootstrap",
+      "linear_and_nonlinear_gyrokinetics",
+      "profile_transport_iteration"
+    ],
+    "status": "CONFINEMENT_REQUIREMENTS_AND_VACUUM_TOPOLOGY_QUANTIFIED__KINETIC_TRANSPORT_OPEN",
+    "vacuum_field_line_best": {
+      "authority": "intermediate_vacuum_biot_savart_field_line_screen",
+      "combined_screen_pass": false,
+      "helical_coil_count": 4,
+      "helical_to_tf_current_ratio": 0.4,
+      "iota_std": 0.010991990245477394,
+      "max_radial_excursion_m": 0.28648061312190065,
+      "mean_iota": 0.038851845717499396,
+      "mean_radial_excursion_m": 0.1597749136188914,
+      "nestedness_screen_pass": true,
+      "nfp": 4,
+      "normalized_max_excursion_over_a": 0.1685180077187651,
+      "sign_pattern": "alternating",
+      "tf_current_MA_turn_per_filament": -9.961772570142877,
+      "transform_screen_pass": false
+    }
+  },
+  "G7_neutronics": {
+    "coverage_constraints": [
+      {
+        "authority": "exact_source_and_geometric_coverage_bound_not_neutron_transport",
+        "breeding_surface_coverage_fraction": 1.0,
+        "fusion_power_MW": 1000.0,
+        "global_tbr_target": 1.15,
+        "neutron_power_MW": 801.1363636363636,
+        "neutron_source_rate_s": 3.546311974125433e+20,
+        "required_bred_tritium_kg_per_day": 0.17647209941383038,
+        "required_local_tbr_if_uncovered_regions_breed_zero": 1.15,
+        "tritium_burn_kg_per_day": 0.1534539994902873
+      },
+      {
+        "authority": "exact_source_and_geometric_coverage_bound_not_neutron_transport",
+        "breeding_surface_coverage_fraction": 0.95,
+        "fusion_power_MW": 1000.0,
+        "global_tbr_target": 1.15,
+        "neutron_power_MW": 801.1363636363636,
+        "neutron_source_rate_s": 3.546311974125433e+20,
+        "required_bred_tritium_kg_per_day": 0.17647209941383038,
+        "required_local_tbr_if_uncovered_regions_breed_zero": 1.2105263157894737,
+        "tritium_burn_kg_per_day": 0.1534539994902873
+      },
+      {
+        "authority": "exact_source_and_geometric_coverage_bound_not_neutron_transport",
+        "breeding_surface_coverage_fraction": 0.9,
+        "fusion_power_MW": 1000.0,
+        "global_tbr_target": 1.15,
+        "neutron_power_MW": 801.1363636363636,
+        "neutron_source_rate_s": 3.546311974125433e+20,
+        "required_bred_tritium_kg_per_day": 0.17647209941383038,
+        "required_local_tbr_if_uncovered_regions_breed_zero": 1.2777777777777777,
+        "tritium_burn_kg_per_day": 0.1534539994902873
+      },
+      {
+        "authority": "exact_source_and_geometric_coverage_bound_not_neutron_transport",
+        "breeding_surface_coverage_fraction": 0.85,
+        "fusion_power_MW": 1000.0,
+        "global_tbr_target": 1.15,
+        "neutron_power_MW": 801.1363636363636,
+        "neutron_source_rate_s": 3.546311974125433e+20,
+        "required_bred_tritium_kg_per_day": 0.17647209941383038,
+        "required_local_tbr_if_uncovered_regions_breed_zero": 1.352941176470588,
+        "tritium_burn_kg_per_day": 0.1534539994902873
+      },
+      {
+        "authority": "exact_source_and_geometric_coverage_bound_not_neutron_transport",
+        "breeding_surface_coverage_fraction": 0.8,
+        "fusion_power_MW": 1000.0,
+        "global_tbr_target": 1.15,
+        "neutron_power_MW": 801.1363636363636,
+        "neutron_source_rate_s": 3.546311974125433e+20,
+        "required_bred_tritium_kg_per_day": 0.17647209941383038,
+        "required_local_tbr_if_uncovered_regions_breed_zero": 1.4374999999999998,
+        "tritium_burn_kg_per_day": 0.1534539994902873
+      },
+      {
+        "authority": "exact_source_and_geometric_coverage_bound_not_neutron_transport",
+        "breeding_surface_coverage_fraction": 0.75,
+        "fusion_power_MW": 1000.0,
+        "global_tbr_target": 1.15,
+        "neutron_power_MW": 801.1363636363636,
+        "neutron_source_rate_s": 3.546311974125433e+20,
+        "required_bred_tritium_kg_per_day": 0.17647209941383038,
+        "required_local_tbr_if_uncovered_regions_breed_zero": 1.5333333333333332,
+        "tritium_burn_kg_per_day": 0.1534539994902873
+      }
+    ],
+    "interpretation": "The coverage bound is exact under its stated zero-breeding uncovered-area assumption; it is not a TBR prediction.",
+    "status": "SOURCE_AND_COVERAGE_BOUNDS_CLOSED__OPENMC_3D_TRANSPORT_OPEN"
+  },
+  "G8_net_electric": {
+    "conditional_thresholds": {
+      "authority": "algebraic_conditional_plant_closure_not_integrated_reactor_prediction",
+      "beta_required_for_fusion_target_uniform_scaling": 0.03574036503978043,
+      "beta_required_for_net_floor_uniform_scaling": 0.03415110129786507,
+      "current_fusion_power_MW": 704.5706395923565,
+      "current_net_electric_MW": 204.10249421248403,
+      "fusion_power_required_for_net_floor_MW": 913.0434782608696,
+      "gross_efficiency_required_at_current_fusion": 0.518354542158685,
+      "recirculating_power_max_for_net_floor_at_target_MW": 160.0,
+      "target_net_electric_MW": 340.0
+    },
+    "status": "CONDITIONAL_PLANT_EQUATIONS_CLOSED__INTEGRATED_PREDICTION_WAITS_ON_G1_TO_G7"
+  },
+  "G9_hardware": {
+    "reason": "Actual net-electric fusion requires an operating physical device and calibrated measurements.",
+    "status": "NOT_COMPUTATIONALLY_RESOLVABLE"
+  },
+  "campaign": "SFR-1 Maximum Computational Closure v0.4.0",
+  "claim_boundary": "This campaign executes analytical and independent reduced/intermediate calculations. It does not substitute those calculations for DESC/VMEC++ force balance, production coil optimization/FEA, gyrokinetics/neoclassical transport, OpenMC neutron transport, or hardware demonstration.",
+  "external_solver_availability_in_build_runtime": {
+    "desc": false,
+    "openmc": false,
+    "simsopt": false,
+    "vmecpp": false
+  },
+  "program": "IX-StellaratorForge",
+  "top_level_verdict": "MAXIMUM_IN_REPO_COMPUTATIONAL_CLOSURE_COMPLETE__PRODUCTION_SOLVER_AND_HARDWARE_GATES_REMAIN"
+}

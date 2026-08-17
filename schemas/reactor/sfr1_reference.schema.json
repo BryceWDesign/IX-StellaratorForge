@@ -1,0 +1,35 @@
+{
+  "$id": "https://example.invalid/ix-stellaratorforge/schemas/sfr1_reference.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "design_id": {
+      "const": "SFR-1-RevA"
+    },
+    "maturity": {
+      "const": "preconceptual_reference_architecture"
+    },
+    "program": {
+      "const": "IX-StellaratorForge"
+    }
+  },
+  "required": [
+    "design_id",
+    "program",
+    "maturity",
+    "core_policy",
+    "reactor_envelope",
+    "magnet_system",
+    "radial_build",
+    "blanket_fuel_cycle",
+    "plasma_facing_and_exhaust",
+    "heating_control",
+    "thermal_power_conversion",
+    "maintenance",
+    "controls_assurance",
+    "safety_architecture",
+    "promotion_status"
+  ],
+  "title": "IX-StellaratorForge SFR-1 Reference Reactor Configuration",
+  "type": "object"
+}

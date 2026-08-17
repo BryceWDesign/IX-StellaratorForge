@@ -1,0 +1,2 @@
+*.csv text eol=lf
+MANIFEST.sha256 text eol=lf

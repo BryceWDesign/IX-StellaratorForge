@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "IX-StellaratorForge external solver evidence envelope",
+  "type": "object",
+  "required": [
+    "gate",
+    "solver",
+    "version",
+    "executed",
+    "input_hashes",
+    "output_hashes",
+    "status",
+    "authority"
+  ],
+  "properties": {
+    "gate": {
+      "type": "string"
+    },
+    "solver": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "build_or_commit": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "executed": {
+      "type": "boolean",
+      "const": true
+    },
+    "platform": {
+      "type": "string"
+    },
+    "input_hashes": {
+      "type": "object"
+    },
+    "output_hashes": {
+      "type": "object"
+    },
+    "status": {
+      "enum": [
+        "CONVERGED",
+        "FAILED",
+        "NONCONVERGED",
+        "REJECTED_BY_GATE"
+      ]
+    },
+    "authority": {
+      "type": "string"
+    },
+    "metrics": {
+      "type": "object"
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": true
+}

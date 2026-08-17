@@ -1,0 +1,151 @@
+{
+  "G1_equilibrium": {
+    "reason": "No DESC/VMEC++ executable is available in this runtime; no 3-D MHD force-balance result is fabricated.",
+    "status": "OPEN_EXTERNAL_SOLVER_REQUIRED"
+  },
+  "G2_coil_diagnostic": {
+    "note": "Simple planar encircling coils yield percent-level B.normal/B; shaping coils or single-stage optimization are mandatory. This is useful negative evidence, not a final magnet design.",
+    "results": {
+      "2": {
+        "authority": "intermediate_biot_savart_filament_screen",
+        "axis_field_std_T": 2.5550469590530026e-05,
+        "clearance_m": 1.35,
+        "coil_count": 24,
+        "max_abs_Bn_over_B": 0.050326618077839363,
+        "max_filament_current_MA_turn": 9.985259597345323,
+        "mean_abs_Bn_over_B": 0.02664278794990691,
+        "mean_axis_field_T": 5.999991717929892,
+        "nfp": 2,
+        "rms_Bn_over_B": 0.030033638351568158
+      },
+      "3": {
+        "authority": "intermediate_biot_savart_filament_screen",
+        "axis_field_std_T": 5.1961651895091056e-05,
+        "clearance_m": 1.35,
+        "coil_count": 24,
+        "max_abs_Bn_over_B": 0.06948401652409666,
+        "max_filament_current_MA_turn": 9.98543894002098,
+        "mean_abs_Bn_over_B": 0.037683326545130215,
+        "mean_axis_field_T": 5.999983464419067,
+        "nfp": 3,
+        "rms_Bn_over_B": 0.04243823059535082
+      },
+      "4": {
+        "authority": "intermediate_biot_savart_filament_screen",
+        "axis_field_std_T": 8.374465821937473e-05,
+        "clearance_m": 1.35,
+        "coil_count": 24,
+        "max_abs_Bn_over_B": 0.08358412932485694,
+        "max_filament_current_MA_turn": 9.985823203355585,
+        "mean_abs_Bn_over_B": 0.04555050526842315,
+        "mean_axis_field_T": 5.999975240672716,
+        "nfp": 4,
+        "rms_Bn_over_B": 0.05193130195642998
+      },
+      "6": {
+        "authority": "intermediate_biot_savart_filament_screen",
+        "axis_field_std_T": 0.0001442014521463651,
+        "clearance_m": 1.35,
+        "coil_count": 24,
+        "max_abs_Bn_over_B": 0.0897703992502416,
+        "max_filament_current_MA_turn": 9.987018107639372,
+        "mean_abs_Bn_over_B": 0.05243085139244263,
+        "mean_axis_field_T": 5.99996705894073,
+        "nfp": 6,
+        "rms_Bn_over_B": 0.05990467605727529
+      }
+    },
+    "status": "FAILS_HIGH_FIDELITY_RECONSTRUCTION_STANDARD"
+  },
+  "G3_G4_confinement_scoping": {
+    "Q10": {
+      "alpha_heating_MW": 198.86363636363635,
+      "auxiliary_heating_MW": 100.0,
+      "iota_screen": 0.55,
+      "iss04_tau_E_H1_s": 0.6044958459900971,
+      "plasma_gain_Q": 10.0,
+      "required_H_ISS04": 1.6282696521226543,
+      "required_tau_E_s": 0.984282240859885,
+      "total_thermal_energy_MJ": 294.1661697115338
+    },
+    "ignition_limit": {
+      "alpha_heating_MW": 198.86363636363635,
+      "auxiliary_heating_MW": 0.0,
+      "iota_screen": 0.55,
+      "iss04_tau_E_H1_s": 0.7750203706790537,
+      "plasma_gain_Q": null,
+      "required_H_ISS04": 1.9086409238090651,
+      "required_tau_E_s": 1.4792355962637131,
+      "total_thermal_energy_MJ": 294.1661697115338
+    },
+    "note": "ISS04 is empirical. Gyrokinetic, neoclassical and energetic-particle solvers remain required.",
+    "status": "SCREENED_NOT_VALIDATED"
+  },
+  "G5_exhaust": {
+    "reason": "No self-consistent edge topology, SOL transport, detachment or target heat-flux solution is available in this runtime.",
+    "status": "OPEN_3D_EDGE_AND_DIVERTOR_SOLVER_REQUIRED"
+  },
+  "G6_RF": {
+    "first_harmonic_GHz": 167.95493900537232,
+    "nominal_GHz": 170.0,
+    "status": "RESONANCE_SCREEN_PASS__DEPOSITION_OPEN"
+  },
+  "G7_neutronics": {
+    "TBR_net_margin_above_replacement": 0.1499999999999999,
+    "TBR_target": 1.15,
+    "minimum_target_tritium_production_kg_per_day_at_TBR_target": 0.17647209941383038,
+    "status": "SOURCE_TERM_DEFINED__3D_MONTE_CARLO_OPEN",
+    "target_neutron_power_MW": 801.1363636363636,
+    "target_neutron_source_rate_s": 3.546311974125433e+20
+  },
+  "G8_system": {
+    "status": "TARGET_LEDGER_CLOSES__PHYSICS_COUPLED_CLOSURE_OPEN",
+    "target_power_balance": {
+      "blanket_multiplier": 1.15,
+      "fusion_power_MW": 1000.0,
+      "gross_efficiency": 0.4,
+      "gross_electric_MW_screening": 460.0,
+      "net_electric_MW_at_recirc_ceiling": 340.0,
+      "recirculating_power_MW_ceiling": 120.0,
+      "thermal_power_MW_screening": 1150.0
+    },
+    "uniform_burn_power_balance": {
+      "blanket_multiplier": 1.15,
+      "fusion_power_MW": 704.5706395923565,
+      "gross_efficiency": 0.4,
+      "gross_electric_MW_screening": 324.10249421248403,
+      "net_electric_MW_at_recirc_ceiling": 204.10249421248403,
+      "recirculating_power_MW_ceiling": 120.0,
+      "thermal_power_MW_screening": 810.25623553121
+    }
+  },
+  "G9_hardware": {
+    "reason": "No computational workflow can demonstrate net-electric fusion or qualify the integrated reactor without hardware.",
+    "status": "OPEN_REQUIRES_PHYSICAL_HARDWARE"
+  },
+  "authority": "mixed_analytical_empirical_intermediate; external high-fidelity solvers not available in this runtime",
+  "burn_scoping": {
+    "beta": 0.03,
+    "dt_reactivity_m3_s": 2.7399296107880726e-22,
+    "field_T": 6.0,
+    "fixed_pressure_optimum_temperature_keV_grid": 13.5,
+    "fixed_pressure_optimum_uniform_fusion_MW_grid": 710.8701384453458,
+    "fusion_power_MW_uniform": 704.5706395923565,
+    "interpretation": "The uniform model is a lower-authority consistency screen; profile peaking, impurities, ash, radiation and transport are unresolved.",
+    "ion_density_m3": 8.940303193980161e+19,
+    "pressure_Pa": 429718.34634811745,
+    "target_fusion_power_MW": 1000.0,
+    "target_to_uniform_ratio": 1.4193041035297327,
+    "temperature_keV": 15.0,
+    "uniform_model_beta_required_for_target": 0.03574036503978043,
+    "volume_m3": 456.37050750637184
+  },
+  "campaign": "SFR-1 Closure Campaign v0.2.0",
+  "external_solver_availability": {
+    "desc": false,
+    "openmc": false,
+    "simsopt": false,
+    "vmecpp": false
+  },
+  "top_level_verdict": "MAJOR_SUBPROBLEMS_QUANTIFIED__HIGH_FIDELITY_G1_G2_G3_G4_G5_G7_NOT_CLOSED"
+}

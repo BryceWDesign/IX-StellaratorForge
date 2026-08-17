@@ -1,0 +1,22 @@
+{
+  "name": "matched_helical_5fp_control",
+  "role": "matched_baseline",
+  "description": "Five-field-period reduced helical control with matched aspect ratio, helical-strength target, parameter count, and optimizer budget. It is not a surrogate for any named experimental machine.",
+  "nfp": 5,
+  "major_radius": 6.0,
+  "minor_radius": 0.9,
+  "axis_helical_amplitude": 0.11,
+  "iota0": 0.57,
+  "shear": 0.055,
+  "mirror_amplitude": 0.08,
+  "required_helical_strength": 0.018,
+  "harmonics": [
+    {"m": 9, "n": 5, "amplitude": 0.0065, "phase": 0.35},
+    {"m": 10, "n": 5, "amplitude": 0.0060, "phase": 2.35},
+    {"m": 11, "n": 5, "amplitude": 0.0055, "phase": 4.75}
+  ],
+  "metadata": {
+    "authority": "reduced_order_matched_control",
+    "not_a_named_stellarator": true
+  }
+}

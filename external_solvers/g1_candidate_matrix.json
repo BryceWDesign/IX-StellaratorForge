@@ -1,0 +1,106 @@
+{
+  "candidates": [
+    {
+      "family": "quasi-isodynamic_or_omnigenous",
+      "field_periods": 3,
+      "id": "SFR1_QI_3FP",
+      "required_G1_outputs": [
+        "convergence_status",
+        "force_balance_or_residual_metrics",
+        "LCFS_representation",
+        "iota_profile",
+        "pressure_profile",
+        "current_profile",
+        "volume",
+        "magnetic_well_or_stability_relevant_diagnostics"
+      ],
+      "role": "candidate",
+      "seed_input": "external_solvers/inputs/input.SFR1_QI_3FP"
+    },
+    {
+      "family": "QI_plus_piecewise_omnigenity",
+      "field_periods": 4,
+      "id": "SFR1_QI_PWO_4FP",
+      "required_G1_outputs": [
+        "convergence_status",
+        "force_balance_or_residual_metrics",
+        "LCFS_representation",
+        "iota_profile",
+        "pressure_profile",
+        "current_profile",
+        "volume",
+        "magnetic_well_or_stability_relevant_diagnostics"
+      ],
+      "role": "candidate",
+      "seed_input": "external_solvers/inputs/input.SFR1_QI_PWO_4FP"
+    },
+    {
+      "family": "C6_lineage_QI_or_omnigenous",
+      "field_periods": 6,
+      "id": "SFR1_C6_QI_6FP",
+      "required_G1_outputs": [
+        "convergence_status",
+        "force_balance_or_residual_metrics",
+        "LCFS_representation",
+        "iota_profile",
+        "pressure_profile",
+        "current_profile",
+        "volume",
+        "magnetic_well_or_stability_relevant_diagnostics"
+      ],
+      "role": "candidate",
+      "seed_input": "external_solvers/inputs/input.SFR1_C6_QI_6FP"
+    },
+    {
+      "family": "quasi_axisymmetric",
+      "field_periods": 2,
+      "id": "SFR1_QA_2FP_REF",
+      "required_G1_outputs": [
+        "convergence_status",
+        "force_balance_or_residual_metrics",
+        "LCFS_representation",
+        "iota_profile",
+        "pressure_profile",
+        "current_profile",
+        "volume",
+        "magnetic_well_or_stability_relevant_diagnostics"
+      ],
+      "role": "engineering_reference",
+      "seed_input": "external_solvers/inputs/input.SFR1_QA_2FP_REF"
+    },
+    {
+      "family": "direct_second_adiabatic_invariant_search",
+      "field_periods": null,
+      "id": "SFR1_DIRECT_J_SEARCH",
+      "note": "Direct-J branch must generate its boundary through the production optimization workflow; it is intentionally not faked as a fixed seed.",
+      "required_G1_outputs": [
+        "convergence_status",
+        "force_balance_or_residual_metrics",
+        "LCFS_representation",
+        "iota_profile",
+        "pressure_profile",
+        "current_profile",
+        "volume",
+        "magnetic_well_or_stability_relevant_diagnostics"
+      ],
+      "role": "assumption_breaker",
+      "seed_input": null
+    }
+  ],
+  "cross_check_policy": "DESC first-pass; independent VMEC++ cross-check for promoted finalists. No reduced-model candidate may self-promote.",
+  "executed": false,
+  "purpose": "G1 candidate matrix; not solver output",
+  "reactor_envelope": {
+    "fusion_power_target_MW": 1000.0,
+    "magnetic_field_axis_T": 6.0,
+    "major_radius_m": 8.0,
+    "minor_radius_m": 1.7,
+    "operating_mode": "steady_state",
+    "screening_temperature_keV": {
+      "electron": 15.0,
+      "ion": 15.0
+    },
+    "volume_average_beta": 0.03
+  },
+  "release": "0.4.0"
+}

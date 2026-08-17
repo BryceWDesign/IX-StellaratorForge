@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0",
+  "campaign": "SFR-1 high-fidelity closure",
+  "principle": "Reduced models may reject candidates but may not promote them over high-fidelity evidence.",
+  "G1_equilibrium": {
+    "required_tools": ["DESC", "VMEC++"],
+    "minimum_evidence": [
+      "converged finite-beta 3-D ideal-MHD equilibrium for each promoted seed family",
+      "reported force-balance/convergence diagnostics",
+      "independent VMEC++ cross-check for finalists",
+      "pressure/current/profile inputs archived with hashes"
+    ],
+    "promotion_rule": "No candidate may pass G1 from a reduced field or prescribed rotational-transform model."
+  },
+  "G2_coils": {
+    "required_tools": ["DESC coil objectives and/or SIMSOPT", "structural FEA"],
+    "minimum_evidence": [
+      "optimized field-reproduction error on the solved plasma boundary",
+      "minimum coil-plasma and coil-coil clearance",
+      "REBCO strain/field/current envelope",
+      "Lorentz-force and support-stress solution",
+      "manufacturing-error ensemble with retained field quality"
+    ],
+    "promotion_rule": "Filament Biot-Savart screening alone cannot establish buildability."
+  },
+  "G3_orbits": {
+    "required_tools": ["direct-J or guiding-center orbit solver", "neoclassical transport solver"],
+    "minimum_evidence": [
+      "alpha-particle loss fraction versus time and birth distribution",
+      "radial drift/direct-J metrics",
+      "neoclassical particle and heat flux",
+      "bootstrap-current consistency with equilibrium"
+    ]
+  },
+  "G4_turbulence": {
+    "required_tools": ["nonlinear gyrokinetic solver"],
+    "minimum_evidence": [
+      "ion/electron heat flux",
+      "particle flux and density-profile tendency",
+      "profile iteration to power balance",
+      "uncertainty/sensitivity over gradients and operating point"
+    ]
+  },
+  "G5_edge": {
+    "required_tools": ["3-D edge/SOL/divertor workflow"],
+    "minimum_evidence": [
+      "magnetic edge topology",
+      "target heat-flux map",
+      "detachment/impurity-control assessment",
+      "pumping conductance",
+      "vessel/coil/maintenance clearance"
+    ]
+  },
+  "G6_RF": {
+    "required_tools": ["3-D ECRH ray/full-wave deposition workflow"],
+    "minimum_evidence": [
+      "accessible resonance layers",
+      "absorbed fraction and deposition profile",
+      "steering/control authority",
+      "wall/port loading",
+      "wall-plug and recirculating-power accounting"
+    ]
+  },
+  "G7_neutronics": {
+    "required_tools": ["OpenMC or independently benchmarked Monte Carlo neutron transport", "CAD/DAGMC stellarator geometry"],
+    "minimum_evidence": [
+      "full-3D TBR including ports and gaps",
+      "coil nuclear heating and dose",
+      "blanket/shield volumetric heating",
+      "DPA/fluence where material limits are claimed",
+      "streaming weak-zone analysis and statistical uncertainty"
+    ],
+    "design_target_TBR": 1.15,
+    "hard_floor_TBR": 1.10
+  },
+  "G8_system": {
+    "minimum_evidence": [
+      "physics-coupled fusion-power result",
+      "thermal-hydraulic heat-removal solution",
+      "realistic gross conversion efficiency",
+      "itemized recirculating loads",
+      "tritium inventory/doubling/accounting",
+      "availability/maintenance model",
+      "uncertainty propagation to net electric output"
+    ],
+    "net_electric_floor_MWe": 300.0
+  },
+  "G9_hardware": {
+    "promotion_rule": "Requires physical hardware. Simulation may not self-promote this gate."
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "stages": [
+    "geometry_hypothesis",
+    "magnetic_candidate",
+    "confinement_candidate",
+    "plasma_candidate",
+    "fusion_performance_candidate"
+  ],
+  "required_for_magnetic_candidate": [
+    "solved_3d_equilibrium",
+    "nested_surface_evidence",
+    "rotational_transform_profile",
+    "coil_realization_or_equivalent_field_realization",
+    "normal_field_error_report"
+  ],
+  "required_for_confinement_candidate": [
+    "magnetic_candidate",
+    "guiding_center_orbit_results",
+    "fast_particle_loss_results",
+    "matched_control_comparison"
+  ],
+  "required_for_plasma_candidate": [
+    "confinement_candidate",
+    "finite_pressure_equilibrium",
+    "mhd_stability",
+    "transport_analysis",
+    "edge_or_divertor_analysis"
+  ],
+  "required_for_fusion_performance_candidate": [
+    "plasma_candidate",
+    "fuel_cycle_model",
+    "blanket_neutronics",
+    "complete_energy_ledger",
+    "net_electric_power_analysis"
+  ]
+}

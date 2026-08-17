@@ -1,0 +1,370 @@
+{
+  "metrics": {
+    "engineering": {
+      "blanket_space_proxy": 5.408328826392645,
+      "cryogenic_burden_proxy": 1.4788010447272728,
+      "engineering_burden_score": 0.870565748343189,
+      "heat_spreading_proxy": 0.8779849144751313,
+      "structural": {
+        "axis_curvature_max": 0.26653660216711794,
+        "axis_curvature_rms": 0.19612915582491622,
+        "axis_torsion_rms": 0.6392389951023196,
+        "normalized_support_burden": 0.3209316640003632
+      }
+    },
+    "omnigenity": {
+      "action_variation_mean": 0.0002581098866308246,
+      "action_variation_p95": 0.00030943281351095,
+      "field_strength_cv": 0.06271762873649853,
+      "mirror_ratio": 0.21186728035066726
+    },
+    "quick_objective": 0.03188203816465995,
+    "trace": {
+      "escape_fraction": 0.0,
+      "iota_estimate_mean": 0.5777616848184333,
+      "iota_estimate_std": 0.012477848448036401,
+      "max_radial_excursion": 0.012009055738371743,
+      "mean_radial_excursion": 0.009301347947810767,
+      "mean_surface_spread": 0.002032582135214314,
+      "p95_radial_excursion": 0.011798823877907694
+    }
+  },
+  "optimized": {
+    "axis_helical_amplitude": 0.11,
+    "description": "Six-field-period helical seed derived from the project's original C6 geometry hypothesis. The visual motif is not preserved as a requirement.",
+    "harmonics": [
+      {
+        "amplitude": 0.00348088331262683,
+        "m": 11,
+        "n": 6,
+        "phase": 5.978799885631776
+      },
+      {
+        "amplitude": 0.005603812993152564,
+        "m": 12,
+        "n": 6,
+        "phase": 2.1683970626777547
+      },
+      {
+        "amplitude": 0.008915303694220606,
+        "m": 13,
+        "n": 6,
+        "phase": 4.29350995990605
+      }
+    ],
+    "iota0": 0.5771999999999999,
+    "major_radius": 6.0,
+    "metadata": {
+      "authority": "reduced_order_seed",
+      "not_a_solver_equilibrium": true,
+      "origin": "C6/inverted-Flower inspiration translated into ordinary field-period symmetry"
+    },
+    "minor_radius": 0.9,
+    "mirror_amplitude": 0.088,
+    "name": "c6_flower_derived_seed",
+    "nfp": 6,
+    "required_helical_strength": 0.018,
+    "role": "candidate",
+    "shear": 0.055
+  },
+  "optimizer_history": [
+    {
+      "iteration": 0.0,
+      "objective": 0.045235032041946524
+    },
+    {
+      "iteration": 1.0,
+      "objective": 0.0416621292967059
+    },
+    {
+      "iteration": 2.0,
+      "objective": 0.044360408313866985
+    },
+    {
+      "iteration": 3.0,
+      "objective": 0.04124764269238542
+    },
+    {
+      "iteration": 4.0,
+      "objective": 0.0416621292967059
+    },
+    {
+      "iteration": 5.0,
+      "objective": 0.041046092877050994
+    },
+    {
+      "iteration": 6.0,
+      "objective": 0.04139130365802313
+    },
+    {
+      "iteration": 7.0,
+      "objective": 0.04139237472744636
+    },
+    {
+      "iteration": 8.0,
+      "objective": 0.03941005452868962
+    },
+    {
+      "iteration": 9.0,
+      "objective": 0.043461902267178776
+    },
+    {
+      "iteration": 10.0,
+      "objective": 0.037488036579068025
+    },
+    {
+      "iteration": 11.0,
+      "objective": 0.03857496632271693
+    },
+    {
+      "iteration": 12.0,
+      "objective": 0.03806325800817532
+    },
+    {
+      "iteration": 13.0,
+      "objective": 0.04531997729183696
+    },
+    {
+      "iteration": 14.0,
+      "objective": 0.03763257514790994
+    },
+    {
+      "iteration": 15.0,
+      "objective": 0.040530851691523304
+    },
+    {
+      "iteration": 16.0,
+      "objective": 0.03690519191331153
+    },
+    {
+      "iteration": 17.0,
+      "objective": 0.038064920092403816
+    },
+    {
+      "iteration": 18.0,
+      "objective": 0.037869840586857745
+    },
+    {
+      "iteration": 19.0,
+      "objective": 0.03671335983897252
+    },
+    {
+      "iteration": 20.0,
+      "objective": 0.03690519191331153
+    },
+    {
+      "iteration": 21.0,
+      "objective": 0.037447269538048604
+    },
+    {
+      "iteration": 22.0,
+      "objective": 0.03568536501262586
+    },
+    {
+      "iteration": 23.0,
+      "objective": 0.03623473498022314
+    },
+    {
+      "iteration": 24.0,
+      "objective": 0.036492215985888095
+    },
+    {
+      "iteration": 25.0,
+      "objective": 0.03816800862273112
+    },
+    {
+      "iteration": 26.0,
+      "objective": 0.03623382098423382
+    },
+    {
+      "iteration": 27.0,
+      "objective": 0.036536404260734054
+    },
+    {
+      "iteration": 28.0,
+      "objective": 0.03564433668973353
+    },
+    {
+      "iteration": 29.0,
+      "objective": 0.03994419952669778
+    },
+    {
+      "iteration": 30.0,
+      "objective": 0.03415067783418924
+    },
+    {
+      "iteration": 31.0,
+      "objective": 0.03683622371613277
+    },
+    {
+      "iteration": 32.0,
+      "objective": 0.037293732060572904
+    },
+    {
+      "iteration": 33.0,
+      "objective": 0.03312017458471458
+    },
+    {
+      "iteration": 34.0,
+      "objective": 0.03410843594382916
+    },
+    {
+      "iteration": 35.0,
+      "objective": 0.03296040952002591
+    },
+    {
+      "iteration": 36.0,
+      "objective": 0.03312017458471458
+    },
+    {
+      "iteration": 37.0,
+      "objective": 0.03326060889027014
+    },
+    {
+      "iteration": 38.0,
+      "objective": 0.03332036880517187
+    },
+    {
+      "iteration": 39.0,
+      "objective": 0.032589813415435
+    },
+    {
+      "iteration": 40.0,
+      "objective": 0.03296040952002591
+    },
+    {
+      "iteration": 41.0,
+      "objective": 0.03327354118387325
+    },
+    {
+      "iteration": 42.0,
+      "objective": 0.032414783704682044
+    },
+    {
+      "iteration": 43.0,
+      "objective": 0.03320859467750067
+    },
+    {
+      "iteration": 44.0,
+      "objective": 0.032489762108403875
+    },
+    {
+      "iteration": 45.0,
+      "objective": 0.03522853671028225
+    },
+    {
+      "iteration": 46.0,
+      "objective": 0.03911893002873564
+    },
+    {
+      "iteration": 47.0,
+      "objective": 0.03461823148636152
+    },
+    {
+      "iteration": 48.0,
+      "objective": 0.03380895781916664
+    },
+    {
+      "iteration": 49.0,
+      "objective": 0.03272731300746793
+    },
+    {
+      "iteration": 50.0,
+      "objective": 0.03292072749960681
+    },
+    {
+      "iteration": 51.0,
+      "objective": 0.03294562567516854
+    },
+    {
+      "iteration": 52.0,
+      "objective": 0.03218386522241828
+    },
+    {
+      "iteration": 53.0,
+      "objective": 0.03240139590813989
+    },
+    {
+      "iteration": 54.0,
+      "objective": 0.0323264295330155
+    },
+    {
+      "iteration": 55.0,
+      "objective": 0.03188203816465995
+    },
+    {
+      "iteration": 56.0,
+      "objective": 0.03218386522241828
+    },
+    {
+      "iteration": 57.0,
+      "objective": 0.032278176231865546
+    },
+    {
+      "iteration": 58.0,
+      "objective": 0.03195151295922189
+    },
+    {
+      "iteration": 59.0,
+      "objective": 0.0321134175207927
+    },
+    {
+      "iteration": 60.0,
+      "objective": 0.03216826935728922
+    },
+    {
+      "iteration": 61.0,
+      "objective": 0.03546071655042267
+    },
+    {
+      "iteration": 62.0,
+      "objective": 0.03746679288190414
+    },
+    {
+      "iteration": 63.0,
+      "objective": 0.033751993236855675
+    },
+    {
+      "iteration": 64.0,
+      "objective": 0.03257944645917156
+    }
+  ],
+  "seed": {
+    "axis_helical_amplitude": 0.11,
+    "description": "Six-field-period helical seed derived from the project's original C6 geometry hypothesis. The visual motif is not preserved as a requirement.",
+    "harmonics": [
+      {
+        "amplitude": 0.0065,
+        "m": 11,
+        "n": 6,
+        "phase": 0.0
+      },
+      {
+        "amplitude": 0.006,
+        "m": 12,
+        "n": 6,
+        "phase": 2.0943951023931953
+      },
+      {
+        "amplitude": 0.0055,
+        "m": 13,
+        "n": 6,
+        "phase": 4.1887902047863905
+      }
+    ],
+    "iota0": 0.57,
+    "major_radius": 6.0,
+    "metadata": {
+      "authority": "reduced_order_seed",
+      "not_a_solver_equilibrium": true,
+      "origin": "C6/inverted-Flower inspiration translated into ordinary field-period symmetry"
+    },
+    "minor_radius": 0.9,
+    "mirror_amplitude": 0.08,
+    "name": "c6_flower_derived_seed",
+    "nfp": 6,
+    "required_helical_strength": 0.018,
+    "role": "candidate",
+    "shear": 0.055
+  }
+}

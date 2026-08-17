@@ -1,0 +1,37 @@
+{
+  "collapsed_harmonic_phase": {
+    "action_variation_mean": 0.0002919697496969823,
+    "engineering_burden_score": 0.870565748343189,
+    "objective_ratio_to_nominal": 1.0531017855434508,
+    "quick_objective": 0.03357503131796783,
+    "radial_excursion_mean": 0.009324144053855999
+  },
+  "no_axis_helical_shaping": {
+    "action_variation_mean": 0.0002581098866308246,
+    "engineering_burden_score": 0.7450065479549792,
+    "objective_ratio_to_nominal": 0.9291116334747702,
+    "quick_objective": 0.02962197255767217,
+    "radial_excursion_mean": 0.009301347947810767
+  },
+  "no_mirror_term": {
+    "action_variation_mean": 0.0009457839789602705,
+    "engineering_burden_score": 0.870565748343189,
+    "objective_ratio_to_nominal": 2.290505195683086,
+    "quick_objective": 0.07302597406512006,
+    "radial_excursion_mean": 0.009301347947810767
+  },
+  "small_c3_correction": {
+    "action_variation_mean": 0.00030043316052697665,
+    "engineering_burden_score": 0.8699894728281832,
+    "objective_ratio_to_nominal": 1.0657034733875002,
+    "quick_objective": 0.03397679881075095,
+    "radial_excursion_mean": 0.009250951646324206
+  },
+  "small_c9_correction": {
+    "action_variation_mean": 0.00028387705567775573,
+    "engineering_burden_score": 0.8706868323731531,
+    "objective_ratio_to_nominal": 1.0404225177218398,
+    "quick_objective": 0.03317079041737929,
+    "radial_excursion_mean": 0.011510507374953715
+  }
+}
