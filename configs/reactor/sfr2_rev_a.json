@@ -1,0 +1,47 @@
+{
+  "as_of": "2026-08-18",
+  "claim_boundary": "SFR-2 Rev A is an assumption-breaker computational study. No finite-beta equilibrium, dynamic MHD stability, validated confinement, alpha self-heating, ignition, net energy, tritium self-sufficiency, buildable high-field coil set, or hardware fusion result has been demonstrated.",
+  "design_id": "SFR-2-RevA",
+  "dynamic_actuation": {
+    "credits_unmodeled_phase_heating": false,
+    "phase_offsets_deg": [0, 90, 180, 270],
+    "reverses_primary_confinement_field": false,
+    "sequence": ["A1", "B1", "A2", "B2"],
+    "statement": "Primary confinement remains steady. A traveling perturbation/compression sequence is a hypothesis only; Rev A assigns it zero RF/resonant-heating credit until a wave/plasma calculation exists."
+  },
+  "maturity": "preconceptual_assumption_breaker__low_authority_screening_only",
+  "program": "IX-StellaratorForge",
+  "promotion_status": {
+    "SFR2_G0_SPEC": "PASS_SPEC_ONLY",
+    "SFR2_G1_DYNAMIC_EQUILIBRIUM": "NOT_RUN",
+    "SFR2_G2_COILS_AND_FIELD": "NOT_RUN",
+    "SFR2_G3_PARTICLE_AND_ALPHA_ORBITS": "NOT_RUN",
+    "SFR2_G4_TRANSPORT_AND_MHD": "NOT_RUN",
+    "SFR2_G5_EDGE_AND_TRANSIENT_HEAT_FLUX": "NOT_RUN",
+    "SFR2_G6_RF_AND_PHASE_CONTROL": "NOT_RUN",
+    "SFR2_G7_NEUTRONICS_AND_TBR": "NOT_RUN",
+    "SFR2_G8_INTEGRATED_BURN_AND_PLANT": "NOT_RUN",
+    "SFR2_G9_HARDWARE": "NOT_RUN"
+  },
+  "study_envelope": {
+    "H_ISS04_sweep": [1.0, 1.2, 1.4],
+    "axis_field_T_sweep": [6.0, 8.0, 10.0, 12.0, 15.0],
+    "base_temperature_keV": 15.0,
+    "iota_2over3_sweep": [0.6, 0.7, 0.8, 0.9],
+    "radial_squeeze_fraction_sweep": [0.0, 0.05, 0.1],
+    "screening_aspect_ratio": 4.5,
+    "sector_lengths_ft": [23.0, 26.0, 23.0, 26.0],
+    "sector_pattern": "ABAB",
+    "target_fusion_power_MW": 1000.0,
+    "transient_confinement_retention_sweep": [1.0, 0.8, 0.65]
+  },
+  "topology": {
+    "independent_plasma_machines": false,
+    "plasma_topology": "one_continuous_closed_toroidal_system",
+    "sector_function_hypothesis": {
+      "A": "confinement_dominant_sector_candidate",
+      "B": "actuation_compression_heating_access_sector_candidate"
+    },
+    "statement": "The four 23/26/23/26 ft values are consecutive sector arc-length targets. They are not four independent reactors connected by plasma ducts."
+  }
+}

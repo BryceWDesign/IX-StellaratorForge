@@ -1,18 +1,31 @@
-# IX-StellaratorForge — SFR-1 Proof of Concept and Computational Closure
+# IX-StellaratorForge — executable evidence overview
 
-Release: **0.4.0**
+Release: **0.5.0**
 
-PoC verdict: **`PIPELINE_POC_PASS__REACTOR_PHYSICS_NOT_CLOSED`**
+## SFR-1
 
-Maximum in-repo closure verdict: **`MAXIMUM_IN_REPO_COMPUTATIONAL_CLOSURE_COMPLETE__PRODUCTION_SOLVER_AND_HARDWARE_GATES_REMAIN`**
+SFR-1 Rev A remains the steady-state reference architecture. Its v0.4 proof-of-concept and maximum in-repository computational closure artifacts are preserved unchanged:
 
-## Two different things are tested
+- PoC verdict: `PIPELINE_POC_PASS__REACTOR_PHYSICS_NOT_CLOSED`
+- maximum closure verdict: `MAXIMUM_IN_REPO_COMPUTATIONAL_CLOSURE_COMPLETE__PRODUCTION_SOLVER_AND_HARDWARE_GATES_REMAIN`
 
-The lightweight SFR-1 PoC verifies that architecture validation, D-T burn, confinement requirements, target-vs-screened power accounting, RF resonance, source-term accounting and held-out magnetic reconstruction execute reproducibly.
+The SFR-1 PoC verifies executable architecture validation, D-T burn arithmetic, confinement requirements, target-vs-screened power accounting, RF resonance, source-term accounting and held-out magnetic reconstruction. The v0.4 maximum closure layer adds production MHD seed generation, alternative vacuum magnet architecture screens, field-line tracing, geometry-only HTS strain proxies, TBR coverage constraints and conditional plant thresholds.
 
-The v0.4 maximum closure campaign goes further: it generates production MHD inputs, executes new vacuum magnet architectures, traces field lines, calculates HTS geometry strain proxies, solves TBR coverage constraints and closes conditional plant thresholds.
+None of those artifacts impersonates DESC/VMEC++, kinetic transport, structural FEA, full 3-D OpenMC transport or hardware.
 
-Neither is allowed to impersonate DESC/VMEC++, gyrokinetics/neoclassical transport, structural FEA, OpenMC 3-D transport or hardware.
+## SFR-2
+
+v0.5.0 adds SFR-2 Rev A as a separate assumption-breaker, not as a promotion of SFR-1.
+
+Its proof-of-concept claim is intentionally narrower:
+
+> The 23/26/23/26 ABAB concept can be represented as a deterministic computational hypothesis with explicit geometry, compression assumptions, target-power matching, ISS04 sensitivity, promotion gates, and zero numerical credit for unmodeled phase/RF or flux-compression effects.
+
+Primary SFR-2 verdict:
+
+`NO_PRIMARY_CASE_CROSSES_OPTIMISTIC_IGNITION_PROXY`
+
+That negative result is retained. It prevents the repository from turning earlier exploratory percentages into evidence.
 
 ## Run
 
@@ -20,23 +33,20 @@ Neither is allowed to impersonate DESC/VMEC++, gyrokinetics/neoclassical transpo
 python scripts/run_sfr1_poc.py
 python scripts/run_computational_closure.py
 python scripts/generate_v040_evidence.py
+python scripts/run_sfr2_screen.py
+python check_stellarforge.py
 ```
 
-Tracked outputs:
+Tracked SFR-2 outputs:
 
-- `results/sfr1_poc/sfr1_poc_v040.json`
-- `results/computational_closure/sfr1_v040.json`
-- `results/computational_closure/SFR1_V040_RESULT.md`
-- `results/reactor/sfr1_rev_a_readiness.json`
-
-## What fails today
-
-The current lower-authority plasma point does not reach the design fusion-power target; the new simple helical architecture cannot simultaneously reach the rotational-transform target and preserve its nestedness screen; the independent surface-current reconstruction does not meet the 0.5% held-out normal-field target.
-
-Those failures are retained because they constrain what the production co-design must improve.
+- `configs/reactor/sfr2_rev_a.json`
+- `results/sfr2/sfr2_rev_a_screen_v050.json`
+- `results/sfr2/SFR2_REVA_SCREEN_RESULT.md`
+- `docs/reactor/12_SFR2_DYNAMIC_COMPRESSION.md`
+- `docs/reactor/13_SFR2_PROMOTION_GATES.md`
 
 ## Promotion boundary
 
-A G1/G2/G3/G4/G7 green status can only be issued from imported production evidence that satisfies the machine-readable contracts. `external_solvers/adapters/validate_production_receipt.py` explicitly rejects unexecuted/template receipts.
+A low-authority model may reject a candidate. It may not declare one successful.
 
-Actual net-electric fusion remains outside software authority.
+SFR-2 G1–G9 remain unrun until candidate-specific high-authority evidence exists. Actual fusion and net-electric operation remain outside software authority.

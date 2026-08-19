@@ -11,10 +11,12 @@ ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT / "src"))
 
 from ix_stellaratorforge.reactor import load_reactor_config, validate_reactor_config
+from ix_stellaratorforge.sfr2 import run_sfr2_screen, validate_sfr2_config
 
 CONTACT = "https://www.linkedin.com/in/brycewdesign/"
 LICENSE_REF = "LicenseRef-IX-StellaratorForge-Eval-Only-1.1"
 V040_VERDICT = "MAXIMUM_IN_REPO_COMPUTATIONAL_CLOSURE_COMPLETE__PRODUCTION_SOLVER_AND_HARDWARE_GATES_REMAIN"
+SFR2_PRIMARY_VERDICT = "NO_PRIMARY_CASE_CROSSES_OPTIMISTIC_IGNITION_PROXY"
 
 
 def run(label: str, command: list[str]) -> bool:
@@ -28,13 +30,24 @@ def run(label: str, command: list[str]) -> bool:
 
 
 def main() -> int:
-    print("IX-STELLARATORFORGE v0.4.0 QUALITY GATE\n")
+    print("IX-STELLARATORFORGE v0.5.0 QUALITY GATE\n")
     failures: list[str] = []
 
     config = load_reactor_config(ROOT / "configs/reactor/sfr1_rev_a.json")
     validation = validate_reactor_config(config)
     print(f"{'SFR-1 Rev A design invariants':.<52} {'PASS' if validation.passed else 'FAIL'}")
     failures.extend(validation.errors)
+
+    try:
+        sfr2_raw = json.loads((ROOT / "configs/reactor/sfr2_rev_a.json").read_text(encoding="utf-8"))
+        sfr2_errors = validate_sfr2_config(sfr2_raw)
+        sfr2_spec_ok = not sfr2_errors
+    except Exception as exc:  # noqa: BLE001
+        sfr2_raw = {}
+        sfr2_errors = (f"SFR-2 config parse/validation failed: {exc}",)
+        sfr2_spec_ok = False
+    print(f"{'SFR-2 Rev A assumption-breaker invariants':.<52} {'PASS' if sfr2_spec_ok else 'FAIL'}")
+    failures.extend(sfr2_errors)
 
     json_files = (
         "configs/reactor/parameter_ledger.json",
@@ -45,6 +58,11 @@ def main() -> int:
         "external_solvers/g1_candidate_matrix.json",
         "external_solvers/confinement_evidence_contract.json",
         "results/computational_closure/sfr1_v040.json",
+        "configs/reactor/sfr2_rev_a.json",
+        "schemas/reactor/sfr2_reference.schema.json",
+        "provenance/SFR2_TECHNICAL_BASIS_2026.json",
+        "results/sfr2/sfr2_rev_a_screen_v050.json",
+        "sbom.spdx.json",
     )
     json_ok = True
     for rel in json_files:
@@ -54,6 +72,25 @@ def main() -> int:
             json_ok = False
             failures.append(f"invalid JSON {rel}: {exc}")
     print(f"{'Reactor / solver-contract JSON integrity':.<52} {'PASS' if json_ok else 'FAIL'}")
+
+    try:
+        version = (ROOT / "VERSION").read_text(encoding="utf-8").strip()
+        pyproject = (ROOT / "pyproject.toml").read_text(encoding="utf-8")
+        citation = (ROOT / "CITATION.cff").read_text(encoding="utf-8")
+        sbom = json.loads((ROOT / "sbom.spdx.json").read_text(encoding="utf-8"))
+        version_ok = (
+            version == "0.5.0"
+            and 'version = "0.5.0"' in pyproject
+            and 'version: "0.5.0"' in citation
+            and sbom["name"] == "IX-StellaratorForge-0.5.0-SBOM"
+            and sbom["packages"][0]["versionInfo"] == "0.5.0"
+        )
+    except Exception as exc:  # noqa: BLE001
+        version_ok = False
+        failures.append(f"release-version consistency failed: {exc}")
+    print(f"{'v0.5 release metadata consistency':.<52} {'PASS' if version_ok else 'FAIL'}")
+    if not version_ok:
+        failures.append("v0.5 release metadata inconsistent")
 
     texts = [(ROOT / name).read_text(encoding="utf-8") for name in ("LICENSE", "LICENSING.md", "NOTICE", "README.md")]
     license_ok = all(CONTACT in text for text in texts) and LICENSE_REF in texts[0]
@@ -118,6 +155,32 @@ def main() -> int:
     if not artifacts_ok:
         failures.append("v0.4 evidence artifacts stale/inconsistent")
 
+    try:
+        persisted_sfr2 = json.loads((ROOT / "results/sfr2/sfr2_rev_a_screen_v050.json").read_text(encoding="utf-8"))
+        recomputed_sfr2 = run_sfr2_screen(sfr2_raw)
+        best = persisted_sfr2["primary_screen"]["best_case"]
+        sfr2_screen_ok = (
+            persisted_sfr2 == recomputed_sfr2
+            and persisted_sfr2["release"] == "0.5.0"
+            and persisted_sfr2["primary_screen"]["verdict"] == SFR2_PRIMARY_VERDICT
+            and persisted_sfr2["model_rules"]["staggering_confinement_credit"] == 0.0
+            and persisted_sfr2["model_rules"]["dynamic_phase_heating_credit"] == 0.0
+            and persisted_sfr2["model_rules"]["magnetic_flux_compression_credit"] == 0.0
+            and best["ignition"]["proxy_pass"] is False
+            and best["radial_squeeze_fraction"] == 0.0
+            and all(
+                status == "NOT_RUN"
+                for gate, status in persisted_sfr2["promotion_status"].items()
+                if gate != "SFR2_G0_SPEC"
+            )
+        )
+    except Exception as exc:  # noqa: BLE001
+        sfr2_screen_ok = False
+        failures.append(f"SFR-2 persisted/recomputed screen check failed: {exc}")
+    print(f"{'SFR-2 reproducible no-overclaim screen':.<52} {'PASS' if sfr2_screen_ok else 'FAIL'}")
+    if not sfr2_screen_ok:
+        failures.append("SFR-2 screen stale, overclaimed, or inconsistent")
+
     openmc_adapter = (ROOT / "external_solvers/adapters/build_openmc_axisymmetric_proxy.py").read_text(encoding="utf-8")
     adapters_ok = "NOT the G7 final 3-D stellarator model" in openmc_adapter and "(n,Xt)" in openmc_adapter
     print(f"{'External solver fail-closed / OpenMC proxy boundary':.<52} {'PASS' if adapters_ok else 'FAIL'}")
@@ -131,8 +194,9 @@ def main() -> int:
             print("-", failure)
         return 1
     print("IX-STELLARATORFORGE: GREEN")
-    print("Meaning: release integrity, SFR-1 PoC, 87-row design inventory, v0.4 in-repo computations, and production-solver execution contracts reproduce.")
-    print("It does NOT mean finite-beta MHD, kinetic confinement, qualified HTS magnets, full-3D TBR, net-electric fusion, safety qualification, or hardware operation has been demonstrated.")
+    print("Meaning: release integrity, preserved SFR-1 v0.4 evidence, and the SFR-2 v0.5 assumption-breaker screen reproduce from committed inputs and code.")
+    print("SFR-2 primary result: no H_ISS04=1 case crosses its optimistic ignition proxy; dynamic compression receives no unmodeled phase/RF or flux-compression credit.")
+    print("It does NOT mean finite-beta dynamic MHD, kinetic confinement, qualified high-field magnets, full-3D TBR, ignition, net-electric fusion, safety qualification, or hardware operation has been demonstrated.")
     return 0
 
 

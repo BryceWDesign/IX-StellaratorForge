@@ -1,0 +1,35 @@
+{
+  "as_of": "2026-08-18",
+  "policy": "External sources motivate equations, ranges, and falsification tests only. No external result is treated as SFR-2 evidence.",
+  "sources": [
+    {
+      "id": "Bosch-Hale-1992",
+      "title": "Improved formulas for fusion cross-sections and thermal reactivities",
+      "citation": "H.-S. Bosch and G. M. Hale, Nuclear Fusion 32 (1992) 611",
+      "use": "D-T Maxwellian thermal reactivity fit already implemented in the repository"
+    },
+    {
+      "id": "ISS04",
+      "title": "International Stellarator Confinement Scaling 2004",
+      "use": "empirical energy-confinement reference only; not a dynamic-compression or ignition solver"
+    },
+    {
+      "id": "arXiv:2505.23485",
+      "title": "On miniature ultra-high-field commercial stellarator reactors with breeding external to resistive coils",
+      "url": "https://arxiv.org/abs/2505.23485",
+      "use": "external precedent for exploring pulsed 10-20 T, small-volume stellarator architectures; not validation of SFR-2"
+    },
+    {
+      "id": "arXiv:2606.23974",
+      "title": "The science of compressional heating on the LM26 magnetized target fusion experiment",
+      "url": "https://arxiv.org/abs/2606.23974",
+      "use": "experimental evidence that radial compression can heat/densify magnetized plasma; geometry and confinement concept differ from SFR-2"
+    },
+    {
+      "id": "arXiv:2512.08027",
+      "title": "Overview of the Helios Design: A Practical Planar Coil Stellarator Fusion Power Plant",
+      "url": "https://arxiv.org/abs/2512.08027",
+      "use": "reactor-scale high-field and aspect-ratio context; no Helios performance is imported into SFR-2"
+    }
+  ]
+}

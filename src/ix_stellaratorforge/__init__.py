@@ -11,6 +11,7 @@ from .physics import (
     power_balance,
 )
 from .reactor import ReactorConfig, ReactorValidation, load_reactor_config, validate_reactor_config
+from .sfr2 import geometry_from_sector_lengths, run_sfr2_screen, validate_sfr2_config
 
 __all__ = [
     "DTReactionLedger",
@@ -24,4 +25,7 @@ __all__ = [
     "plasma_screening_ledger",
     "power_balance",
     "validate_reactor_config",
+    "geometry_from_sector_lengths",
+    "run_sfr2_screen",
+    "validate_sfr2_config",
 ]
