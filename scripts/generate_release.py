@@ -15,7 +15,8 @@ def main()->int:
  run('scripts/run_closure_campaign.py')
  run('scripts/run_computational_closure.py')
  run('scripts/generate_v040_evidence.py')
+ run('scripts/run_sfr2_screen.py')
  run('scripts/make_manifest.py')
- print('IX-StellaratorForge v0.4.0 release artifacts regenerated')
+ print('IX-StellaratorForge v0.5.0 release artifacts regenerated')
  return 0
 if __name__=='__main__':raise SystemExit(main())

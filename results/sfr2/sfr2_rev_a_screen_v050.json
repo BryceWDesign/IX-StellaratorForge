@@ -1,0 +1,482 @@
+{
+  "authority": "LOW__analytical_plus_empirical_scaling_only",
+  "candidate": "SFR-2-RevA",
+  "candidate_role": "assumption_breaker_dynamic_stellarator_derived_candidate",
+  "claim_boundary": "SFR-2 Rev A is an assumption-breaker computational study. No finite-beta equilibrium, dynamic MHD stability, validated confinement, alpha self-heating, ignition, net energy, tritium self-sufficiency, buildable high-field coil set, or hardware fusion result has been demonstrated.",
+  "compression_sensitivity_at_max_B_max_iota": [
+    {
+      "H_ISS04": 1.0,
+      "authority": "analytical_empirical_low_authority_screen__not_equilibrium_or_ignition_evidence",
+      "axis_field_T": 15.0,
+      "base_beta": 0.011936957296877555,
+      "ignition": {
+        "H_ISS04": 1.0,
+        "effective_tau_E_s_after_retention": 0.811369543057502,
+        "iota_2over3": 0.9,
+        "iss04_tau_E_s": 0.811369543057502,
+        "minimum_retention_if_H_is_fixed": null,
+        "proxy_pass": false,
+        "required_H_if_retention_is_one": 1.0404990868818804,
+        "required_tau_E_s_optimistic": 0.8442292686750994,
+        "tau_ratio_to_optimistic_ignition": 0.9610772489928403,
+        "transient_confinement_retention": 1.0
+      },
+      "interpretation": {
+        "compression_is_not_credited_for_phase_heating": true,
+        "distance_from_proxy_ratio_1_fraction": -0.038922751007159695,
+        "low_authority_proxy_pass": false
+      },
+      "iota_2over3": 0.9,
+      "radial_squeeze_fraction": 0.0,
+      "state": {
+        "alpha_heating_MW_uniform": 198.86363636363635,
+        "beta_at_fixed_B": 0.011936957296877555,
+        "fusion_power_MW_uniform": 1000.0,
+        "ion_density_m3": 2.2233336968266498e+20,
+        "ion_temperature_keV": 15.0,
+        "minor_radius_m": 1.0564492915849226,
+        "neutron_power_MW_uniform": 801.1363636363635,
+        "neutron_wall_load_MW_m2_circular_proxy": 4.040516474789336,
+        "pressure_Pa": 1068651.9895921494,
+        "radial_compression_ratio": 1.0,
+        "radial_squeeze_fraction": 0.0,
+        "thermal_energy_MJ": 167.88650229334363,
+        "volume_m3": 104.73412855848888
+      },
+      "transient_confinement_retention": 1.0
+    },
+    {
+      "H_ISS04": 1.0,
+      "authority": "analytical_empirical_low_authority_screen__not_equilibrium_or_ignition_evidence",
+      "axis_field_T": 15.0,
+      "base_beta": 0.010674284606489375,
+      "ignition": {
+        "H_ISS04": 1.0,
+        "effective_tau_E_s_after_retention": 0.7182363848148943,
+        "iota_2over3": 0.9,
+        "iss04_tau_E_s": 0.7182363848148943,
+        "minimum_retention_if_H_is_fixed": null,
+        "proxy_pass": false,
+        "required_H_if_retention_is_one": 1.1254857485595913,
+        "required_tau_E_s_optimistic": 0.8083648152061259,
+        "tau_ratio_to_optimistic_ignition": 0.8885052532027267,
+        "transient_confinement_retention": 1.0
+      },
+      "interpretation": {
+        "compression_is_not_credited_for_phase_heating": true,
+        "distance_from_proxy_ratio_1_fraction": -0.11149474679727334,
+        "low_authority_proxy_pass": false
+      },
+      "iota_2over3": 0.9,
+      "radial_squeeze_fraction": 0.05,
+      "state": {
+        "alpha_heating_MW_uniform": 198.86363636363646,
+        "beta_at_fixed_B": 0.012664656853925203,
+        "fusion_power_MW_uniform": 1000.0000000000006,
+        "ion_density_m3": 2.202939537415748e+20,
+        "ion_temperature_keV": 16.061759497754224,
+        "minor_radius_m": 1.0036268270056765,
+        "neutron_power_MW_uniform": 801.136363636364,
+        "neutron_wall_load_MW_m2_circular_proxy": 4.253175236620357,
+        "pressure_Pa": 1133799.0417364768,
+        "radial_compression_ratio": 1.0526315789473684,
+        "radial_squeeze_fraction": 0.05,
+        "thermal_energy_MJ": 160.75436666030922,
+        "volume_m3": 94.52255102403622
+      },
+      "transient_confinement_retention": 1.0
+    },
+    {
+      "H_ISS04": 1.0,
+      "authority": "analytical_empirical_low_authority_screen__not_equilibrium_or_ignition_evidence",
+      "axis_field_T": 15.0,
+      "base_beta": 0.009527403239047109,
+      "ignition": {
+        "H_ISS04": 1.0,
+        "effective_tau_E_s_after_retention": 0.6330432787765979,
+        "iota_2over3": 0.9,
+        "iss04_tau_E_s": 0.6330432787765979,
+        "minimum_retention_if_H_is_fixed": null,
+        "proxy_pass": false,
+        "required_H_if_retention_is_one": 1.2249486869512571,
+        "required_tau_E_s_optimistic": 0.7754455331207123,
+        "tau_ratio_to_optimistic_ignition": 0.8163607264961228,
+        "transient_confinement_retention": 1.0
+      },
+      "interpretation": {
+        "compression_is_not_credited_for_phase_heating": true,
+        "distance_from_proxy_ratio_1_fraction": -0.1836392735038772,
+        "low_authority_proxy_pass": false
+      },
+      "iota_2over3": 0.9,
+      "radial_squeeze_fraction": 0.1,
+      "state": {
+        "alpha_heating_MW_uniform": 198.86363636363643,
+        "beta_at_fixed_B": 0.013536285798672732,
+        "fusion_power_MW_uniform": 1000.0000000000003,
+        "ion_density_m3": 2.1907889302569393e+20,
+        "ion_temperature_keV": 17.262402810854773,
+        "minor_radius_m": 0.9508043624264303,
+        "neutron_power_MW_uniform": 801.1363636363639,
+        "neutron_wall_load_MW_m2_circular_proxy": 4.489462749765932,
+        "pressure_Pa": 1211831.3227294066,
+        "radial_compression_ratio": 1.1111111111111112,
+        "radial_squeeze_fraction": 0.1,
+        "thermal_energy_MJ": 154.2079185183235,
+        "volume_m3": 84.83464413237598
+      },
+      "transient_confinement_retention": 1.0
+    }
+  ],
+  "favorable_sensitivity_only": {
+    "best_case": {
+      "H_ISS04": 1.4,
+      "authority": "analytical_empirical_low_authority_screen__not_equilibrium_or_ignition_evidence",
+      "axis_field_T": 15.0,
+      "base_beta": 0.011936957296877555,
+      "ignition": {
+        "H_ISS04": 1.4,
+        "effective_tau_E_s_after_retention": 1.1359173602805026,
+        "iota_2over3": 0.9,
+        "iss04_tau_E_s": 1.1359173602805026,
+        "minimum_retention_if_H_is_fixed": 0.7432136334870576,
+        "proxy_pass": true,
+        "required_H_if_retention_is_one": 1.0404990868818806,
+        "required_tau_E_s_optimistic": 0.8442292686750994,
+        "tau_ratio_to_optimistic_ignition": 1.3455081485899762,
+        "transient_confinement_retention": 1.0
+      },
+      "interpretation": {
+        "compression_is_not_credited_for_phase_heating": true,
+        "distance_from_proxy_ratio_1_fraction": 0.34550814858997625,
+        "low_authority_proxy_pass": true
+      },
+      "iota_2over3": 0.9,
+      "radial_squeeze_fraction": 0.0,
+      "state": {
+        "alpha_heating_MW_uniform": 198.86363636363635,
+        "beta_at_fixed_B": 0.011936957296877555,
+        "fusion_power_MW_uniform": 1000.0,
+        "ion_density_m3": 2.2233336968266498e+20,
+        "ion_temperature_keV": 15.0,
+        "minor_radius_m": 1.0564492915849226,
+        "neutron_power_MW_uniform": 801.1363636363635,
+        "neutron_wall_load_MW_m2_circular_proxy": 4.040516474789336,
+        "pressure_Pa": 1068651.9895921494,
+        "radial_compression_ratio": 1.0,
+        "radial_squeeze_fraction": 0.0,
+        "thermal_energy_MJ": 167.88650229334363,
+        "volume_m3": 104.73412855848888
+      },
+      "transient_confinement_retention": 1.0
+    },
+    "warning": "H>1 and/or retention assumptions are sensitivity variables, not earned SFR-2 performance."
+  },
+  "geometry": {
+    "circular_torus_surface_area_m2": 198.2757324800001,
+    "circular_torus_volume_m3": 104.73412855848888,
+    "equivalent_major_radius_m": 4.754021812132152,
+    "screening_aspect_ratio": 4.5,
+    "screening_minor_radius_m": 1.0564492915849226,
+    "sector_lengths_ft": [
+      23.0,
+      26.0,
+      23.0,
+      26.0
+    ],
+    "sector_lengths_m": [
+      7.010400000000001,
+      7.9248,
+      7.010400000000001,
+      7.9248
+    ],
+    "total_axis_path_m": 29.870400000000004
+  },
+  "high_authority_required": [
+    "3-D finite-beta equilibrium for the ABAB boundary/axis",
+    "magnetic-island/stochastic-region assessment during the full actuation cycle",
+    "ideal/resistive MHD stability under time-varying perturbation",
+    "neoclassical/bootstrap plus nonlinear gyrokinetic/profile transport",
+    "alpha-particle orbit confinement during actuation",
+    "self-consistent RF/wave deposition and phase-control calculation",
+    "coil/current/field/stress/quench design proving the demanded fields are physically realizable",
+    "3-D edge/divertor/first-wall transient heat-flux solution",
+    "full 3-D neutronics/TBR/shielding and integrated plant closure",
+    "hardware experiment"
+  ],
+  "model_rules": {
+    "compression_thermodynamics": "ideal monatomic adiabatic upper-bound at fixed axis B",
+    "confinement_model": "ISS04 empirical scaling; extrapolated; not dynamic-MHD evidence",
+    "dynamic_phase_heating_credit": 0.0,
+    "ignition_balance": "thermal energy / alpha heating only; radiation/ash/transport channels omitted beyond ISS04 proxy",
+    "magnetic_flux_compression_credit": 0.0,
+    "sector_interpretation": "four consecutive arc-length sectors of one closed toroidal plasma system",
+    "staggering_confinement_credit": 0.0
+  },
+  "primary_screen": {
+    "best_case": {
+      "H_ISS04": 1.0,
+      "authority": "analytical_empirical_low_authority_screen__not_equilibrium_or_ignition_evidence",
+      "axis_field_T": 15.0,
+      "base_beta": 0.011936957296877555,
+      "ignition": {
+        "H_ISS04": 1.0,
+        "effective_tau_E_s_after_retention": 0.811369543057502,
+        "iota_2over3": 0.9,
+        "iss04_tau_E_s": 0.811369543057502,
+        "minimum_retention_if_H_is_fixed": null,
+        "proxy_pass": false,
+        "required_H_if_retention_is_one": 1.0404990868818804,
+        "required_tau_E_s_optimistic": 0.8442292686750994,
+        "tau_ratio_to_optimistic_ignition": 0.9610772489928403,
+        "transient_confinement_retention": 1.0
+      },
+      "interpretation": {
+        "compression_is_not_credited_for_phase_heating": true,
+        "distance_from_proxy_ratio_1_fraction": -0.038922751007159695,
+        "low_authority_proxy_pass": false
+      },
+      "iota_2over3": 0.9,
+      "radial_squeeze_fraction": 0.0,
+      "state": {
+        "alpha_heating_MW_uniform": 198.86363636363635,
+        "beta_at_fixed_B": 0.011936957296877555,
+        "fusion_power_MW_uniform": 1000.0,
+        "ion_density_m3": 2.2233336968266498e+20,
+        "ion_temperature_keV": 15.0,
+        "minor_radius_m": 1.0564492915849226,
+        "neutron_power_MW_uniform": 801.1363636363635,
+        "neutron_wall_load_MW_m2_circular_proxy": 4.040516474789336,
+        "pressure_Pa": 1068651.9895921494,
+        "radial_compression_ratio": 1.0,
+        "radial_squeeze_fraction": 0.0,
+        "thermal_energy_MJ": 167.88650229334363,
+        "volume_m3": 104.73412855848888
+      },
+      "transient_confinement_retention": 1.0
+    },
+    "best_dynamic_compression_case": {
+      "H_ISS04": 1.0,
+      "authority": "analytical_empirical_low_authority_screen__not_equilibrium_or_ignition_evidence",
+      "axis_field_T": 15.0,
+      "base_beta": 0.010674284606489375,
+      "ignition": {
+        "H_ISS04": 1.0,
+        "effective_tau_E_s_after_retention": 0.7182363848148943,
+        "iota_2over3": 0.9,
+        "iss04_tau_E_s": 0.7182363848148943,
+        "minimum_retention_if_H_is_fixed": null,
+        "proxy_pass": false,
+        "required_H_if_retention_is_one": 1.1254857485595913,
+        "required_tau_E_s_optimistic": 0.8083648152061259,
+        "tau_ratio_to_optimistic_ignition": 0.8885052532027267,
+        "transient_confinement_retention": 1.0
+      },
+      "interpretation": {
+        "compression_is_not_credited_for_phase_heating": true,
+        "distance_from_proxy_ratio_1_fraction": -0.11149474679727334,
+        "low_authority_proxy_pass": false
+      },
+      "iota_2over3": 0.9,
+      "radial_squeeze_fraction": 0.05,
+      "state": {
+        "alpha_heating_MW_uniform": 198.86363636363646,
+        "beta_at_fixed_B": 0.012664656853925203,
+        "fusion_power_MW_uniform": 1000.0000000000006,
+        "ion_density_m3": 2.202939537415748e+20,
+        "ion_temperature_keV": 16.061759497754224,
+        "minor_radius_m": 1.0036268270056765,
+        "neutron_power_MW_uniform": 801.136363636364,
+        "neutron_wall_load_MW_m2_circular_proxy": 4.253175236620357,
+        "pressure_Pa": 1133799.0417364768,
+        "radial_compression_ratio": 1.0526315789473684,
+        "radial_squeeze_fraction": 0.05,
+        "thermal_energy_MJ": 160.75436666030922,
+        "volume_m3": 94.52255102403622
+      },
+      "transient_confinement_retention": 1.0
+    },
+    "definition": "H_ISS04=1.0 and transient_confinement_retention=1.0",
+    "verdict": "NO_PRIMARY_CASE_CROSSES_OPTIMISTIC_IGNITION_PROXY"
+  },
+  "program": "IX-StellaratorForge",
+  "promotion_status": {
+    "SFR2_G0_SPEC": "PASS_SPEC_ONLY",
+    "SFR2_G1_DYNAMIC_EQUILIBRIUM": "NOT_RUN",
+    "SFR2_G2_COILS_AND_FIELD": "NOT_RUN",
+    "SFR2_G3_PARTICLE_AND_ALPHA_ORBITS": "NOT_RUN",
+    "SFR2_G4_TRANSPORT_AND_MHD": "NOT_RUN",
+    "SFR2_G5_EDGE_AND_TRANSIENT_HEAT_FLUX": "NOT_RUN",
+    "SFR2_G6_RF_AND_PHASE_CONTROL": "NOT_RUN",
+    "SFR2_G7_NEUTRONICS_AND_TBR": "NOT_RUN",
+    "SFR2_G8_INTEGRATED_BURN_AND_PLANT": "NOT_RUN",
+    "SFR2_G9_HARDWARE": "NOT_RUN"
+  },
+  "release": "0.5.0",
+  "rifling_sensitivity_at_max_B_no_compression": [
+    {
+      "H_ISS04": 1.0,
+      "authority": "analytical_empirical_low_authority_screen__not_equilibrium_or_ignition_evidence",
+      "axis_field_T": 15.0,
+      "base_beta": 0.011936957296877555,
+      "ignition": {
+        "H_ISS04": 1.0,
+        "effective_tau_E_s_after_retention": 0.6871021144988233,
+        "iota_2over3": 0.6,
+        "iss04_tau_E_s": 0.6871021144988233,
+        "minimum_retention_if_H_is_fixed": null,
+        "proxy_pass": false,
+        "required_H_if_retention_is_one": 1.2286809352797374,
+        "required_tau_E_s_optimistic": 0.8442292686750994,
+        "tau_ratio_to_optimistic_ignition": 0.8138809444229939,
+        "transient_confinement_retention": 1.0
+      },
+      "interpretation": {
+        "compression_is_not_credited_for_phase_heating": true,
+        "distance_from_proxy_ratio_1_fraction": -0.18611905557700614,
+        "low_authority_proxy_pass": false
+      },
+      "iota_2over3": 0.6,
+      "radial_squeeze_fraction": 0.0,
+      "state": {
+        "alpha_heating_MW_uniform": 198.86363636363635,
+        "beta_at_fixed_B": 0.011936957296877555,
+        "fusion_power_MW_uniform": 1000.0,
+        "ion_density_m3": 2.2233336968266498e+20,
+        "ion_temperature_keV": 15.0,
+        "minor_radius_m": 1.0564492915849226,
+        "neutron_power_MW_uniform": 801.1363636363635,
+        "neutron_wall_load_MW_m2_circular_proxy": 4.040516474789336,
+        "pressure_Pa": 1068651.9895921494,
+        "radial_compression_ratio": 1.0,
+        "radial_squeeze_fraction": 0.0,
+        "thermal_energy_MJ": 167.88650229334363,
+        "volume_m3": 104.73412855848888
+      },
+      "transient_confinement_retention": 1.0
+    },
+    {
+      "H_ISS04": 1.0,
+      "authority": "analytical_empirical_low_authority_screen__not_equilibrium_or_ignition_evidence",
+      "axis_field_T": 15.0,
+      "base_beta": 0.011936957296877555,
+      "ignition": {
+        "H_ISS04": 1.0,
+        "effective_tau_E_s_after_retention": 0.7319298662129446,
+        "iota_2over3": 0.7,
+        "iss04_tau_E_s": 0.7319298662129446,
+        "minimum_retention_if_H_is_fixed": null,
+        "proxy_pass": false,
+        "required_H_if_retention_is_one": 1.1534291844698175,
+        "required_tau_E_s_optimistic": 0.8442292686750994,
+        "tau_ratio_to_optimistic_ignition": 0.8669799702178141,
+        "transient_confinement_retention": 1.0
+      },
+      "interpretation": {
+        "compression_is_not_credited_for_phase_heating": true,
+        "distance_from_proxy_ratio_1_fraction": -0.13302002978218586,
+        "low_authority_proxy_pass": false
+      },
+      "iota_2over3": 0.7,
+      "radial_squeeze_fraction": 0.0,
+      "state": {
+        "alpha_heating_MW_uniform": 198.86363636363635,
+        "beta_at_fixed_B": 0.011936957296877555,
+        "fusion_power_MW_uniform": 1000.0,
+        "ion_density_m3": 2.2233336968266498e+20,
+        "ion_temperature_keV": 15.0,
+        "minor_radius_m": 1.0564492915849226,
+        "neutron_power_MW_uniform": 801.1363636363635,
+        "neutron_wall_load_MW_m2_circular_proxy": 4.040516474789336,
+        "pressure_Pa": 1068651.9895921494,
+        "radial_compression_ratio": 1.0,
+        "radial_squeeze_fraction": 0.0,
+        "thermal_energy_MJ": 167.88650229334363,
+        "volume_m3": 104.73412855848888
+      },
+      "transient_confinement_retention": 1.0
+    },
+    {
+      "H_ISS04": 1.0,
+      "authority": "analytical_empirical_low_authority_screen__not_equilibrium_or_ignition_evidence",
+      "axis_field_T": 15.0,
+      "base_beta": 0.011936957296877555,
+      "ignition": {
+        "H_ISS04": 1.0,
+        "effective_tau_E_s_after_retention": 0.7731186805143913,
+        "iota_2over3": 0.8,
+        "iss04_tau_E_s": 0.7731186805143913,
+        "minimum_retention_if_H_is_fixed": null,
+        "proxy_pass": false,
+        "required_H_if_retention_is_one": 1.091978877180144,
+        "required_tau_E_s_optimistic": 0.8442292686750994,
+        "tau_ratio_to_optimistic_ignition": 0.9157686296847937,
+        "transient_confinement_retention": 1.0
+      },
+      "interpretation": {
+        "compression_is_not_credited_for_phase_heating": true,
+        "distance_from_proxy_ratio_1_fraction": -0.08423137031520633,
+        "low_authority_proxy_pass": false
+      },
+      "iota_2over3": 0.8,
+      "radial_squeeze_fraction": 0.0,
+      "state": {
+        "alpha_heating_MW_uniform": 198.86363636363635,
+        "beta_at_fixed_B": 0.011936957296877555,
+        "fusion_power_MW_uniform": 1000.0,
+        "ion_density_m3": 2.2233336968266498e+20,
+        "ion_temperature_keV": 15.0,
+        "minor_radius_m": 1.0564492915849226,
+        "neutron_power_MW_uniform": 801.1363636363635,
+        "neutron_wall_load_MW_m2_circular_proxy": 4.040516474789336,
+        "pressure_Pa": 1068651.9895921494,
+        "radial_compression_ratio": 1.0,
+        "radial_squeeze_fraction": 0.0,
+        "thermal_energy_MJ": 167.88650229334363,
+        "volume_m3": 104.73412855848888
+      },
+      "transient_confinement_retention": 1.0
+    },
+    {
+      "H_ISS04": 1.0,
+      "authority": "analytical_empirical_low_authority_screen__not_equilibrium_or_ignition_evidence",
+      "axis_field_T": 15.0,
+      "base_beta": 0.011936957296877555,
+      "ignition": {
+        "H_ISS04": 1.0,
+        "effective_tau_E_s_after_retention": 0.811369543057502,
+        "iota_2over3": 0.9,
+        "iss04_tau_E_s": 0.811369543057502,
+        "minimum_retention_if_H_is_fixed": null,
+        "proxy_pass": false,
+        "required_H_if_retention_is_one": 1.0404990868818804,
+        "required_tau_E_s_optimistic": 0.8442292686750994,
+        "tau_ratio_to_optimistic_ignition": 0.9610772489928403,
+        "transient_confinement_retention": 1.0
+      },
+      "interpretation": {
+        "compression_is_not_credited_for_phase_heating": true,
+        "distance_from_proxy_ratio_1_fraction": -0.038922751007159695,
+        "low_authority_proxy_pass": false
+      },
+      "iota_2over3": 0.9,
+      "radial_squeeze_fraction": 0.0,
+      "state": {
+        "alpha_heating_MW_uniform": 198.86363636363635,
+        "beta_at_fixed_B": 0.011936957296877555,
+        "fusion_power_MW_uniform": 1000.0,
+        "ion_density_m3": 2.2233336968266498e+20,
+        "ion_temperature_keV": 15.0,
+        "minor_radius_m": 1.0564492915849226,
+        "neutron_power_MW_uniform": 801.1363636363635,
+        "neutron_wall_load_MW_m2_circular_proxy": 4.040516474789336,
+        "pressure_Pa": 1068651.9895921494,
+        "radial_compression_ratio": 1.0,
+        "radial_squeeze_fraction": 0.0,
+        "thermal_energy_MJ": 167.88650229334363,
+        "volume_m3": 104.73412855848888
+      },
+      "transient_confinement_retention": 1.0
+    }
+  ]
+}

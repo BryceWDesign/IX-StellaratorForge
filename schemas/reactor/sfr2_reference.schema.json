@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/BryceWDesign/IX-StellaratorForge/schemas/reactor/sfr2_reference.schema.json",
+  "title": "IX-StellaratorForge SFR-2 Rev A assumption-breaker configuration",
+  "type": "object",
+  "required": [
+    "as_of",
+    "claim_boundary",
+    "design_id",
+    "dynamic_actuation",
+    "maturity",
+    "program",
+    "promotion_status",
+    "study_envelope",
+    "topology"
+  ],
+  "properties": {
+    "design_id": {"const": "SFR-2-RevA"},
+    "program": {"const": "IX-StellaratorForge"},
+    "topology": {
+      "type": "object",
+      "required": ["independent_plasma_machines", "plasma_topology"],
+      "properties": {
+        "independent_plasma_machines": {"const": false},
+        "plasma_topology": {"const": "one_continuous_closed_toroidal_system"}
+      }
+    },
+    "study_envelope": {
+      "type": "object",
+      "required": [
+        "H_ISS04_sweep",
+        "axis_field_T_sweep",
+        "base_temperature_keV",
+        "iota_2over3_sweep",
+        "radial_squeeze_fraction_sweep",
+        "screening_aspect_ratio",
+        "sector_lengths_ft",
+        "sector_pattern",
+        "target_fusion_power_MW",
+        "transient_confinement_retention_sweep"
+      ],
+      "properties": {
+        "sector_lengths_ft": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 4,
+          "prefixItems": [
+            {"const": 23.0}, {"const": 26.0}, {"const": 23.0}, {"const": 26.0}
+          ]
+        },
+        "sector_pattern": {"const": "ABAB"},
+        "screening_aspect_ratio": {"type": "number", "exclusiveMinimum": 1.0},
+        "base_temperature_keV": {"type": "number", "exclusiveMinimum": 0.0},
+        "target_fusion_power_MW": {"type": "number", "exclusiveMinimum": 0.0}
+      }
+    }
+  }
+}

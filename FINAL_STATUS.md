@@ -1,44 +1,92 @@
-# IX-StellaratorForge v0.4.0 — Maximum Computational Closure status
+# IX-StellaratorForge v0.5.0 — SFR-2 assumption-breaker integration
 
-## Current verdict
+## Current repository verdict
 
-`MAXIMUM_IN_REPO_COMPUTATIONAL_CLOSURE_COMPLETE__PRODUCTION_SOLVER_AND_HARDWARE_GATES_REMAIN`
+`GREEN` means the preserved SFR-1 v0.4 evidence and the new SFR-2 Rev A low-authority study reproduce from committed inputs and code.
 
-This release resolves every remaining item **to the highest authority actually executable inside the repository/build runtime** and packages the production-solver jump without inventing its output.
+It does **not** mean fusion, ignition, net energy, net electricity, dynamic MHD stability, a buildable high-field magnet, tritium self-sufficiency, or hardware operation has been demonstrated.
 
-## What was newly executed
+## What v0.5.0 adds
 
-- exact VMEC-family boundary/input generation for the 2FP, 3FP, 4FP and 6FP SFR-1 seed league;
-- 40-case classical helical TF+helix Biot-Savart / field-line architecture scan;
-- independent continuous winding-surface current-potential reconstruction with held-out validation;
-- geometry-level HTS centerline length/bend/strain screens;
-- exact D-T source, tritium burn and blanket-coverage/TBR constraints;
-- conditional net-electric thresholds tied to the actual in-repo burn screen;
-- production adapters for DESC, VMEC++, OpenMC proxy construction and OpenMC 3-D TBR statepoint analysis.
+v0.5.0 preserves SFR-1 Rev A unchanged as the steady-state reference program and adds **SFR-2 Rev A** as a separate assumption-breaker candidate.
 
-## Key negative result
+SFR-2 encodes the user-specified `23 / 26 / 23 / 26 ft` pattern as four consecutive sectors of **one closed toroidal plasma system**. It does not model four independent plasma machines connected by ducts.
 
-No tested low/intermediate-authority magnet architecture is promoted.
+The new implementation includes:
 
-The best classical-helical scan keeps the radial-excursion screen but generates only ~0.0389 mean rotational transform, far below the 0.25 minimum screening target. The current-potential fits also fail the held-out 0.5% RMS `Bn/B0` threshold for every 2/3/4/6FP reduced boundary.
+- deterministic 23/26/23/26 geometry bookkeeping;
+- an explicit 4.5 aspect-ratio circular-torus screening proxy;
+- Bosch-Hale D-T reactivity;
+- an ideal monatomic radial-compression upper-bound with no magnetic-field amplification credit;
+- ISS04 confinement sensitivity to axis field and rotational transform;
+- a target-power-matched 1 GW comparison so compression cases are not rewarded merely for producing more fusion power in an unconstrained uniform model;
+- zero numerical credit for unmodeled RF resonance, magnetic pumping, traveling-wave phase heating, or flux-compression field gain;
+- SFR2-G0 through SFR2-G9 promotion gates;
+- reproducibility tests and tracked JSON/Markdown results.
 
-This changes the design instruction: **do not force a magnet onto the current reduced plasma boundary. Solve finite-beta equilibrium and coil geometry as a co-design problem.**
+## Primary SFR-2 result
 
-## Plant closure result
+The primary screen is defined as:
 
-The uniform 6 T / 3% beta / 15 keV screen remains ~704.57 MW fusion and ~204.10 MWe under the current plant assumptions. The 300 MWe floor requires ~913.04 MW fusion, or ~3.415% beta under the deliberately simple fixed-temperature uniform scaling. The 1 GW target corresponds to ~3.574% beta in that same screen and yields 340 MWe conditional net power.
+- `H_ISS04 = 1.0`;
+- no assumed transient confinement penalty;
+- axis-field sweep: 6, 8, 10, 12, 15 T;
+- `iota(2/3)` sweep: 0.6, 0.7, 0.8, 0.9;
+- radial squeeze: 0%, 5%, 10%;
+- each case solved for the base beta that makes the uniform compressed state equal the same 1,000 MW fusion-power target.
 
-These are algebraic/screening thresholds, not a net-electric reactor prediction.
+**Result:** `NO_PRIMARY_CASE_CROSSES_OPTIMISTIC_IGNITION_PROXY`.
 
-## Remaining authority jumps
+The strongest primary point is the **uncompressed** 15 T / `iota=0.9` case. Its ISS04-to-alpha-only required confinement ratio is approximately **0.9611**, corresponding to an `H_ISS04` requirement of approximately **1.0405** in this optimistic screen.
 
-- **G1:** execute and converge finite-beta DESC; independently cross-check finalists with VMEC++.
-- **G2:** optimize coils with the solved equilibrium; qualify REBCO Ic/strain, EM loads/support FEA, manufacturing tolerance and quench.
-- **G3/G4:** alpha/guiding-center, neoclassical/bootstrap, gyrokinetic and profile-transport closure.
-- **G5:** 3-D edge/divertor/SOL heat-flux solution.
-- **G6:** 3-D RF propagation/deposition and wall-plug accounting.
-- **G7:** full 3-D OpenMC/DAGMC/ParaStell-class neutronics including ports/penetrations.
-- **G8:** couple real G1–G7 outputs into thermal-hydraulic and plant balance.
-- **G9:** physical hardware demonstration.
+That is **not “3.9% away from fusion”**. It means only that the empirical confinement estimate is about 3.9% below the deliberately optimistic alpha-only balance for that low-authority point.
 
-No production-solver or hardware result is fabricated in this release.
+## Important negative result: compression is not automatically beneficial
+
+The updated implementation corrects the earlier conversational exploration.
+
+At fixed 1 GW target power and `H_ISS04=1`, radial compression increases density and temperature but shrinks the minor radius. In ISS04 this confinement-size penalty dominates the first-order benefit for the declared SFR-2 scan:
+
+- 0% squeeze, 15 T, `iota=0.9`: ratio ~0.9611;
+- 5% squeeze: ratio ~0.8885;
+- 10% squeeze: ratio ~0.8164.
+
+Therefore v0.5.0 does **not** claim the traveling-compression idea improves ignition likelihood. Dynamic compression remains scientifically open because ISS04 is not a dynamic-MHD model and the repository gives phase-controlled heating zero numerical credit.
+
+## Magnetic-rifling sensitivity
+
+Within ISS04 only, increasing `iota(2/3)` improves the confinement proxy. At 15 T and no compression, the target-power-matched ratios rise monotonically from about 0.814 at `iota=0.6` to about 0.961 at `iota=0.9`.
+
+This does not prove that an ABAB 3-D equilibrium with `iota=0.9` exists or is stable. Magnetic islands, stochasticity, coil feasibility and transport remain unresolved.
+
+## Favorable sensitivity is not earned performance
+
+The repository also evaluates `H_ISS04 = 1.2` and `1.4` as sensitivity variables. Some favorable cases cross the low-authority proxy. Those are **scenario studies only** and cannot be quoted as achieved SFR-2 confinement.
+
+## SFR-1 status is preserved
+
+All v0.4 SFR-1 evidence remains intact:
+
+- 87-row system design inventory;
+- finite-pressure DESC/VMEC++ seed pack;
+- rejected low/intermediate coil architectures retained as negative evidence;
+- HTS geometry-only screens;
+- TBR coverage bounds and OpenMC execution path;
+- conditional plant thresholds;
+- all high-authority production-solver and hardware gates still open where evidence is absent.
+
+v0.5.0 does not rewrite SFR-1 history to make SFR-2 look successful.
+
+## SFR-2 authority jumps still required
+
+1. Dynamic finite-beta ABAB equilibrium.
+2. Coil/current solution and high-field structural/strain/quench feasibility.
+3. Thermal and alpha-particle orbit confinement through the actuation cycle.
+4. Neoclassical/bootstrap, gyrokinetic/profile transport, island/stochastic and ideal/resistive MHD assessment.
+5. 3-D edge/divertor transient heat-flux closure.
+6. Real RF/wave deposition and phase-control calculation.
+7. Full 3-D neutronics/TBR/shielding.
+8. Integrated burn/thermal/plant calculation using G1–G7 outputs.
+9. Physical hardware evidence.
+
+The repository explicitly keeps SFR2-G1 through SFR2-G9 at `NOT_RUN`.

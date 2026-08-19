@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.5.0 — 2026-08-18 — SFR-2 Dynamic-Compression Assumption Breaker
+
+- Preserved SFR-1 Rev A and all v0.4 evidence unchanged as the steady-state reference branch.
+- Added SFR-2 Rev A, interpreting the user-specified 23/26/23/26 ft pattern as four consecutive sectors of one closed toroidal plasma system rather than four independent reactors connected by plasma ducts.
+- Added deterministic geometry bookkeeping, Bosch-Hale D-T burn calculation, ideal radial-compression upper-bound thermodynamics, target-power matching, ISS04 rotational-transform sensitivity and explicit transient-confinement sensitivity.
+- Assigned zero numerical credit to unmodeled traveling-wave/RF heating, magnetic pumping, ABAB staggering advantage, or magnetic-flux-compression field amplification.
+- Added SFR2-G0 through SFR2-G9 promotion gates; only G0 specification is passed and every physics/engineering/hardware gate remains NOT_RUN.
+- Added a reproducible negative result: with H_ISS04=1.0 and equal 1 GW target power, no declared SFR-2 point crosses the optimistic alpha-only ignition proxy; radial compression worsens the ISS04 proxy in the tested target-power-matched cases.
+- Superseded earlier conversational percentage estimates with repository-generated equations/results rather than copying informal numbers into evidence.
+- Added SFR-2 schema, technical-basis provenance, documentation, tests, CLI access, release-generation integration and v0.5 quality-gate checks.
+
 ## 0.4.0 — 2026-08-16 — SFR-1 Maximum Computational Closure
 
 - Added exact SFR-1 reduced-boundary to VMEC Fourier conversion and generated finite-pressure 2FP/3FP/4FP/6FP solver inputs.

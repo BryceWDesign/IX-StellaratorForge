@@ -2,13 +2,32 @@
 
 **Evidence-driven stellarator fusion reactor design and computational co-design program.**
 
-IX-StellaratorForge preserves the original `IX-Fusion` research lineage and builds the reactor-level program above it. The first reference architecture is **SFR-1 Rev A**.
+IX-StellaratorForge preserves the original `IX-Fusion` research lineage and builds a reactor-level evidence program above it. **SFR-1 Rev A** remains the steady-state reference architecture; **SFR-2 Rev A** is a separate dynamic-compression assumption breaker introduced in v0.5.0.
 
-> **Release:** `0.4.0 — SFR-1 Maximum Computational Closure`
+> **Release:** `0.5.0 — SFR-2 Dynamic-Compression Assumption Breaker`
 >
-> **Current verdict:** `MAXIMUM_IN_REPO_COMPUTATIONAL_CLOSURE_COMPLETE__PRODUCTION_SOLVER_AND_HARDWARE_GATES_REMAIN`
+> **Repository verdict:** `GREEN` when the preserved SFR-1 v0.4 evidence and the SFR-2 v0.5 low-authority screen both reproduce.
 >
-> SFR-1 is a preconceptual computational reactor program. It does **not** claim a demonstrated fusion reactor, ignition, tritium self-sufficiency, net electricity, or construction readiness.
+> **SFR-2 primary verdict:** `NO_PRIMARY_CASE_CROSSES_OPTIMISTIC_IGNITION_PROXY`
+>
+> Neither SFR-1 nor SFR-2 claims demonstrated ignition, net energy, tritium self-sufficiency, net electricity, buildable hardware, or reactor feasibility.
+
+
+## What v0.5.0 adds
+
+v0.5.0 does **not** rewrite SFR-1. It adds SFR-2 Rev A as a separately gated assumption-breaker study built from the 23 / 26 / 23 / 26 ft concept.
+
+| SFR-2 question | v0.5 result |
+|---|---|
+| Four machines or one plasma system? | **One continuous closed toroidal plasma system.** The four dimensions are consecutive ABAB sector arc lengths, not independent plasmas connected by ducts. |
+| Does the 23/26 staggering itself earn confinement credit? | **No.** v0.5 assigns zero benefit to staggering until a real 3-D equilibrium/transport calculation demonstrates one. |
+| Does “magnetic rifling” help in the empirical screen? | **Yes, monotonically inside ISS04.** At the highest declared 15 T field with no compression, the target-power-matched ratio rises from ~0.814 at `iota=0.6` to ~0.961 at `iota=0.9`. This is not proof that such a field is realizable. |
+| Does radial compression automatically improve the ignition screen? | **No.** At the same 1 GW target and `H_ISS04=1`, 0%, 5%, and 10% squeeze give approximately 0.961, 0.889, and 0.816 respectively at the most favorable declared field/transform point. The smaller minor radius penalizes ISS04 confinement. |
+| Is phase-controlled traveling-wave/RF heating credited? | **No.** Numerical credit is exactly zero until a self-consistent wave/plasma calculation exists. |
+| Is magnetic-flux compression credited? | **No.** Axis field is held fixed in the compression screen. |
+| Did any primary SFR-2 point cross the optimistic ignition proxy? | **No.** The best primary case requires `H_ISS04 ≈ 1.0405` in an already optimistic alpha-only balance. That is not “4% away from fusion.” |
+
+The implementation intentionally supersedes earlier conversational percentages. Only repository-generated results count as SFR-2 evidence. See `docs/reactor/12_SFR2_DYNAMIC_COMPRESSION.md` and `results/sfr2/SFR2_REVA_SCREEN_RESULT.md`.
 
 ## What v0.4.0 resolves
 
@@ -64,6 +83,7 @@ The adapters **stop** if the real dependency is unavailable. They never silently
 ```bash
 python scripts/run_computational_closure.py
 python scripts/generate_v040_evidence.py
+python scripts/run_sfr2_screen.py
 python check_stellarforge.py
 ```
 
@@ -94,7 +114,7 @@ No core is privileged: 2FP QA reference, 3FP QI, 4FP QI/piecewise-omnigenous, 6F
 
 “Full” means complete at the system-architecture inventory level. It is **not** falsely labeled a procurement/fabrication BOM: final quantities, nuclear compositions/enrichment, conductor sizing/current, pressure ratings, safety setpoints, vendors, part numbers and drawings remain solver/hardware dependent.
 
-## Evidence gates after v0.4
+## Evidence gates after v0.5
 
 1. **G1 equilibrium — production execution open.** Inputs are complete; real finite-beta DESC and VMEC++ convergence/cross-code evidence has not been executed in this build runtime.
 2. **G2 coils — new architectures executed, no promoted set.** Low/intermediate tests reject current fixed boundary/coil combinations; true plasma/coil co-optimization, REBCO Ic/strain over winding packs, loads/support FEA, tolerances and quench remain open.
@@ -105,13 +125,15 @@ No core is privileged: 2FP QA reference, 3FP QI, 4FP QI/piecewise-omnigenous, 6F
 7. **G8 system — conditional algebra closed; coupled prediction waits on G1–G7.**
 8. **G9 hardware — open by definition.**
 
+SFR-2 has its own independent gates. Only `SFR2_G0_SPEC` is `PASS_SPEC_ONLY`; dynamic equilibrium, coils/field, particle and alpha orbits, transport/MHD, transient edge heat flux, RF/phase control, neutronics/TBR, integrated burn/plant, and hardware are all `NOT_RUN`. SFR-1 evidence cannot silently promote SFR-2.
+
 ## Quality gate
 
 ```bash
 python check_stellarforge.py
 ```
 
-`IX-STELLARATORFORGE: GREEN` means the release, tests, PoC, BOM, license, tracked computations and solver contracts reproduce. **It never means fusion was achieved.**
+`IX-STELLARATORFORGE: GREEN` means release integrity, tests, preserved SFR-1 evidence, the SFR-2 deterministic screen, license, tracked computations and solver contracts reproduce. **It never means fusion was achieved.**
 
 ## License and permission contact
 
@@ -125,6 +147,9 @@ A LinkedIn connection, message, discussion, download, citation or repository acc
 
 - `FINAL_STATUS.md`
 - `PROOF_OF_CONCEPT.md`
+- `docs/reactor/12_SFR2_DYNAMIC_COMPRESSION.md`
+- `docs/reactor/13_SFR2_PROMOTION_GATES.md`
+- `results/sfr2/SFR2_REVA_SCREEN_RESULT.md`
 - `docs/closure/06_MAXIMUM_COMPUTATIONAL_CLOSURE.md`
 - `results/computational_closure/SFR1_V040_RESULT.md`
 - `BOM/SFR1_FULL_SYSTEM_BOM.md`
