@@ -17,7 +17,7 @@ from math import cos, exp, pi, sin, sqrt
 from typing import Any
 
 import numpy as np
-
+from .evidence_canonical import canonical_evidence
 AUTHORITY = "LOW__synthetic_linear_harmonic_controllability__not_physical_confinement"
 PASS_VERDICT = (
     "SYNTHETIC_HARMONIC_CONTROL_DEMONSTRATED__PHYSICAL_CONFINEMENT_UNPROVEN"
@@ -254,7 +254,7 @@ def _evaluate_scenario(
         "fusion_or_ignition_credit": 0.0,
     }
 
-
+@canonical_evidence
 def run_sfr3_field_integrity_screen(raw: dict[str, Any]) -> dict[str, Any]:
     """Run the declared SFR-3 screen and return a deterministic evidence artifact."""
     errors = validate_sfr3_config(raw)

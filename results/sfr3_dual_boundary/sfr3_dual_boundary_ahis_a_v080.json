@@ -151,7 +151,7 @@
         "available": true,
         "physical_confinement_credit": 0.0,
         "requested": true,
-        "synthetic_rms_reduction_fraction": 0.6546225715726142
+        "synthetic_rms_reduction_fraction": 0.6546225716
       }
     },
     {
@@ -404,41 +404,41 @@
         "heat_flux_MW_m2": 0.25,
         "layers_plasma_to_coolant": [
           {
-            "cold_face_temperature_C": 406.8253968253968,
+            "cold_face_temperature_C": 406.8253968,
             "declared_max_service_temperature_C": 1600.0,
-            "hot_face_temperature_C": 420.7142857142857,
+            "hot_face_temperature_C": 420.7142857,
             "layer_id": "segmented_tungsten_armor",
             "material": "segmented tungsten; long-fiber Wf-W retained as replaceable qualification coupon",
-            "temperature_rise_K": 13.88888888888889,
+            "temperature_rise_K": 13.88888889,
             "temperature_screen_pass": true,
-            "thermal_resistance_m2K_W": 5.555555555555556e-05
+            "thermal_resistance_m2K_W": 5.555555556e-05
           },
           {
-            "cold_face_temperature_C": 395.7142857142857,
+            "cold_face_temperature_C": 395.7142857,
             "declared_max_service_temperature_C": 800.0,
-            "hot_face_temperature_C": 406.8253968253968,
+            "hot_face_temperature_C": 406.8253968,
             "layer_id": "graded_w_rafm_transition",
             "material": "functionally graded tungsten-to-RAFM transition candidate",
-            "temperature_rise_K": 11.111111111111112,
+            "temperature_rise_K": 11.11111111,
             "temperature_screen_pass": true,
-            "thermal_resistance_m2K_W": 4.4444444444444447e-05
+            "thermal_resistance_m2K_W": 4.444444444e-05
           },
           {
             "cold_face_temperature_C": 360.0,
             "declared_max_service_temperature_C": 550.0,
-            "hot_face_temperature_C": 395.7142857142857,
+            "hot_face_temperature_C": 395.7142857,
             "layer_id": "helium_cooled_rafm_first_wall",
             "material": "ODS-Eurofer or qualified RAFM first-wall structure",
-            "temperature_rise_K": 35.714285714285715,
+            "temperature_rise_K": 35.71428571,
             "temperature_screen_pass": true,
-            "thermal_resistance_m2K_W": 0.00014285714285714287
+            "thermal_resistance_m2K_W": 0.0001428571429
           }
         ],
-        "plasma_facing_surface_temperature_C": 420.7142857142857,
-        "raw_cte_mismatch_strain_proxy": 0.000530357142857143,
+        "plasma_facing_surface_temperature_C": 420.7142857,
+        "raw_cte_mismatch_strain_proxy": 0.0005303571429,
         "raw_cte_mismatch_strain_screen_pass": true,
-        "solid_thermal_resistance_m2K_W": 0.00024285714285714286,
-        "total_thermal_resistance_m2K_W": 0.00028285714285714286
+        "solid_thermal_resistance_m2K_W": 0.0002428571429,
+        "total_thermal_resistance_m2K_W": 0.0002828571429
       },
       "physical_qualification_complete": false,
       "status": "SELECTED_BALANCED_REFERENCE__NOT_QUALIFIED",
@@ -449,41 +449,41 @@
         "heat_flux_MW_m2": 1.0,
         "layers_plasma_to_coolant": [
           {
-            "cold_face_temperature_C": 577.3015873015873,
+            "cold_face_temperature_C": 577.3015873,
             "declared_max_service_temperature_C": 1600.0,
-            "hot_face_temperature_C": 632.8571428571429,
+            "hot_face_temperature_C": 632.8571429,
             "layer_id": "segmented_tungsten_armor",
             "material": "segmented tungsten; long-fiber Wf-W retained as replaceable qualification coupon",
-            "temperature_rise_K": 55.55555555555556,
+            "temperature_rise_K": 55.55555556,
             "temperature_screen_pass": true,
-            "thermal_resistance_m2K_W": 5.555555555555556e-05
+            "thermal_resistance_m2K_W": 5.555555556e-05
           },
           {
-            "cold_face_temperature_C": 532.8571428571429,
+            "cold_face_temperature_C": 532.8571429,
             "declared_max_service_temperature_C": 800.0,
-            "hot_face_temperature_C": 577.3015873015873,
+            "hot_face_temperature_C": 577.3015873,
             "layer_id": "graded_w_rafm_transition",
             "material": "functionally graded tungsten-to-RAFM transition candidate",
-            "temperature_rise_K": 44.44444444444445,
+            "temperature_rise_K": 44.44444444,
             "temperature_screen_pass": true,
-            "thermal_resistance_m2K_W": 4.4444444444444447e-05
+            "thermal_resistance_m2K_W": 4.444444444e-05
           },
           {
             "cold_face_temperature_C": 390.0,
             "declared_max_service_temperature_C": 550.0,
-            "hot_face_temperature_C": 532.8571428571429,
+            "hot_face_temperature_C": 532.8571429,
             "layer_id": "helium_cooled_rafm_first_wall",
             "material": "ODS-Eurofer or qualified RAFM first-wall structure",
-            "temperature_rise_K": 142.85714285714286,
+            "temperature_rise_K": 142.8571429,
             "temperature_screen_pass": true,
-            "thermal_resistance_m2K_W": 0.00014285714285714287
+            "thermal_resistance_m2K_W": 0.0001428571429
           }
         ],
-        "plasma_facing_surface_temperature_C": 632.8571428571429,
-        "raw_cte_mismatch_strain_proxy": 0.002121428571428572,
+        "plasma_facing_surface_temperature_C": 632.8571429,
+        "raw_cte_mismatch_strain_proxy": 0.002121428571,
         "raw_cte_mismatch_strain_screen_pass": true,
-        "solid_thermal_resistance_m2K_W": 0.00024285714285714286,
-        "total_thermal_resistance_m2K_W": 0.00028285714285714286
+        "solid_thermal_resistance_m2K_W": 0.0002428571429,
+        "total_thermal_resistance_m2K_W": 0.0002828571429
       }
     },
     {
@@ -507,24 +507,24 @@
         "heat_flux_MW_m2": 0.25,
         "layers_plasma_to_coolant": [
           {
-            "cold_face_temperature_C": 168.33333333333334,
+            "cold_face_temperature_C": 168.3333333,
             "declared_max_service_temperature_C": 1600.0,
-            "hot_face_temperature_C": 182.22222222222223,
+            "hot_face_temperature_C": 182.2222222,
             "layer_id": "segmented_tungsten_armor",
             "material": "segmented tungsten",
-            "temperature_rise_K": 13.88888888888889,
+            "temperature_rise_K": 13.88888889,
             "temperature_screen_pass": true,
-            "thermal_resistance_m2K_W": 5.555555555555556e-05
+            "thermal_resistance_m2K_W": 5.555555556e-05
           },
           {
             "cold_face_temperature_C": 165.0,
             "declared_max_service_temperature_C": 800.0,
-            "hot_face_temperature_C": 168.33333333333334,
+            "hot_face_temperature_C": 168.3333333,
             "layer_id": "w_cu_fgm",
             "material": "W-Cu functionally graded transition",
-            "temperature_rise_K": 3.3333333333333335,
+            "temperature_rise_K": 3.333333333,
             "temperature_screen_pass": true,
-            "thermal_resistance_m2K_W": 1.3333333333333333e-05
+            "thermal_resistance_m2K_W": 1.333333333e-05
           },
           {
             "cold_face_temperature_C": 155.0,
@@ -537,11 +537,11 @@
             "thermal_resistance_m2K_W": 4e-05
           }
         ],
-        "plasma_facing_surface_temperature_C": 182.22222222222223,
-        "raw_cte_mismatch_strain_proxy": 0.00040277777777777783,
+        "plasma_facing_surface_temperature_C": 182.2222222,
+        "raw_cte_mismatch_strain_proxy": 0.0004027777778,
         "raw_cte_mismatch_strain_screen_pass": true,
-        "solid_thermal_resistance_m2K_W": 0.00010888888888888889,
-        "total_thermal_resistance_m2K_W": 0.0001288888888888889
+        "solid_thermal_resistance_m2K_W": 0.0001088888889,
+        "total_thermal_resistance_m2K_W": 0.0001288888889
       },
       "physical_qualification_complete": false,
       "status": "THERMALLY_FAVORABLE__DEFERRED_INTEGRATED_REACTOR_BRANCH",
@@ -552,24 +552,24 @@
         "heat_flux_MW_m2": 1.0,
         "layers_plasma_to_coolant": [
           {
-            "cold_face_temperature_C": 223.33333333333334,
+            "cold_face_temperature_C": 223.3333333,
             "declared_max_service_temperature_C": 1600.0,
-            "hot_face_temperature_C": 278.8888888888889,
+            "hot_face_temperature_C": 278.8888889,
             "layer_id": "segmented_tungsten_armor",
             "material": "segmented tungsten",
-            "temperature_rise_K": 55.55555555555556,
+            "temperature_rise_K": 55.55555556,
             "temperature_screen_pass": true,
-            "thermal_resistance_m2K_W": 5.555555555555556e-05
+            "thermal_resistance_m2K_W": 5.555555556e-05
           },
           {
             "cold_face_temperature_C": 210.0,
             "declared_max_service_temperature_C": 800.0,
-            "hot_face_temperature_C": 223.33333333333334,
+            "hot_face_temperature_C": 223.3333333,
             "layer_id": "w_cu_fgm",
             "material": "W-Cu functionally graded transition",
-            "temperature_rise_K": 13.333333333333334,
+            "temperature_rise_K": 13.33333333,
             "temperature_screen_pass": true,
-            "thermal_resistance_m2K_W": 1.3333333333333333e-05
+            "thermal_resistance_m2K_W": 1.333333333e-05
           },
           {
             "cold_face_temperature_C": 170.0,
@@ -582,11 +582,11 @@
             "thermal_resistance_m2K_W": 4e-05
           }
         ],
-        "plasma_facing_surface_temperature_C": 278.8888888888889,
-        "raw_cte_mismatch_strain_proxy": 0.0016111111111111113,
+        "plasma_facing_surface_temperature_C": 278.8888889,
+        "raw_cte_mismatch_strain_proxy": 0.001611111111,
         "raw_cte_mismatch_strain_screen_pass": true,
-        "solid_thermal_resistance_m2K_W": 0.00010888888888888889,
-        "total_thermal_resistance_m2K_W": 0.0001288888888888889
+        "solid_thermal_resistance_m2K_W": 0.0001088888889,
+        "total_thermal_resistance_m2K_W": 0.0001288888889
       }
     },
     {
@@ -610,24 +610,24 @@
         "heat_flux_MW_m2": 0.25,
         "layers_plasma_to_coolant": [
           {
-            "cold_face_temperature_C": 579.1666666666666,
+            "cold_face_temperature_C": 579.1666667,
             "declared_max_service_temperature_C": 1600.0,
             "hot_face_temperature_C": 587.5,
             "layer_id": "segmented_tungsten_armor",
             "material": "segmented tungsten",
-            "temperature_rise_K": 8.333333333333334,
+            "temperature_rise_K": 8.333333333,
             "temperature_screen_pass": true,
-            "thermal_resistance_m2K_W": 3.3333333333333335e-05
+            "thermal_resistance_m2K_W": 3.333333333e-05
           },
           {
             "cold_face_temperature_C": 562.5,
             "declared_max_service_temperature_C": 1200.0,
-            "hot_face_temperature_C": 579.1666666666666,
+            "hot_face_temperature_C": 579.1666667,
             "layer_id": "graded_w_sic_transition",
             "material": "graded W-SiC transition candidate",
-            "temperature_rise_K": 16.666666666666668,
+            "temperature_rise_K": 16.66666667,
             "temperature_screen_pass": true,
-            "thermal_resistance_m2K_W": 6.666666666666667e-05
+            "thermal_resistance_m2K_W": 6.666666667e-05
           },
           {
             "cold_face_temperature_C": 512.5,
@@ -641,10 +641,10 @@
           }
         ],
         "plasma_facing_surface_temperature_C": 587.5,
-        "raw_cte_mismatch_strain_proxy": 2.624999999999997e-05,
+        "raw_cte_mismatch_strain_proxy": 2.625e-05,
         "raw_cte_mismatch_strain_screen_pass": true,
-        "solid_thermal_resistance_m2K_W": 0.00030000000000000003,
-        "total_thermal_resistance_m2K_W": 0.00035000000000000005
+        "solid_thermal_resistance_m2K_W": 0.0003,
+        "total_thermal_resistance_m2K_W": 0.00035
       },
       "physical_qualification_complete": false,
       "status": "HIGH_TEMPERATURE_RESEARCH_BRANCH__DEFERRED",
@@ -655,24 +655,24 @@
         "heat_flux_MW_m2": 1.0,
         "layers_plasma_to_coolant": [
           {
-            "cold_face_temperature_C": 816.6666666666666,
+            "cold_face_temperature_C": 816.6666667,
             "declared_max_service_temperature_C": 1600.0,
             "hot_face_temperature_C": 850.0,
             "layer_id": "segmented_tungsten_armor",
             "material": "segmented tungsten",
-            "temperature_rise_K": 33.333333333333336,
+            "temperature_rise_K": 33.33333333,
             "temperature_screen_pass": true,
-            "thermal_resistance_m2K_W": 3.3333333333333335e-05
+            "thermal_resistance_m2K_W": 3.333333333e-05
           },
           {
             "cold_face_temperature_C": 750.0,
             "declared_max_service_temperature_C": 1200.0,
-            "hot_face_temperature_C": 816.6666666666666,
+            "hot_face_temperature_C": 816.6666667,
             "layer_id": "graded_w_sic_transition",
             "material": "graded W-SiC transition candidate",
-            "temperature_rise_K": 66.66666666666667,
+            "temperature_rise_K": 66.66666667,
             "temperature_screen_pass": true,
-            "thermal_resistance_m2K_W": 6.666666666666667e-05
+            "thermal_resistance_m2K_W": 6.666666667e-05
           },
           {
             "cold_face_temperature_C": 550.0,
@@ -686,10 +686,10 @@
           }
         ],
         "plasma_facing_surface_temperature_C": 850.0,
-        "raw_cte_mismatch_strain_proxy": 0.00010499999999999988,
+        "raw_cte_mismatch_strain_proxy": 0.000105,
         "raw_cte_mismatch_strain_screen_pass": true,
-        "solid_thermal_resistance_m2K_W": 0.00030000000000000003,
-        "total_thermal_resistance_m2K_W": 0.00035000000000000005
+        "solid_thermal_resistance_m2K_W": 0.0003,
+        "total_thermal_resistance_m2K_W": 0.00035
       }
     }
   ]

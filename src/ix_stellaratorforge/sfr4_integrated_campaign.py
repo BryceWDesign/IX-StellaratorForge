@@ -31,6 +31,7 @@ from .hts_screen import screen_curve_geometry
 from .neutronics_constraints import breeding_coverage_constraint
 from .physics import dt_reaction_ledger
 from .sfr3_dual_boundary import evaluate_stack
+from .evidence_canonical import canonical_evidence
 from .vacuum_codesign import evaluate_helical_architecture
 
 AUTHORITY = (
@@ -491,7 +492,7 @@ def validate_integrated_config(raw: dict[str, Any]) -> tuple[str, ...]:
         errors.append(f"invalid integrated config: {exc}")
     return tuple(errors)
 
-
+@canonical_evidence
 def run_integrated_campaign(raw: dict[str, Any]) -> dict[str, Any]:
     errors = validate_integrated_config(raw)
     if errors:

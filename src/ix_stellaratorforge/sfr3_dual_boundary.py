@@ -16,6 +16,7 @@ from __future__ import annotations
 from typing import Any
 
 from .sfr3_field_integrity import run_sfr3_field_integrity_screen
+from .evidence_canonical import canonical_evidence
 
 AUTHORITY = (
     "LOW__1D_thermal_resistance_plus_deterministic_fault_logic__not_safety_or_confinement"
@@ -281,7 +282,7 @@ def validate_dual_boundary_config(raw: dict[str, Any]) -> tuple[str, ...]:
         errors.append(f"invalid dual-boundary config: {exc}")
     return tuple(errors)
 
-
+@canonical_evidence
 def run_dual_boundary_screen(
     raw: dict[str, Any], sfr3_raw: dict[str, Any]
 ) -> dict[str, Any]:
