@@ -1,0 +1,65 @@
+id,workstream,component,selected_material_or_tool,function,status,evidence_gate
+SFR4-001,physical_coil_field,primary_conductor,copper-stabilized REBCO coated conductor,generate primary confinement field,KEEP,conductor Ic B T angle and irradiation qualification
+SFR4-002,physical_coil_field,conductor_substrate,qualified high-strength nonmagnetic coated-conductor substrate,carry tape strain,KEEP,lot-specific properties required
+SFR4-003,physical_coil_field,winding_insulation,radiation-resistant ceramic or cyanate-ester system,electrical isolation,DEFER,irradiation and cryogenic dielectric tests
+SFR4-004,physical_coil_field,winding_pack_case,high-strength nonmagnetic steel or composite,react electromagnetic loads,KEEP,3-D structural FEA
+SFR4-005,physical_coil_field,trim_coils,copper water-cooled planar trim set,correct measured field errors,KEEP,CAD-linked response matrix
+SFR4-006,physical_coil_field,passive_loops,superconducting transient loops,attenuate time-varying field errors,KEEP,quench and coupling tests
+SFR4-007,physical_coil_field,field_model,in-repo filament Biot-Savart,execute falsification scan,EXECUTED,intermediate authority only
+SFR4-008,physical_coil_field,coil_CAD,configuration-controlled 3-D centerlines,replace analytic curves,NEW,required before physical promotion
+SFR4-009,finite_beta_equilibrium,DESC,DESC production solver,solve finite-beta force balance,REQUIRED,not installed in build runtime
+SFR4-010,finite_beta_equilibrium,VMEC++,VMEC++ production solver,cross-check finite-beta equilibrium,REQUIRED,not installed in build runtime
+SFR4-011,finite_beta_equilibrium,equilibrium_inputs,versioned VMEC-family seed pack,define candidate pressure flux and boundary,KEEP,inputs complete
+SFR4-012,finite_beta_equilibrium,convergence_receipt,raw solver output plus residual ledger,prevent unverifiable pass claims,NEW,requires production execution
+SFR4-013,finite_beta_equilibrium,island_analysis,SPEC or validated equivalent,quantify islands and stochastic regions,DEFER,requires converged equilibrium
+SFR4-014,finite_beta_equilibrium,stability_analysis,validated ideal and resistive MHD tools,test stability limits,DEFER,requires converged equilibrium
+SFR4-015,finite_beta_equilibrium,cross_code_comparator,in-repo receipt validator,compare geometry iota beta and force balance,KEEP,requires two real outputs
+SFR4-016,finite_beta_equilibrium,free_boundary_model,coils vessel blanket and trim response,include engineering perturbations,NEW,requires physical coil CAD
+SFR4-017,coil_plasma_codesign,SIMSOPT,SIMSOPT production optimization,stage-two or single-stage coil optimization,REQUIRED,not installed in build runtime
+SFR4-018,coil_plasma_codesign,boundary_variables,Fourier plasma boundary degrees of freedom,search equilibrium geometry,NEW,production solver required
+SFR4-019,coil_plasma_codesign,coil_variables,Fourier or spline coil centerlines,search buildable winding geometry,NEW,production solver required
+SFR4-020,coil_plasma_codesign,normal_field_objective,held-out B-normal metric,reject poor field reconstruction,EXECUTED,current family fails
+SFR4-021,coil_plasma_codesign,clearance_objective,plasma blanket shield and coil distances,preserve nuclear island and maintenance space,KEEP,CAD validation required
+SFR4-022,coil_plasma_codesign,curvature_objective,REBCO centerline curvature and tape frame,limit hard-way strain,PARTIAL,winding-pack strain optimizer required
+SFR4-023,coil_plasma_codesign,tolerance_ensemble,manufacturing and assembly error distributions,optimize robust rather than nominal field,NEW,metrology data required
+SFR4-024,coil_plasma_codesign,trim_authority,24-channel physical response matrix,verify correction after errors,NEW,CAD-linked Biot-Savart required
+SFR4-025,particle_confinement,alpha_source,3.5 MeV isotropic alpha birth distribution,seed energetic-particle test,PARTIAL,gyroradius scale executed
+SFR4-026,particle_confinement,Boozer_transform,BOOZ_XFORM or validated equivalent,construct magnetic coordinates,REQUIRED,converged equilibrium required
+SFR4-027,particle_confinement,guiding_center_tracker,collisionless and collisional orbit solver,calculate alpha retention,REQUIRED,not available in build runtime
+SFR4-028,particle_confinement,neoclassical_transport,SFINCS KNOSOS or validated equivalent,calculate thermal transport and bootstrap current,REQUIRED,not executed
+SFR4-029,particle_confinement,turbulent_transport,GX GENE or validated equivalent,calculate gyrokinetic turbulence,REQUIRED,not executed
+SFR4-030,particle_confinement,loss_maps,wall and divertor strike localization,connect losses to heat loads,NEW,orbit and CAD geometry required
+SFR4-031,particle_confinement,field_line_screen,in-repo vacuum field-line integrator,reject open or radially wandering candidates,EXECUTED,current family fails transform
+SFR4-032,particle_confinement,profile_iteration,coupled source transport loop,find self-consistent profiles,DEFER,transport coefficients required
+SFR4-033,self_consistent_burn,deuterium,fuel-cycle qualified deuterium,50 percent fuel-ion assumption,KEEP,fueling profile unresolved
+SFR4-034,self_consistent_burn,tritium,closed-cycle bred tritium,50 percent fuel-ion assumption,KEEP,TBR and inventory unresolved
+SFR4-035,self_consistent_burn,reactivity,Bosch-Hale D-T fit,calculate Maxwellian reaction rate,EXECUTED,uniform low-authority screen
+SFR4-036,self_consistent_burn,alpha_heating,finite alpha-deposition fraction,close plasma heating ledger,PARTIAL,orbit deposition unresolved
+SFR4-037,self_consistent_burn,bremsstrahlung,hydrogenic engineering approximation,add explicit radiative loss,EXECUTED,impurity spectrum unresolved
+SFR4-038,self_consistent_burn,ECRH,170 GHz-class heating architecture,startup and control heat,KEEP,3-D deposition unresolved
+SFR4-039,self_consistent_burn,fueling,high-field-side pellets plus controlled gas,control density and burn fraction,DEFER,penetration model required
+SFR4-040,self_consistent_burn,helium_ash_exhaust,island divertor pumping,prevent ash dilution,DEFER,edge and particle balance required
+SFR4-041,magnet_and_heat,first_wall_armor,3 mm segmented tungsten,erosion and thermal protection,SELECTED,joining fatigue and irradiation open
+SFR4-042,magnet_and_heat,first_wall_transition,1 mm graded W-to-RAFM candidate,reduce material mismatch,SELECTED,coupon qualification open
+SFR4-043,magnet_and_heat,first_wall_structure,3 mm ODS-Eurofer or qualified RAFM,carry first-wall loads,SELECTED,code case and irradiation open
+SFR4-044,magnet_and_heat,first_wall_coolant,independent high-pressure helium microchannels,remove distributed wall heat,SELECTED,CFD pressure and leak tests open
+SFR4-045,magnet_and_heat,divertor_armor,6 mm segmented tungsten monoblock,receive concentrated exhaust heat,SELECTED,cyclic high-heat-flux tests open
+SFR4-046,magnet_and_heat,divertor_interlayer,1 mm OFHC copper compliant layer,reduce W-CuCrZr joint stress,SELECTED,fatigue and irradiation open
+SFR4-047,magnet_and_heat,divertor_heat_sink,2 mm CuCrZr,spread heat to coolant channels,SELECTED,temperature and irradiation limits open
+SFR4-048,magnet_and_heat,divertor_coolant,independent pressurized water loop,remove 91.6 MW declared divertor load,SELECTED,CHF corrosion accident qualification open
+SFR4-049,reactor_systems,divertor_topology,24-sector long-leg island-divertor requirement,expand wetted area and support detachment,SELECTED,3-D edge solution not run
+SFR4-050,reactor_systems,radiative_exhaust,controlled impurity-seeded detachment requirement,radiate 60 percent of declared plasma exhaust,SELECTED,stable detachment not demonstrated
+SFR4-051,reactor_systems,blanket_breeder,enriched PbLi DCLL,breed tritium and carry neutron heat,KEEP,3-D TBR MHD and corrosion open
+SFR4-052,reactor_systems,flow_channel_insert,SiC or alumina electrical barrier,reduce PbLi MHD drag and corrosion,KEEP,loop qualification open
+SFR4-053,reactor_systems,water_PbLi_isolation,double wall guard vacuum and independent leak detection,prevent direct coolant-breeder contact,SELECTED,accident and leak-rate tests open
+SFR4-054,reactor_systems,vacuum_vessel,monitored 316LN-class double-wall vessel,primary vacuum and confinement-independent safety boundary,KEEP,nuclear code case open
+SFR4-055,reactor_systems,neutron_shield,graded WC plus B4C,protect vessel and magnets,KEEP,3-D OpenMC optimization open
+SFR4-056,reactor_systems,magnet_local_shield,HfH1.7 matrix local option,attenuate residual fast neutrons,DEFER,3-D placement and compatibility open
+SFR4-057,reactor_systems,neutronics_solver,OpenMC plus qualified nuclear data,calculate TBR heating damage and streaming,REQUIRED,not installed in build runtime
+SFR4-058,reactor_systems,primary_heat_exchanger,helium PbLi and water isolated trains,transfer heat without cross-contamination,NEW,thermohydraulic design open
+SFR4-059,reactor_systems,power_cycle,supercritical steam or helium Brayton down-select,convert blanket heat to electricity,DEFER,temperature and materials closure required
+SFR4-060,reactor_systems,tritium_plant,extraction cleanup storage and accountability,close fuel cycle,REQUIRED,inventory and safety analysis open
+SFR4-061,reactor_systems,remote_maintenance,replaceable divertor and blanket cassettes,service activated components,REQUIRED,CAD access and dose study open
+SFR4-062,reactor_systems,heat_instrumentation,dual-lane temperature flow pressure and leak network,detect heat-removal degradation,KEEP,radiation calibration open
+SFR4-063,reactor_systems,protection_logic,sector isolation rundown and safe hold,limit fault propagation,KEEP,integrated hardware validation open
+SFR4-064,reactor_systems,heat_test_facility,representative high-heat-flux coupon and channel loop,validate thermal model and fatigue,REQUIRED,physical campaign not performed

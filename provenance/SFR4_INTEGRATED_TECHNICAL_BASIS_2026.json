@@ -1,0 +1,57 @@
+{
+  "record_version": "0.9.0",
+  "study_id": "SFR4-INTEGRATED-PHYSICAL-PROMOTION-A",
+  "retrieval_date": "2026-08-22",
+  "sources": [
+    {
+      "title": "DESC 0.17.3 documentation",
+      "url": "https://desc-docs.readthedocs.io/",
+      "use": "production fixed-boundary equilibrium and optimization route",
+      "credit": "method and dependency route only; no DESC result was executed"
+    },
+    {
+      "title": "VMEC++ documentation",
+      "url": "https://proximafusion.github.io/vmecpp/",
+      "use": "independent finite-beta equilibrium cross-check route",
+      "credit": "method and dependency route only; no VMEC++ result was executed"
+    },
+    {
+      "title": "SIMSOPT coil optimization documentation",
+      "url": "https://simsopt.readthedocs.io/v1.10.4/",
+      "use": "production coil and plasma co-design route",
+      "credit": "method route only; SIMSOPT was unavailable"
+    },
+    {
+      "title": "ITER Fusion Divertor",
+      "url": "https://www.iter.org/machine/divertor",
+      "use": "10 MW/m2 steady and 20 MW/m2 slow-transient reference context for tungsten targets",
+      "credit": "reference context only; ITER qualification does not transfer to SFR-4"
+    },
+    {
+      "title": "Power and particle exhaust for the Infinity Two fusion pilot plant",
+      "url": "https://www.cambridge.org/core/journals/journal-of-plasma-physics/article/power-and-particle-exhaust-for-the-infinity-two-fusion-pilot-plant/FCE20C6558D7D77C585973F42AB5AC15",
+      "use": "stellarator island-divertor detachment and exhaust context",
+      "credit": "architecture context only; no performance is transferred"
+    },
+    {
+      "title": "OpenMC",
+      "url": "https://openmc.org/",
+      "use": "production neutron transport route",
+      "credit": "method route only; no OpenMC result was executed"
+    }
+  ],
+  "in_repo_methods": [
+    "direct filament Biot-Savart",
+    "vacuum field-line integration",
+    "held-out normal-field reconstruction",
+    "Bosch-Hale D-T reactivity",
+    "ISS04 empirical requirement",
+    "bremsstrahlung engineering approximation",
+    "one-dimensional multilayer conduction",
+    "single-phase hydraulic pressure-drop screen",
+    "exact D-T source ledger",
+    "geometric breeding-coverage bound",
+    "conditional plant algebra"
+  ],
+  "nontransfer_rule": "Published component or facility performance is not assigned to SFR-4. Every selected material and limit remains subject to candidate-specific analysis and test."
+}

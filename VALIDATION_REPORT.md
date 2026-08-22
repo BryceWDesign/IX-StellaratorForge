@@ -1,56 +1,33 @@
-# IX-Fusion Validation Report
+# IX-StellaratorForge Validation Report
 
-Release: **0.1.0**  
-Date: **2026-08-15**  
-Authority: **software integrity + reduced-order computational screening only**
+Release: **0.9.0**
+Date: **2026-08-22**
+Authority: **software integrity plus mixed low/intermediate analytical and direct-filament screening**
 
-## Validation summary
+## v0.9 validation scope
 
-The release was generated from versioned configurations and validated locally with the same
-quality gate committed for GitHub Actions.
+The SFR-4 focused suite adds eleven tests covering the seven-workstream specification, 80-case physical coil rejection, production-solver fail-closed behavior, alpha gyroradius boundaries, burn-loss bookkeeping, heat partition, first-wall and divertor temperatures, hydraulic requirements, heat sensitivity, magnet nonqualification, conditional reactor bookkeeping and exact persisted-result reproduction.
 
-Current test suite: **41 deterministic unit/regression tests**, covering configuration
-validation, C6 periodicity, field-strength bounds, field-line integration, bounce-action
-proxy behavior, optimizer determinism, RF mode purity and feedback, structural/engineering
-screens, energy-ledger claim refusal, evidence validation, Monte Carlo reproducibility,
-external-solver detection, and release-result claim boundaries.
+One additional release-contract test checks the 64-row SFR-4 BOM. The complete suite contains **114 deterministic tests** when combined with the preserved 102-test v0.8 release.
 
-Release reproduction: **PASS**. `scripts/reproduce_release.py --verify` regenerates the
-machine-readable proof-of-concept, matched baseline, ablations, RF Monte Carlo, geometry-
-error Monte Carlo, loss ledger, and POC report in a temporary directory and compares them
-against the committed release.
+## Executed evidence
 
-## Current scientific verdict
+* 80 direct-filament Biot-Savart and vacuum field-line cases;
+* one held-out 120-filament normal-field reconstruction at the selected field-period count;
+* 3.5 MeV alpha gyroradius scope;
+* Bosch-Hale D-T burn and ISS04 Q=20 requirement with bremsstrahlung;
+* 16-point radiation-fraction and divertor-area heat sensitivity matrix;
+* multilayer first-wall and divertor 1-D conduction;
+* distributed-water-loop mass flow, velocity, pressure drop and pump power;
+* REBCO centerline geometry, magnetic-pressure and stored-energy scopes;
+* exact D-T neutron and tritium source ledger;
+* breeding-coverage constraint; and
+* conditional plant arithmetic.
 
-The release's C6 hypothesis verdict is **`FAIL_OR_INCONCLUSIVE`** at the reduced-model gate.
-The scientific stage remains **`geometry_hypothesis`**.
+## Negative and open evidence
 
-This is a validation success, not a fusion success: the repository is allowed to reject its
-own hypothesis and still be GREEN if the rejection is reproducible and internally
-consistent.
+No physical coil passes. DESC, VMEC++, SIMSOPT and OpenMC are unavailable. Particle confinement, finite-beta equilibrium, transport, stable detachment, thermal transients, structural survival, full 3-D TBR, sustained burn, net electricity, safety and hardware remain unpromoted.
 
-## What GREEN means
+## GREEN meaning
 
-`python check_green.py` verifies:
-
-- required release-contract files;
-- parseable JSON/configuration/evidence artifacts;
-- absence of common scaffolding markers;
-- evaluation-license contract markers;
-- conservative claim-boundary state;
-- Python compilation;
-- full unit/regression suite;
-- deterministic scientific reproduction;
-- SHA-256 release manifest integrity.
-
-A GREEN result means the repository's **internal evidence chain** is intact.
-
-## What GREEN does not mean
-
-GREEN is not evidence of a solved equilibrium, real nested flux surfaces, particle
-confinement, MHD stability, low turbulent transport, RF plasma coupling, blanket
-performance, tritium self-sufficiency, ignition, net energy, net electricity, or reactor
-safety/buildability.
-
-Those remain later authority gates and are explicitly recorded as `UNKNOWN` where
-applicable.
+GREEN means the repository, configuration, persisted reduced result, tests, BOMs, manifests and fail-closed boundaries reproduce. It does not mean the heat solution is physically qualified or that fusion performance improved.

@@ -1,0 +1,28 @@
+{
+  "as_of": "2026-08-21",
+  "authority_rule": "Sources justify testing mechanisms and risks only. They do not validate this SFR-2 actuation overlay.",
+  "program": "IX-StellaratorForge",
+  "sources": [
+    {
+      "doi": "10.1063/1.859025",
+      "title": "Theory of first-order plasma heating by collisional magnetic pumping",
+      "use": "Supports the statement that net magnetic-pumping heating requires kinetic irreversibility and depends on waveform; no heating rate is transferred to SFR-2."
+    },
+    {
+      "title": "Stable compression of a spherical tokamak plasma",
+      "url": "https://www.osti.gov/servlets/purl/1650654",
+      "use": "Supports treating compression stability as a required MHD calculation; the device and geometry differ from SFR-2."
+    },
+    {
+      "title": "Influence of the Trim Coils Operation on Wendelstein 7-X Magnetic Field",
+      "url": "https://www.ipp.mpg.de/3958422/ishw2015_book_of_abstracts_5.pdf",
+      "use": "Supports explicit evaluation of magnetic perturbations, structural deformation and correction-coil effects in a stellarator; no W7-X performance is transferred."
+    },
+    {
+      "title": "Verification of energetic and angular distributions of nuclear-reaction products in beam-plasma fusion",
+      "url": "https://conferences.iaea.org/event/392/papers/36194/files/13501-Manuscript%20FEC%202025.pdf",
+      "use": "Supports treating the relevant fusion reaction as binary rather than crediting a three-body collision mechanism."
+    }
+  ],
+  "study_id": "SFR-2-Actuation-Overlay-A"
+}

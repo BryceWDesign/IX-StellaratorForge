@@ -1,0 +1,52 @@
+{
+  "as_of": "2026-08-21",
+  "baseline_design_id": "SFR-2-RevA",
+  "claim_boundary": "This phase-programmed actuation overlay is a low-authority analytical falsification screen. It does not demonstrate a realizable time-dependent magnetic field, nested flux surfaces, MHD stability, magnetic-pumping absorption, alpha confinement, ignition, sustained burn, net energy, buildable coils, or hardware.",
+  "concept_image_translation": {
+    "area_normalize_repeated_poloidal_m3": true,
+    "baseline_field_periods": 4,
+    "credits_astrophysical_gravity_or_accretion": false,
+    "credits_three_body_fusion": false,
+    "global_toroidal_lobe_count": 3,
+    "poloidal_m3_amplitude_fraction_sweep": [0.0, 0.02, 0.05, 0.1],
+    "statement": "The image is translated into an area-preserving poloidal m=3 shaping harmonic repeated inside each of the four baseline field periods. A global three-toroidal-lobe machine is not substituted for the unchanged 4FP ABAB baseline."
+  },
+  "mechanical_architecture": {
+    "auxiliary_actuator_type": "normal_conducting_phase_programmed_saddle_coil_triplets",
+    "flexible_vacuum_vessel": false,
+    "primary_hts_field_mode": "steady_DC",
+    "pulses_primary_hts_coils": false,
+    "station_count": 8,
+    "independent_coil_circuits_per_station": 3,
+    "statement": "The vessel, blanket and primary HTS confinement system remain rigid and unchanged. Only an optional auxiliary field overlay is screened."
+  },
+  "program": "IX-StellaratorForge",
+  "promotion_status": {
+    "SFR2A_G0_OVERLAY_SPEC": "PASS_SPEC_ONLY",
+    "SFR2A_G1_TIME_DEPENDENT_EQUILIBRIUM": "NOT_RUN",
+    "SFR2A_G2_COILS_AND_ELECTROMAGNETICS": "NOT_RUN",
+    "SFR2A_G3_MAGNETIC_PUMPING_KINETICS": "NOT_RUN",
+    "SFR2A_G4_PARTICLE_AND_ALPHA_ORBITS": "NOT_RUN",
+    "SFR2A_G5_TRANSPORT_AND_MHD": "NOT_RUN",
+    "SFR2A_G6_EDGE_AND_WALL_LOADS": "NOT_RUN",
+    "SFR2A_G7_INTEGRATED_POWER_BALANCE": "NOT_RUN",
+    "SFR2A_G8_HARDWARE": "NOT_RUN"
+  },
+  "screen": {
+    "axis_field_T": 15.0,
+    "base_temperature_keV": 15.0,
+    "depth_fraction_sweep": [0.0, 0.0025, 0.005, 0.01, 0.02, 0.05],
+    "iota_2over3": 0.9,
+    "phase_patterns_deg": {
+      "abab_opposed": [0, 180, 0, 180],
+      "synchronous": [0, 0, 0, 0],
+      "traveling_quadrature": [0, 90, 180, 270]
+    },
+    "sample_count_per_cycle": 720,
+    "screening_aspect_ratio": 4.5,
+    "sector_lengths_ft": [23.0, 26.0, 23.0, 26.0],
+    "sector_pattern": "ABAB",
+    "target_fusion_power_MW": 1000.0
+  },
+  "study_id": "SFR-2-Actuation-Overlay-A"
+}

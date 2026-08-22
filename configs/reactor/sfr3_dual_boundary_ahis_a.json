@@ -1,0 +1,370 @@
+{
+  "schema_version": "0.8.0",
+  "study_id": "SFR3-DUAL-BOUNDARY-AHIS-A",
+  "baseline_overlay_id": "SFR3-FIELD-INTEGRITY-SHELL-A",
+  "architecture": {
+    "name": "Dual Boundary Integrity Network A",
+    "vacuum_vessel_is_double_walled": true,
+    "mechanically_pushes_plasma_inward": false,
+    "inner_boundary_function": "monitor armor first-wall temperature and strain coolant state and local magnetic disturbance",
+    "outer_boundary_function": "monitor vacuum-vessel interspace shielding supports magnet alignment vibration and leak state",
+    "allowed_responses": [
+      "active magnetic trim when SFR-3 resource gates pass",
+      "controlled power rundown",
+      "isolate affected coolant sector",
+      "passive or hard safe hold",
+      "inspection and remote replacement"
+    ],
+    "prohibited_response": "mechanical pressure against the plasma"
+  },
+  "monitoring_geometry": {
+    "field_periods": 4,
+    "toroidal_control_sectors": 24,
+    "poloidal_locations_per_sector": 8,
+    "independent_sensor_lanes": 2,
+    "inner_localized_sensor_types": [
+      "mineral_insulated_temperature",
+      "all_metal_or_radiation_qualified_strain"
+    ],
+    "outer_localized_sensor_types": [
+      "radiation_qualified_optical_strain",
+      "optical_or_inductive_displacement"
+    ],
+    "sector_sensor_types": [
+      "mineral_insulated_flux_loop",
+      "coolant_pressure_and_flow",
+      "interspace_pressure_and_leak",
+      "outer_vibration"
+    ],
+    "hard_vacuum_channels_per_field_period": 2,
+    "placement_rule": "No polymer PVDF or unqualified electronics face the plasma. Inner sensors sit behind armor or in protected feedthroughs; outer sensors sit behind the blanket or on vessel and support structures."
+  },
+  "thermal_screen": {
+    "nominal_heat_flux_MW_m2": 0.25,
+    "upset_heat_flux_MW_m2": 1.0,
+    "upset_interpretation": "steady one-dimensional upper-bound screen only; not a transient disruption calculation",
+    "decision_weights": {
+      "thermal_screen_pass": 2.0,
+      "breeding_blanket_compatible": 2.0,
+      "low_activation_structure": 2.0,
+      "avoids_water_pbli_interaction": 1.0,
+      "structural_code_path": 1.0,
+      "joining_process_mature": 1.0,
+      "full_fusion_neutron_qualification": 2.0,
+      "preserves_magnetic_clearance": 1.0
+    }
+  },
+  "selected_stack_id": "DB-A_DCLL_MONITORED_RAFT",
+  "wall_stack_candidates": [
+    {
+      "id": "DB-A_DCLL_MONITORED_RAFT",
+      "name": "Segmented tungsten plus graded W-RAFM plus helium-cooled RAFM and DCLL blanket",
+      "status": "SELECTED_BALANCED_REFERENCE__NOT_QUALIFIED",
+      "coolant": "high-pressure helium in first-wall channels; PbLi breeder loop remains electrically isolated",
+      "coolant_bulk_temperature_C": 350.0,
+      "coolant_heat_transfer_coefficient_W_m2K": 25000.0,
+      "maximum_raw_cte_mismatch_strain_proxy": 0.003,
+      "solid_layers_plasma_to_coolant": [
+        {
+          "id": "segmented_tungsten_armor",
+          "material": "segmented tungsten; long-fiber Wf-W retained as replaceable qualification coupon",
+          "thickness_m": 0.005,
+          "effective_k_W_mK": 90.0,
+          "effective_cte_per_K": 0.0000045,
+          "declared_max_service_temperature_C": 1600.0
+        },
+        {
+          "id": "graded_w_rafm_transition",
+          "material": "functionally graded tungsten-to-RAFM transition candidate",
+          "thickness_m": 0.002,
+          "effective_k_W_mK": 45.0,
+          "effective_cte_per_K": 0.000008,
+          "declared_max_service_temperature_C": 800.0
+        },
+        {
+          "id": "helium_cooled_rafm_first_wall",
+          "material": "ODS-Eurofer or qualified RAFM first-wall structure",
+          "thickness_m": 0.004,
+          "effective_k_W_mK": 28.0,
+          "effective_cte_per_K": 0.000012,
+          "declared_max_service_temperature_C": 550.0
+        }
+      ],
+      "integration_gates": {
+        "breeding_blanket_compatible": true,
+        "low_activation_structure": true,
+        "avoids_water_pbli_interaction": true,
+        "structural_code_path": true,
+        "joining_process_mature": false,
+        "full_fusion_neutron_qualification": false,
+        "preserves_magnetic_clearance": true
+      },
+      "downstream_layers": [
+        "PbLi DCLL blanket in RAFM cassette with SiC or alumina flow-channel insert",
+        "monitored 316LN-class double-wall vacuum vessel with evacuated leak-detection interspace",
+        "WC plus B4C graded neutron shield with HfH1.7 local option uncredited until 3-D OpenMC",
+        "thermal shield cryostat REBCO coils and monitored nonmagnetic support shell"
+      ]
+    },
+    {
+      "id": "DB-B_WCU_WATER",
+      "name": "Tungsten plus W-Cu graded joint plus water-cooled CuCrZr heat sink",
+      "status": "THERMALLY_FAVORABLE__DEFERRED_INTEGRATED_REACTOR_BRANCH",
+      "coolant": "pressurized water",
+      "coolant_bulk_temperature_C": 150.0,
+      "coolant_heat_transfer_coefficient_W_m2K": 50000.0,
+      "maximum_raw_cte_mismatch_strain_proxy": 0.003,
+      "solid_layers_plasma_to_coolant": [
+        {
+          "id": "segmented_tungsten_armor",
+          "material": "segmented tungsten",
+          "thickness_m": 0.005,
+          "effective_k_W_mK": 90.0,
+          "effective_cte_per_K": 0.0000045,
+          "declared_max_service_temperature_C": 1600.0
+        },
+        {
+          "id": "w_cu_fgm",
+          "material": "W-Cu functionally graded transition",
+          "thickness_m": 0.002,
+          "effective_k_W_mK": 150.0,
+          "effective_cte_per_K": 0.00001,
+          "declared_max_service_temperature_C": 800.0
+        },
+        {
+          "id": "cucrzr_heat_sink",
+          "material": "CuCrZr heat sink",
+          "thickness_m": 0.01,
+          "effective_k_W_mK": 250.0,
+          "effective_cte_per_K": 0.000017,
+          "declared_max_service_temperature_C": 350.0
+        }
+      ],
+      "integration_gates": {
+        "breeding_blanket_compatible": true,
+        "low_activation_structure": false,
+        "avoids_water_pbli_interaction": false,
+        "structural_code_path": true,
+        "joining_process_mature": true,
+        "full_fusion_neutron_qualification": false,
+        "preserves_magnetic_clearance": true
+      },
+      "downstream_layers": [
+        "separate breeder blanket required",
+        "monitored double-wall vacuum vessel",
+        "graded magnet shield and cryostat"
+      ]
+    },
+    {
+      "id": "DB-C_SIC_HIGH_TEMP",
+      "name": "Tungsten plus graded W-SiC plus helium-cooled SiCf-SiC first wall",
+      "status": "HIGH_TEMPERATURE_RESEARCH_BRANCH__DEFERRED",
+      "coolant": "high-pressure helium",
+      "coolant_bulk_temperature_C": 500.0,
+      "coolant_heat_transfer_coefficient_W_m2K": 20000.0,
+      "maximum_raw_cte_mismatch_strain_proxy": 0.003,
+      "solid_layers_plasma_to_coolant": [
+        {
+          "id": "segmented_tungsten_armor",
+          "material": "segmented tungsten",
+          "thickness_m": 0.003,
+          "effective_k_W_mK": 90.0,
+          "effective_cte_per_K": 0.0000045,
+          "declared_max_service_temperature_C": 1600.0
+        },
+        {
+          "id": "graded_w_sic_transition",
+          "material": "graded W-SiC transition candidate",
+          "thickness_m": 0.002,
+          "effective_k_W_mK": 30.0,
+          "effective_cte_per_K": 0.0000048,
+          "declared_max_service_temperature_C": 1200.0
+        },
+        {
+          "id": "sicf_sic_first_wall",
+          "material": "SiCf-SiC composite first-wall structure",
+          "thickness_m": 0.005,
+          "effective_k_W_mK": 25.0,
+          "effective_cte_per_K": 0.0000048,
+          "declared_max_service_temperature_C": 1200.0
+        }
+      ],
+      "integration_gates": {
+        "breeding_blanket_compatible": true,
+        "low_activation_structure": true,
+        "avoids_water_pbli_interaction": true,
+        "structural_code_path": false,
+        "joining_process_mature": false,
+        "full_fusion_neutron_qualification": false,
+        "preserves_magnetic_clearance": true
+      },
+      "downstream_layers": [
+        "PbLi blanket with reduced structural steel fraction",
+        "monitored double-wall vacuum vessel",
+        "graded magnet shield and cryostat"
+      ]
+    }
+  ],
+  "signal_channels": {
+    "inner_temperature": ["inner_temperature:A", "inner_temperature:B"],
+    "inner_strain": ["inner_strain:A", "inner_strain:B"],
+    "coolant_leak": ["coolant_state:A", "coolant_state:B", "interspace_leak:A", "interspace_leak:B"],
+    "interspace_pressure": ["interspace_leak:A", "interspace_leak:B"],
+    "outer_displacement": ["outer_displacement:A", "outer_displacement:B"],
+    "flux_error": ["flux_loop:A", "flux_loop:B"],
+    "outer_vibration": ["outer_vibration:A", "outer_vibration:B"],
+    "vacuum_loss": ["hard_vacuum:A", "hard_vacuum:B"]
+  },
+  "fault_scenarios": [
+    {
+      "id": "nominal",
+      "description": "All boundaries and channels healthy.",
+      "event_signals": [],
+      "failed_channels": [],
+      "latent_fault_without_declared_signal": false,
+      "observability_lost": false,
+      "total_control_power_lost": false,
+      "sfr3_active_trim_available": true,
+      "expected_control_state": "NOMINAL"
+    },
+    {
+      "id": "inner_hotspot_single_lane_failure",
+      "description": "Local first-wall hotspot with lane A temperature channel failed.",
+      "event_signals": ["inner_temperature"],
+      "failed_channels": ["inner_temperature:A"],
+      "latent_fault_without_declared_signal": false,
+      "observability_lost": false,
+      "total_control_power_lost": false,
+      "sfr3_active_trim_available": true,
+      "expected_control_state": "CONTROLLED_POWER_RUNDOWN_AND_INSPECT"
+    },
+    {
+      "id": "coolant_leak_single_lane_failure",
+      "description": "First-wall coolant leak with one interspace leak channel failed.",
+      "event_signals": ["coolant_leak", "interspace_pressure"],
+      "failed_channels": ["interspace_leak:A"],
+      "latent_fault_without_declared_signal": false,
+      "observability_lost": false,
+      "total_control_power_lost": false,
+      "sfr3_active_trim_available": true,
+      "expected_control_state": "ISOLATE_AFFECTED_SECTOR_AND_SAFE_HOLD"
+    },
+    {
+      "id": "outer_support_shift",
+      "description": "Outer support movement is correlated with a measured magnetic error.",
+      "event_signals": ["outer_displacement", "flux_error"],
+      "failed_channels": [],
+      "latent_fault_without_declared_signal": false,
+      "observability_lost": false,
+      "total_control_power_lost": false,
+      "sfr3_active_trim_available": true,
+      "expected_control_state": "ACTIVE_TRIM_THEN_CONTROLLED_INSPECTION"
+    },
+    {
+      "id": "inner_lane_a_loss",
+      "description": "The complete inner lane A is lost without a physical event.",
+      "event_signals": [],
+      "failed_channels": ["inner_temperature:A", "inner_strain:A", "coolant_state:A", "flux_loop:A"],
+      "latent_fault_without_declared_signal": false,
+      "observability_lost": false,
+      "total_control_power_lost": false,
+      "sfr3_active_trim_available": true,
+      "expected_control_state": "DEGRADED_MONITORING_SINGLE_LANE_RETAINED"
+    },
+    {
+      "id": "outer_lane_a_loss",
+      "description": "The complete outer lane A is lost without a physical event.",
+      "event_signals": [],
+      "failed_channels": ["outer_displacement:A", "outer_vibration:A", "interspace_leak:A"],
+      "latent_fault_without_declared_signal": false,
+      "observability_lost": false,
+      "total_control_power_lost": false,
+      "sfr3_active_trim_available": true,
+      "expected_control_state": "DEGRADED_MONITORING_SINGLE_LANE_RETAINED"
+    },
+    {
+      "id": "sector_dual_bus_loss",
+      "description": "Both sensing lanes are lost in one control sector.",
+      "event_signals": [],
+      "failed_channels": [],
+      "latent_fault_without_declared_signal": false,
+      "observability_lost": true,
+      "total_control_power_lost": false,
+      "sfr3_active_trim_available": false,
+      "expected_control_state": "SAFE_HOLD_LOST_OBSERVABILITY"
+    },
+    {
+      "id": "vacuum_breach",
+      "description": "Vacuum loss is detected by independent hard channels and the interspace network.",
+      "event_signals": ["vacuum_loss", "interspace_pressure"],
+      "failed_channels": [],
+      "latent_fault_without_declared_signal": false,
+      "observability_lost": false,
+      "total_control_power_lost": false,
+      "sfr3_active_trim_available": false,
+      "expected_control_state": "ISOLATE_AFFECTED_SECTOR_AND_SAFE_HOLD"
+    },
+    {
+      "id": "total_control_power_loss",
+      "description": "Control power is lost; independent hard protection commands passive safe hold.",
+      "event_signals": [],
+      "failed_channels": [],
+      "latent_fault_without_declared_signal": false,
+      "observability_lost": false,
+      "total_control_power_lost": true,
+      "sfr3_active_trim_available": false,
+      "expected_control_state": "PASSIVE_HARD_SAFE_HOLD"
+    },
+    {
+      "id": "silent_armor_crack",
+      "description": "An armor crack below online sensor sensitivity is deliberately retained as an undetected fault requiring periodic NDE.",
+      "event_signals": [],
+      "failed_channels": [],
+      "latent_fault_without_declared_signal": true,
+      "observability_lost": false,
+      "total_control_power_lost": false,
+      "sfr3_active_trim_available": true,
+      "expected_control_state": "NO_AUTOMATIC_DETECTION__PERIODIC_NDE_REQUIRED"
+    },
+    {
+      "id": "support_shift_trim_unavailable",
+      "description": "A support shift is detected while active trim is unavailable.",
+      "event_signals": ["outer_displacement", "flux_error"],
+      "failed_channels": [],
+      "latent_fault_without_declared_signal": false,
+      "observability_lost": false,
+      "total_control_power_lost": false,
+      "sfr3_active_trim_available": false,
+      "expected_control_state": "SAFE_HOLD_ALIGNMENT_ERROR_UNCORRECTED"
+    }
+  ],
+  "claim_boundary": {
+    "mechanical_plasma_confinement_credit": 0.0,
+    "magnetic_confinement_gain_credit": 0.0,
+    "fusion_power_gain_credit": 0.0,
+    "ignition_gain_credit": 0.0,
+    "safety_qualification_credit": 0.0,
+    "statement": "The dual boundary protects vacuum coolant radioactive inventory and magnetic alignment. It does not push plasma inward or prove wall lifetime."
+  },
+  "promotion_status": {
+    "SFR3D_G0_DUAL_BOUNDARY_SPEC": "PASS_SPEC_ONLY",
+    "SFR3D_G1_REDUCED_THERMAL_AND_FAULT_SCREEN": "PASS_LOW_AUTHORITY_SYNTHETIC_ONLY",
+    "SFR3D_G2_COUPLED_THERMAL_CFD_AND_STRESS_FEA": "NOT_RUN",
+    "SFR3D_G3_FRACTURE_EROSION_AND_LIFETIME": "NOT_RUN",
+    "SFR3D_G4_SENSOR_RADIATION_AND_CALIBRATION": "NOT_RUN",
+    "SFR3D_G5_3D_MAGNETIC_COUPLING": "NOT_RUN",
+    "SFR3D_G6_3D_NEUTRONICS_TBR_AND_HEATING": "NOT_RUN",
+    "SFR3D_G7_INTEGRATED_TRITIUM_AND_COOLANT_SAFETY": "NOT_RUN",
+    "SFR3D_G8_REMOTE_MAINTENANCE_AND_AVAILABILITY": "NOT_RUN",
+    "SFR3D_G9_HARDWARE": "NOT_RUN"
+  },
+  "next_required_evidence": [
+    "Coupled 3-D heat transfer CFD electromagnetic load and nonlinear structural FEA for every wall interface and port.",
+    "Fracture creep fatigue erosion and irradiation lifetime with material batch and joining-process data.",
+    "Radiation and temperature qualification of each sensor feedthrough cable and calibration chain.",
+    "CAD-linked magnetic analysis proving that vessel blanket sensors and shield materials do not create unacceptable field error.",
+    "Full 3-D OpenMC neutronics including TBR nuclear heating damage gas production sensor dose and streaming.",
+    "Helium PbLi tritium leak fire chemical and decay-heat safety analysis with independent protection credit.",
+    "Instrumented subscale double-wall coupon followed by sector prototype fault injection and high-heat-flux testing."
+  ]
+}

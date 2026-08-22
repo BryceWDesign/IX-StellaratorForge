@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "as_of": {"type": "string"},
+    "baseline_design_id": {"const": "SFR-2-RevA"},
+    "claim_boundary": {"minLength": 40, "type": "string"},
+    "concept_image_translation": {"type": "object"},
+    "mechanical_architecture": {"type": "object"},
+    "program": {"const": "IX-StellaratorForge"},
+    "promotion_status": {"type": "object"},
+    "screen": {"type": "object"},
+    "study_id": {"const": "SFR-2-Actuation-Overlay-A"}
+  },
+  "required": [
+    "as_of",
+    "baseline_design_id",
+    "claim_boundary",
+    "concept_image_translation",
+    "mechanical_architecture",
+    "program",
+    "promotion_status",
+    "screen",
+    "study_id"
+  ],
+  "title": "SFR-2 phase-programmed actuation overlay",
+  "type": "object"
+}

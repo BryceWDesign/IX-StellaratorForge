@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ix-stellaratorforge.local/schemas/reactor/sfr3_dual_boundary_ahis.schema.json",
+  "title": "SFR-3 dual-boundary AHIS integration configuration",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "study_id",
+    "baseline_overlay_id",
+    "architecture",
+    "monitoring_geometry",
+    "thermal_screen",
+    "selected_stack_id",
+    "wall_stack_candidates",
+    "signal_channels",
+    "fault_scenarios",
+    "claim_boundary",
+    "promotion_status",
+    "next_required_evidence"
+  ],
+  "properties": {
+    "schema_version": {"const": "0.8.0"},
+    "study_id": {"const": "SFR3-DUAL-BOUNDARY-AHIS-A"},
+    "baseline_overlay_id": {"const": "SFR3-FIELD-INTEGRITY-SHELL-A"},
+    "architecture": {
+      "type": "object",
+      "properties": {
+        "vacuum_vessel_is_double_walled": {"const": true},
+        "mechanically_pushes_plasma_inward": {"const": false}
+      },
+      "required": ["vacuum_vessel_is_double_walled", "mechanically_pushes_plasma_inward"]
+    },
+    "monitoring_geometry": {
+      "type": "object",
+      "properties": {
+        "field_periods": {"const": 4},
+        "toroidal_control_sectors": {"const": 24},
+        "poloidal_locations_per_sector": {"const": 8},
+        "independent_sensor_lanes": {"const": 2}
+      }
+    },
+    "wall_stack_candidates": {"type": "array", "minItems": 3, "maxItems": 3},
+    "fault_scenarios": {"type": "array", "minItems": 11, "maxItems": 11},
+    "claim_boundary": {
+      "type": "object",
+      "properties": {
+        "mechanical_plasma_confinement_credit": {"const": 0.0},
+        "magnetic_confinement_gain_credit": {"const": 0.0},
+        "fusion_power_gain_credit": {"const": 0.0},
+        "ignition_gain_credit": {"const": 0.0},
+        "safety_qualification_credit": {"const": 0.0}
+      }
+    }
+  },
+  "additionalProperties": false
+}

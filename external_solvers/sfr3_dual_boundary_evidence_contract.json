@@ -1,0 +1,35 @@
+{
+  "contract_id": "SFR3-DUAL-BOUNDARY-HIGH-AUTHORITY-001",
+  "release": "0.8.0",
+  "executed": false,
+  "purpose": "Replace the v0.8 one-dimensional thermal and deterministic fault screens with coupled physical evidence.",
+  "required_runs": [
+    {
+      "gate": "SFR3D_G2_COUPLED_THERMAL_CFD_AND_STRESS_FEA",
+      "solver_class": "coupled conjugate heat transfer coolant CFD electromagnetic load and nonlinear structural FEA",
+      "required_outputs": ["interface temperatures", "coolant margins", "stress", "strain", "buckling", "fatigue usage", "fault transients"]
+    },
+    {
+      "gate": "SFR3D_G3_FRACTURE_EROSION_AND_LIFETIME",
+      "solver_class": "fracture mechanics creep fatigue erosion and irradiation-damage workflow",
+      "required_outputs": ["critical flaw size", "crack growth", "erosion allowance", "joint life", "replacement interval"]
+    },
+    {
+      "gate": "SFR3D_G4_SENSOR_RADIATION_AND_CALIBRATION",
+      "solver_class": "irradiation and environmental qualification campaign",
+      "required_outputs": ["dose survival", "drift", "latency", "localization error", "probability of detection", "false alarm rate", "calibration interval"]
+    },
+    {
+      "gate": "SFR3D_G5_3D_MAGNETIC_COUPLING",
+      "solver_class": "CAD-linked magnetostatic and free-boundary equilibrium workflow",
+      "required_outputs": ["material-induced field error", "sensor and feedthrough perturbation", "trim authority", "island widths", "effective ripple"]
+    },
+    {
+      "gate": "SFR3D_G6_3D_NEUTRONICS_TBR_AND_HEATING",
+      "solver_class": "continuous-energy 3-D OpenMC or equivalent",
+      "required_outputs": ["TBR", "nuclear heating", "dpa", "gas production", "sensor dose", "REBCO flux", "streaming"]
+    }
+  ],
+  "hardware_entry_requirement": "No hardware safety or wall-lifetime claim is permitted until G2 through G7 outputs close and an instrumented sector prototype passes seeded-fault tests.",
+  "fail_closed_rule": "Missing physical evidence remains NOT_RUN and cannot be replaced by the v0.8 screen."
+}
