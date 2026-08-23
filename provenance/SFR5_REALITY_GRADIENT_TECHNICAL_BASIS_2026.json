@@ -1,0 +1,58 @@
+{
+  "record_version": "0.10.0",
+  "study_id": "SFR5-REALITY-GRADIENT-A",
+  "purpose": "Document the method basis and donor-pattern provenance for adaptive inverse design without transferring unrelated domain claims.",
+  "internal_donor_translation": [
+    {
+      "source": "IX-BlackFox-Cognition",
+      "retained": ["typed evidence state", "contradiction and rejection state", "unknown and quarantine discipline"],
+      "not_transferred": ["domain claims", "model-generated confidence as physical evidence"]
+    },
+    {
+      "source": "IX-BlackFox",
+      "retained": ["fail-closed promotion", "receipts and provenance", "adversarial review", "bounded authority"],
+      "not_transferred": ["unrelated operational assumptions"]
+    },
+    {
+      "source": "IX-BlackFox-WorldTwin",
+      "retained": ["perturbation scenarios", "prediction-versus-result deltas", "robustness evaluation"],
+      "not_transferred": ["world-model claims as fusion evidence"]
+    },
+    {
+      "source": "IX-Function",
+      "retained": ["bottleneck hypotheses", "falsification", "negative-control mindset"],
+      "not_transferred": ["causal claims without fusion-specific evidence"]
+    },
+    {
+      "source": "IX-IntentRealityLoop",
+      "retained": ["intent-to-action-to-reality feedback loop", "stateful adaptation after failure"],
+      "not_transferred": ["automatic promotion of model intent into physical truth"]
+    },
+    {
+      "source": "IX-AeroIntegrity and IX-Vahdat",
+      "retained": ["measurement honesty", "conservative thresholds", "auditable evidence handling"],
+      "not_transferred": ["aerospace or unrelated domain performance"]
+    }
+  ],
+  "external_method_context": [
+    {
+      "source": "SIMSOPT single-stage optimization documentation",
+      "url": "https://simsopt.readthedocs.io/latest/example_single_stage.html",
+      "relevance": "Demonstrates simultaneous optimization of plasma-boundary objectives and coil objectives with engineering regularization.",
+      "credit": "method context only; no SIMSOPT result is claimed by the base SFR-5 release"
+    },
+    {
+      "source": "SIMSOPT coil optimization documentation",
+      "url": "https://simsopt.readthedocs.io/latest/example_coils.html",
+      "relevance": "Documents quadratic-flux, coil-length, spacing, curvature, stochastic-error and finite-build optimization concepts.",
+      "credit": "method context only"
+    },
+    {
+      "source": "QUADCOIL",
+      "url": "https://github.com/lankef/quadcoil",
+      "relevance": "Differentiable constrained winding-surface/global coil proxy with plasma and winding-surface sensitivities.",
+      "credit": "method context only; QUADCOIL is not executed in the base SFR-5 release"
+    }
+  ],
+  "nontransfer_rule": "Published methods and donor-repository mechanisms may shape SFR-5 architecture, but no external result, material qualification, confinement result, or hardware performance is assigned to IX-StellaratorForge without candidate-specific execution and evidence."
+}

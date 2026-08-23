@@ -2,6 +2,10 @@
 
 This directory is an **execution bridge**, not prefilled evidence.
 
+## SFR-5 adaptive inverse design
+
+`sfr5_inverse_design_evidence_contract.json` defines the fail-closed path from the v0.10 reduced magnetic autopsy to movable-geometry sensitivities, constrained winding-surface feasibility, discrete nonplanar coils, single-stage finite-beta co-design, transport, 3-D heat/magnet/neutronics, plant closure and hardware. The base release names QUADCOIL/SIMSOPT/DESC/VMEC++-class methods as candidate tools but does not claim that any of those production stages ran.
+
 ## SFR-4 integrated campaign
 
 `sfr4_integrated_evidence_contract.json` defines nine fail-closed promotion gates spanning physical coils, cross-code equilibrium, stability, particle transport, three-dimensional island-divertor exhaust, thermal/structural qualification, OpenMC neutronics, integrated burn/plant analysis and hardware. v0.9 explicitly attempted the DESC, VMEC++ and OpenMC adapters; all stopped because the production dependencies are absent.

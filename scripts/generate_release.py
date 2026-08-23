@@ -20,7 +20,8 @@ def main()->int:
  run('scripts/run_sfr3_field_integrity.py')
  run('scripts/run_sfr3_dual_boundary.py')
  run('scripts/run_sfr4_integrated_campaign.py')
+ run('scripts/run_sfr5_reality_gradient.py')
  run('scripts/make_manifest.py')
- print('IX-StellaratorForge v0.9.0 release artifacts regenerated')
+ print('IX-StellaratorForge v0.10.0 release artifacts regenerated')
  return 0
 if __name__=='__main__':raise SystemExit(main())

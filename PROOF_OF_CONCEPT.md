@@ -1,6 +1,14 @@
 # IX-StellaratorForge — executable evidence overview
 
-Release: **0.9.0**
+Release: **0.10.0**
+
+## SFR-5 Reality Gradient and adaptive inverse design
+
+v0.10.0 converts the preserved SFR-4 magnetic rejection into a deterministic architecture-search decision. It derives the diagnostic values from the committed SFR-4 JSON and config, preserves the topology and held-out reconstruction as separate evidence lanes, and stores the rejected family in fail-closed memory.
+
+Result: `REALITY_GRADIENT_AUTOPSY_COMPLETE__CURRENT_MAGNETIC_FAMILY_REJECTED__ADAPTIVE_INVERSE_DESIGN_PATH_DEFINED__NO_PHYSICS_PROMOTION`.
+
+The result means the fixed helical plus fixed hybrid filament-basis family is no longer the preferred target for more brute-force sampling. It does not prove a replacement coilset. Geometry sensitivities, winding-surface optimization, discrete nonplanar coils, finite-beta co-design, transport, TBR, magnet qualification, plant closure and hardware all remain unrun.
 
 ## SFR-4 integrated campaign
 
@@ -68,6 +76,7 @@ python scripts/run_sfr2_actuation_overlay.py
 python scripts/run_sfr3_field_integrity.py
 python scripts/run_sfr3_dual_boundary.py
 python scripts/run_sfr4_integrated_campaign.py
+python scripts/run_sfr5_reality_gradient.py
 python check_stellarforge.py
 ```
 
@@ -113,6 +122,17 @@ Tracked SFR-4 outputs:
 - `docs/reactor/27_SFR4_SOLVER_ATTEMPTS.md`
 - `docs/reactor/28_SFR4_PROMOTION_GATES.md`
 - `docs/reactor/29_SFR4_DECISION.md`
+
+Tracked SFR-5 outputs:
+
+- `configs/reactor/sfr5_reality_gradient_a.json`
+- `results/sfr5/sfr5_reality_gradient_a_v0100.json`
+- `results/sfr5/SFR5_REALITY_GRADIENT_A_RESULT.md`
+- `schemas/reactor/sfr5_reality_gradient.schema.json`
+- `provenance/SFR5_REALITY_GRADIENT_TECHNICAL_BASIS_2026.json`
+- `external_solvers/sfr5_inverse_design_evidence_contract.json`
+- `docs/reactor/30_SFR5_REALITY_GRADIENT.md`
+- `docs/reactor/31_SFR5_PROMOTION_GATES.md`
 
 ## Promotion boundary
 

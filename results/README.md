@@ -7,16 +7,18 @@ marked as a non-result/unknown. The authoritative regeneration command is:
 python scripts/generate_release.py
 ```
 
-Primary v0.9 review path:
+Primary v0.10 review path:
 
-1. `sfr4_integrated/SFR4_INTEGRATED_PHYSICAL_PROMOTION_A_RESULT.md`
-2. `sfr4_integrated/sfr4_integrated_physical_promotion_a_v090.json`
-3. `sfr3_dual_boundary/SFR3_DUAL_BOUNDARY_AHIS_A_RESULT.md`
-4. `sfr3_dual_boundary/sfr3_dual_boundary_ahis_a_v080.json`
-5. `sfr3_field_integrity/SFR3_FIELD_INTEGRITY_SHELL_A_RESULT.md`
-6. `sfr3_field_integrity/sfr3_field_integrity_shell_a_v070.json`
-7. `sfr2_actuation/SFR2_ACTUATION_OVERLAY_A_RESULT.md`
-8. `sfr2/SFR2_REVA_SCREEN_RESULT.md`
+1. `sfr5/SFR5_REALITY_GRADIENT_A_RESULT.md`
+2. `sfr5/sfr5_reality_gradient_a_v0100.json`
+3. `sfr4_integrated/SFR4_INTEGRATED_PHYSICAL_PROMOTION_A_RESULT.md`
+4. `sfr4_integrated/sfr4_integrated_physical_promotion_a_v090.json`
+5. `sfr3_dual_boundary/SFR3_DUAL_BOUNDARY_AHIS_A_RESULT.md`
+6. `sfr3_dual_boundary/sfr3_dual_boundary_ahis_a_v080.json`
+7. `sfr3_field_integrity/SFR3_FIELD_INTEGRITY_SHELL_A_RESULT.md`
+8. `sfr3_field_integrity/sfr3_field_integrity_shell_a_v070.json`
+9. `sfr2_actuation/SFR2_ACTUATION_OVERLAY_A_RESULT.md`
+10. `sfr2/SFR2_REVA_SCREEN_RESULT.md`
 
 Preserved IX-Fusion foundation path:
 

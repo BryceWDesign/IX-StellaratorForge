@@ -1,0 +1,107 @@
+{
+  "schema_version": "0.10.0",
+  "study_id": "SFR5-REALITY-GRADIENT-A",
+  "source_release": "0.9.0",
+  "source_artifacts": {
+    "sfr4_result": "results/sfr4_integrated/sfr4_integrated_physical_promotion_a_v090.json",
+    "sfr4_config": "configs/reactor/sfr4_integrated_physical_promotion_a.json"
+  },
+  "constraint_pressure": {
+    "rho": 2.0,
+    "normalization": "declared_gate_scale",
+    "uncertainty_policy": "multiply_active_pressure_by_1_plus_declared_fraction"
+  },
+  "search_policy": {
+    "stagnation_window": 4,
+    "minimum_relative_improvement": 0.05,
+    "forbid_bruteforce_same_family_after_rejection": true,
+    "candidate_families": [
+      "single_stage_nonplanar_modular_fourier_coils_with_movable_plasma_boundary",
+      "differentiable_winding_surface_proxy_then_filament_realization",
+      "spatially_constrained_wireframe_or_planar_shaping_array",
+      "passive_superconductor_hybrid_only_as_secondary_architecture"
+    ]
+  },
+  "movable_design_variables": [
+    {
+      "group": "plasma_boundary",
+      "variables": ["R_mn", "Z_mn", "field_period_selection"],
+      "authority": "optimization_degree_of_freedom_only"
+    },
+    {
+      "group": "winding_surface",
+      "variables": ["surface_Fourier_coefficients", "offset_or_clearance_distribution", "maintenance_exclusion_zones"],
+      "authority": "optimization_degree_of_freedom_only"
+    },
+    {
+      "group": "coil_geometry",
+      "variables": ["nonplanar_curve_Fourier_coefficients", "coil_count", "symmetry_class", "placement"],
+      "authority": "optimization_degree_of_freedom_only"
+    },
+    {
+      "group": "coil_currents",
+      "variables": ["independent_current_groups", "current_signs"],
+      "authority": "optimization_degree_of_freedom_only"
+    },
+    {
+      "group": "magnet_engineering",
+      "variables": ["REBCO_winding_orientation", "minimum_coil_spacing", "minimum_coil_plasma_distance", "support_and_access_keepouts"],
+      "authority": "constraint_only_until_FEA_and_magnet_qualification"
+    }
+  ],
+  "required_external_methods": [
+    {
+      "stage": "winding_surface_feasibility",
+      "preferred_methods": ["QUADCOIL_or_equivalent_differentiable_winding_surface_optimizer"],
+      "required_outputs": ["normal_field_error", "curvature_or_complexity_constraints", "force_or_support_proxy", "plasma_and_winding_surface_sensitivities"]
+    },
+    {
+      "stage": "discrete_nonplanar_coils",
+      "preferred_methods": ["SIMSOPT_or_equivalent_constrained_filament_optimizer"],
+      "required_outputs": ["coil_curves", "currents", "quadratic_flux", "length", "curvature", "coil_coil_distance", "coil_plasma_distance"]
+    },
+    {
+      "stage": "single_stage_codesign",
+      "preferred_methods": ["SIMSOPT_plus_VMEC_or_DESC_equivalent"],
+      "required_outputs": ["optimized_plasma_boundary", "optimized_coils", "equilibrium_receipt", "objective_and_constraint_history"]
+    },
+    {
+      "stage": "physics_promotion",
+      "preferred_methods": ["DESC", "VMEC++", "Boozer_transform", "guiding_center_orbits", "neoclassical_and_turbulent_transport"],
+      "required_outputs": ["cross_code_equilibrium", "particle_confinement", "transport_evidence"]
+    },
+    {
+      "stage": "reactor_promotion",
+      "preferred_methods": ["OpenMC_DAGMC_or_equivalent", "thermal_CFD", "structural_FEA", "magnet_quench_analysis"],
+      "required_outputs": ["3D_TBR_and_heating", "heat_exhaust", "structural_margin", "magnet_qualification"]
+    }
+  ],
+  "reopen_conditions": [
+    "new_plasma_boundary_family",
+    "new_winding_surface_parameterization",
+    "new_nonplanar_coil_parameterization",
+    "higher_authority_solver_evidence_changes_failure_identity"
+  ],
+  "promotion_status": {
+    "SFR5_G0_SPEC_AND_AUTOPSY": "PASS_REDUCED",
+    "SFR5_G1_MOVABLE_GEOMETRY_SENSITIVITIES": "NOT_RUN",
+    "SFR5_G2_WINDING_SURFACE_FEASIBILITY": "NOT_RUN",
+    "SFR5_G3_DISCRETE_NONPLANAR_COILS": "NOT_RUN",
+    "SFR5_G4_SINGLE_STAGE_EQUILIBRIUM_CODESIGN": "NOT_RUN",
+    "SFR5_G5_PARTICLE_AND_TRANSPORT": "NOT_RUN",
+    "SFR5_G6_HEAT_MAGNET_NEUTRONICS": "NOT_RUN",
+    "SFR5_G7_INTEGRATED_PLANT": "NOT_RUN",
+    "SFR5_G8_HARDWARE": "NOT_RUN"
+  },
+  "claim_boundary": {
+    "fusion_progress_credit_fraction": 0.0,
+    "production_equilibrium_credit": 0.0,
+    "particle_confinement_credit": 0.0,
+    "ignition_credit": 0.0,
+    "net_electric_credit": 0.0,
+    "magnet_qualification_credit": 0.0,
+    "tritium_breeding_credit": 0.0,
+    "safety_qualification_credit": 0.0,
+    "hardware_credit": 0.0
+  }
+}

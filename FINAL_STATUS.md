@@ -1,46 +1,39 @@
-# IX-StellaratorForge v0.9.0: Integrated Physical Promotion and Heat Exhaust
+# IX-StellaratorForge v0.10.0: Reality Gradient and Adaptive Inverse Design
 
 ## Bottom line
 
-All seven requested computational workstreams were attempted. The executable reduced campaign completed, but the result is not a fusion promotion.
+The v0.9 SFR-4 integrated campaign remains preserved: its declared nominal and steady heat envelope passes the reduced screen, while its scanned physical coil family fails with zero combined topology passes across 80 direct-filament cases.
 
-The heat architecture passes its declared nominal and steady screening envelope. The scanned physical coil family fails.
+Version 0.10.0 adds SFR-5 Reality Gradient and converts that failure into a governed architecture-search decision rather than increasing brute-force sampling of the same magnetic representation.
 
-Top-level verdict:
+Top-level SFR-5 verdict:
 
-`INTEGRATED_REDUCED_CAMPAIGN_COMPLETE__NOMINAL_HEAT_ENVELOPE_SCREEN_PASS__PHYSICAL_COIL_EQUILIBRIUM_CONFINEMENT_AND_FUSION_UNPROVEN`
+`REALITY_GRADIENT_AUTOPSY_COMPLETE__CURRENT_MAGNETIC_FAMILY_REJECTED__ADAPTIVE_INVERSE_DESIGN_PATH_DEFINED__NO_PHYSICS_PROMOTION`
 
-## What passed
+## Executed SFR-5 diagnosis
 
-The selected heat architecture separates distributed first-wall heat, concentrated divertor exhaust and blanket neutron heat. At the declared 1 GW fusion target and Q=20 ledger:
+SFR-5 regenerates its values from the committed SFR-4 result and configuration:
 
-* first-wall peak heat flux: approximately 0.294 MW/m2;
-* divertor peak heat flux: approximately 5.724 MW/m2;
-* nominal first-wall tungsten surface: approximately 401.2 C;
-* first-wall surface at the declared 1 MW/m2 steady upper bound: approximately 523.8 C;
-* divertor tungsten surface: approximately 678.3 C;
-* divertor water flow: approximately 426.0 kg/s through 960 parallel channels;
-* mean channel velocity: approximately 7.56 m/s; and
-* hydraulic pumping screen: approximately 0.122 MW.
+* SFR-4 direct-filament candidates: 80;
+* combined topology passes: 0;
+* transform factor required merely to reach the minimum iota gate: approximately 3.8265x;
+* remaining normalized radial-excursion slack in that same topology lane: approximately 3.887%; and
+* separate held-out richer-basis RMS normal-field error: approximately 12.9825x its declared limit.
 
-The selected requirements are a helium-cooled segmented-W/graded-W-RAFM/ODS-RAFM first wall, isolated PbLi DCLL blanket, and a separately bounded water-cooled W/OFHC-Cu/CuCrZr divertor. The water and PbLi systems never share a boundary, penetration or heat exchanger.
+The direct-filament topology and held-out reconstruction are preserved as separate evidence lanes. They are not combined into a fictitious physical coilset.
 
-This resolves the nominal and declared steady heat allocation only at reduced-model authority. Stable detachment, the 3-D island footprint, critical heat flux, boiling stability, erosion, cyclic fatigue, irradiation, disruptions, accidents and hardware qualification remain unproven.
+## What changed
 
-## What failed
+The fixed helical plus fixed hybrid filament-basis family is rejected as the preferred target for more brute-force sampling. SFR-5 opens plasma-boundary, winding-surface, nonplanar-coil, current-group and engineering keep-out degrees of freedom for the replacement search.
 
-Eighty direct-filament Biot-Savart coil configurations were executed. Zero pass both the transform and radial-excursion gates. The best declared scoring case reaches approximately 0.0653 mean iota against a minimum 0.25 requirement. The richer held-out normal-field reconstruction is approximately 6.49% RMS against a 0.5% screen.
+The base release computes normalized constraint pressure but deliberately does not fabricate a geometry gradient. Real geometry sensitivities, constrained winding-surface optimization, discrete nonplanar coils, single-stage finite-beta co-design, particle/transport evidence, 3-D neutronics, magnet qualification, integrated plant analysis and hardware remain `NOT_RUN`.
 
-The classical scanned helical family is rejected. Increasing its current did not solve the missing transform without violating other field-quality requirements.
+## Preserved v0.9 heat result
 
-## What could not run
+The selected separated first-wall/blanket/divertor architecture still passes its declared nominal and steady reduced heat envelope. That remains requirement-level evidence only; stable detachment, 3-D island footprints, transient heat, lifetime, critical heat flux, irradiation, structural qualification and accidents remain open.
 
-DESC, VMEC++, SIMSOPT, OpenMC, kinetic transport, CAD, CFD and structural FEA are unavailable in this runtime. The DESC, VMEC++ and OpenMC adapters were explicitly invoked and stopped with exit code 1. The dependency-installation route was attempted and blocked by runtime network policy. No surrogate output was relabeled as production evidence.
+## Scientific boundary
 
-## Remaining scientific result
+Earned improvement toward demonstrated equilibrium, confinement, ignition, TBR, net-electric power, qualified magnets, safety or hardware remains exactly **0.00%**.
 
-The 3.5 MeV alpha gyroradius scale is approximately 0.0449 m at 6 T, but no alpha retention is credited. The Q=20 design-iota burn requirement, including the declared alpha-deposition and bremsstrahlung assumptions, requires approximately H_ISS04 2.00. That target cannot be assigned to the failed physical coil family.
-
-Earned improvement toward demonstrated confinement, ignition or fusion remains exactly **0.00%**.
-
-The useful advance is narrower and real: the repository now has an executable heat-exhaust requirement and a stronger rejection of an inadequate magnet family. The next design action is a fundamentally different nonplanar modular-coil optimization, not another increase in current through the rejected helices.
+The useful v0.10 advance is a stronger research-control result: failed magnetic evidence now determines which representation must change next, while the software is prohibited from promoting that decision into a physical fusion claim.

@@ -1,0 +1,49 @@
+{
+  "contract_version": "0.10.0",
+  "study_id": "SFR5-REALITY-GRADIENT-A",
+  "principle": "A reduced SFR-5 autopsy may choose what to test next but cannot promote a replacement magnetic architecture without external solver evidence.",
+  "gates": [
+    {
+      "id": "SFR5_G1_MOVABLE_GEOMETRY_SENSITIVITIES",
+      "status": "NOT_RUN",
+      "required": ["plasma-boundary degrees of freedom", "winding-surface degrees of freedom", "coil degrees of freedom", "constraint Jacobian or controlled sensitivity evidence"]
+    },
+    {
+      "id": "SFR5_G2_WINDING_SURFACE_FEASIBILITY",
+      "status": "NOT_RUN",
+      "required": ["constrained winding-surface/global current solution", "normal-field error", "curvature/complexity limits", "force/support proxy", "reproducible solver receipt"]
+    },
+    {
+      "id": "SFR5_G3_DISCRETE_NONPLANAR_COILS",
+      "status": "NOT_RUN",
+      "required": ["discrete coil curves and currents", "coil-coil distance", "coil-plasma distance", "curvature and length", "normal-field objective", "finite-build follow-up plan"]
+    },
+    {
+      "id": "SFR5_G4_SINGLE_STAGE_EQUILIBRIUM_CODESIGN",
+      "status": "NOT_RUN",
+      "required": ["movable plasma boundary", "finite-beta equilibrium", "coil co-design", "cross-code or independent equilibrium evidence", "constraint history"]
+    },
+    {
+      "id": "SFR5_G5_PARTICLE_AND_TRANSPORT",
+      "status": "NOT_RUN",
+      "required": ["Boozer or equivalent coordinates", "alpha/guiding-center orbits", "neoclassical transport", "turbulent transport evidence"]
+    },
+    {
+      "id": "SFR5_G6_HEAT_MAGNET_NEUTRONICS",
+      "status": "NOT_RUN",
+      "required": ["3-D heat exhaust", "peak conductor field", "structural loads", "REBCO strain and quench", "3-D neutronics and TBR"]
+    },
+    {
+      "id": "SFR5_G7_INTEGRATED_PLANT",
+      "status": "NOT_RUN",
+      "required": ["self-consistent burn/transport coupling", "recirculating power", "gross and net electric ledger", "fuel-cycle closure"]
+    },
+    {
+      "id": "SFR5_G8_HARDWARE",
+      "status": "NOT_RUN",
+      "required": ["representative hardware", "metrology", "thermal-vacuum and electromagnetic testing", "fault and safety evidence"]
+    }
+  ],
+  "automatic_promotion": false,
+  "missing_evidence_policy": "FAIL_CLOSED"
+}

@@ -2,17 +2,19 @@
   "SPDXID": "SPDXRef-DOCUMENT",
   "spdxVersion": "SPDX-2.3",
   "dataLicense": "CC0-1.0",
-  "name": "IX-StellaratorForge-0.9.0-SBOM",
-  "documentNamespace": "https://github.com/BryceWDesign/IX-StellaratorForge/spdx/0.9.0",
+  "name": "IX-StellaratorForge-0.10.0-SBOM",
+  "documentNamespace": "https://github.com/BryceWDesign/IX-StellaratorForge/spdx/0.10.0",
   "creationInfo": {
     "created": "2026-08-22T00:00:00Z",
-    "creators": ["Tool: IX-StellaratorForge release preparation"]
+    "creators": [
+      "Tool: IX-StellaratorForge release preparation"
+    ]
   },
   "packages": [
     {
       "name": "IX-StellaratorForge",
       "SPDXID": "SPDXRef-Package-IXStellaratorForge",
-      "versionInfo": "0.9.0",
+      "versionInfo": "0.10.0",
       "downloadLocation": "NOASSERTION",
       "filesAnalyzed": false,
       "licenseConcluded": "LicenseRef-IX-StellaratorForge-Eval-Only-1.1",

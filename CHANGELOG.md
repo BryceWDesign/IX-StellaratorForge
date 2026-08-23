@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.10.0 — 2026-08-22 — Reality Gradient and Adaptive Inverse Design
+
+- Added SFR-5 Reality Gradient as a fail-closed architecture-search layer above the preserved SFR-4 evidence.
+- Derived the magnetic autopsy directly from committed v0.9 result/config artifacts: 80 candidates, zero combined topology passes, 3.8265x transform gap to the minimum gate, 3.887% normalized excursion slack, and a held-out normal-field error 12.9825x above its limit.
+- Added explicit independent evidence lanes so the direct-filament topology result and held-out reconstruction result cannot be merged into a fictitious physical coilset.
+- Added normalized augmented-Lagrangian-style constraint pressure while deliberately withholding any backward geometry gradient until a real movable-geometry evaluator supplies sensitivities.
+- Added rejected-family memory, architecture-stagnation logic, movable plasma/winding-surface/coil degrees of freedom, and a production-solver promotion contract.
+- Added SFR-5 config/schema, deterministic runner, persisted result, provenance, documentation, external evidence contract, release checks and tests.
+- Preserved zero earned fusion-progress credit and all high-authority equilibrium, confinement, TBR, net-electric, magnet, safety and hardware gates as open.
+
 ## 0.9.0 — 2026-08-22 — Integrated Physical Promotion and Heat Exhaust
 
 - Attempted all seven requested workstreams in one fail-closed campaign: physical coils, finite-beta equilibrium, coil/plasma co-design, particle confinement, burn, magnet engineering and reactor systems.

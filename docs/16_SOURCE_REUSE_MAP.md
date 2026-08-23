@@ -22,3 +22,19 @@ conceptual provenance, not as evidence that their original application transfers
 Sacred-geometry and cymatic imagery are retained only as historical design inspiration.
 Physics terms used in IX-Fusion are symmetry, harmonics, eigenmodes, phase, field periods,
 and experimentally falsifiable metrics.
+
+## SFR-5 donor-pattern translation
+
+SFR-5 additionally audits later IX repositories as software/research-control donors. These are mechanism translations only.
+
+| Donor | Retained mechanism | Explicitly not transferred |
+|---|---|---|
+| IX-BlackFox-Cognition | typed evidence/rejection/unknown/quarantine states | model confidence as physical truth |
+| IX-BlackFox | fail-closed promotion, receipts, provenance, adversarial review | unrelated operational claims |
+| IX-BlackFox-WorldTwin | perturbation scenarios and prediction-versus-result deltas | world-model predictions as fusion evidence |
+| IX-Function | bottleneck hypotheses, falsification, negative controls | causal claims without fusion-specific tests |
+| IX-IntentRealityLoop | stateful intent/action/reality feedback | automatic promotion from intent to evidence |
+| IX-AeroIntegrity / IX-Vahdat | measurement honesty, conservative thresholds, audit discipline | aerospace or unrelated performance claims |
+| IX-Sally | selective strict-validation/review patterns only | unfinished or unverified subsystem behavior |
+
+IX-Shimizu and IX-Trinity are not used in the SFR-5 technical core because no sufficiently grounded mechanism from those repositories was needed for this release.

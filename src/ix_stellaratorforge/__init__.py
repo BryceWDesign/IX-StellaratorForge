@@ -26,6 +26,10 @@ from .sfr4_integrated_campaign import (
     run_integrated_campaign,
     validate_integrated_config,
 )
+from .sfr5_inverse_design import (
+    run_sfr5_campaign,
+    validate_sfr5_config,
+)
 
 __all__ = [
     "DTReactionLedger",
@@ -51,4 +55,6 @@ __all__ = [
     "validate_dual_boundary_config",
     "run_integrated_campaign",
     "validate_integrated_config",
+    "run_sfr5_campaign",
+    "validate_sfr5_config",
 ]
