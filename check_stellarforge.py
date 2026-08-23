@@ -31,6 +31,11 @@ from ix_stellaratorforge.sfr4_integrated_campaign import (
     run_integrated_campaign,
     validate_integrated_config,
 )
+from ix_stellaratorforge.sfr5_inverse_design import (
+    PASS_VERDICT as SFR5_VERDICT,
+    run_sfr5_campaign,
+    validate_sfr5_config,
+)
 
 CONTACT = "https://www.linkedin.com/in/brycewdesign/"
 LICENSE_REF = "LicenseRef-IX-StellaratorForge-Eval-Only-1.1"
@@ -50,7 +55,7 @@ def run(label: str, command: list[str]) -> bool:
 
 
 def main() -> int:
-    print("IX-STELLARATORFORGE v0.9.0 QUALITY GATE\n")
+    print("IX-STELLARATORFORGE v0.10.0 QUALITY GATE\n")
     failures: list[str] = []
 
     config = load_reactor_config(ROOT / "configs/reactor/sfr1_rev_a.json")
@@ -127,6 +132,19 @@ def main() -> int:
     print(f"{'SFR-4 integrated-campaign invariants':.<52} {'PASS' if sfr4_spec_ok else 'FAIL'}")
     failures.extend(sfr4_errors)
 
+    try:
+        sfr5_raw = json.loads(
+            (ROOT / "configs/reactor/sfr5_reality_gradient_a.json").read_text(encoding="utf-8")
+        )
+        sfr5_errors = validate_sfr5_config(sfr5_raw)
+        sfr5_spec_ok = not sfr5_errors
+    except Exception as exc:  # noqa: BLE001
+        sfr5_raw = {}
+        sfr5_errors = (f"SFR-5 config parse/validation failed: {exc}",)
+        sfr5_spec_ok = False
+    print(f"{'SFR-5 Reality Gradient invariants':.<52} {'PASS' if sfr5_spec_ok else 'FAIL'}")
+    failures.extend(sfr5_errors)
+
     json_files = (
         "configs/reactor/parameter_ledger.json",
         "provenance/EXTERNAL_TECHNICAL_BASIS_2026.json",
@@ -159,6 +177,11 @@ def main() -> int:
         "provenance/SFR4_INTEGRATED_TECHNICAL_BASIS_2026.json",
         "external_solvers/sfr4_integrated_evidence_contract.json",
         "results/sfr4_integrated/sfr4_integrated_physical_promotion_a_v090.json",
+        "configs/reactor/sfr5_reality_gradient_a.json",
+        "schemas/reactor/sfr5_reality_gradient.schema.json",
+        "provenance/SFR5_REALITY_GRADIENT_TECHNICAL_BASIS_2026.json",
+        "external_solvers/sfr5_inverse_design_evidence_contract.json",
+        "results/sfr5/sfr5_reality_gradient_a_v0100.json",
         "sbom.spdx.json",
     )
     json_ok = True
@@ -176,18 +199,18 @@ def main() -> int:
         citation = (ROOT / "CITATION.cff").read_text(encoding="utf-8")
         sbom = json.loads((ROOT / "sbom.spdx.json").read_text(encoding="utf-8"))
         version_ok = (
-            version == "0.9.0"
-            and 'version = "0.9.0"' in pyproject
-            and 'version: "0.9.0"' in citation
-            and sbom["name"] == "IX-StellaratorForge-0.9.0-SBOM"
-            and sbom["packages"][0]["versionInfo"] == "0.9.0"
+            version == "0.10.0"
+            and 'version = "0.10.0"' in pyproject
+            and 'version: "0.10.0"' in citation
+            and sbom["name"] == "IX-StellaratorForge-0.10.0-SBOM"
+            and sbom["packages"][0]["versionInfo"] == "0.10.0"
         )
     except Exception as exc:  # noqa: BLE001
         version_ok = False
         failures.append(f"release-version consistency failed: {exc}")
-    print(f"{'v0.9 release metadata consistency':.<52} {'PASS' if version_ok else 'FAIL'}")
+    print(f"{'v0.10 release metadata consistency':.<52} {'PASS' if version_ok else 'FAIL'}")
     if not version_ok:
-        failures.append("v0.9 release metadata inconsistent")
+        failures.append("v0.10 release metadata inconsistent")
 
     texts = [(ROOT / name).read_text(encoding="utf-8") for name in ("LICENSE", "LICENSING.md", "NOTICE", "README.md")]
     license_ok = all(CONTACT in text for text in texts) and LICENSE_REF in texts[0]
@@ -503,8 +526,12 @@ def main() -> int:
         systems = persisted_sfr4["workstreams"]["7_reactor_systems"]
         heat = persisted_sfr4["heat_exhaust_resolution"]
         promotion = persisted_sfr4["promotion_summary"]
+        persisted_sfr4_core = dict(persisted_sfr4)
+        recomputed_sfr4_core = dict(recomputed_sfr4)
+        persisted_sfr4_core.pop("solver_availability", None)
+        recomputed_sfr4_core.pop("solver_availability", None)
         sfr4_screen_ok = (
-            persisted_sfr4 == recomputed_sfr4
+            persisted_sfr4_core == recomputed_sfr4_core
             and persisted_sfr4["release"] == "0.9.0"
             and persisted_sfr4["top_level_verdict"] == SFR4_VERDICT
             and coil["candidate_count"] == 80
@@ -525,6 +552,41 @@ def main() -> int:
     if not sfr4_screen_ok:
         failures.append("SFR-4 campaign stale, overclaimed, or inconsistent")
 
+    try:
+        persisted_sfr5 = json.loads(
+            (ROOT / "results/sfr5/sfr5_reality_gradient_a_v0100.json").read_text(encoding="utf-8")
+        )
+        recomputed_sfr5 = run_sfr5_campaign(sfr5_raw, persisted_sfr4, sfr4_raw)
+        diag = persisted_sfr5["magnetic_autopsy"]["diagnostics"]
+        pressure = persisted_sfr5["constraint_pressure"]
+        promotion5 = persisted_sfr5["promotion_status"]
+        sfr5_screen_ok = (
+            persisted_sfr5 == recomputed_sfr5
+            and persisted_sfr5["release"] == "0.10.0"
+            and persisted_sfr5["top_level_verdict"] == SFR5_VERDICT
+            and persisted_sfr5["source_invariants"]["candidate_count"] == 80
+            and persisted_sfr5["source_invariants"]["combined_pass_count"] == 0
+            and persisted_sfr5["magnetic_autopsy"]["decision"] == "family_switch_required"
+            and 3.82 < diag["iota_factor_to_minimum_gate"] < 3.84
+            and 0.038 < diag["excursion_slack_fraction_of_limit"] < 0.040
+            and 12.9 < diag["normal_field_factor_over_limit"] < 13.1
+            and pressure["geometry_sensitivity_status"].startswith("NOT_RUN")
+            and pressure["backward_reality_gradient_status"].startswith("NOT_COMPUTED")
+            and persisted_sfr5["earned_fusion_progress_credit_fraction"] == 0.0
+            and all(value == 0.0 for value in persisted_sfr5["claim_boundary"].values())
+            and all(
+                status == "NOT_RUN"
+                for gate, status in promotion5.items()
+                if gate != "SFR5_G0_SPEC_AND_AUTOPSY"
+            )
+        )
+    except Exception as exc:  # noqa: BLE001
+        sfr5_screen_ok = False
+        failures.append(f"SFR-5 persisted/recomputed campaign failed: {exc}")
+    print(f"{'SFR-5 Reality Gradient no-overclaim campaign':.<52} {'PASS' if sfr5_screen_ok else 'FAIL'}")
+    if not sfr5_screen_ok:
+        failures.append("SFR-5 campaign stale, overclaimed, or inconsistent")
+
     openmc_adapter = (ROOT / "external_solvers/adapters/build_openmc_axisymmetric_proxy.py").read_text(encoding="utf-8")
     adapters_ok = "NOT the G7 final 3-D stellarator model" in openmc_adapter and "(n,Xt)" in openmc_adapter
     print(f"{'External solver fail-closed / OpenMC proxy boundary':.<52} {'PASS' if adapters_ok else 'FAIL'}")
@@ -538,12 +600,13 @@ def main() -> int:
             print("-", failure)
         return 1
     print("IX-STELLARATORFORGE: GREEN")
-    print("Meaning: release integrity, preserved SFR-1/SFR-2/SFR-3 evidence, and the v0.9 integrated campaign reproduce from committed inputs and code.")
+    print("Meaning: release integrity, preserved SFR-1/SFR-2/SFR-3 evidence, the v0.9 SFR-4 integrated campaign, and the v0.10 SFR-5 adaptive inverse-design autopsy reproduce from committed inputs and code.")
     print("SFR-2 primary result: no H_ISS04=1 case crosses its optimistic ignition proxy; dynamic compression receives no unmodeled phase/RF or flux-compression credit.")
     print("SFR-2 actuation result: no declared breathing case improves both cycle-average proxy and fusion power; the tri-lobe translation receives zero unearned fusion credit.")
     print("SFR-3 result: the synthetic bounded control and fault cases pass their declared thresholds; physical confinement and fusion credit remain zero.")
     print("Dual-boundary result: reduced thermal and fault-routing screens pass; mechanical plasma-force, wall-lifetime, safety and fusion credit remain zero.")
     print("SFR-4 result: 80 direct-filament coil cases produce zero topology passes; the declared nominal and steady heat envelope passes, but equilibrium, transport, transient heat, qualified magnets, TBR and fusion remain unproven.")
+    print("SFR-5 result: the failed magnetic family is rejected as the preferred brute-force search direction; the next search opens plasma boundary, winding surface and nonplanar coil geometry, while real sensitivities and production co-design remain unrun.")
     print("It does NOT mean finite-beta dynamic MHD, kinetic confinement, qualified high-field magnets, full-3D TBR, ignition, net-electric fusion, safety qualification, or hardware operation has been demonstrated.")
     return 0
 

@@ -2,11 +2,11 @@
 
 **Evidence-driven stellarator fusion reactor design and computational co-design program.**
 
-IX-StellaratorForge preserves the original `IX-Fusion` research lineage and builds a reactor-level evidence program above it. **SFR-1 Rev A** remains the steady-state reference architecture; **SFR-2 Rev A** remains a separate dynamic-compression assumption breaker; **SFR-3 Field Integrity Shell A** remains the synthetic magnetic-error-control branch; **Dual Boundary AHIS A** remains the independently monitored engineering boundary. Version 0.9.0 adds **SFR-4 Integrated Physical-Promotion Campaign A**, which attempts physical coil fields, equilibrium, co-design, particle confinement, burn, magnet engineering, heat exhaust and reactor systems without promoting unavailable production evidence.
+IX-StellaratorForge preserves the original `IX-Fusion` research lineage and builds a reactor-level evidence program above it. **SFR-1 Rev A** remains the steady-state reference architecture; **SFR-2 Rev A** remains a separate dynamic-compression assumption breaker; **SFR-3 Field Integrity Shell A** remains the synthetic magnetic-error-control branch; **Dual Boundary AHIS A** remains the independently monitored engineering boundary; **SFR-4 Integrated Physical-Promotion Campaign A** remains the integrated heat/magnetic campaign. Version 0.10.0 adds **SFR-5 Reality Gradient and Adaptive Inverse Design A**, which converts the SFR-4 magnetic rejection into a fail-closed architecture-search program instead of increasing brute-force sampling of the same family.
 
-> **Release:** `0.9.0: Integrated Physical Promotion and Heat Exhaust`
+> **Release:** `0.10.0: Reality Gradient and Adaptive Inverse Design`
 >
-> **Repository verdict:** `GREEN` when all preserved evidence and the SFR-4 integrated reduced campaign reproduce.
+> **Repository verdict:** `GREEN` when all preserved evidence, the SFR-4 integrated campaign, and the SFR-5 adaptive inverse-design autopsy reproduce.
 >
 > **SFR-2 primary verdict:** `NO_PRIMARY_CASE_CROSSES_OPTIMISTIC_IGNITION_PROXY`
 >
@@ -18,7 +18,36 @@ IX-StellaratorForge preserves the original `IX-Fusion` research lineage and buil
 >
 > **SFR-4 verdict:** `INTEGRATED_REDUCED_CAMPAIGN_COMPLETE__NOMINAL_HEAT_ENVELOPE_SCREEN_PASS__PHYSICAL_COIL_EQUILIBRIUM_CONFINEMENT_AND_FUSION_UNPROVEN`
 >
+> **SFR-5 verdict:** `REALITY_GRADIENT_AUTOPSY_COMPLETE__CURRENT_MAGNETIC_FAMILY_REJECTED__ADAPTIVE_INVERSE_DESIGN_PATH_DEFINED__NO_PHYSICS_PROMOTION`
+>
 > No branch claims demonstrated confinement, ignition, net energy, tritium self-sufficiency, net electricity, buildable hardware, reactor safety, or reactor feasibility.
+
+## What v0.10.0 adds
+
+SFR-5 treats the `0 / 80` SFR-4 magnetic result as information about the search representation, not an invitation to sample the same family more densely. Its diagnosis is regenerated from the committed SFR-4 result and thresholds rather than hard-coded into a new narrative.
+
+| SFR-5 diagnostic | Executed result |
+|---|---:|
+| SFR-4 direct-filament candidates | 80 |
+| Combined topology passes | 0 |
+| Mean-transform factor required to reach the minimum iota gate | 3.8265x |
+| Remaining normalized excursion slack | 3.887% |
+| Held-out richer-basis RMS normal-field error / declared limit | 12.9825x |
+| Earned fusion-progress credit | 0 |
+
+The two magnetic diagnostics remain separate evidence lanes because they are not the same physical coil representation. SFR-5 rejects continued brute-force search of the fixed helical plus fixed hybrid filament basis as the preferred next move, while explicitly **not** rejecting stellarators, quasi-isodynamic configurations, nonplanar modular coils or fusion.
+
+The new inverse-design contract allows the plasma boundary, winding surface, nonplanar coil geometry, current groups, REBCO orientation and engineering keep-outs to move. Constraint failures become normalized pressure signals. A backward geometry gradient is only permitted when a real solver supplies analytic, automatic-differentiation or controlled finite-difference sensitivities; the base release deliberately records that step as `NOT_RUN`.
+
+Primary v0.10 artifacts:
+
+- `results/sfr5/SFR5_REALITY_GRADIENT_A_RESULT.md`
+- `results/sfr5/sfr5_reality_gradient_a_v0100.json`
+- `configs/reactor/sfr5_reality_gradient_a.json`
+- `docs/reactor/30_SFR5_REALITY_GRADIENT.md`
+- `docs/reactor/31_SFR5_PROMOTION_GATES.md`
+- `external_solvers/sfr5_inverse_design_evidence_contract.json`
+- `provenance/SFR5_REALITY_GRADIENT_TECHNICAL_BASIS_2026.json`
 
 ## What v0.9.0 adds
 
@@ -202,6 +231,7 @@ python scripts/run_sfr2_actuation_overlay.py
 python scripts/run_sfr3_field_integrity.py
 python scripts/run_sfr3_dual_boundary.py
 python scripts/run_sfr4_integrated_campaign.py
+python scripts/run_sfr5_reality_gradient.py
 python check_stellarforge.py
 ```
 
@@ -238,7 +268,7 @@ No core is privileged: 2FP QA reference, 3FP QI, 4FP QI/piecewise-omnigenous, 6F
 
 “Full” means complete at the system-architecture inventory level. It is **not** falsely labeled a procurement/fabrication BOM: final quantities, nuclear compositions/enrichment, conductor sizing/current, pressure ratings, safety setpoints, vendors, part numbers and drawings remain solver/hardware dependent.
 
-## Evidence gates after v0.9
+## Evidence gates after v0.10
 
 1. **G1 equilibrium — production execution open.** Inputs are complete; real finite-beta DESC and VMEC++ convergence/cross-code evidence has not been executed in this build runtime.
 2. **G2 coils — new architectures executed, no promoted set.** Low/intermediate tests reject current fixed boundary/coil combinations; true plasma/coil co-optimization, REBCO Ic/strain over winding packs, loads/support FEA, tolerances and quench remain open.
@@ -259,13 +289,15 @@ Dual Boundary AHIS A is also independently gated. Only its configuration and red
 
 SFR-4 is independently gated. Its specification passes; its scanned coil family fails; its nominal and declared steady reduced heat screen passes. CAD-linked nonplanar coil optimization, DESC/VMEC++ equilibrium, islands/stability, alpha and thermal transport, 3-D edge/divertor physics, CFD/FEA/fatigue/irradiation, OpenMC TBR, integrated burn/plant analysis and hardware remain `NOT_RUN`.
 
+SFR-5 is independently gated. Only `SFR5_G0_SPEC_AND_AUTOPSY` is `PASS_REDUCED`: the v0.9 magnetic evidence is reinterpreted as an architecture-family rejection and a declared inverse-design search direction. Movable-geometry sensitivities, winding-surface feasibility, discrete nonplanar-coil realization, single-stage finite-beta plasma/coil co-design, transport, 3-D heat/magnet/neutronics closure, integrated plant analysis and hardware remain `NOT_RUN`. Constraint pressure is diagnostic until a real movable-geometry evaluator supplies sensitivities; SFR-5 assigns zero unearned physics or fusion credit.
+
 ## Quality gate
 
 ```bash
 python check_stellarforge.py
 ```
 
-`IX-STELLARATORFORGE: GREEN` means release integrity, 114 tests, preserved SFR-1/SFR-2/SFR-3 evidence, the dual-boundary reduced screen, the SFR-4 integrated campaign, BOM contracts, license, tracked computations and solver contracts reproduce. **It never means fusion was achieved.**
+`IX-STELLARATORFORGE: GREEN` means release integrity, the complete deterministic test suite, preserved SFR-1/SFR-2/SFR-3 evidence, the dual-boundary reduced screen, the SFR-4 integrated campaign, the SFR-5 Reality Gradient autopsy, BOM contracts, license, tracked computations and solver contracts reproduce. **It never means fusion was achieved.**
 
 ## License and permission contact
 
@@ -279,6 +311,10 @@ A LinkedIn connection, message, discussion, download, citation or repository acc
 
 - `FINAL_STATUS.md`
 - `PROOF_OF_CONCEPT.md`
+- `docs/reactor/30_SFR5_REALITY_GRADIENT.md`
+- `docs/reactor/31_SFR5_PROMOTION_GATES.md`
+- `results/sfr5/SFR5_REALITY_GRADIENT_A_RESULT.md`
+- `results/sfr5/sfr5_reality_gradient_a_v0100.json`
 - `docs/reactor/25_SFR4_INTEGRATED_PHYSICAL_CAMPAIGN.md`
 - `docs/reactor/26_SFR4_HEAT_EXHAUST_RESOLUTION.md`
 - `docs/reactor/27_SFR4_SOLVER_ATTEMPTS.md`

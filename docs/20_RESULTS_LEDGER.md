@@ -1,5 +1,18 @@
 # Results Ledger
 
+## Release 0.10 status
+
+| Question | Status | Evidence |
+|---|---|---|
+| Does SFR-5 reproduce the SFR-4 `0 / 80` magnetic rejection from committed evidence? | YES | `results/sfr5/sfr5_reality_gradient_a_v0100.json` |
+| Is the minimum-iota gap approximately 3.8265x for the best SFR-4 topology case? | YES | derived from SFR-4 result + declared `0.25` gate |
+| Is only about 3.887% normalized excursion slack left in that same topology lane? | YES | same artifacts |
+| Is the separate held-out reconstruction about 12.9825x above its RMS normal-field limit? | YES | same artifacts |
+| Are those two reduced representations merged into one fictitious coilset? | NO | independent SFR-5 evidence lanes |
+| Is the fixed helical/fixed-hybrid family preferred for more brute-force sampling? | NO | family switch required |
+| Has SFR-5 produced a viable replacement coilset or finite-beta equilibrium? | NO | G1-G8 remain `NOT_RUN` |
+| Did v0.10 earn confinement, ignition, TBR, net-electric, magnet, safety or hardware credit? | NO | all claim-boundary credits remain zero |
+
 ## Release 0.9 status
 
 | Question | Status | Evidence |

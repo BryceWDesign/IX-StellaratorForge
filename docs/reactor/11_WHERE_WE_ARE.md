@@ -24,6 +24,18 @@
 - Eighty direct-filament coil cases produce zero combined topology passes. The scanned classical helical family is rejected.
 - The selected separated first-wall, blanket and divertor architecture passes its nominal and declared steady reduced heat envelope.
 - Production equilibrium, transport, stable detachment, transient heat, qualified magnets, full 3-D TBR and hardware remain unrun.
+- Version 0.10 adds SFR-5 Reality Gradient and Adaptive Inverse Design A.
+- SFR-5 regenerates the v0.9 magnetic autopsy from committed evidence instead of copying diagnostic numbers into a new claim.
+- The fixed helical plus fixed hybrid filament-basis family is stored as rejected for the preferred next search, with explicit evidence required before reopening.
+- Plasma-boundary, winding-surface, nonplanar-coil and current degrees of freedom are opened for the next search; no geometry sensitivity or replacement coil result is fabricated in the base release.
+
+## What v0.10.0 actually found
+
+The SFR-4 failure contains a representation-level diagnosis. The best helical topology lane would need about 3.8265 times its present mean transform merely to reach the minimum iota gate while retaining only about 3.887% normalized radial-excursion slack. A separate held-out richer basis remains about 12.9825 times above its normal-field RMS limit.
+
+Because those diagnostics come from different reduced representations, SFR-5 keeps them in independent evidence lanes. Their joint meaning is not that stellarators fail. Their joint meaning is that more brute-force sampling of the same fixed family is a poor next allocation of compute.
+
+SFR-5 therefore opens the plasma boundary, winding surface, nonplanar coil geometry, current groups and engineering keep-outs as coupled design variables. The base release computes constraint pressure but records geometry sensitivities and the backward Reality Gradient as `NOT_RUN` until a real movable-geometry solver is connected.
 
 ## What v0.9.0 actually found
 
@@ -65,13 +77,14 @@ An important correction also emerged: ideal radial compression does not automati
 
 ## What this means
 
-The project now contains **four reactor-level research branches plus one integrated engineering layer with different roles**:
+The project now contains **four reactor-level research branches plus two integrated design/engineering layers with different roles**:
 
 - **SFR-1:** steady-state reference architecture and production-solver path.
 - **SFR-2:** dynamic/high-field assumption breaker designed to test whether a staggered, strongly transformed, phase-actuated concept earns survival through progressively higher-authority physics.
 - **SFR-3:** field-integrity overlay designed to preserve a steady stellarator field against error, motion and faults without changing the vessel or inventing material confinement.
 - **Dual Boundary AHIS A:** engineering-health overlay designed to detect inner-wall, vessel, shield and support problems and coordinate protective actions without touching the plasma or replacing magnetic confinement.
 - **SFR-4:** integrated promotion and heat-exhaust campaign that rejects the present coil family while retaining a testable steady heat-removal requirement.
+- **SFR-5:** adaptive inverse-design layer that converts failed constraints into a governed family-switch/search program and opens coupled plasma/winding-surface/coil degrees of freedom without granting unearned physics credit.
 
 No branch or layer has demonstrated ignition, reactor safety or reactor feasibility.
 
@@ -81,7 +94,7 @@ For SFR-3, the decisive next action is **SFR3-G2 physical coil response**: repla
 
 For Dual Boundary AHIS A, the decisive next action is a coupled CAD-based thermal, electromagnetic and structural model of the selected geometry, followed by W/RAFM joint coupons, PbLi/coolant compatibility loops, calibrated interspace leak tests and sensor irradiation. The low-authority pass cannot substitute for any of those experiments.
 
-For SFR-4, the decisive next action is a fundamentally different nonplanar modular-coil optimization using a real finite-beta target boundary, followed by DESC and VMEC++ cross-code equilibrium. More current in the rejected classical helices is not a defensible next step.
+For SFR-4/SFR-5, the decisive next action is to execute SFR5-G1 through G4: connect a real movable-geometry sensitivity path, run constrained winding-surface feasibility, realize discrete nonplanar modular coils, then perform single-stage coil/plasma optimization against finite-beta equilibrium with independent/cross-code confirmation. More current in the rejected classical helices is not a defensible next step.
 
 For SFR-2, the decisive next action remains **SFR2-G1 dynamic equilibrium**: construct a real finite-beta ABAB 3-D equilibrium and determine whether the requested transform survives the proposed actuation/compression cycle without destructive islands, stochastic regions or MHD failure.
 

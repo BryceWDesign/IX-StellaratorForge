@@ -1,0 +1,299 @@
+{
+  "claim_boundary": {
+    "fusion_progress_credit_fraction": 0.0,
+    "hardware_credit": 0.0,
+    "ignition_credit": 0.0,
+    "magnet_qualification_credit": 0.0,
+    "net_electric_credit": 0.0,
+    "particle_confinement_credit": 0.0,
+    "production_equilibrium_credit": 0.0,
+    "safety_qualification_credit": 0.0,
+    "tritium_breeding_credit": 0.0
+  },
+  "constraint_pressure": {
+    "active_pressure": {
+      "mean_iota_min": 2.95466461488,
+      "normalized_max_excursion": 0.0,
+      "validation_rms_Bn_over_B": 47.930199008
+    },
+    "backward_reality_gradient_status": "NOT_COMPUTED__NO_FAKE_SENSITIVITY_CREDIT",
+    "geometry_sensitivity_status": "NOT_RUN__REQUIRES_REAL_MOVABLE_GEOMETRY_EVALUATOR",
+    "method": "normalized_augmented_lagrangian_pressure_without_fabricated_geometry_gradient",
+    "multipliers": {
+      "mean_iota_min": 1.47733230744,
+      "normalized_max_excursion": 0.0,
+      "validation_rms_Bn_over_B": 23.965099504
+    },
+    "rho": 2.0
+  },
+  "earned_fusion_progress_credit_fraction": 0.0,
+  "inverse_design_program": {
+    "candidate_families": [
+      "single_stage_nonplanar_modular_fourier_coils_with_movable_plasma_boundary",
+      "differentiable_winding_surface_proxy_then_filament_realization",
+      "spatially_constrained_wireframe_or_planar_shaping_array",
+      "passive_superconductor_hybrid_only_as_secondary_architecture"
+    ],
+    "movable_design_variables": [
+      {
+        "authority": "optimization_degree_of_freedom_only",
+        "group": "plasma_boundary",
+        "variables": [
+          "R_mn",
+          "Z_mn",
+          "field_period_selection"
+        ]
+      },
+      {
+        "authority": "optimization_degree_of_freedom_only",
+        "group": "winding_surface",
+        "variables": [
+          "surface_Fourier_coefficients",
+          "offset_or_clearance_distribution",
+          "maintenance_exclusion_zones"
+        ]
+      },
+      {
+        "authority": "optimization_degree_of_freedom_only",
+        "group": "coil_geometry",
+        "variables": [
+          "nonplanar_curve_Fourier_coefficients",
+          "coil_count",
+          "symmetry_class",
+          "placement"
+        ]
+      },
+      {
+        "authority": "optimization_degree_of_freedom_only",
+        "group": "coil_currents",
+        "variables": [
+          "independent_current_groups",
+          "current_signs"
+        ]
+      },
+      {
+        "authority": "constraint_only_until_FEA_and_magnet_qualification",
+        "group": "magnet_engineering",
+        "variables": [
+          "REBCO_winding_orientation",
+          "minimum_coil_spacing",
+          "minimum_coil_plasma_distance",
+          "support_and_access_keepouts"
+        ]
+      }
+    ],
+    "primary_next_family": "single_stage_nonplanar_modular_fourier_coils_with_movable_plasma_boundary",
+    "required_external_methods": [
+      {
+        "preferred_methods": [
+          "QUADCOIL_or_equivalent_differentiable_winding_surface_optimizer"
+        ],
+        "required_outputs": [
+          "normal_field_error",
+          "curvature_or_complexity_constraints",
+          "force_or_support_proxy",
+          "plasma_and_winding_surface_sensitivities"
+        ],
+        "stage": "winding_surface_feasibility"
+      },
+      {
+        "preferred_methods": [
+          "SIMSOPT_or_equivalent_constrained_filament_optimizer"
+        ],
+        "required_outputs": [
+          "coil_curves",
+          "currents",
+          "quadratic_flux",
+          "length",
+          "curvature",
+          "coil_coil_distance",
+          "coil_plasma_distance"
+        ],
+        "stage": "discrete_nonplanar_coils"
+      },
+      {
+        "preferred_methods": [
+          "SIMSOPT_plus_VMEC_or_DESC_equivalent"
+        ],
+        "required_outputs": [
+          "optimized_plasma_boundary",
+          "optimized_coils",
+          "equilibrium_receipt",
+          "objective_and_constraint_history"
+        ],
+        "stage": "single_stage_codesign"
+      },
+      {
+        "preferred_methods": [
+          "DESC",
+          "VMEC++",
+          "Boozer_transform",
+          "guiding_center_orbits",
+          "neoclassical_and_turbulent_transport"
+        ],
+        "required_outputs": [
+          "cross_code_equilibrium",
+          "particle_confinement",
+          "transport_evidence"
+        ],
+        "stage": "physics_promotion"
+      },
+      {
+        "preferred_methods": [
+          "OpenMC_DAGMC_or_equivalent",
+          "thermal_CFD",
+          "structural_FEA",
+          "magnet_quench_analysis"
+        ],
+        "required_outputs": [
+          "3D_TBR_and_heating",
+          "heat_exhaust",
+          "structural_margin",
+          "magnet_qualification"
+        ],
+        "stage": "reactor_promotion"
+      }
+    ],
+    "search_policy": {
+      "candidate_families": [
+        "single_stage_nonplanar_modular_fourier_coils_with_movable_plasma_boundary",
+        "differentiable_winding_surface_proxy_then_filament_realization",
+        "spatially_constrained_wireframe_or_planar_shaping_array",
+        "passive_superconductor_hybrid_only_as_secondary_architecture"
+      ],
+      "forbid_bruteforce_same_family_after_rejection": true,
+      "minimum_relative_improvement": 0.05,
+      "stagnation_window": 4
+    }
+  },
+  "magnetic_autopsy": {
+    "decision": "family_switch_required",
+    "diagnostics": {
+      "excursion_slack_fraction_of_limit": 0.03887363150000003,
+      "iota_factor_to_minimum_gate": 3.8265231015219268,
+      "normal_field_factor_over_limit": 12.982549751999999,
+      "sfr4_candidate_count": 80.0,
+      "sfr4_combined_pass_count": 0.0
+    },
+    "lanes": [
+      {
+        "lane": "direct_filament_helical_topology",
+        "max_violation": 0.73866615372,
+        "observations": [
+          {
+            "authority": "intermediate_vacuum_biot_savart_field_line_screen",
+            "constraint_id": "mean_iota_min",
+            "lane": "direct_filament_helical_topology",
+            "limit": 0.25,
+            "lower": null,
+            "normalized_slack": 0.0,
+            "normalized_violation": 0.73866615372,
+            "passed": false,
+            "relation": "ge",
+            "signed_residual": 0.18466653843,
+            "source": "results/sfr4_integrated/...v090.json:workstreams.1_physical_coil_field.best_candidate",
+            "uncertainty_fraction": 0.0,
+            "unit": "dimensionless",
+            "upper": null,
+            "value": 0.06533346157
+          },
+          {
+            "authority": "intermediate_vacuum_biot_savart_field_line_screen",
+            "constraint_id": "normalized_max_excursion",
+            "lane": "direct_filament_helical_topology",
+            "limit": 0.2,
+            "lower": null,
+            "normalized_slack": 0.03887363150000003,
+            "normalized_violation": 0.0,
+            "passed": true,
+            "relation": "le",
+            "signed_residual": -0.007774726300000007,
+            "source": "results/sfr4_integrated/...v090.json:workstreams.1_physical_coil_field.best_candidate",
+            "uncertainty_fraction": 0.0,
+            "unit": "dimensionless",
+            "upper": null,
+            "value": 0.1922252737
+          }
+        ]
+      },
+      {
+        "lane": "held_out_hybrid_reconstruction",
+        "max_violation": 11.982549752,
+        "observations": [
+          {
+            "authority": "intermediate_held_out_biot_savart_filament_screen",
+            "constraint_id": "validation_rms_Bn_over_B",
+            "lane": "held_out_hybrid_reconstruction",
+            "limit": 0.005,
+            "lower": null,
+            "normalized_slack": 0.0,
+            "normalized_violation": 11.982549752,
+            "passed": false,
+            "relation": "le",
+            "signed_residual": 0.05991274876,
+            "source": "results/sfr4_integrated/...v090.json:workstreams.1_physical_coil_field.held_out_hybrid_reconstruction",
+            "uncertainty_fraction": 0.0,
+            "unit": "dimensionless",
+            "upper": null,
+            "value": 0.06491274876
+          }
+        ]
+      }
+    ],
+    "next_families": [
+      "single_stage_nonplanar_modular_fourier_coils_with_movable_plasma_boundary",
+      "differentiable_winding_surface_proxy_then_filament_realization",
+      "spatially_constrained_wireframe_or_planar_shaping_array",
+      "passive_superconductor_hybrid_only_as_secondary_architecture"
+    ],
+    "rationale": [
+      "The SFR-4 helical topology lane needs 3.827x its present mean transform just to reach the minimum gate.",
+      "That same lane retains only 3.89% normalized excursion slack before its declared nestedness ceiling.",
+      "The independent held-out richer basis is 12.983x above its RMS normal-field limit.",
+      "The topology and held-out reconstruction values come from different reduced representations and are not merged into a fictitious physical coil set.",
+      "The evidence rejects brute-force continuation of the present fixed helical/fixed-basis family as the preferred next move; it does not reject stellarators or fusion."
+    ]
+  },
+  "promotion_status": {
+    "SFR5_G0_SPEC_AND_AUTOPSY": "PASS_REDUCED",
+    "SFR5_G1_MOVABLE_GEOMETRY_SENSITIVITIES": "NOT_RUN",
+    "SFR5_G2_WINDING_SURFACE_FEASIBILITY": "NOT_RUN",
+    "SFR5_G3_DISCRETE_NONPLANAR_COILS": "NOT_RUN",
+    "SFR5_G4_SINGLE_STAGE_EQUILIBRIUM_CODESIGN": "NOT_RUN",
+    "SFR5_G5_PARTICLE_AND_TRANSPORT": "NOT_RUN",
+    "SFR5_G6_HEAT_MAGNET_NEUTRONICS": "NOT_RUN",
+    "SFR5_G7_INTEGRATED_PLANT": "NOT_RUN",
+    "SFR5_G8_HARDWARE": "NOT_RUN"
+  },
+  "rejected_family_memory": {
+    "evidence_ids": [
+      "SFR4_PHYSICAL_COIL_SCAN_80_OF_80_REJECTED",
+      "SFR4_HELD_OUT_HYBRID_RECONSTRUCTION_FAIL"
+    ],
+    "family": "fixed_helical_plus_fixed_hybrid_filament_basis",
+    "fingerprint_sha256": "782fb74a669c8166f4ceef1ddec7090b81899bb5bcc347e62fdd931b508a2bfb",
+    "reason": "SFR-4 produced zero combined topology passes and the independent held-out reconstruction also failed its declared normal-field gate.",
+    "reopen_conditions": [
+      "new_plasma_boundary_family",
+      "new_winding_surface_parameterization",
+      "new_nonplanar_coil_parameterization",
+      "higher_authority_solver_evidence_changes_failure_identity"
+    ],
+    "silent_reopen_allowed": false
+  },
+  "release": "0.10.0",
+  "research_decision": "STOP_BRUTE_FORCE_FIXED_HELICAL_FAMILY__MOVE_TO_MOVABLE_PLASMA_BOUNDARY_WINDING_SURFACE_AND_NONPLANAR_COIL_CODESIGN__PROMOTE_ONLY_WITH_EXTERNAL_EVIDENCE",
+  "source_artifacts": {
+    "sfr4_config": "configs/reactor/sfr4_integrated_physical_promotion_a.json",
+    "sfr4_result": "results/sfr4_integrated/sfr4_integrated_physical_promotion_a_v090.json"
+  },
+  "source_invariants": {
+    "candidate_count": 80,
+    "combined_pass_count": 0,
+    "held_out_reconstruction_pass": false,
+    "physical_coil_promoted": false,
+    "sfr4_release": "0.9.0"
+  },
+  "study_id": "SFR5-REALITY-GRADIENT-A",
+  "top_level_verdict": "REALITY_GRADIENT_AUTOPSY_COMPLETE__CURRENT_MAGNETIC_FAMILY_REJECTED__ADAPTIVE_INVERSE_DESIGN_PATH_DEFINED__NO_PHYSICS_PROMOTION"
+}

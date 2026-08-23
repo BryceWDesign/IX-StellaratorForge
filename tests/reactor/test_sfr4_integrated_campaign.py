@@ -119,7 +119,12 @@ def test_top_level_pass_is_reduced_campaign_only_with_zero_fusion_credit():
 
 
 def test_persisted_result_matches_recomputation():
-    expected = _result()
+    expected = dict(_result())
     path = ROOT / "results/sfr4_integrated/sfr4_integrated_physical_promotion_a_v090.json"
-    persisted = json.loads(path.read_text(encoding="utf-8"))
+    persisted = dict(json.loads(path.read_text(encoding="utf-8")))
+    # Optional-package discovery is runtime metadata, not scientific evidence.
+    # The GitHub release environment records the committed availability map; extra
+    # locally installed packages must not invalidate the deterministic campaign core.
+    expected.pop("solver_availability", None)
+    persisted.pop("solver_availability", None)
     assert persisted == expected

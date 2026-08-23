@@ -1,37 +1,31 @@
 # Research Roadmap
 
-The next work is not "more exotic geometry." It is higher-authority validation.
+The next work is not more brute-force sampling of the rejected magnetic family. It is a higher-authority adaptive inverse-design campaign.
 
-## R1 — Equilibrium
+## R1 — Reality Gradient geometry path
 
-Integrate DESC or equivalent. Re-run C6 and matched controls with convergence evidence.
-Reject any seed that cannot produce acceptable nested surfaces and transform without
-unfair assumptions.
+Connect a real movable-geometry evaluator so plasma-boundary, winding-surface and coil variables produce analytic, automatic-differentiation or controlled finite-difference sensitivities. Until this exists, SFR-5 constraint pressure is diagnostic only.
 
-## R2 — Coils and structures
+## R2 — Winding-surface feasibility
 
-Use SIMSOPT-class Biot-Savart/coil optimization and incorporate support/strain objectives.
-Run field-error Monte Carlo from physical coil perturbations rather than parameter proxies.
+Use QUADCOIL or an equivalent constrained differentiable winding-surface/global current solver to test whether candidate plasma boundaries admit engineering-feasible magnetic support. Reject coil-hostile boundaries before expensive discrete-coil optimization.
 
-## R3 — Particle confinement
+## R3 — Discrete nonplanar coils and single-stage co-design
 
-Trace guiding-center thermal and fast particles. Replace the internal bounce-action proxy
-with orbit-physics metrics from the solved field.
+Use SIMSOPT-class optimization to realize nonplanar modular coils with explicit length, curvature, coil-to-coil distance, coil-to-plasma distance, finite-build and robustness objectives. Allow the plasma boundary and coil shapes to move together rather than freezing the target geometry before coil design.
 
-## R4 — Stability and turbulence
+## R4 — Equilibrium and confinement
 
-Add finite-pressure equilibrium, MHD stability, and validated turbulent-transport tools.
+Run finite-beta DESC and VMEC++/equivalent equilibrium with convergence evidence and independent comparison, then trace guiding-center thermal and fast particles. Replace reduced field-line and bounce-action proxies with orbit and transport metrics from the solved field.
 
-## R5 — Active RF
+## R5 — Stability, turbulence and active RF
 
-Use full-wave/deposition modeling to decide whether distributed phase control adds value.
+Add MHD stability, validated neoclassical/turbulent transport, and full-wave/deposition modeling. Distributed phase control receives credit only if the solved plasma response earns it.
 
-## R6 — Edge, heat, blanket, cryogenics
+## R6 — Edge, heat, magnets and neutronics
 
-Replace normalized penalties with specialist thermal, materials, neutronics, breeding,
-magnet, and cryogenic models.
+Resolve 3-D edge/divertor physics, thermal/structural lifetime, peak conductor field, REBCO strain/quench, full 3-D neutron transport, shielding and TBR on the same promoted geometry.
 
-## R7 — Plant accounting
+## R7 — Plant accounting and hardware
 
-Only after the previous gates, create a complete energy ledger and evaluate whether any
-fusion-performance claim is justified.
+Only after the preceding gates, construct a complete burn/fuel-cycle/recirculating-power ledger and test representative hardware. Net-electric or reactor-feasibility claims remain closed until those gates are satisfied.

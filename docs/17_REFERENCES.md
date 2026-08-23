@@ -21,6 +21,10 @@ candidate.
 9. ITER Organization, Tritium breeding overview.
    https://www.iter.org/machine/supporting-systems/tritium-breeding
 
+10. SIMSOPT documentation, "Single stage optimization." https://simsopt.readthedocs.io/latest/example_single_stage.html
+11. SIMSOPT documentation, "Coil optimization." https://simsopt.readthedocs.io/latest/example_coils.html
+12. L. Fu et al., QUADCOIL, differentiable constrained stellarator winding-surface/global coil optimizer. https://github.com/lankef/quadcoil
+
 References are intentionally separated from internal findings. The presence of a technique
 in the literature does not imply that IX-Fusion has successfully implemented it at the same
 authority level.
