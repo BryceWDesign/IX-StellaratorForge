@@ -1,0 +1,35 @@
+{
+  "contract_id": "SFR3-FIELD-INTEGRITY-HIGH-AUTHORITY-001",
+  "release": "0.7.0",
+  "executed": false,
+  "purpose": "Replace the synthetic harmonic response with physical field and plasma evidence.",
+  "required_runs": [
+    {
+      "gate": "SFR3_G2_BIOT_SAVART_COIL_RESPONSE",
+      "solver_class": "Biot-Savart or validated magnetostatic finite element",
+      "inputs": ["as-built primary coils", "24 trim coils", "passive loops", "blanket steel", "ports", "shield geometry"],
+      "outputs": ["Bn response matrix", "forces", "inductance matrix", "current and clearance margins"]
+    },
+    {
+      "gate": "SFR3_G3_FREE_BOUNDARY_EQUILIBRIUM_AND_ISLANDS",
+      "solver_class": "VMEC++ or DESC plus SPEC or equivalent island-capable workflow",
+      "outputs": ["finite-beta equilibrium", "island widths", "effective ripple", "strike-point displacement"]
+    },
+    {
+      "gate": "SFR3_G4_PARTICLE_AND_ALPHA_ORBITS",
+      "solver_class": "ASCOT5 or equivalent guiding-center and selected full-orbit workflow",
+      "outputs": ["thermal losses", "alpha losses", "wall loss map", "fault-case sensitivity"]
+    },
+    {
+      "gate": "SFR3_G6_COIL_STRESS_QUENCH_AND_CRYOGENICS",
+      "solver_class": "coupled electromagnetic structural thermal and quench analysis",
+      "outputs": ["stress", "strain", "modal FRF", "temperature margin", "quench voltage", "energy extraction"]
+    },
+    {
+      "gate": "SFR3_G7_FULL_3D_NEUTRONICS_AND_TBR",
+      "solver_class": "OpenMC or equivalent continuous-energy 3-D neutronics",
+      "outputs": ["TBR", "REBCO fast flux", "nuclear heating", "dose", "streaming", "shield comparison"]
+    }
+  ],
+  "fail_closed_rule": "No missing output may be replaced by the v0.7 synthetic result or by a material analogy."
+}

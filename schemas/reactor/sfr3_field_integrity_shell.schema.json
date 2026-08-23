@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ix-stellaratorforge.local/schemas/reactor/sfr3_field_integrity_shell.schema.json",
+  "title": "SFR-3 field-integrity shell configuration",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "study_id",
+    "baseline_design_id",
+    "architecture",
+    "harmonic_screen",
+    "resource_gate_thresholds",
+    "scenarios",
+    "donor_translation",
+    "claim_boundary",
+    "promotion_status",
+    "next_required_evidence"
+  ],
+  "properties": {
+    "schema_version": {"const": "0.7.0"},
+    "study_id": {"const": "SFR3-FIELD-INTEGRITY-SHELL-A"},
+    "baseline_design_id": {"const": "SFR-1-RevA"},
+    "architecture": {
+      "type": "object",
+      "required": ["primary_field_is_steady", "vacuum_vessel_is_flexible", "passive_material_claimed_to_confine_plasma"]
+    },
+    "harmonic_screen": {
+      "type": "object",
+      "required": ["field_periods", "actuator_count", "modes", "static_error_coefficients", "transient_error_coefficients"],
+      "properties": {
+        "field_periods": {"const": 4},
+        "actuator_count": {"type": "integer", "minimum": 12, "maximum": 256},
+        "modes": {"type": "array", "minItems": 1},
+        "static_error_coefficients": {"type": "array", "items": {"type": "number"}},
+        "transient_error_coefficients": {"type": "array", "items": {"type": "number"}}
+      }
+    },
+    "scenarios": {"type": "array", "minItems": 7},
+    "claim_boundary": {
+      "type": "object",
+      "properties": {
+        "confinement_gain_credit": {"const": 0.0},
+        "fusion_power_gain_credit": {"const": 0.0},
+        "ignition_gain_credit": {"const": 0.0},
+        "net_electric_gain_credit": {"const": 0.0}
+      }
+    }
+  },
+  "additionalProperties": false
+}

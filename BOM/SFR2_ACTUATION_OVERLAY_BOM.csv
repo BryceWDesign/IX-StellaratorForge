@@ -1,0 +1,25 @@
+ID,System,Item,Quantity,Architecture decision,Unresolved sizing,Maturity,Gate
+AO01,Baseline,Existing SFR-2 Rev A vessel and blanket,1,"Rigid and unchanged","All nuclear and structural qualification remains open",DEFINED,SFR2A_G8
+AO02,Baseline,Existing primary HTS confinement magnet set,1,"Steady DC operation; not pulse driven","Final conductor current stress quench and irradiation design",DEFINED,SFR2A_G2
+AO03,Actuation,Auxiliary saddle-coil triplet stations,8,"Two stations per ABAB field period",Turns current conductor section and placement,SOLVER_DEPENDENT,SFR2A_G1/G2
+AO04,Actuation,Independent normal-conducting coil circuits,24,"Three phase channels per station",Voltage current inductance bandwidth and insulation,SOLVER_DEPENDENT,SFR2A_G2
+AO05,Actuation,Four-quadrant power-converter channels,24,"Independent reversible current control",Semiconductor topology ratings and switching frequency,HARDWARE_DEPENDENT,SFR2A_G2
+AO06,Actuation,Shared DC link and pulse-energy buffer,1,"Recovers reversible field energy where feasible",Stored energy voltage capacitance protection and enclosure,HARDWARE_DEPENDENT,SFR2A_G2/G7
+AO07,Actuation,Fast dump and crowbar channels,24,"Fail-safe isolation for every actuator circuit",Dump resistance voltage and thermal rating,HARDWARE_DEPENDENT,SFR2A_G2
+AO08,Actuation,Buswork and penetrations,24 circuits,"Low-inductance routed services",Geometry shielding insulation and remote joints,HARDWARE_DEPENDENT,SFR2A_G2/G6
+AO09,Thermal,Actuator deionized-water cooling loops,8,"One independently monitored loop per station",Flow pressure heat exchanger and chemistry,HARDWARE_DEPENDENT,SFR2A_G2/G7
+AO10,Structure,Cyclic electromagnetic support frames,8,"Decoupled from primary HTS supports where feasible",Force spectrum fatigue life displacement and attachment,HARDWARE_DEPENDENT,SFR2A_G2
+AO11,Structure,Vibration and displacement sensors,24,"Three-axis station monitoring",Range bandwidth radiation tolerance and calibration,HARDWARE_DEPENDENT,SFR2A_G2/G8
+AO12,Diagnostics,Mirnov magnetic-probe arrays,8,"Toroidally distributed phase and mode observation",Coil count placement bandwidth and radiation life,SOLVER_DEPENDENT,SFR2A_G1/G5
+AO13,Diagnostics,Flux-loop sets,8,"Local boundary response and eddy-current observation",Loop geometry calibration bandwidth and routing,SOLVER_DEPENDENT,SFR2A_G1/G2
+AO14,Diagnostics,Interferometry channels,4,"Density response over the actuation cycle",Sightlines wavelength vibration isolation and calibration,SOLVER_DEPENDENT,SFR2A_G3/G5
+AO15,Diagnostics,Electron-cyclotron-emission channels,4,"Electron-temperature phase response",Frequency coverage access calibration and radiation protection,SOLVER_DEPENDENT,SFR2A_G3/G5
+AO16,Diagnostics,Diamagnetic-loop system,1,"Global stored-energy response",Geometry compensation bandwidth and calibration,SOLVER_DEPENDENT,SFR2A_G3/G7
+AO17,Controls,Deterministic phase controller,1,"Commands synchronous ABAB-opposed and traveling-quadrature patterns",Clock rate latency redundancy and nuclear qualification,CANDIDATE,SFR2A_G2/G8
+AO18,Controls,Machine-protection interlock interface,1,"Trips actuation without disturbing safe primary-field handling",Setpoints voting logic response time and qualification,HARDWARE_DEPENDENT,SFR2A_G8
+AO19,Controls,Real-time state estimator,1,"Uses field density temperature and structural measurements",Model order compute platform latency and validation,SOLVER_DEPENDENT,SFR2A_G1/G5
+AO20,Electromagnetics,Conducting-structure eddy-current model,1,"Required before actuator current or phase is specified",Full vessel blanket shield and support mesh,SOLVER_DEPENDENT,SFR2A_G2
+AO21,Physics,Time-sliced free-boundary equilibrium campaign,1,"Complete phase cycle for every retained waveform",DESC VMEC++ or justified dynamic-equilibrium workflow,SOLVER_DEPENDENT,SFR2A_G1
+AO22,Physics,Kinetic magnetic-pumping calculation,1,"Must resolve collisionality frequency waveform and phase lag",Kinetic solver profiles and validated absorption model,SOLVER_DEPENDENT,SFR2A_G3
+AO23,Physics,Alpha-orbit and transport campaign,1,"Complete-cycle loss and redistribution assessment",Production orbit neoclassical gyrokinetic and MHD tools,SOLVER_DEPENDENT,SFR2A_G4/G5
+AO24,Systems,Integrated actuator power and burn ledger,1,"Debits converters cooling cryogenics and induced losses",Validated actuator demand and plasma absorption,SOLVER_DEPENDENT,SFR2A_G7

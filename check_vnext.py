@@ -28,7 +28,7 @@ def validate_json() -> None:
 print("IX-STELLARATORFORGE INHERITED vNEXT QUALITY GATE\n")
 validate_json()
 run("Inherited IX-Fusion foundation gate", [sys.executable, "check_green.py"])
-run("vNext tests", [sys.executable, "-m", "pytest", "-q", "tests/vnext"])
+run("vNext tests", [sys.executable, "scripts/run_zero_arg_tests.py", "tests/vnext"])
 run("vNext readiness report", [sys.executable, "scripts/report_vnext_readiness.py"])
 print("\nIX-STELLARATORFORGE INHERITED vNEXT: GREEN (architecture/research-contract level)")
 print("This does NOT mean a plasma, magnet, reactor, Q>1 system, or net-electric plant has been demonstrated.")

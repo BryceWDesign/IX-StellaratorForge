@@ -1,0 +1,69 @@
+{
+  "contract_version": "0.9.0",
+  "study_id": "SFR4-INTEGRATED-PHYSICAL-PROMOTION-A",
+  "promotion_is_fail_closed": true,
+  "required_jobs": [
+    {
+      "gate": "SFR4-G1",
+      "job": "CAD-linked coil optimization and independent Biot-Savart validation",
+      "required_tools": ["SIMSOPT or validated equivalent", "configuration-controlled CAD"],
+      "status": "NOT_RUN"
+    },
+    {
+      "gate": "SFR4-G2",
+      "job": "finite-beta equilibrium cross-code campaign",
+      "required_tools": ["DESC", "VMEC++"],
+      "status": "NOT_RUN"
+    },
+    {
+      "gate": "SFR4-G3",
+      "job": "islands stability and error-field robustness",
+      "required_tools": ["SPEC or validated equivalent", "MHD stability suite"],
+      "status": "NOT_RUN"
+    },
+    {
+      "gate": "SFR4-G4",
+      "job": "alpha orbits neoclassical and gyrokinetic transport",
+      "required_tools": ["Boozer transform", "guiding-center solver", "neoclassical solver", "gyrokinetic solver"],
+      "status": "NOT_RUN"
+    },
+    {
+      "gate": "SFR4-G5",
+      "job": "3-D island-divertor detachment and wall-load solution",
+      "required_tools": ["3-D edge plasma and neutral transport", "CAD heat-footprint mapping"],
+      "status": "NOT_RUN"
+    },
+    {
+      "gate": "SFR4-G6",
+      "job": "conjugate thermal hydraulic structural and lifetime qualification",
+      "required_tools": ["CFD", "structural FEA", "fracture and fatigue", "CHF correlation qualification"],
+      "status": "NOT_RUN"
+    },
+    {
+      "gate": "SFR4-G7",
+      "job": "full 3-D neutronics TBR heating damage and streaming",
+      "required_tools": ["OpenMC", "DAGMC or equivalent CAD transport", "qualified nuclear data"],
+      "status": "NOT_RUN"
+    },
+    {
+      "gate": "SFR4-G8",
+      "job": "integrated burn plant fuel-cycle and accident analysis",
+      "required_tools": ["profile transport", "plant model", "tritium model", "safety analysis"],
+      "status": "NOT_RUN"
+    },
+    {
+      "gate": "SFR4-G9",
+      "job": "representative component and integrated hardware validation",
+      "required_tools": ["high heat flux test", "PbLi loop", "irradiation", "magnet prototype", "plasma experiment"],
+      "status": "NOT_RUN"
+    }
+  ],
+  "prohibited_substitutions": [
+    "ISS04 for transport",
+    "filament fields for qualified coils",
+    "1-D conduction for conjugate thermal FEA",
+    "geometric breeding coverage for OpenMC TBR",
+    "conditional power algebra for net electricity",
+    "software tests for fusion or safety"
+  ]
+}

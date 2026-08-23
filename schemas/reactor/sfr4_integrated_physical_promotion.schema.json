@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ix-stellaratorforge/sfr4-integrated-physical-promotion.schema.json",
+  "title": "SFR-4 Integrated Physical Promotion Campaign",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "study_id",
+    "workstreams",
+    "coil_field_scan",
+    "particle_screen",
+    "burn_screen",
+    "heat_exhaust",
+    "selected_first_wall_stack",
+    "magnet_engineering",
+    "reactor_systems",
+    "claim_boundary"
+  ],
+  "properties": {
+    "schema_version": {"const": "0.9.0"},
+    "study_id": {"const": "SFR4-INTEGRATED-PHYSICAL-PROMOTION-A"},
+    "workstreams": {"type": "array", "minItems": 7, "maxItems": 7, "uniqueItems": true},
+    "coil_field_scan": {"type": "object"},
+    "particle_screen": {"type": "object"},
+    "burn_screen": {"type": "object"},
+    "heat_exhaust": {"type": "object"},
+    "selected_first_wall_stack": {"type": "object"},
+    "first_wall_decision_weights": {"type": "object"},
+    "magnet_engineering": {"type": "object"},
+    "reactor_systems": {"type": "object"},
+    "claim_boundary": {"type": "object"}
+  },
+  "additionalProperties": false
+}

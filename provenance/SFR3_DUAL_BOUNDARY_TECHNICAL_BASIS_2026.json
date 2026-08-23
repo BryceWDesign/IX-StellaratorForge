@@ -1,0 +1,98 @@
+{
+  "release": "0.8.0",
+  "study_id": "SFR3-DUAL-BOUNDARY-AHIS-A",
+  "retrieved_utc_date": "2026-08-22",
+  "authority_rule": "Sources justify material choices, monitoring mechanisms and required tests. Published performance is not transferred numerically unless explicitly identified as a declared low-authority input.",
+  "sources": [
+    {
+      "id": "ITER-VACUUM-VESSEL",
+      "title": "Vacuum Vessel",
+      "url": "https://www.iter.org/machine/vacuum-vessel",
+      "use": "Supports a double-walled steel vessel with cooling, in-wall shielding and safety-boundary functions.",
+      "limit": "ITER geometry, loads and materials are not a stellarator reactor qualification."
+    },
+    {
+      "id": "ITER-LEAK-SENSITIVITY",
+      "title": "Ensuring leak test sensitivity",
+      "url": "https://www.iter.org/node/20687/ensuring-leak-test-sensitivity",
+      "use": "Supports monitored interspace and helium leak testing of double-wall vessel sectors.",
+      "limit": "Does not establish the v0.8 detection threshold or sector isolation time."
+    },
+    {
+      "id": "ITER-DOUBLE-BARRIER-FEEDTHROUGH",
+      "title": "Positioned at the vacuum boundary",
+      "url": "https://www.iter.org/node/20687/positioned-vacuum-boundary",
+      "use": "Supports double-seal feedthroughs with a monitored interspace as defense in depth.",
+      "limit": "Final v0.8 feedthrough count and qualification remain open."
+    },
+    {
+      "id": "FED-FW-INTEGRITY-2025",
+      "title": "Integrity assessment of Tokamak-type fusion reactor First Wall and Blanket structures",
+      "url": "https://doi.org/10.1016/j.fusengdes.2025.114995",
+      "use": "Supports explicit plastic strain, creep, radiation and lifetime analysis for RAFM first-wall structures.",
+      "limit": "Tokamak FNSF results and reported lifetime are not transferred to SFR-3."
+    },
+    {
+      "id": "FED-FW-MULTIPHYSICS-2025",
+      "title": "Transient multiphysics modeling of the electromagnetic loads on the first wall during plasma disruptions",
+      "url": "https://doi.org/10.1016/j.fusengdes.2025.114929",
+      "use": "Supports coupled electromagnetic and structural analysis rather than pressure-only wall logic.",
+      "limit": "The v0.8 one-dimensional screen cannot reproduce this authority."
+    },
+    {
+      "id": "ITER-BLANKET",
+      "title": "ITER Blanket",
+      "url": "https://www.iter.org/machine/blanket",
+      "use": "Supports actively cooled blanket modules and tungsten first-wall relevance.",
+      "limit": "ITER water cooling is not selected as the v0.8 integrated PbLi reference."
+    },
+    {
+      "id": "NF-WCU-INTERFACE-2026",
+      "title": "Enhanced thermal fatigue resistance of W/Cu divertor components via serrated interface design",
+      "url": "https://doi.org/10.1088/1741-4326/ae4111",
+      "use": "Supports retaining engineered W/Cu interfaces as a comparison branch.",
+      "limit": "Divertor results do not qualify a first-wall blanket system."
+    },
+    {
+      "id": "IJRMHM-WCU-FGM-2026",
+      "title": "Improving interfacial bonding and properties of W/W-Cu FGM/CuCrZr joints",
+      "url": "https://doi.org/10.1016/j.ijrmhm.2025.107544",
+      "use": "Supports the thermally favorable W-Cu-CuCrZr comparison stack and its joining challenge.",
+      "limit": "The joint is not qualified for full fusion-neutron reactor service."
+    },
+    {
+      "id": "ORNL-PBLI-2025",
+      "title": "Mitigated Dissimilar Mass Transfer with Aluminized RAFM Steels in Flowing PbLi at 650 C",
+      "url": "https://doi.org/10.1080/15361055.2025.2498195",
+      "use": "Supports retaining RAFM, coating and SiC/PbLi compatibility as an experimental qualification path.",
+      "limit": "Loop exposures do not close reactor corrosion, MHD or lifetime."
+    },
+    {
+      "id": "MEASUREMENT-OPTICAL-2025",
+      "title": "All-metal packaged temperature compensation fiber optic Fabry-Perot strain sensor for high-temperature liquid metal environments",
+      "url": "https://doi.org/10.1016/j.measurement.2025.118501",
+      "use": "Supports an all-metal temperature-compensated strain-sensing research candidate near liquid-metal systems.",
+      "limit": "Demonstration to 500 C is not fusion-neutron qualification."
+    },
+    {
+      "id": "JET-FOCS-2025",
+      "title": "Assessment of Neutron Radiation Effects on the Fiber Optics Current Sensor Performance During JET DTE2",
+      "url": "https://doi.org/10.3390/s25216552",
+      "use": "Supports explicit neutron-effects testing for optical current and magnetic instrumentation.",
+      "limit": "JET campaign exposure is not a reactor lifetime guarantee."
+    },
+    {
+      "id": "JMRT-EMBEDDED-FIBER-2025",
+      "title": "Electric field-assisted embedding of fiber optic sensors in structural materials for structural health monitoring",
+      "url": "https://doi.org/10.1016/j.jmrt.2024.12.050",
+      "use": "Supports studying stainless or nickel encapsulation of optical fibers for SHM.",
+      "limit": "Embedding and bonding performance under fusion irradiation remain unproven."
+    }
+  ],
+  "explicit_non_transfers": [
+    "No ITER vessel dimension or pressure is copied into the stellarator geometry.",
+    "No published wall lifetime is assigned to the selected stack.",
+    "No sensor probability of detection is invented.",
+    "No thermal screen result is converted into confinement or ignition credit."
+  ]
+}

@@ -1,5 +1,48 @@
 # Changelog
 
+## 0.9.0 — 2026-08-22 — Integrated Physical Promotion and Heat Exhaust
+
+- Attempted all seven requested workstreams in one fail-closed campaign: physical coils, finite-beta equilibrium, coil/plasma co-design, particle confinement, burn, magnet engineering and reactor systems.
+- Expanded the physical filament scan to 80 direct Biot-Savart cases. Zero cases pass both transform and radial-excursion gates, so the scanned classical helical family is rejected.
+- Explicitly attempted DESC, VMEC++ and OpenMC adapters. Each stopped because its production dependency is unavailable; the package installation route was also blocked by runtime network policy.
+- Added a 3.5 MeV alpha gyroradius scope without assigning guiding-center retention credit.
+- Added a Q=20 burn requirement with finite alpha deposition and explicit bremsstrahlung; the design-iota requirement is about H_ISS04 2.00 and is not linked to the failed coil family.
+- Split heat into first-wall radiation, island-divertor exhaust and blanket neutron heating.
+- Selected a separated helium first-wall, PbLi blanket and independent water-cooled W/Cu/CuCrZr divertor architecture.
+- Passed the nominal and declared steady reduced heat envelope at about 0.294 MW/m2 first-wall peak and 5.724 MW/m2 divertor peak, while retaining edge topology, transients, CHF, fatigue, irradiation and hardware as open gates.
+- Added a 64-row integrated campaign BOM, evidence contract, schema, provenance, decision records and eleven focused regression tests.
+
+## 0.8.0 — 2026-08-22 — Dual Boundary Integrity Network
+
+- Translated the proposed inside-out and outside AHIS concept into two independently monitored engineering boundaries without assigning mechanical plasma-confinement credit.
+- Added three comparable wall-stack branches and selected a balanced tungsten / graded W-RAFM / helium-cooled RAFM / DCLL reference under explicit reduced-screen weights.
+- Added a 1-D nominal and steady-upset thermal-resistance screen with interface temperature and raw CTE-mismatch strain bookkeeping.
+- Added 24 toroidal monitoring sectors, 192 paired inner/outer locations, two independent lanes and 1,736 declared sensing elements.
+- Added eleven deterministic fault scenarios covering hotspot, coolant leak, support shift, single-lane losses, dual-bus loss, vacuum breach, power loss, trim unavailability and an intentionally undetected silent armor crack.
+- Linked measured support displacement to existing bounded SFR-3 trim logic while retaining exactly zero physical confinement, fusion, ignition and safety-qualification credit.
+- Added a 64-row integration BOM, materials decision record, fault campaign, promotion gates, technical provenance, high-authority evidence contract, eight model tests and one BOM contract test.
+
+## 0.7.0 — 2026-08-21 — Field Integrity Shell
+
+- Audited AHIS, PressureX, IX-Vibe, IX-Breath, IX-GCR-SPE, IX-Shield and IX-HfTaZen-Shield as mechanism donors with explicit KEEP / ADAPT / DEFER / REJECT boundaries.
+- Added SFR-3 Field Integrity Shell A: steady primary confinement coils, 24 independent planar trim channels, 24 passive superconducting-loop research channels, confidence-aware sensing and fail-closed control.
+- Added a deterministic 12-by-24 harmonic controllability screen with bounded commands, nominal, single-actuator-failure, low-confidence, passive-loop-quench and passive-only transient scenarios.
+- Passed the declared synthetic thresholds while assigning exactly zero confinement, fusion-power, ignition or net-electric credit.
+- Added a 52-row architecture BOM covering field sources, control, support-mode damping, magnet shielding, plasma-facing materials, blanket integration and rejected material/liquid concepts.
+- Retained WC/B4C, HfH1.7 composites, tungsten-fiber composites, liquid-lithium edge modules and ferromagnetic blanket co-design only at their defensible authority levels.
+- Added SFR3-G0 through SFR3-G9 promotion gates, a high-authority solver contract, source provenance, six regression tests and fail-closed v0.7 quality-gate checks.
+
+## 0.6.0 — 2026-08-21 — Phase-Programmed Breathing and Tri-Lobe Falsification
+
+- Preserved SFR-2 Rev A geometry, rigid vessel and steady primary HTS field unchanged.
+- Added a 720-sample-per-cycle magnetic-breathing screen for synchronous, ABAB-opposed and traveling-quadrature patterns at 0% through 5% modulation depth.
+- Used fixed-particle ideal adiabatic bookkeeping, Bosch-Hale D-T reactivity and instantaneous ISS04 comparison without inventing magnetic-pumping, RF, shock, flux-compression or actuator-power credit.
+- Found no declared waveform that improves both cycle-average optimistic ignition ratio and cycle-average uniform fusion power. No cycle-average case crosses the proxy.
+- Translated the user concept image into an area-preserving poloidal m=3 harmonic repeated within all four field periods. Rejected global three-toroidal-lobe substitution and three-body D-T credit.
+- Added an explicit 24-row actuator-overlay architecture BOM built around eight normal-conducting triplet stations and 24 independent circuits; all electrical, magnetic, thermal and structural ratings remain solver or hardware dependent.
+- Added separate promotion gates for dynamic equilibrium, electromagnetics, magnetic-pumping kinetics, particle and alpha orbits, transport/MHD, wall loads, integrated power and hardware.
+- Added deterministic generated evidence, tests, provenance, CLI access and fail-closed v0.6 quality-gate checks.
+
 ## 0.5.0 — 2026-08-18 — SFR-2 Dynamic-Compression Assumption Breaker
 
 - Preserved SFR-1 Rev A and all v0.4 evidence unchanged as the steady-state reference branch.

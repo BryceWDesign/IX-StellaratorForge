@@ -2,6 +2,18 @@
 
 This directory is an **execution bridge**, not prefilled evidence.
 
+## SFR-4 integrated campaign
+
+`sfr4_integrated_evidence_contract.json` defines nine fail-closed promotion gates spanning physical coils, cross-code equilibrium, stability, particle transport, three-dimensional island-divertor exhaust, thermal/structural qualification, OpenMC neutronics, integrated burn/plant analysis and hardware. v0.9 explicitly attempted the DESC, VMEC++ and OpenMC adapters; all stopped because the production dependencies are absent.
+
+## Dual Boundary AHIS
+
+`sfr3_dual_boundary_evidence_contract.json` defines the evidence needed to replace the v0.8 1-D thermal and deterministic fault screen: coupled CAD thermal/EM/structural analysis, W/RAFM joint and fatigue qualification, PbLi/coolant MHD and corrosion loops, sensor irradiation/calibration, quantified interspace leak testing, full 3-D neutronics and integrated representative hardware. No reduced-screen pass may be promoted into survivability, safety or confinement evidence.
+
+## SFR-3 field integrity
+
+`sfr3_field_integrity_evidence_contract.json` defines the high-authority path that must replace the v0.7 analytic response matrix: CAD-linked magnetic response, free-boundary equilibrium and islands, particle/alpha orbits, coupled magnet engineering and full 3-D neutronics. No missing output may be replaced by the synthetic controllability pass.
+
 ## G1 equilibrium
 
 Inputs in `inputs/` are generated from the exact analytic SFR-1 reduced boundary and contain finite-pressure/flux/iota design seeds.

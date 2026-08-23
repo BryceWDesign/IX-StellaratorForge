@@ -1,0 +1,173 @@
+{
+  "schema_version": "0.9.0",
+  "study_id": "SFR4-INTEGRATED-PHYSICAL-PROMOTION-A",
+  "workstreams": [
+    "physical_coil_field",
+    "finite_beta_equilibrium",
+    "coil_plasma_codesign",
+    "particle_confinement",
+    "self_consistent_burn",
+    "magnet_engineering",
+    "reactor_systems"
+  ],
+  "coil_field_scan": {
+    "major_radius_m": 8.0,
+    "minor_radius_m": 1.7,
+    "axis_field_T": 6.0,
+    "plasma_to_coil_clearance_m": 1.35,
+    "field_periods": [2, 3, 4, 6],
+    "helical_coil_count": 4,
+    "sign_patterns": ["same", "alternating"],
+    "helical_to_tf_current_ratios": [0.05, 0.08, 0.12, 0.18, 0.25, 0.35, 0.5, 0.7, 0.85, 1.0],
+    "field_line_turns": 3,
+    "steps_per_turn": 48,
+    "iota_target": 0.55,
+    "iota_acceptance": [0.25, 0.8],
+    "max_excursion_fraction": 0.2,
+    "normal_field_rms_limit": 0.005,
+    "rebco_strain_target_fraction": 0.0035,
+    "rebco_strain_ceiling_fraction": 0.004
+  },
+  "particle_screen": {
+    "alpha_energy_MeV": 3.5,
+    "maximum_gyroradius_over_minor_radius": 0.05
+  },
+  "burn_screen": {
+    "temperature_keV": 15.0,
+    "beta": 0.03,
+    "target_fusion_power_MW": 1000.0,
+    "plasma_gain_Q": 20.0,
+    "design_iota_for_requirement_only": 0.55,
+    "zeff": 1.5,
+    "alpha_deposition_fraction_assumption": 0.9
+  },
+  "heat_exhaust": {
+    "concept": "24-sector long-leg island-divertor requirement with controlled radiation and replaceable W/CuCrZr targets",
+    "controlled_radiation_fraction": 0.6,
+    "first_wall_area_multiplier": 1.0,
+    "first_wall_peaking_factor": 1.15,
+    "first_wall_nominal_limit_MW_m2": 0.5,
+    "first_wall_upset_heat_flux_MW_m2": 1.0,
+    "effective_divertor_wetted_area_m2": 24.0,
+    "divertor_peaking_factor": 1.5,
+    "divertor_steady_limit_MW_m2": 10.0,
+    "radiation_fraction_sensitivity": [0.4, 0.5, 0.6, 0.7],
+    "wetted_area_sensitivity_m2": [12.0, 18.0, 24.0, 30.0],
+    "divertor_coolant_bulk_temperature_C": 150.0,
+    "divertor_heat_transfer_coefficient_W_m2K": 70000.0,
+    "divertor_layers_coolant_to_surface": [
+      {
+        "id": "CuCrZr_heat_sink",
+        "thickness_m": 0.002,
+        "k_W_mK": 250.0,
+        "declared_max_temperature_C": 350.0
+      },
+      {
+        "id": "OFHC_Cu_compliant_interlayer",
+        "thickness_m": 0.001,
+        "k_W_mK": 300.0,
+        "declared_max_temperature_C": 500.0
+      },
+      {
+        "id": "segmented_tungsten_monoblock",
+        "thickness_m": 0.006,
+        "k_W_mK": 90.0,
+        "declared_max_temperature_C": 1200.0
+      }
+    ],
+    "divertor_water_loop": {
+      "density_kg_m3": 917.0,
+      "specific_heat_J_kgK": 4300.0,
+      "outlet_minus_inlet_K": 50.0,
+      "parallel_channels": 960,
+      "channel_width_m": 0.008,
+      "channel_height_m": 0.008,
+      "channel_length_m": 1.2,
+      "darcy_friction_factor": 0.02,
+      "minor_loss_coefficient": 4.0,
+      "pump_efficiency": 0.7,
+      "maximum_velocity_m_s": 10.0,
+      "maximum_pumping_power_MW": 5.0
+    },
+    "water_PbLi_separation_requirement": "Independent double-wall divertor coolant boundary, guard vacuum and leak detection separate water from every PbLi sector. No shared heat exchanger or common penetration."
+  },
+  "selected_first_wall_stack": {
+    "id": "DB-A2_DCLL_HEAT_RESOLVED_SCREEN",
+    "name": "Segmented tungsten, graded W-RAFM, helium-cooled ODS-RAFM first wall and separate PbLi DCLL blanket",
+    "status": "SELECTED_FOR_REDUCED_HEAT_CAMPAIGN__NOT_QUALIFIED",
+    "coolant": "high-pressure helium first-wall channels isolated from PbLi and divertor water",
+    "coolant_bulk_temperature_C": 350.0,
+    "coolant_heat_transfer_coefficient_W_m2K": 35000.0,
+    "maximum_raw_cte_mismatch_strain_proxy": 0.003,
+    "solid_layers_plasma_to_coolant": [
+      {
+        "id": "segmented_tungsten_armor",
+        "material": "segmented tungsten",
+        "thickness_m": 0.003,
+        "effective_k_W_mK": 90.0,
+        "effective_cte_per_K": 0.0000045,
+        "declared_max_service_temperature_C": 1600.0
+      },
+      {
+        "id": "graded_w_rafm_transition",
+        "material": "functionally graded tungsten-to-RAFM transition candidate",
+        "thickness_m": 0.001,
+        "effective_k_W_mK": 55.0,
+        "effective_cte_per_K": 0.000008,
+        "declared_max_service_temperature_C": 800.0
+      },
+      {
+        "id": "helium_cooled_ods_rafm_first_wall",
+        "material": "ODS-Eurofer or qualified RAFM with distributed helium microchannels",
+        "thickness_m": 0.003,
+        "effective_k_W_mK": 32.0,
+        "effective_cte_per_K": 0.000012,
+        "declared_max_service_temperature_C": 550.0
+      }
+    ],
+    "integration_gates": {
+      "breeding_blanket_compatible": true,
+      "low_activation_structure": true,
+      "avoids_water_pbli_interaction": true,
+      "structural_code_path": true,
+      "joining_process_mature": false,
+      "full_fusion_neutron_qualification": false,
+      "preserves_magnetic_clearance": true
+    },
+    "downstream_layers": [
+      "electrically insulated PbLi DCLL blanket",
+      "monitored double-wall vessel interspace",
+      "WC-B4C neutron shield",
+      "thermal shield cryostat and REBCO magnets"
+    ]
+  },
+  "first_wall_decision_weights": {
+    "thermal_screen_pass": 2.0,
+    "breeding_blanket_compatible": 2.0,
+    "low_activation_structure": 2.0,
+    "avoids_water_pbli_interaction": 1.0,
+    "structural_code_path": 1.0,
+    "joining_process_mature": 1.0,
+    "full_fusion_neutron_qualification": 2.0,
+    "preserves_magnetic_clearance": 1.0
+  },
+  "magnet_engineering": {
+    "peak_field_on_conductor_limit_T": 20.0
+  },
+  "reactor_systems": {
+    "global_tbr_target": 1.15,
+    "breeding_coverage_fraction": 0.85,
+    "blanket_energy_multiplier": 1.15,
+    "gross_thermal_efficiency": 0.4,
+    "base_recirculating_power_MW": 120.0
+  },
+  "claim_boundary": {
+    "fusion_progress_credit_fraction": 0.0,
+    "mechanical_wall_confinement_credit": 0.0,
+    "production_equilibrium_credit": 0.0,
+    "particle_confinement_credit": 0.0,
+    "ignition_credit": 0.0,
+    "safety_qualification_credit": 0.0,
+    "hardware_credit": 0.0
+  }
+}

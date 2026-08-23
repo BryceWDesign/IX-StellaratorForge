@@ -1,0 +1,1259 @@
+{
+  "authority": "LOW__zero_D_adiabatic_cycle_plus_ISS04_screen__not_dynamic_equilibrium",
+  "baseline": {
+    "axis_field_T": 15.0,
+    "base_beta": 0.011936957296877555,
+    "base_temperature_keV": 15.0,
+    "distance_from_ratio_one_fraction": -0.038922751007159695,
+    "fusion_power_MW_uniform": 1000.0,
+    "iota_2over3": 0.9,
+    "optimistic_ignition_tau_ratio": 0.9610772489928403
+  },
+  "baseline_design_id": "SFR-2-RevA",
+  "breathing_cases": [
+    {
+      "closest_instantaneous_proxy_point": {
+        "alpha_heating_MW_uniform": 198.86363636363635,
+        "beta_at_fixed_B": 0.011936957296877555,
+        "cycle_phase_deg": 0.0,
+        "equivalent_radial_squeeze_fraction": 0.0,
+        "fusion_power_MW_uniform": 1000.0,
+        "ion_density_m3": 2.2233336968266498e+20,
+        "ion_temperature_keV": 15.0,
+        "neutron_power_MW_uniform": 801.1363636363635,
+        "optimistic_ignition_tau_ratio": 0.9610772489928403,
+        "thermal_energy_MJ": 167.88650229334363,
+        "volume_ratio_to_baseline": 1.0
+      },
+      "cycle_average": {
+        "alpha_heating_MW_uniform": 198.86363636363635,
+        "beta_at_fixed_B": 0.011936957296877555,
+        "distance_from_ratio_one_fraction": -0.038922751007159695,
+        "fusion_power_MW_uniform": 1000.0,
+        "optimistic_ignition_tau_ratio": 0.9610772489928403
+      },
+      "depth_fraction": 0.0,
+      "full_cycle": {
+        "maximum_beta_at_fixed_B": 0.011936957296877555,
+        "maximum_fusion_power_MW_uniform": 1000.0,
+        "maximum_optimistic_ignition_tau_ratio": 0.9610772489928403,
+        "minimum_fusion_power_MW_uniform": 1000.0,
+        "minimum_optimistic_ignition_tau_ratio": 0.9610772489928403
+      },
+      "maximum_fusion_point": {
+        "alpha_heating_MW_uniform": 198.86363636363635,
+        "beta_at_fixed_B": 0.011936957296877555,
+        "cycle_phase_deg": 0.0,
+        "equivalent_radial_squeeze_fraction": 0.0,
+        "fusion_power_MW_uniform": 1000.0,
+        "ion_density_m3": 2.2233336968266498e+20,
+        "ion_temperature_keV": 15.0,
+        "neutron_power_MW_uniform": 801.1363636363635,
+        "optimistic_ignition_tau_ratio": 0.9610772489928403,
+        "thermal_energy_MJ": 167.88650229334363,
+        "volume_ratio_to_baseline": 1.0
+      },
+      "pattern": "abab_opposed",
+      "phase_offsets_deg": [
+        0.0,
+        180.0,
+        0.0,
+        180.0
+      ],
+      "screen_decision": {
+        "cycle_average_fusion_improves_over_baseline": false,
+        "cycle_average_proxy_pass": false,
+        "cycle_average_ratio_improves_over_baseline": false,
+        "entire_cycle_proxy_pass": false,
+        "joint_average_improvement": false,
+        "net_power_claim_permitted": false
+      }
+    },
+    {
+      "closest_instantaneous_proxy_point": {
+        "alpha_heating_MW_uniform": 198.86363636363635,
+        "beta_at_fixed_B": 0.011936957296877555,
+        "cycle_phase_deg": 0.0,
+        "equivalent_radial_squeeze_fraction": 0.0,
+        "fusion_power_MW_uniform": 1000.0,
+        "ion_density_m3": 2.2233336968266498e+20,
+        "ion_temperature_keV": 15.0,
+        "neutron_power_MW_uniform": 801.1363636363635,
+        "optimistic_ignition_tau_ratio": 0.9610772489928403,
+        "thermal_energy_MJ": 167.88650229334363,
+        "volume_ratio_to_baseline": 1.0
+      },
+      "cycle_average": {
+        "alpha_heating_MW_uniform": 198.86363636363635,
+        "beta_at_fixed_B": 0.011936957296877555,
+        "distance_from_ratio_one_fraction": -0.038922751007159695,
+        "fusion_power_MW_uniform": 1000.0,
+        "optimistic_ignition_tau_ratio": 0.9610772489928403
+      },
+      "depth_fraction": 0.0,
+      "full_cycle": {
+        "maximum_beta_at_fixed_B": 0.011936957296877555,
+        "maximum_fusion_power_MW_uniform": 1000.0,
+        "maximum_optimistic_ignition_tau_ratio": 0.9610772489928403,
+        "minimum_fusion_power_MW_uniform": 1000.0,
+        "minimum_optimistic_ignition_tau_ratio": 0.9610772489928403
+      },
+      "maximum_fusion_point": {
+        "alpha_heating_MW_uniform": 198.86363636363635,
+        "beta_at_fixed_B": 0.011936957296877555,
+        "cycle_phase_deg": 0.0,
+        "equivalent_radial_squeeze_fraction": 0.0,
+        "fusion_power_MW_uniform": 1000.0,
+        "ion_density_m3": 2.2233336968266498e+20,
+        "ion_temperature_keV": 15.0,
+        "neutron_power_MW_uniform": 801.1363636363635,
+        "optimistic_ignition_tau_ratio": 0.9610772489928403,
+        "thermal_energy_MJ": 167.88650229334363,
+        "volume_ratio_to_baseline": 1.0
+      },
+      "pattern": "synchronous",
+      "phase_offsets_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "screen_decision": {
+        "cycle_average_fusion_improves_over_baseline": false,
+        "cycle_average_proxy_pass": false,
+        "cycle_average_ratio_improves_over_baseline": false,
+        "entire_cycle_proxy_pass": false,
+        "joint_average_improvement": false,
+        "net_power_claim_permitted": false
+      }
+    },
+    {
+      "closest_instantaneous_proxy_point": {
+        "alpha_heating_MW_uniform": 198.86363636363635,
+        "beta_at_fixed_B": 0.011936957296877555,
+        "cycle_phase_deg": 0.0,
+        "equivalent_radial_squeeze_fraction": 0.0,
+        "fusion_power_MW_uniform": 1000.0,
+        "ion_density_m3": 2.2233336968266498e+20,
+        "ion_temperature_keV": 15.0,
+        "neutron_power_MW_uniform": 801.1363636363635,
+        "optimistic_ignition_tau_ratio": 0.9610772489928403,
+        "thermal_energy_MJ": 167.88650229334363,
+        "volume_ratio_to_baseline": 1.0
+      },
+      "cycle_average": {
+        "alpha_heating_MW_uniform": 198.86363636363635,
+        "beta_at_fixed_B": 0.011936957296877555,
+        "distance_from_ratio_one_fraction": -0.038922751007159695,
+        "fusion_power_MW_uniform": 1000.0,
+        "optimistic_ignition_tau_ratio": 0.9610772489928403
+      },
+      "depth_fraction": 0.0,
+      "full_cycle": {
+        "maximum_beta_at_fixed_B": 0.011936957296877555,
+        "maximum_fusion_power_MW_uniform": 1000.0,
+        "maximum_optimistic_ignition_tau_ratio": 0.9610772489928403,
+        "minimum_fusion_power_MW_uniform": 1000.0,
+        "minimum_optimistic_ignition_tau_ratio": 0.9610772489928403
+      },
+      "maximum_fusion_point": {
+        "alpha_heating_MW_uniform": 198.86363636363635,
+        "beta_at_fixed_B": 0.011936957296877555,
+        "cycle_phase_deg": 0.0,
+        "equivalent_radial_squeeze_fraction": 0.0,
+        "fusion_power_MW_uniform": 1000.0,
+        "ion_density_m3": 2.2233336968266498e+20,
+        "ion_temperature_keV": 15.0,
+        "neutron_power_MW_uniform": 801.1363636363635,
+        "optimistic_ignition_tau_ratio": 0.9610772489928403,
+        "thermal_energy_MJ": 167.88650229334363,
+        "volume_ratio_to_baseline": 1.0
+      },
+      "pattern": "traveling_quadrature",
+      "phase_offsets_deg": [
+        0.0,
+        90.0,
+        180.0,
+        270.0
+      ],
+      "screen_decision": {
+        "cycle_average_fusion_improves_over_baseline": false,
+        "cycle_average_proxy_pass": false,
+        "cycle_average_ratio_improves_over_baseline": false,
+        "entire_cycle_proxy_pass": false,
+        "joint_average_improvement": false,
+        "net_power_claim_permitted": false
+      }
+    },
+    {
+      "closest_instantaneous_proxy_point": {
+        "alpha_heating_MW_uniform": 198.72593377835332,
+        "beta_at_fixed_B": 0.011930745256620663,
+        "cycle_phase_deg": 90.0,
+        "equivalent_radial_squeeze_fraction": -0.00015617402932610602,
+        "fusion_power_MW_uniform": 999.3075527140054,
+        "ion_density_m3": 2.2226394055123517e+20,
+        "ion_temperature_keV": 14.996877088422382,
+        "neutron_power_MW_uniform": 800.5816189356519,
+        "optimistic_ignition_tau_ratio": 0.9611978352301627,
+        "thermal_energy_MJ": 167.85154931322776,
+        "volume_ratio_to_baseline": 1.0003123724489795
+      },
+      "cycle_average": {
+        "alpha_heating_MW_uniform": 198.86228793595393,
+        "beta_at_fixed_B": 0.01193689636850747,
+        "distance_from_ratio_one_fraction": -0.03892155636783956,
+        "fusion_power_MW_uniform": 999.9932193350826,
+        "optimistic_ignition_tau_ratio": 0.9610784436321604
+      },
+      "depth_fraction": 0.0025,
+      "full_cycle": {
+        "maximum_beta_at_fixed_B": 0.011942925624143882,
+        "maximum_fusion_power_MW_uniform": 1000.6653246853826,
+        "maximum_optimistic_ignition_tau_ratio": 0.9611978352301627,
+        "minimum_fusion_power_MW_uniform": 999.3075527140054,
+        "minimum_optimistic_ignition_tau_ratio": 0.9609614413079356
+      },
+      "maximum_fusion_point": {
+        "alpha_heating_MW_uniform": 198.99594524993404,
+        "beta_at_fixed_B": 0.011942925624143882,
+        "cycle_phase_deg": 270.0,
+        "equivalent_radial_squeeze_fraction": 0.00014994746661112224,
+        "fusion_power_MW_uniform": 1000.6653246853826,
+        "ion_density_m3": 2.224000613337103e+20,
+        "ion_temperature_keV": 15.002999474051975,
+        "neutron_power_MW_uniform": 801.6693794354485,
+        "optimistic_ignition_tau_ratio": 0.9609614413079356,
+        "thermal_energy_MJ": 167.920073707164,
+        "volume_ratio_to_baseline": 0.9997001275510204
+      },
+      "pattern": "abab_opposed",
+      "phase_offsets_deg": [
+        0.0,
+        180.0,
+        0.0,
+        180.0
+      ],
+      "screen_decision": {
+        "cycle_average_fusion_improves_over_baseline": false,
+        "cycle_average_proxy_pass": false,
+        "cycle_average_ratio_improves_over_baseline": true,
+        "entire_cycle_proxy_pass": false,
+        "joint_average_improvement": false,
+        "net_power_claim_permitted": false
+      }
+    },
+    {
+      "closest_instantaneous_proxy_point": {
+        "alpha_heating_MW_uniform": 196.67157638421264,
+        "beta_at_fixed_B": 0.011838019088410675,
+        "cycle_phase_deg": 270.0,
+        "equivalent_radial_squeeze_fraction": -0.0024999999999999467,
+        "fusion_power_MW_uniform": 988.977069817755,
+        "ion_density_m3": 2.2122585773239222e+20,
+        "ion_temperature_keV": 14.95014542933495,
+        "neutron_power_MW_uniform": 792.3054934335423,
+        "optimistic_ignition_tau_ratio": 0.9630038480929751,
+        "thermal_energy_MJ": 167.32850832719083,
+        "volume_ratio_to_baseline": 1.0050062499999999
+      },
+      "cycle_average": {
+        "alpha_heating_MW_uniform": 198.87020064288436,
+        "beta_at_fixed_B": 0.011937226710926861,
+        "distance_from_ratio_one_fraction": -0.03892473531299079,
+        "fusion_power_MW_uniform": 1000.0330089470756,
+        "optimistic_ignition_tau_ratio": 0.9610752646870092
+      },
+      "depth_fraction": 0.0025,
+      "full_cycle": {
+        "maximum_beta_at_fixed_B": 0.012036973166281384,
+        "maximum_fusion_power_MW_uniform": 1011.1549664423495,
+        "maximum_optimistic_ignition_tau_ratio": 0.9630038480929751,
+        "minimum_fusion_power_MW_uniform": 988.977069817755,
+        "minimum_optimistic_ignition_tau_ratio": 0.9591427126739391
+      },
+      "maximum_fusion_point": {
+        "alpha_heating_MW_uniform": 201.0819535538763,
+        "beta_at_fixed_B": 0.012036973166281384,
+        "cycle_phase_deg": 90.0,
+        "equivalent_radial_squeeze_fraction": 0.0024999999999999467,
+        "fusion_power_MW_uniform": 1011.1549664423495,
+        "ion_density_m3": 2.234492192211506e+20,
+        "ion_temperature_keV": 15.050146239525983,
+        "neutron_power_MW_uniform": 810.073012888473,
+        "optimistic_ignition_tau_ratio": 0.9591427126739391,
+        "thermal_energy_MJ": 168.4477607438224,
+        "volume_ratio_to_baseline": 0.9950062500000001
+      },
+      "pattern": "synchronous",
+      "phase_offsets_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "screen_decision": {
+        "cycle_average_fusion_improves_over_baseline": true,
+        "cycle_average_proxy_pass": false,
+        "cycle_average_ratio_improves_over_baseline": false,
+        "entire_cycle_proxy_pass": false,
+        "joint_average_improvement": false,
+        "net_power_claim_permitted": false
+      }
+    },
+    {
+      "closest_instantaneous_proxy_point": {
+        "alpha_heating_MW_uniform": 198.86217378238388,
+        "beta_at_fixed_B": 0.011936891319088993,
+        "cycle_phase_deg": 0.0,
+        "equivalent_radial_squeeze_fraction": -1.6581618906830187e-06,
+        "fusion_power_MW_uniform": 999.9926453057018,
+        "ion_density_m3": 2.2233263235505766e+20,
+        "ion_temperature_keV": 14.999966836826342,
+        "neutron_power_MW_uniform": 801.1304715233179,
+        "optimistic_ignition_tau_ratio": 0.9610785294676502,
+        "thermal_energy_MJ": 167.88613111672828,
+        "volume_ratio_to_baseline": 1.0000033163265307
+      },
+      "cycle_average": {
+        "alpha_heating_MW_uniform": 198.86225816170347,
+        "beta_at_fixed_B": 0.0119368951254845,
+        "distance_from_ratio_one_fraction": -0.03892154440574869,
+        "fusion_power_MW_uniform": 999.9930696131375,
+        "optimistic_ignition_tau_ratio": 0.9610784555942513
+      },
+      "depth_fraction": 0.0025,
+      "full_cycle": {
+        "maximum_beta_at_fixed_B": 0.011936898931880973,
+        "maximum_fusion_power_MW_uniform": 999.9934939206886,
+        "maximum_optimistic_ignition_tau_ratio": 0.9610785294676502,
+        "minimum_fusion_power_MW_uniform": 999.9926453057018,
+        "minimum_optimistic_ignition_tau_ratio": 0.9610783817208431
+      },
+      "maximum_fusion_point": {
+        "alpha_heating_MW_uniform": 198.86234254104602,
+        "beta_at_fixed_B": 0.011936898931880973,
+        "cycle_phase_deg": 90.0,
+        "equivalent_radial_squeeze_fraction": -1.4668356589364606e-06,
+        "fusion_power_MW_uniform": 999.9934939206886,
+        "ion_density_m3": 2.2233271743107046e+20,
+        "ion_temperature_keV": 14.999970663337026,
+        "neutron_power_MW_uniform": 801.1311513796425,
+        "optimistic_ignition_tau_ratio": 0.9610783817208431,
+        "thermal_energy_MJ": 167.88617394469458,
+        "volume_ratio_to_baseline": 1.0000029336734695
+      },
+      "pattern": "traveling_quadrature",
+      "phase_offsets_deg": [
+        0.0,
+        90.0,
+        180.0,
+        270.0
+      ],
+      "screen_decision": {
+        "cycle_average_fusion_improves_over_baseline": false,
+        "cycle_average_proxy_pass": false,
+        "cycle_average_ratio_improves_over_baseline": true,
+        "entire_cycle_proxy_pass": false,
+        "joint_average_improvement": false,
+        "net_power_claim_permitted": false
+      }
+    },
+    {
+      "closest_instantaneous_proxy_point": {
+        "alpha_heating_MW_uniform": 198.58285223207847,
+        "beta_at_fixed_B": 0.01192429011854141,
+        "cycle_phase_deg": 90.0,
+        "equivalent_radial_squeeze_fraction": -0.0003185717050138148,
+        "fusion_power_MW_uniform": 998.5880569384517,
+        "ion_density_m3": 2.2219177910506183e+20,
+        "ion_temperature_keV": 14.993630933113524,
+        "neutron_power_MW_uniform": 800.0052047063731,
+        "optimistic_ignition_tau_ratio": 0.961323194066435,
+        "thermal_energy_MJ": 167.81521693584747,
+        "volume_ratio_to_baseline": 1.000637244897959
+      },
+      "cycle_average": {
+        "alpha_heating_MW_uniform": 198.85824275860125,
+        "beta_at_fixed_B": 0.011936713587805101,
+        "distance_from_ratio_one_fraction": -0.0389179724936517,
+        "fusion_power_MW_uniform": 999.9728778718235,
+        "optimistic_ignition_tau_ratio": 0.9610820275063483
+      },
+      "depth_fraction": 0.005,
+      "full_cycle": {
+        "maximum_beta_at_fixed_B": 0.01194864964676002,
+        "maximum_fusion_power_MW_uniform": 1001.3034554937059,
+        "maximum_optimistic_ignition_tau_ratio": 0.961323194066435,
+        "minimum_fusion_power_MW_uniform": 998.5880569384517,
+        "minimum_optimistic_ignition_tau_ratio": 0.9608504178954587
+      },
+      "maximum_fusion_point": {
+        "alpha_heating_MW_uniform": 199.12284626295286,
+        "beta_at_fixed_B": 0.01194864964676002,
+        "cycle_phase_deg": 270.0,
+        "equivalent_radial_squeeze_fraction": 0.0002936655687127976,
+        "fusion_power_MW_uniform": 1001.3034554937059,
+        "ion_density_m3": 2.2246401053783287e+20,
+        "ion_temperature_keV": 15.005875324285263,
+        "neutron_power_MW_uniform": 802.1806092307529,
+        "optimistic_ignition_tau_ratio": 0.9608504178954587,
+        "thermal_energy_MJ": 167.95226146961647,
+        "volume_ratio_to_baseline": 0.9994127551020408
+      },
+      "pattern": "abab_opposed",
+      "phase_offsets_deg": [
+        0.0,
+        180.0,
+        0.0,
+        180.0
+      ],
+      "screen_decision": {
+        "cycle_average_fusion_improves_over_baseline": false,
+        "cycle_average_proxy_pass": false,
+        "cycle_average_ratio_improves_over_baseline": true,
+        "entire_cycle_proxy_pass": false,
+        "joint_average_improvement": false,
+        "net_power_claim_permitted": false
+      }
+    },
+    {
+      "closest_instantaneous_proxy_point": {
+        "alpha_heating_MW_uniform": 194.50544258037755,
+        "beta_at_fixed_B": 0.011740144285036606,
+        "cycle_phase_deg": 270.0,
+        "equivalent_radial_squeeze_fraction": -0.004999999999999893,
+        "fusion_power_MW_uniform": 978.0845112613272,
+        "ion_density_m3": 2.2012660051252697e+20,
+        "ion_temperature_keV": 14.900580110053479,
+        "neutron_power_MW_uniform": 783.5790686809495,
+        "optimistic_ignition_tau_ratio": 0.9649225188157589,
+        "thermal_energy_MJ": 166.7737517879096,
+        "volume_ratio_to_baseline": 1.0100249999999997
+      },
+      "cycle_average": {
+        "alpha_heating_MW_uniform": 198.8898943250629,
+        "beta_at_fixed_B": 0.011938034995733707,
+        "distance_from_ratio_one_fraction": -0.03893068818946954,
+        "fusion_power_MW_uniform": 1000.132040034602,
+        "optimistic_ignition_tau_ratio": 0.9610693118105305
+      },
+      "depth_fraction": 0.005,
+      "full_cycle": {
+        "maximum_beta_at_fixed_B": 0.01213808117998298,
+        "maximum_fusion_power_MW_uniform": 1022.4436564261636,
+        "maximum_optimistic_ignition_tau_ratio": 0.9649225188157589,
+        "minimum_fusion_power_MW_uniform": 978.0845112613272,
+        "minimum_optimistic_ignition_tau_ratio": 0.9572002305135972
+      },
+      "maximum_fusion_point": {
+        "alpha_heating_MW_uniform": 203.32686349383934,
+        "beta_at_fixed_B": 0.01213808117998298,
+        "cycle_phase_deg": 90.0,
+        "equivalent_radial_squeeze_fraction": 0.0050000000000000044,
+        "fusion_power_MW_uniform": 1022.4436564261636,
+        "ion_density_m3": 2.2457349024788765e+20,
+        "ion_temperature_keV": 15.100586591722205,
+        "neutron_power_MW_uniform": 819.1167929323241,
+        "optimistic_ignition_tau_ratio": 0.9572002305135972,
+        "thermal_energy_MJ": 169.01231103080028,
+        "volume_ratio_to_baseline": 0.990025
+      },
+      "pattern": "synchronous",
+      "phase_offsets_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "screen_decision": {
+        "cycle_average_fusion_improves_over_baseline": true,
+        "cycle_average_proxy_pass": false,
+        "cycle_average_ratio_improves_over_baseline": false,
+        "entire_cycle_proxy_pass": false,
+        "joint_average_improvement": false,
+        "net_power_claim_permitted": false
+      }
+    },
+    {
+      "closest_instantaneous_proxy_point": {
+        "alpha_heating_MW_uniform": 198.85778612248268,
+        "beta_at_fixed_B": 0.011936693389224132,
+        "cycle_phase_deg": 0.0,
+        "equivalent_radial_squeeze_fraction": -6.632631065262018e-06,
+        "fusion_power_MW_uniform": 999.9705816444844,
+        "ion_density_m3": 2.2233042040157808e+20,
+        "ion_temperature_keV": 14.999867348405163,
+        "neutron_power_MW_uniform": 801.1127955220015,
+        "optimistic_ignition_tau_ratio": 0.9610823708583905,
+        "thermal_energy_MJ": 167.88501759919154,
+        "volume_ratio_to_baseline": 1.0000132653061222
+      },
+      "cycle_average": {
+        "alpha_heating_MW_uniform": 198.85812363050323,
+        "beta_at_fixed_B": 0.011936708614419684,
+        "distance_from_ratio_one_fraction": -0.03891792463148569,
+        "fusion_power_MW_uniform": 999.9722788276733,
+        "optimistic_ignition_tau_ratio": 0.9610820753685143
+      },
+      "depth_fraction": 0.005,
+      "full_cycle": {
+        "maximum_beta_at_fixed_B": 0.01193672383963078,
+        "maximum_fusion_power_MW_uniform": 999.9739760127336,
+        "maximum_optimistic_ignition_tau_ratio": 0.9610823708583905,
+        "minimum_fusion_power_MW_uniform": 999.9705816444844,
+        "minimum_optimistic_ignition_tau_ratio": 0.9610817798784889
+      },
+      "maximum_fusion_point": {
+        "alpha_heating_MW_uniform": 198.85846113889588,
+        "beta_at_fixed_B": 0.01193672383963078,
+        "cycle_phase_deg": 90.0,
+        "equivalent_radial_squeeze_fraction": -5.867329726072512e-06,
+        "fusion_power_MW_uniform": 999.9739760127336,
+        "ion_density_m3": 2.223307606992486e+20,
+        "ion_temperature_keV": 14.999882654208738,
+        "neutron_power_MW_uniform": 801.1155148738376,
+        "optimistic_ignition_tau_ratio": 0.9610817798784889,
+        "thermal_energy_MJ": 167.88518890838006,
+        "volume_ratio_to_baseline": 1.0000117346938775
+      },
+      "pattern": "traveling_quadrature",
+      "phase_offsets_deg": [
+        0.0,
+        90.0,
+        180.0,
+        270.0
+      ],
+      "screen_decision": {
+        "cycle_average_fusion_improves_over_baseline": false,
+        "cycle_average_proxy_pass": false,
+        "cycle_average_ratio_improves_over_baseline": true,
+        "entire_cycle_proxy_pass": false,
+        "joint_average_improvement": false,
+        "net_power_claim_permitted": false
+      }
+    },
+    {
+      "closest_instantaneous_proxy_point": {
+        "alpha_heating_MW_uniform": 198.2806140072973,
+        "beta_at_fixed_B": 0.011910653126293278,
+        "cycle_phase_deg": 90.0,
+        "equivalent_radial_squeeze_fraction": -0.0006620257589065037,
+        "fusion_power_MW_uniform": 997.068230436695,
+        "ion_density_m3": 2.2203928092079233e+20,
+        "ion_temperature_keV": 14.986769703793946,
+        "neutron_power_MW_uniform": 798.7876164293976,
+        "optimistic_ignition_tau_ratio": 0.9615882045583278,
+        "thermal_energy_MJ": 167.73842308305439,
+        "volume_ratio_to_baseline": 1.0013244897959184
+      },
+      "cycle_average": {
+        "alpha_heating_MW_uniform": 198.84206363445668,
+        "beta_at_fixed_B": 0.011935982531107501,
+        "distance_from_ratio_one_fraction": -0.03890363765347005,
+        "fusion_power_MW_uniform": 999.8915199904108,
+        "optimistic_ignition_tau_ratio": 0.96109636234653
+      },
+      "depth_fraction": 0.01,
+      "full_cycle": {
+        "maximum_beta_at_fixed_B": 0.011959362529743422,
+        "maximum_fusion_power_MW_uniform": 1002.4978646408078,
+        "maximum_optimistic_ignition_tau_ratio": 0.9615882045583278,
+        "minimum_fusion_power_MW_uniform": 997.068230436695,
+        "minimum_optimistic_ignition_tau_ratio": 0.9606427455970882
+      },
+      "maximum_fusion_point": {
+        "alpha_heating_MW_uniform": 199.36037080925155,
+        "beta_at_fixed_B": 0.011959362529743422,
+        "cycle_phase_deg": 270.0,
+        "equivalent_radial_squeeze_fraction": 0.0005624030465525287,
+        "fusion_power_MW_uniform": 1002.4978646408078,
+        "ion_density_m3": 2.2258366274015445e+20,
+        "ion_temperature_keV": 15.011255445813427,
+        "neutron_power_MW_uniform": 803.1374938315562,
+        "optimistic_ignition_tau_ratio": 0.9606427455970882,
+        "thermal_energy_MJ": 168.01247812196823,
+        "volume_ratio_to_baseline": 0.9988755102040816
+      },
+      "pattern": "abab_opposed",
+      "phase_offsets_deg": [
+        0.0,
+        180.0,
+        0.0,
+        180.0
+      ],
+      "screen_decision": {
+        "cycle_average_fusion_improves_over_baseline": false,
+        "cycle_average_proxy_pass": false,
+        "cycle_average_ratio_improves_over_baseline": true,
+        "entire_cycle_proxy_pass": false,
+        "joint_average_improvement": false,
+        "net_power_claim_permitted": false
+      }
+    },
+    {
+      "closest_instantaneous_proxy_point": {
+        "alpha_heating_MW_uniform": 190.24965149005874,
+        "beta_at_fixed_B": 0.011547528983090041,
+        "cycle_phase_deg": 270.0,
+        "equivalent_radial_squeeze_fraction": -0.010000000000000009,
+        "fusion_power_MW_uniform": 956.6839617785811,
+        "ion_density_m3": 2.1795252395124494e+20,
+        "ion_temperature_keV": 14.802307685307014,
+        "neutron_power_MW_uniform": 766.4343102885223,
+        "optimistic_ignition_tau_ratio": 0.9687361115714498,
+        "thermal_energy_MJ": 165.67384421040495,
+        "volume_ratio_to_baseline": 1.0201
+      },
+      "cycle_average": {
+        "alpha_heating_MW_uniform": 198.96868172156906,
+        "beta_at_fixed_B": 0.0119412687749536,
+        "distance_from_ratio_one_fraction": -0.03895449908015958,
+        "fusion_power_MW_uniform": 1000.5282280856045,
+        "optimistic_ignition_tau_ratio": 0.9610455009198404
+      },
+      "depth_fraction": 0.01,
+      "full_cycle": {
+        "maximum_beta_at_fixed_B": 0.0123436327366851,
+        "maximum_fusion_power_MW_uniform": 1045.4290713655432,
+        "maximum_optimistic_ignition_tau_ratio": 0.9687361115714498,
+        "minimum_fusion_power_MW_uniform": 956.6839617785811,
+        "minimum_optimistic_ignition_tau_ratio": 0.9532913952889004
+      },
+      "maximum_fusion_point": {
+        "alpha_heating_MW_uniform": 207.89782669201142,
+        "beta_at_fixed_B": 0.0123436327366851,
+        "cycle_phase_deg": 90.0,
+        "equivalent_radial_squeeze_fraction": 0.010000000000000009,
+        "fusion_power_MW_uniform": 1045.4290713655432,
+        "ion_density_m3": 2.2684763767234462e+20,
+        "ion_temperature_keV": 15.2023595431513,
+        "neutron_power_MW_uniform": 837.5312446735317,
+        "optimistic_ignition_tau_ratio": 0.9532913952889004,
+        "thermal_energy_MJ": 170.151398020367,
+        "volume_ratio_to_baseline": 0.9801000000000001
+      },
+      "pattern": "synchronous",
+      "phase_offsets_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "screen_decision": {
+        "cycle_average_fusion_improves_over_baseline": true,
+        "cycle_average_proxy_pass": false,
+        "cycle_average_ratio_improves_over_baseline": false,
+        "entire_cycle_proxy_pass": false,
+        "joint_average_improvement": false,
+        "net_power_claim_permitted": false
+      }
+    },
+    {
+      "closest_instantaneous_proxy_point": {
+        "alpha_heating_MW_uniform": 198.84023674062428,
+        "beta_at_fixed_B": 0.011935901722273348,
+        "cycle_phase_deg": 0.0,
+        "equivalent_radial_squeeze_fraction": -2.6530260317514376e-05,
+        "fusion_power_MW_uniform": 999.8823333242822,
+        "ion_density_m3": 2.2232157302776965e+20,
+        "ion_temperature_keV": 14.999469411216442,
+        "neutron_power_MW_uniform": 801.0420965836578,
+        "optimistic_ignition_tau_ratio": 0.961097735916021,
+        "thermal_energy_MJ": 167.88056371367514,
+        "volume_ratio_to_baseline": 1.0000530612244898
+      },
+      "cycle_average": {
+        "alpha_heating_MW_uniform": 198.84158662460953,
+        "beta_at_fixed_B": 0.011935962616872796,
+        "distance_from_ratio_one_fraction": -0.038903445983980434,
+        "fusion_power_MW_uniform": 999.8891213123222,
+        "optimistic_ignition_tau_ratio": 0.9610965540160196
+      },
+      "depth_fraction": 0.01,
+      "full_cycle": {
+        "maximum_beta_at_fixed_B": 0.01193602351172078,
+        "maximum_fusion_power_MW_uniform": 999.8959093302975,
+        "maximum_optimistic_ignition_tau_ratio": 0.961097735916021,
+        "minimum_fusion_power_MW_uniform": 999.8823333242822,
+        "minimum_optimistic_ignition_tau_ratio": 0.9610953721136254
+      },
+      "maximum_fusion_point": {
+        "alpha_heating_MW_uniform": 198.8429365145478,
+        "beta_at_fixed_B": 0.01193602351172078,
+        "cycle_phase_deg": 90.0,
+        "equivalent_radial_squeeze_fraction": -2.3469112355511967e-05,
+        "fusion_power_MW_uniform": 999.8959093302975,
+        "ion_density_m3": 2.2232293411636973e+20,
+        "ion_temperature_keV": 14.999530630604538,
+        "neutron_power_MW_uniform": 801.0529728157496,
+        "optimistic_ignition_tau_ratio": 0.9610953721136254,
+        "thermal_energy_MJ": 167.8812489076045,
+        "volume_ratio_to_baseline": 1.0000469387755102
+      },
+      "pattern": "traveling_quadrature",
+      "phase_offsets_deg": [
+        0.0,
+        90.0,
+        180.0,
+        270.0
+      ],
+      "screen_decision": {
+        "cycle_average_fusion_improves_over_baseline": false,
+        "cycle_average_proxy_pass": false,
+        "cycle_average_ratio_improves_over_baseline": true,
+        "entire_cycle_proxy_pass": false,
+        "joint_average_improvement": false,
+        "net_power_claim_permitted": false
+      }
+    },
+    {
+      "closest_instantaneous_proxy_point": {
+        "alpha_heating_MW_uniform": 197.61230027868618,
+        "beta_at_fixed_B": 0.011880491611248323,
+        "cycle_phase_deg": 90.0,
+        "equivalent_radial_squeeze_fraction": -0.0014234766530274445,
+        "fusion_power_MW_uniform": 993.7075671156791,
+        "ion_density_m3": 2.217017459330272e+20,
+        "ion_temperature_keV": 14.97157767227619,
+        "neutron_power_MW_uniform": 796.0952668369929,
+        "optimistic_ignition_tau_ratio": 0.9621752090095599,
+        "thermal_energy_MJ": 167.56838728077125,
+        "volume_ratio_to_baseline": 1.0028489795918367
+      },
+      "cycle_average": {
+        "alpha_heating_MW_uniform": 198.7773724926141,
+        "beta_at_fixed_B": 0.011933059361705016,
+        "distance_from_ratio_one_fraction": -0.038846308796023465,
+        "fusion_power_MW_uniform": 999.5662159628596,
+        "optimistic_ignition_tau_ratio": 0.9611536912039765
+      },
+      "depth_fraction": 0.02,
+      "full_cycle": {
+        "maximum_beta_at_fixed_B": 0.011977833246559887,
+        "maximum_fusion_power_MW_uniform": 1004.5575384649836,
+        "maximum_optimistic_ignition_tau_ratio": 0.9621752090095599,
+        "minimum_fusion_power_MW_uniform": 993.7075671156791,
+        "minimum_optimistic_ignition_tau_ratio": 0.9602850379050595
+      },
+      "maximum_fusion_point": {
+        "alpha_heating_MW_uniform": 199.76996503565013,
+        "beta_at_fixed_B": 0.011977833246559887,
+        "cycle_phase_deg": 270.0,
+        "equivalent_radial_squeeze_fraction": 0.001025015123920503,
+        "fusion_power_MW_uniform": 1004.5575384649836,
+        "ion_density_m3": 2.227898615622742e+20,
+        "ion_temperature_keV": 15.020524845736835,
+        "neutron_power_MW_uniform": 804.7875734293334,
+        "optimistic_ignition_tau_ratio": 0.9602850379050595,
+        "thermal_energy_MJ": 168.11622526406816,
+        "volume_ratio_to_baseline": 0.9979510204081633
+      },
+      "pattern": "abab_opposed",
+      "phase_offsets_deg": [
+        0.0,
+        180.0,
+        0.0,
+        180.0
+      ],
+      "screen_decision": {
+        "cycle_average_fusion_improves_over_baseline": false,
+        "cycle_average_proxy_pass": false,
+        "cycle_average_ratio_improves_over_baseline": true,
+        "entire_cycle_proxy_pass": false,
+        "joint_average_improvement": false,
+        "net_power_claim_permitted": false
+      }
+    },
+    {
+      "closest_instantaneous_proxy_point": {
+        "alpha_heating_MW_uniform": 182.0351028524932,
+        "beta_at_fixed_B": 0.011174456288888551,
+        "cycle_phase_deg": 270.0,
+        "equivalent_radial_squeeze_fraction": -0.020000000000000018,
+        "fusion_power_MW_uniform": 915.3765172011086,
+        "ion_density_m3": 2.1369989396642156e+20,
+        "ion_temperature_keV": 14.60913032586712,
+        "neutron_power_MW_uniform": 733.3414143486153,
+        "optimistic_ignition_tau_ratio": 0.9762685691900495,
+        "thermal_energy_MJ": 163.5117194638298,
+        "volume_ratio_to_baseline": 1.0404
+      },
+      "cycle_average": {
+        "alpha_heating_MW_uniform": 199.2840340726929,
+        "beta_at_fixed_B": 0.011954214138561585,
+        "distance_from_ratio_one_fraction": -0.03904973279791235,
+        "fusion_power_MW_uniform": 1002.1139999083986,
+        "optimistic_ignition_tau_ratio": 0.9609502672020876
+      },
+      "depth_fraction": 0.02,
+      "full_cycle": {
+        "maximum_beta_at_fixed_B": 0.012768505108870752,
+        "maximum_fusion_power_MW_uniform": 1093.0814163117307,
+        "maximum_optimistic_ignition_tau_ratio": 0.9762685691900495,
+        "minimum_fusion_power_MW_uniform": 915.3765172011086,
+        "minimum_optimistic_ignition_tau_ratio": 0.9453780203029907
+      },
+      "maximum_fusion_point": {
+        "alpha_heating_MW_uniform": 217.37414528926462,
+        "beta_at_fixed_B": 0.012768505108870752,
+        "cycle_phase_deg": 90.0,
+        "equivalent_radial_squeeze_fraction": 0.020000000000000018,
+        "fusion_power_MW_uniform": 1093.0814163117307,
+        "ion_density_m3": 2.3150080141885152e+20,
+        "ion_temperature_keV": 15.40954533250341,
+        "neutron_power_MW_uniform": 875.707271022466,
+        "optimistic_ignition_tau_ratio": 0.9453780203029907,
+        "thermal_energy_MJ": 172.4703111869811,
+        "volume_ratio_to_baseline": 0.9603999999999999
+      },
+      "pattern": "synchronous",
+      "phase_offsets_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "screen_decision": {
+        "cycle_average_fusion_improves_over_baseline": true,
+        "cycle_average_proxy_pass": false,
+        "cycle_average_ratio_improves_over_baseline": false,
+        "entire_cycle_proxy_pass": false,
+        "joint_average_improvement": false,
+        "net_power_claim_permitted": false
+      }
+    },
+    {
+      "closest_instantaneous_proxy_point": {
+        "alpha_heating_MW_uniform": 198.77005933210992,
+        "beta_at_fixed_B": 0.01193273589439488,
+        "cycle_phase_deg": 0.0,
+        "equivalent_radial_squeeze_fraction": -0.00010611681859007405,
+        "fusion_power_MW_uniform": 999.5294412128957,
+        "ion_density_m3": 2.222861905728291e+20,
+        "ion_temperature_keV": 14.997877926348737,
+        "neutron_power_MW_uniform": 800.7593818807857,
+        "optimistic_ignition_tau_ratio": 0.961159188062178,
+        "thermal_energy_MJ": 167.862751125149,
+        "volume_ratio_to_baseline": 1.0002122448979591
+      },
+      "cycle_average": {
+        "alpha_heating_MW_uniform": 198.77545649930968,
+        "beta_at_fixed_B": 0.011932979373902697,
+        "distance_from_ratio_one_fraction": -0.03884553858593587,
+        "fusion_power_MW_uniform": 999.5565812536718,
+        "optimistic_ignition_tau_ratio": 0.9611544614140641
+      },
+      "depth_fraction": 0.02,
+      "full_cycle": {
+        "maximum_beta_at_fixed_B": 0.011933222857384927,
+        "maximum_fusion_power_MW_uniform": 999.583721773172,
+        "maximum_optimistic_ignition_tau_ratio": 0.961159188062178,
+        "minimum_fusion_power_MW_uniform": 999.5294412128957,
+        "minimum_optimistic_ignition_tau_ratio": 0.9611497347276876
+      },
+      "maximum_fusion_point": {
+        "alpha_heating_MW_uniform": 198.78085376171032,
+        "beta_at_fixed_B": 0.011933222857384927,
+        "cycle_phase_deg": 90.0,
+        "equivalent_radial_squeeze_fraction": -9.387314493669585e-05,
+        "fusion_power_MW_uniform": 999.583721773172,
+        "ion_density_m3": 2.2229163329437296e+20,
+        "ion_temperature_keV": 14.998122742697058,
+        "neutron_power_MW_uniform": 800.8028680114616,
+        "optimistic_ignition_tau_ratio": 0.9611497347276876,
+        "thermal_energy_MJ": 167.86549121584395,
+        "volume_ratio_to_baseline": 1.0001877551020408
+      },
+      "pattern": "traveling_quadrature",
+      "phase_offsets_deg": [
+        0.0,
+        90.0,
+        180.0,
+        270.0
+      ],
+      "screen_decision": {
+        "cycle_average_fusion_improves_over_baseline": false,
+        "cycle_average_proxy_pass": false,
+        "cycle_average_ratio_improves_over_baseline": true,
+        "entire_cycle_proxy_pass": false,
+        "joint_average_improvement": false,
+        "net_power_claim_permitted": false
+      }
+    },
+    {
+      "closest_instantaneous_proxy_point": {
+        "alpha_heating_MW_uniform": 195.10766233320325,
+        "beta_at_fixed_B": 0.011767365872560125,
+        "cycle_phase_deg": 90.0,
+        "equivalent_radial_squeeze_fraction": -0.004301971012499628,
+        "fusion_power_MW_uniform": 981.1128163041078,
+        "ion_density_m3": 2.20432699973708e+20,
+        "ion_temperature_keV": 14.914390354137929,
+        "neutron_power_MW_uniform": 786.0051539709044,
+        "optimistic_ignition_tau_ratio": 0.9643876009869523,
+        "thermal_energy_MJ": 166.9283220262533,
+        "volume_ratio_to_baseline": 1.0086224489795919
+      },
+      "cycle_average": {
+        "alpha_heating_MW_uniform": 198.32566771657463,
+        "beta_at_fixed_B": 0.011912644433886253,
+        "distance_from_ratio_one_fraction": -0.03844547682435984,
+        "fusion_power_MW_uniform": 997.2947862319182,
+        "optimistic_ignition_tau_ratio": 0.9615545231756402
+      },
+      "depth_fraction": 0.05,
+      "full_cycle": {
+        "maximum_beta_at_fixed_B": 0.01200937529447452,
+        "maximum_fusion_power_MW_uniform": 1008.075737229055,
+        "maximum_optimistic_ignition_tau_ratio": 0.9643876009869523,
+        "minimum_fusion_power_MW_uniform": 981.1128163041078,
+        "minimum_optimistic_ignition_tau_ratio": 0.9596752170802083
+      },
+      "maximum_fusion_point": {
+        "alpha_heating_MW_uniform": 200.46960683532342,
+        "beta_at_fixed_B": 0.01200937529447452,
+        "cycle_phase_deg": 270.0,
+        "equivalent_radial_squeeze_fraction": 0.0018128677345072841,
+        "fusion_power_MW_uniform": 1008.075737229055,
+        "ion_density_m3": 2.2314168906652844e+20,
+        "ion_temperature_keV": 15.036334194213199,
+        "neutron_power_MW_uniform": 807.6061303937314,
+        "optimistic_ignition_tau_ratio": 0.9596752170802083,
+        "thermal_energy_MJ": 168.2931703453504,
+        "volume_ratio_to_baseline": 0.9963775510204083
+      },
+      "pattern": "abab_opposed",
+      "phase_offsets_deg": [
+        0.0,
+        180.0,
+        0.0,
+        180.0
+      ],
+      "screen_decision": {
+        "cycle_average_fusion_improves_over_baseline": false,
+        "cycle_average_proxy_pass": false,
+        "cycle_average_ratio_improves_over_baseline": true,
+        "entire_cycle_proxy_pass": false,
+        "joint_average_improvement": false,
+        "net_power_claim_permitted": false
+      }
+    },
+    {
+      "closest_instantaneous_proxy_point": {
+        "alpha_heating_MW_uniform": 159.59635408183988,
+        "beta_at_fixed_B": 0.010145247428298136,
+        "cycle_phase_deg": 270.0,
+        "equivalent_radial_squeeze_fraction": -0.050000000000000044,
+        "fusion_power_MW_uniform": 802.5416662401091,
+        "ion_density_m3": 2.016629203470884e+20,
+        "ion_temperature_keV": 14.055259240088528,
+        "neutron_power_MW_uniform": 642.9453121582691,
+        "optimistic_ignition_tau_ratio": 0.998114153538391,
+        "thermal_energy_MJ": 157.3125541763108,
+        "volume_ratio_to_baseline": 1.1025
+      },
+      "cycle_average": {
+        "alpha_heating_MW_uniform": 201.50060710116102,
+        "beta_at_fixed_B": 0.012045292673010228,
+        "distance_from_ratio_one_fraction": -0.03971592737076013,
+        "fusion_power_MW_uniform": 1013.2601957086955,
+        "optimistic_ignition_tau_ratio": 0.9602840726292399
+      },
+      "depth_fraction": 0.05,
+      "full_cycle": {
+        "maximum_beta_at_fixed_B": 0.014162772833788346,
+        "maximum_fusion_power_MW_uniform": 1250.5749471630445,
+        "maximum_optimistic_ignition_tau_ratio": 0.998114153538391,
+        "minimum_fusion_power_MW_uniform": 802.5416662401091,
+        "minimum_optimistic_ignition_tau_ratio": 0.9208683693016062
+      },
+      "maximum_fusion_point": {
+        "alpha_heating_MW_uniform": 248.69388153810542,
+        "beta_at_fixed_B": 0.014162772833788346,
+        "cycle_phase_deg": 90.0,
+        "equivalent_radial_squeeze_fraction": 0.050000000000000044,
+        "fusion_power_MW_uniform": 1250.5749471630445,
+        "ion_density_m3": 2.4635276419131854e+20,
+        "ion_temperature_keV": 16.061759497754228,
+        "neutron_power_MW_uniform": 1001.881065624939,
+        "optimistic_ignition_tau_ratio": 0.9208683693016062,
+        "thermal_energy_MJ": 179.77017485032326,
+        "volume_ratio_to_baseline": 0.9025
+      },
+      "pattern": "synchronous",
+      "phase_offsets_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "screen_decision": {
+        "cycle_average_fusion_improves_over_baseline": true,
+        "cycle_average_proxy_pass": false,
+        "cycle_average_ratio_improves_over_baseline": false,
+        "entire_cycle_proxy_pass": false,
+        "joint_average_improvement": false,
+        "net_power_claim_permitted": false
+      }
+    },
+    {
+      "closest_instantaneous_proxy_point": {
+        "alpha_heating_MW_uniform": 198.27971738244796,
+        "beta_at_fixed_B": 0.011910612667564942,
+        "cycle_phase_deg": 0.0,
+        "equivalent_radial_squeeze_fraction": -0.0006630454914604567,
+        "fusion_power_MW_uniform": 997.0637216945954,
+        "ion_density_m3": 2.2203882837971232e+20,
+        "ion_temperature_keV": 14.986749340636509,
+        "neutron_power_MW_uniform": 798.7840043121473,
+        "optimistic_ignition_tau_ratio": 0.9615889911649608,
+        "thermal_energy_MJ": 167.73819516976917,
+        "volume_ratio_to_baseline": 1.0013265306122447
+      },
+      "cycle_average": {
+        "alpha_heating_MW_uniform": 198.31334627199277,
+        "beta_at_fixed_B": 0.011912130097707214,
+        "distance_from_ratio_one_fraction": -0.038440508781964255,
+        "fusion_power_MW_uniform": 997.2328269677351,
+        "optimistic_ignition_tau_ratio": 0.9615594912180357
+      },
+      "depth_fraction": 0.05,
+      "full_cycle": {
+        "maximum_beta_at_fixed_B": 0.011913647682503867,
+        "maximum_fusion_power_MW_uniform": 997.4019508705528,
+        "maximum_optimistic_ignition_tau_ratio": 0.9615889911649608,
+        "minimum_fusion_power_MW_uniform": 997.0637216945954,
+        "minimum_optimistic_ignition_tau_ratio": 0.9615299897790484
+      },
+      "maximum_fusion_point": {
+        "alpha_heating_MW_uniform": 198.34697886630312,
+        "beta_at_fixed_B": 0.011913647682503867,
+        "cycle_phase_deg": 90.0,
+        "equivalent_radial_squeeze_fraction": -0.0005865626659971035,
+        "fusion_power_MW_uniform": 997.4019508705528,
+        "ion_density_m3": 2.2207277408042772e+20,
+        "ion_temperature_keV": 14.988276769419024,
+        "neutron_power_MW_uniform": 799.0549720042496,
+        "optimistic_ignition_tau_ratio": 0.9615299897790484,
+        "thermal_energy_MJ": 167.75529081482242,
+        "volume_ratio_to_baseline": 1.0011734693877552
+      },
+      "pattern": "traveling_quadrature",
+      "phase_offsets_deg": [
+        0.0,
+        90.0,
+        180.0,
+        270.0
+      ],
+      "screen_decision": {
+        "cycle_average_fusion_improves_over_baseline": false,
+        "cycle_average_proxy_pass": false,
+        "cycle_average_ratio_improves_over_baseline": true,
+        "entire_cycle_proxy_pass": false,
+        "joint_average_improvement": false,
+        "net_power_claim_permitted": false
+      }
+    }
+  ],
+  "breathing_result": {
+    "any_cycle_average_proxy_pass": false,
+    "any_joint_cycle_average_improvement": false,
+    "closest_cycle_average_case": {
+      "closest_instantaneous_proxy_point": {
+        "alpha_heating_MW_uniform": 198.27971738244796,
+        "beta_at_fixed_B": 0.011910612667564942,
+        "cycle_phase_deg": 0.0,
+        "equivalent_radial_squeeze_fraction": -0.0006630454914604567,
+        "fusion_power_MW_uniform": 997.0637216945954,
+        "ion_density_m3": 2.2203882837971232e+20,
+        "ion_temperature_keV": 14.986749340636509,
+        "neutron_power_MW_uniform": 798.7840043121473,
+        "optimistic_ignition_tau_ratio": 0.9615889911649608,
+        "thermal_energy_MJ": 167.73819516976917,
+        "volume_ratio_to_baseline": 1.0013265306122447
+      },
+      "cycle_average": {
+        "alpha_heating_MW_uniform": 198.31334627199277,
+        "beta_at_fixed_B": 0.011912130097707214,
+        "distance_from_ratio_one_fraction": -0.038440508781964255,
+        "fusion_power_MW_uniform": 997.2328269677351,
+        "optimistic_ignition_tau_ratio": 0.9615594912180357
+      },
+      "depth_fraction": 0.05,
+      "full_cycle": {
+        "maximum_beta_at_fixed_B": 0.011913647682503867,
+        "maximum_fusion_power_MW_uniform": 997.4019508705528,
+        "maximum_optimistic_ignition_tau_ratio": 0.9615889911649608,
+        "minimum_fusion_power_MW_uniform": 997.0637216945954,
+        "minimum_optimistic_ignition_tau_ratio": 0.9615299897790484
+      },
+      "maximum_fusion_point": {
+        "alpha_heating_MW_uniform": 198.34697886630312,
+        "beta_at_fixed_B": 0.011913647682503867,
+        "cycle_phase_deg": 90.0,
+        "equivalent_radial_squeeze_fraction": -0.0005865626659971035,
+        "fusion_power_MW_uniform": 997.4019508705528,
+        "ion_density_m3": 2.2207277408042772e+20,
+        "ion_temperature_keV": 14.988276769419024,
+        "neutron_power_MW_uniform": 799.0549720042496,
+        "optimistic_ignition_tau_ratio": 0.9615299897790484,
+        "thermal_energy_MJ": 167.75529081482242,
+        "volume_ratio_to_baseline": 1.0011734693877552
+      },
+      "pattern": "traveling_quadrature",
+      "phase_offsets_deg": [
+        0.0,
+        90.0,
+        180.0,
+        270.0
+      ],
+      "screen_decision": {
+        "cycle_average_fusion_improves_over_baseline": false,
+        "cycle_average_proxy_pass": false,
+        "cycle_average_ratio_improves_over_baseline": true,
+        "entire_cycle_proxy_pass": false,
+        "joint_average_improvement": false,
+        "net_power_claim_permitted": false
+      }
+    },
+    "closest_instantaneous_case": {
+      "closest_instantaneous_proxy_point": {
+        "alpha_heating_MW_uniform": 159.59635408183988,
+        "beta_at_fixed_B": 0.010145247428298136,
+        "cycle_phase_deg": 270.0,
+        "equivalent_radial_squeeze_fraction": -0.050000000000000044,
+        "fusion_power_MW_uniform": 802.5416662401091,
+        "ion_density_m3": 2.016629203470884e+20,
+        "ion_temperature_keV": 14.055259240088528,
+        "neutron_power_MW_uniform": 642.9453121582691,
+        "optimistic_ignition_tau_ratio": 0.998114153538391,
+        "thermal_energy_MJ": 157.3125541763108,
+        "volume_ratio_to_baseline": 1.1025
+      },
+      "cycle_average": {
+        "alpha_heating_MW_uniform": 201.50060710116102,
+        "beta_at_fixed_B": 0.012045292673010228,
+        "distance_from_ratio_one_fraction": -0.03971592737076013,
+        "fusion_power_MW_uniform": 1013.2601957086955,
+        "optimistic_ignition_tau_ratio": 0.9602840726292399
+      },
+      "depth_fraction": 0.05,
+      "full_cycle": {
+        "maximum_beta_at_fixed_B": 0.014162772833788346,
+        "maximum_fusion_power_MW_uniform": 1250.5749471630445,
+        "maximum_optimistic_ignition_tau_ratio": 0.998114153538391,
+        "minimum_fusion_power_MW_uniform": 802.5416662401091,
+        "minimum_optimistic_ignition_tau_ratio": 0.9208683693016062
+      },
+      "maximum_fusion_point": {
+        "alpha_heating_MW_uniform": 248.69388153810542,
+        "beta_at_fixed_B": 0.014162772833788346,
+        "cycle_phase_deg": 90.0,
+        "equivalent_radial_squeeze_fraction": 0.050000000000000044,
+        "fusion_power_MW_uniform": 1250.5749471630445,
+        "ion_density_m3": 2.4635276419131854e+20,
+        "ion_temperature_keV": 16.061759497754228,
+        "neutron_power_MW_uniform": 1001.881065624939,
+        "optimistic_ignition_tau_ratio": 0.9208683693016062,
+        "thermal_energy_MJ": 179.77017485032326,
+        "volume_ratio_to_baseline": 0.9025
+      },
+      "pattern": "synchronous",
+      "phase_offsets_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "screen_decision": {
+        "cycle_average_fusion_improves_over_baseline": true,
+        "cycle_average_proxy_pass": false,
+        "cycle_average_ratio_improves_over_baseline": false,
+        "entire_cycle_proxy_pass": false,
+        "joint_average_improvement": false,
+        "net_power_claim_permitted": false
+      }
+    },
+    "verdict": "NO_DECLARED_BREATHING_CASE_IMPROVES_BOTH_CYCLE_AVERAGE_PROXY_AND_FUSION_POWER"
+  },
+  "claim_boundary": "This phase-programmed actuation overlay is a low-authority analytical falsification screen. It does not demonstrate a realizable time-dependent magnetic field, nested flux surfaces, MHD stability, magnetic-pumping absorption, alpha confinement, ignition, sustained burn, net energy, buildable coils, or hardware.",
+  "concept_image_result": {
+    "global_three_toroidal_lobes_compatible_with_4fp_baseline": false,
+    "repeated_poloidal_m3_bookkeeping_compatible_with_4fp": true,
+    "three_point_collision_is_dt_fusion_mechanism": false,
+    "tri_lobe_cases": [
+      {
+        "amplitude_fraction": 0.0,
+        "area_normalization": 1.0,
+        "maximum_radius_over_a": 1.0,
+        "minimum_radius_over_a": 1.0,
+        "normalized_area_ratio": 1.0,
+        "thermodynamic_ignition_credit": 0.0
+      },
+      {
+        "amplitude_fraction": 0.02,
+        "area_normalization": 0.9999000149975006,
+        "maximum_radius_over_a": 1.0198980152974506,
+        "minimum_radius_over_a": 0.9799020146975506,
+        "normalized_area_ratio": 1.0000000000000002,
+        "thermodynamic_ignition_credit": 0.0
+      },
+      {
+        "amplitude_fraction": 0.05,
+        "area_normalization": 0.9993755853278152,
+        "maximum_radius_over_a": 1.049344364594206,
+        "minimum_radius_over_a": 0.9494068060614245,
+        "normalized_area_ratio": 1.0,
+        "thermodynamic_ignition_credit": 0.0
+      },
+      {
+        "amplitude_fraction": 0.1,
+        "area_normalization": 0.9975093361076329,
+        "maximum_radius_over_a": 1.0972602697183964,
+        "minimum_radius_over_a": 0.8977584024968697,
+        "normalized_area_ratio": 0.9999999999999999,
+        "thermodynamic_ignition_credit": 0.0
+      }
+    ],
+    "useful_translation": "area-preserving poloidal m=3 actuator harmonic repeated in every one of the four ABAB field periods",
+    "verdict": "IMAGE_SUGGESTS_A_TESTABLE_ACTUATOR_SYMMETRY_BUT_ADDS_NO_EARNED_FUSION_GAIN",
+    "zero_D_closer_to_ignition_credit": 0.0
+  },
+  "model_rules": {
+    "actuator_and_cryogenic_power_debited": false,
+    "astrophysical_gravity_or_accretion_credit": 0.0,
+    "baseline_geometry_changed": false,
+    "confinement": "instantaneous ISS04 geometry proxy; not valid as dynamic MHD evidence",
+    "magnetic_pumping_heating_credit": 0.0,
+    "primary_hts_pulsing_credit": 0.0,
+    "rf_phase_heating_credit": 0.0,
+    "shock_heating_credit": 0.0,
+    "thermodynamics": "fixed particle inventory; ideal monatomic adiabatic global-volume response",
+    "three_body_fusion_credit": 0.0,
+    "vacuum_vessel_flex_credit": 0.0
+  },
+  "program": "IX-StellaratorForge",
+  "promotion_status": {
+    "SFR2A_G0_OVERLAY_SPEC": "PASS_SPEC_ONLY",
+    "SFR2A_G1_TIME_DEPENDENT_EQUILIBRIUM": "NOT_RUN",
+    "SFR2A_G2_COILS_AND_ELECTROMAGNETICS": "NOT_RUN",
+    "SFR2A_G3_MAGNETIC_PUMPING_KINETICS": "NOT_RUN",
+    "SFR2A_G4_PARTICLE_AND_ALPHA_ORBITS": "NOT_RUN",
+    "SFR2A_G5_TRANSPORT_AND_MHD": "NOT_RUN",
+    "SFR2A_G6_EDGE_AND_WALL_LOADS": "NOT_RUN",
+    "SFR2A_G7_INTEGRATED_POWER_BALANCE": "NOT_RUN",
+    "SFR2A_G8_HARDWARE": "NOT_RUN"
+  },
+  "release": "0.6.0",
+  "required_next_evidence": [
+    "time-sliced free-boundary finite-beta equilibria over a complete actuation cycle",
+    "Poincare and island/stochasticity maps for every phase",
+    "coil-current solution plus eddy-current, force, fatigue, cooling and quench analysis",
+    "kinetic magnetic-pumping calculation resolving frequency, collisionality and phase lag",
+    "alpha-particle orbit confinement through the complete cycle",
+    "transport and nonlinear MHD response",
+    "actuator wall-plug power debit and integrated burn balance"
+  ],
+  "study_id": "SFR-2-Actuation-Overlay-A"
+}

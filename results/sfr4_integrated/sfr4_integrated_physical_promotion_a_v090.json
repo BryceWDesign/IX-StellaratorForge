@@ -1,0 +1,475 @@
+{
+  "authority": "MIXED_LOW_AND_INTERMEDIATE__DIRECT_FILAMENT_BIOT_SAVART_PLUS_ANALYTICAL_THERMAL_HYDRAULIC_BURN_AND_SOURCE_SCREENS__NOT_PRODUCTION_PHYSICS",
+  "claim_boundary": {
+    "fusion_progress_credit_fraction": 0.0,
+    "hardware_credit": 0.0,
+    "ignition_credit": 0.0,
+    "mechanical_wall_confinement_credit": 0.0,
+    "particle_confinement_credit": 0.0,
+    "production_equilibrium_credit": 0.0,
+    "safety_qualification_credit": 0.0
+  },
+  "heat_exhaust_resolution": {
+    "authority": "power_partition_plus_1D_conduction_and_hydraulics_not_edge_plasma_CFD_FEA_or_CHF_qualification",
+    "controlled_radiation_MW": 137.3863636,
+    "divertor_hydraulics": {
+      "mass_flow_kg_s": 426.0042283,
+      "mean_channel_velocity_m_s": 7.561245987,
+      "parallel_channels": 960,
+      "pressure_drop_Pa_screen": 183494.949,
+      "pumping_power_MW_screen": 0.1217785078
+    },
+    "divertor_peak_heat_flux_MW_m2": 5.724431818,
+    "divertor_power_MW": 91.59090909,
+    "divertor_thermal_screen": {
+      "all_temperature_screens_pass": true,
+      "heat_flux_MW_m2": 5.724431818,
+      "interfaces": [
+        {
+          "location": "coolant_film_wall",
+          "temperature_C": 231.7775974
+        },
+        {
+          "declared_max_temperature_C": 350.0,
+          "layer": "CuCrZr_heat_sink",
+          "outer_temperature_C": 277.5730519,
+          "temperature_screen_pass": true
+        },
+        {
+          "declared_max_temperature_C": 500.0,
+          "layer": "OFHC_Cu_compliant_interlayer",
+          "outer_temperature_C": 296.6544913,
+          "temperature_screen_pass": true
+        },
+        {
+          "declared_max_temperature_C": 1200.0,
+          "layer": "segmented_tungsten_monoblock",
+          "outer_temperature_C": 678.2832792,
+          "temperature_screen_pass": true
+        }
+      ],
+      "surface_temperature_C": 678.2832792
+    },
+    "first_wall_effective_area_m2": 536.9064794,
+    "first_wall_peak_heat_flux_MW_m2": 0.2942678553,
+    "heat_partition_feasibility_window": {
+      "maximum_controlled_radiation_fraction_from_first_wall_limit": 1.0,
+      "minimum_controlled_radiation_fraction_at_selected_area": 0.3012406948,
+      "minimum_effective_wetted_area_m2_at_selected_radiation": 13.73863636,
+      "selected_point_inside_flux_window": true
+    },
+    "heat_partition_sensitivity": [
+      {
+        "controlled_radiation_fraction": 0.4,
+        "divertor_peak_MW_m2": 17.17329545,
+        "effective_wetted_area_m2": 12.0,
+        "first_wall_peak_MW_m2": 0.1961785702,
+        "heat_flux_limits_pass": false
+      },
+      {
+        "controlled_radiation_fraction": 0.4,
+        "divertor_peak_MW_m2": 11.44886364,
+        "effective_wetted_area_m2": 18.0,
+        "first_wall_peak_MW_m2": 0.1961785702,
+        "heat_flux_limits_pass": false
+      },
+      {
+        "controlled_radiation_fraction": 0.4,
+        "divertor_peak_MW_m2": 8.586647727,
+        "effective_wetted_area_m2": 24.0,
+        "first_wall_peak_MW_m2": 0.1961785702,
+        "heat_flux_limits_pass": true
+      },
+      {
+        "controlled_radiation_fraction": 0.4,
+        "divertor_peak_MW_m2": 6.869318182,
+        "effective_wetted_area_m2": 30.0,
+        "first_wall_peak_MW_m2": 0.1961785702,
+        "heat_flux_limits_pass": true
+      },
+      {
+        "controlled_radiation_fraction": 0.5,
+        "divertor_peak_MW_m2": 14.31107955,
+        "effective_wetted_area_m2": 12.0,
+        "first_wall_peak_MW_m2": 0.2452232127,
+        "heat_flux_limits_pass": false
+      },
+      {
+        "controlled_radiation_fraction": 0.5,
+        "divertor_peak_MW_m2": 9.540719697,
+        "effective_wetted_area_m2": 18.0,
+        "first_wall_peak_MW_m2": 0.2452232127,
+        "heat_flux_limits_pass": true
+      },
+      {
+        "controlled_radiation_fraction": 0.5,
+        "divertor_peak_MW_m2": 7.155539773,
+        "effective_wetted_area_m2": 24.0,
+        "first_wall_peak_MW_m2": 0.2452232127,
+        "heat_flux_limits_pass": true
+      },
+      {
+        "controlled_radiation_fraction": 0.5,
+        "divertor_peak_MW_m2": 5.724431818,
+        "effective_wetted_area_m2": 30.0,
+        "first_wall_peak_MW_m2": 0.2452232127,
+        "heat_flux_limits_pass": true
+      },
+      {
+        "controlled_radiation_fraction": 0.6,
+        "divertor_peak_MW_m2": 11.44886364,
+        "effective_wetted_area_m2": 12.0,
+        "first_wall_peak_MW_m2": 0.2942678553,
+        "heat_flux_limits_pass": false
+      },
+      {
+        "controlled_radiation_fraction": 0.6,
+        "divertor_peak_MW_m2": 7.632575758,
+        "effective_wetted_area_m2": 18.0,
+        "first_wall_peak_MW_m2": 0.2942678553,
+        "heat_flux_limits_pass": true
+      },
+      {
+        "controlled_radiation_fraction": 0.6,
+        "divertor_peak_MW_m2": 5.724431818,
+        "effective_wetted_area_m2": 24.0,
+        "first_wall_peak_MW_m2": 0.2942678553,
+        "heat_flux_limits_pass": true
+      },
+      {
+        "controlled_radiation_fraction": 0.6,
+        "divertor_peak_MW_m2": 4.579545455,
+        "effective_wetted_area_m2": 30.0,
+        "first_wall_peak_MW_m2": 0.2942678553,
+        "heat_flux_limits_pass": true
+      },
+      {
+        "controlled_radiation_fraction": 0.7,
+        "divertor_peak_MW_m2": 8.586647727,
+        "effective_wetted_area_m2": 12.0,
+        "first_wall_peak_MW_m2": 0.3433124978,
+        "heat_flux_limits_pass": true
+      },
+      {
+        "controlled_radiation_fraction": 0.7,
+        "divertor_peak_MW_m2": 5.724431818,
+        "effective_wetted_area_m2": 18.0,
+        "first_wall_peak_MW_m2": 0.3433124978,
+        "heat_flux_limits_pass": true
+      },
+      {
+        "controlled_radiation_fraction": 0.7,
+        "divertor_peak_MW_m2": 4.293323864,
+        "effective_wetted_area_m2": 24.0,
+        "first_wall_peak_MW_m2": 0.3433124978,
+        "heat_flux_limits_pass": true
+      },
+      {
+        "controlled_radiation_fraction": 0.7,
+        "divertor_peak_MW_m2": 3.434659091,
+        "effective_wetted_area_m2": 30.0,
+        "first_wall_peak_MW_m2": 0.3433124978,
+        "heat_flux_limits_pass": true
+      }
+    ],
+    "heat_verdict": "NOMINAL_AND_DECLARED_STEADY_HEAT_ENVELOPE_SCREEN_PASS__DETACHMENT_EDGE_TOPOLOGY_TRANSIENTS_FATIGUE_AND_HARDWARE_UNPROVEN",
+    "nominal_and_declared_steady_heat_envelope_pass": true,
+    "plasma_exhaust_power_MW": 228.9772727,
+    "selected_first_wall_screen": {
+      "declared_weighted_architecture_score": 9.0,
+      "direct_plasma_confinement_credit": 0.0,
+      "id": "DB-A2_DCLL_HEAT_RESOLVED_SCREEN",
+      "integration_gates": {
+        "avoids_water_pbli_interaction": true,
+        "breeding_blanket_compatible": true,
+        "full_fusion_neutron_qualification": false,
+        "joining_process_mature": false,
+        "low_activation_structure": true,
+        "preserves_magnetic_clearance": true,
+        "structural_code_path": true
+      },
+      "name": "Segmented tungsten, graded W-RAFM, helium-cooled ODS-RAFM first wall and separate PbLi DCLL blanket",
+      "nominal": {
+        "all_layer_temperature_screens_pass": true,
+        "coolant_bulk_temperature_C": 350.0,
+        "coolant_film_temperature_rise_K": 8.407653008,
+        "heat_flux_MW_m2": 0.2942678553,
+        "layers_plasma_to_coolant": [
+          {
+            "cold_face_temperature_C": 391.3455891,
+            "declared_max_service_temperature_C": 1600.0,
+            "hot_face_temperature_C": 401.1545176,
+            "layer_id": "segmented_tungsten_armor",
+            "material": "segmented tungsten",
+            "temperature_rise_K": 9.808928509,
+            "temperature_screen_pass": true,
+            "thermal_resistance_m2K_W": 3.333333333e-05
+          },
+          {
+            "cold_face_temperature_C": 385.9952644,
+            "declared_max_service_temperature_C": 800.0,
+            "hot_face_temperature_C": 391.3455891,
+            "layer_id": "graded_w_rafm_transition",
+            "material": "functionally graded tungsten-to-RAFM transition candidate",
+            "temperature_rise_K": 5.350324641,
+            "temperature_screen_pass": true,
+            "thermal_resistance_m2K_W": 1.818181818e-05
+          },
+          {
+            "cold_face_temperature_C": 358.407653,
+            "declared_max_service_temperature_C": 550.0,
+            "hot_face_temperature_C": 385.9952644,
+            "layer_id": "helium_cooled_ods_rafm_first_wall",
+            "material": "ODS-Eurofer or qualified RAFM with distributed helium microchannels",
+            "temperature_rise_K": 27.58761143,
+            "temperature_screen_pass": true,
+            "thermal_resistance_m2K_W": 9.375e-05
+          }
+        ],
+        "plasma_facing_surface_temperature_C": 401.1545176,
+        "raw_cte_mismatch_strain_proxy": 0.0003836588819,
+        "raw_cte_mismatch_strain_screen_pass": true,
+        "solid_thermal_resistance_m2K_W": 0.0001452651515,
+        "total_thermal_resistance_m2K_W": 0.0001738365801
+      },
+      "physical_qualification_complete": false,
+      "status": "SELECTED_FOR_REDUCED_HEAT_CAMPAIGN__NOT_QUALIFIED",
+      "upset_steady_upper_bound": {
+        "all_layer_temperature_screens_pass": true,
+        "coolant_bulk_temperature_C": 350.0,
+        "coolant_film_temperature_rise_K": 28.57142857,
+        "heat_flux_MW_m2": 1.0,
+        "layers_plasma_to_coolant": [
+          {
+            "cold_face_temperature_C": 490.5032468,
+            "declared_max_service_temperature_C": 1600.0,
+            "hot_face_temperature_C": 523.8365801,
+            "layer_id": "segmented_tungsten_armor",
+            "material": "segmented tungsten",
+            "temperature_rise_K": 33.33333333,
+            "temperature_screen_pass": true,
+            "thermal_resistance_m2K_W": 3.333333333e-05
+          },
+          {
+            "cold_face_temperature_C": 472.3214286,
+            "declared_max_service_temperature_C": 800.0,
+            "hot_face_temperature_C": 490.5032468,
+            "layer_id": "graded_w_rafm_transition",
+            "material": "functionally graded tungsten-to-RAFM transition candidate",
+            "temperature_rise_K": 18.18181818,
+            "temperature_screen_pass": true,
+            "thermal_resistance_m2K_W": 1.818181818e-05
+          },
+          {
+            "cold_face_temperature_C": 378.5714286,
+            "declared_max_service_temperature_C": 550.0,
+            "hot_face_temperature_C": 472.3214286,
+            "layer_id": "helium_cooled_ods_rafm_first_wall",
+            "material": "ODS-Eurofer or qualified RAFM with distributed helium microchannels",
+            "temperature_rise_K": 93.75,
+            "temperature_screen_pass": true,
+            "thermal_resistance_m2K_W": 9.375e-05
+          }
+        ],
+        "plasma_facing_surface_temperature_C": 523.8365801,
+        "raw_cte_mismatch_strain_proxy": 0.001303774351,
+        "raw_cte_mismatch_strain_screen_pass": true,
+        "solid_thermal_resistance_m2K_W": 0.0001452651515,
+        "total_thermal_resistance_m2K_W": 0.0001738365801
+      }
+    },
+    "transient_disruption_heat_resolved": false,
+    "water_PbLi_separation_requirement": "Independent double-wall divertor coolant boundary, guard vacuum and leak detection separate water from every PbLi sector. No shared heat exchanger or common penetration."
+  },
+  "program": "IX-StellaratorForge",
+  "promotion_summary": {
+    "earned_fusion_progress_credit_fraction": 0.0,
+    "full_3D_TBR_pass": false,
+    "hardware_pass": false,
+    "magnet_qualification_pass": false,
+    "nominal_and_declared_steady_heat_envelope_screen_pass": true,
+    "physical_confinement_pass": false,
+    "production_equilibrium_pass": false,
+    "sustained_burn_pass": false
+  },
+  "reduced_campaign_complete": true,
+  "release": "0.9.0",
+  "solver_availability": {
+    "cadquery": false,
+    "desc": false,
+    "dolfinx": false,
+    "fenics": false,
+    "gmsh": false,
+    "openmc": false,
+    "simsopt": false,
+    "vmecpp": false
+  },
+  "study_id": "SFR4-INTEGRATED-PHYSICAL-PROMOTION-A",
+  "top_level_verdict": "INTEGRATED_REDUCED_CAMPAIGN_COMPLETE__NOMINAL_HEAT_ENVELOPE_SCREEN_PASS__PHYSICAL_COIL_EQUILIBRIUM_CONFINEMENT_AND_FUSION_UNPROVEN",
+  "workstreams": {
+    "1_physical_coil_field": {
+      "authority": "direct_filament_Biot_Savart_and_field_line_screen_not_MHD_equilibrium",
+      "best_candidate": {
+        "authority": "intermediate_vacuum_biot_savart_field_line_screen",
+        "combined_screen_pass": false,
+        "helical_coil_count": 4,
+        "helical_to_tf_current_ratio": 1.0,
+        "iota_std": 0.02090175847,
+        "max_radial_excursion_m": 0.3267829652,
+        "mean_iota": 0.06533346157,
+        "mean_radial_excursion_m": 0.180429973,
+        "nestedness_screen_pass": true,
+        "nfp": 6,
+        "normalized_max_excursion_over_a": 0.1922252737,
+        "sign_pattern": "alternating",
+        "tf_current_MA_turn_per_filament": -9.96177257,
+        "transform_screen_pass": false
+      },
+      "candidate_count": 80,
+      "combined_pass_count": 0,
+      "held_out_hybrid_reconstruction": {
+        "authority": "intermediate_held_out_biot_savart_filament_screen",
+        "axis_field_std_T": 0.001962837562,
+        "basis": "24_encircling_plus_helical_harmonics_plus_48_saddle_filaments",
+        "clearance_m": 1.35,
+        "coil_count": 120,
+        "max_filament_current_MA_turn": 4.800318618,
+        "mean_axis_field_T": 5.999956193,
+        "nfp": 6,
+        "passes_reconstruction_screen": false,
+        "rms_filament_current_MA_turn": 0.9978809804,
+        "train_mean_abs_Bn_over_B0": 0.053662477,
+        "train_rms_Bn_over_B0": 0.06281297904,
+        "validation_max_abs_Bn_over_B": 0.1438877666,
+        "validation_mean_abs_Bn_over_B": 0.05487239489,
+        "validation_rms_Bn_over_B": 0.06491274876
+      },
+      "physical_coil_promoted": false,
+      "tf_centerline_geometry": {
+        "authority": "geometry_only_rebco_strain_proxy_not_winding_pack_FEA",
+        "hard_way_strain_proxy_fraction": 0.001967213115,
+        "length_m": 19.16316792,
+        "max_curvature_per_m": 0.3278688525,
+        "min_bend_radius_m": 3.05,
+        "passes_geometry_strain_proxy": true,
+        "rms_curvature_per_m": 0.3278688525,
+        "strain_ceiling_fraction": 0.004,
+        "strain_target_fraction": 0.0035
+      }
+    },
+    "2_finite_beta_equilibrium": {
+      "cross_code_equilibrium_completed": false,
+      "desc_available": false,
+      "fail_closed": true,
+      "status": "NOT_RUN__PRODUCTION_SOLVERS_UNAVAILABLE_IN_BUILD_RUNTIME",
+      "vmecpp_available": false
+    },
+    "3_coil_plasma_codesign": {
+      "direct_filament_candidate_count": 80,
+      "production_single_stage_codesign_completed": false,
+      "simsopt_available": false,
+      "status": "REDUCED_SCAN_EXECUTED__PRODUCTION_CODESIGN_NOT_RUN"
+    },
+    "4_particle_confinement": {
+      "alpha_energy_MeV": 3.5,
+      "alpha_speed_m_s_nonrelativistic": 12991758.0,
+      "authority": "alpha_gyroradius_scope_only_not_orbit_retention",
+      "field_line_topology_prerequisite_pass": false,
+      "gyroradius_clearance_screen_pass": true,
+      "gyroradius_over_minor_radius": 0.02641191862,
+      "maximum_pitch_alpha_gyroradius_m": 0.04490026165,
+      "particle_confinement_promoted": false,
+      "reason": "A gyroradius scale and vacuum field-line test cannot establish guiding-center alpha retention. The physical coil candidate also fails its combined topology gate.",
+      "required_external_evidence": [
+        "finite_beta_equilibrium",
+        "Boozer_coordinates",
+        "collisionless_and_collisional_guiding_center_orbits",
+        "neoclassical_transport",
+        "gyrokinetic_transport"
+      ]
+    },
+    "5_self_consistent_burn": {
+      "authority": "uniform_Bosch_Hale_plus_ISS04_and_bremsstrahlung_screen_not_transport_or_burn_simulation",
+      "auxiliary_heating_MW": 50.0,
+      "best_physical_coil_iota_requirement": {
+        "alpha_heating_MW": 198.8636364,
+        "auxiliary_heating_MW": 50.0,
+        "iota_screen": 0.06533346157,
+        "iss04_tau_E_H1_s": 0.2821969652,
+        "plasma_gain_Q": 20.0,
+        "required_H_ISS04": 4.188696984,
+        "required_tau_E_s": 1.182037577,
+        "total_thermal_energy_MJ": 294.1661697
+      },
+      "bremsstrahlung_MW_screen": 11.33738086,
+      "deposited_alpha_heating_MW_assumption": 178.9772727,
+      "design_iota_requirement": {
+        "alpha_heating_MW": 198.8636364,
+        "auxiliary_heating_MW": 50.0,
+        "iota_screen": 0.55,
+        "iss04_tau_E_H1_s": 0.6759201871,
+        "plasma_gain_Q": 20.0,
+        "required_H_ISS04": 1.74878277,
+        "required_tau_E_s": 1.182037577,
+        "total_thermal_energy_MJ": 294.1661697
+      },
+      "net_heating_after_bremsstrahlung_MW": 217.6398919,
+      "physical_coil_linked_burn_promoted": false,
+      "reason": "The best direct-filament coil fails topology; a design-iota burn target cannot be assigned to it.",
+      "required_H_ISS04_with_bremsstrahlung_at_design_iota": 1.99967219,
+      "required_tau_E_with_bremsstrahlung_s": 1.351618801,
+      "uniform_burn_point": {
+        "beta": 0.03,
+        "dt_reactivity_m3_s": 2.739929611e-22,
+        "field_T": 6.0,
+        "fusion_power_MW_uniform": 704.5706396,
+        "ion_density_m3": 8.940303194e+19,
+        "pressure_Pa": 429718.3463,
+        "target_fusion_power_MW": 1000.0,
+        "target_to_uniform_ratio": 1.419304104,
+        "temperature_keV": 15.0,
+        "volume_m3": 456.3705075
+      }
+    },
+    "6_magnet_engineering": {
+      "authority": "magnetic_pressure_energy_and_centerline_geometry_scope_not_winding_pack_or_support_FEA",
+      "best_candidate_tf_current_MA_turn_per_filament": -9.96177257,
+      "centerline_geometry_screen_pass": true,
+      "declared_peak_field_on_conductor_limit_T": 20.0,
+      "magnet_promoted": false,
+      "magnetic_pressure_MPa_axis_field_proxy": 14.32394488,
+      "peak_field_on_conductor_calculated": false,
+      "quench_protection_qualified": false,
+      "stored_magnetic_energy_GJ_plasma_volume_proxy": 6.537025994,
+      "structural_FEA_completed": false
+    },
+    "7_reactor_systems": {
+      "authority": "exact_source_and_conditional_plant_ledger_not_3D_neutronics_or_integrated_plant",
+      "breeding_coverage_constraint": {
+        "authority": "exact_source_and_geometric_coverage_bound_not_neutron_transport",
+        "breeding_surface_coverage_fraction": 0.85,
+        "fusion_power_MW": 1000.0,
+        "global_tbr_target": 1.15,
+        "neutron_power_MW": 801.1363636,
+        "neutron_source_rate_s": 3.546311974e+20,
+        "required_bred_tritium_kg_per_day": 0.1764720994,
+        "required_local_tbr_if_uncovered_regions_breed_zero": 1.352941176,
+        "tritium_burn_kg_per_day": 0.1534539995
+      },
+      "conditional_gross_electric_MW": 460.0,
+      "conditional_net_electric_MW": 339.8782215,
+      "conditional_recirculating_power_MW": 120.1217785,
+      "conditional_thermal_power_MW": 1150.0,
+      "dt_source_ledger": {
+        "alpha_power_MW": 198.8636364,
+        "deuterium_burn_kg_per_day": 0.1024757702,
+        "fusion_power_MW": 1000.0,
+        "neutron_power_MW": 801.1363636,
+        "reaction_rate_per_s": 3.546311974e+20,
+        "tritium_burn_kg_per_day": 0.1534539995
+      },
+      "full_3D_TBR_calculated": false,
+      "net_electric_prediction_promoted": false
+    }
+  }
+}

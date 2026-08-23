@@ -1,0 +1,101 @@
+{
+  "release": "0.7.0",
+  "study_id": "SFR3-FIELD-INTEGRITY-SHELL-A",
+  "retrieved_utc_date": "2026-08-21",
+  "scope": "Evidence used to select mechanisms and exclusions; no source result is numerically transferred into the synthetic controllability screen except as an explicitly declared hypothesis.",
+  "sources": [
+    {
+      "id": "APS-PSC-2025",
+      "title": "Optimization of passive superconductors for shaping stellarator magnetic fields",
+      "url": "https://doi.org/10.1103/PhysRevE.111.065202",
+      "role": "Supports studying optimized passive superconducting coils for partial 3-D shaping and passive response.",
+      "limit": "Does not validate the SFR-3 loop geometry or its declared 55 percent transient attenuation."
+    },
+    {
+      "id": "NF-PLANAR-2025",
+      "title": "Stellarator fusion systems enabled by arrays of planar coils",
+      "url": "https://doi.org/10.1088/1741-4326/ada56c",
+      "role": "Supports individually controlled planar field-shaping arrays as a credible stellarator architecture.",
+      "limit": "Published configurations and field errors are not transferred to SFR-3."
+    },
+    {
+      "id": "IAEA-W7X-TRIM-2016",
+      "title": "Error field measurement correction and heat flux balancing on Wendelstein 7-X",
+      "url": "https://conferences.iaea.org/event/98/contributions/12363/",
+      "role": "Demonstrates practical error-field measurement and trim-coil correction in a stellarator.",
+      "limit": "W7-X response and capacity are machine-specific."
+    },
+    {
+      "id": "IPP-W7X-PRECISION-2016",
+      "title": "Magnetic field of Wendelstein 7-X exact to a hundred-thousandth",
+      "url": "https://www.ipp.mpg.de/4141626/w7x_nature",
+      "role": "Establishes the importance and measurability of high field-geometry precision.",
+      "limit": "Precision achievement is not a reactor confinement or manufacturing guarantee."
+    },
+    {
+      "id": "FED-FERRO-2026",
+      "title": "Efficient calculation of magnetic fields from ferromagnetic materials near strong electromagnets and application to stellarator coil optimization",
+      "url": "https://doi.org/10.1016/j.fusengdes.2026.115627",
+      "role": "Supports including ferritic blanket magnetization in coil co-design rather than banning all magnetic structure by assumption.",
+      "limit": "Requires CAD-specific validation and does not guarantee minor effects for SFR-3."
+    },
+    {
+      "id": "COIL-FEM-2026-PREPRINT",
+      "title": "Towards joint optimization of stellarator coils and support structures",
+      "url": "https://arxiv.org/abs/2607.05749",
+      "role": "Supports integrating support stress and displacement into coil optimization.",
+      "limit": "Preprint evidence; SFR-3 has not run the tool or reproduced the reported result."
+    },
+    {
+      "id": "OXFORD-REBCO-2026",
+      "title": "The performance of REBCO coated conductor during in situ cryogenic irradiation with fusion-spectrum neutrons",
+      "url": "https://doi.org/10.1088/1361-6668/ae4548",
+      "role": "Requires conservative real-time radiation lifetime treatment for REBCO.",
+      "limit": "One conductor and exposure protocol do not define a complete reactor lifetime."
+    },
+    {
+      "id": "FST-HFH-2026",
+      "title": "Design and Performance of Metal Hydride Composite Neutron Shields for Compact High-Power Fusion Reactors",
+      "url": "https://doi.org/10.1080/15361055.2025.2514910",
+      "role": "Supports retaining HfH1.7 composites as a solver-dependent magnet-shield candidate.",
+      "limit": "Published reductions are compact-tokamak configuration results and are not credited to SFR-3."
+    },
+    {
+      "id": "ITER-BLANKET",
+      "title": "ITER blanket",
+      "url": "https://www.iter.org/machine/blanket",
+      "role": "Supports tungsten first-wall relevance and separates plasma-facing survival from confinement.",
+      "limit": "ITER materials and water-cooling decisions are not a direct reactor prescription."
+    },
+    {
+      "id": "FED-WFW-2026",
+      "title": "Demonstrating powder metallurgically produced long tungsten fiber-reinforced tungsten composite to serve as plasma-facing material",
+      "url": "https://doi.org/10.1016/j.fusengdes.2025.115605",
+      "role": "Supports retaining tungsten-fiber-reinforced tungsten as a damage-resilience branch.",
+      "limit": "Does not establish reactor lifetime or make the wall a confinement system."
+    },
+    {
+      "id": "FST-LI-DIVERTOR-2025",
+      "title": "Design and Analysis of the Open-Surface Slow Li Flow Divertor and Comparison to the Fast Li Flow Divertor",
+      "url": "https://doi.org/10.1080/15361055.2025.2454154",
+      "role": "Supports a local liquid-lithium divertor branch for recycling and heat exhaust.",
+      "limit": "The reported engineering limits do not imply core confinement improvement."
+    },
+    {
+      "id": "LHD-LI-2025-PREPRINT",
+      "title": "Enhancement of Mid-/High-Z Impurity Transport by Continuous Li-granule Dropping in a Stellarator Plasma",
+      "url": "https://arxiv.org/abs/2506.21141",
+      "role": "Shows lithium can materially alter impurity transport in a stellarator plasma.",
+      "limit": "Preprint and machine-specific; both beneficial and adverse impurity consequences require experiment."
+    }
+  ],
+  "donor_archives": [
+    "IX-Vibe-main(20260822-015659).zip",
+    "PressureX-main(20260822-015659).zip",
+    "ahis-autonomic-hull-integrity-system-main(20260822-015708).zip",
+    "IX-Breath-main(20260822-015809).zip",
+    "IX-GCR-SPE-main(20260822-015809).zip",
+    "IX-HfTaZen-Shield-main(20260822-015810).zip",
+    "IX-Shield-main(20260822-015809).zip"
+  ]
+}
